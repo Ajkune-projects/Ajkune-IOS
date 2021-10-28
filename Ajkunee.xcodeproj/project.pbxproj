@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -331,8 +331,8 @@
 					};
 				};
 			};
-			buildConfigurationList = 2DF8212A272177C8009C2932 /* Build configuration list for PBXProject "Ajkune" */;
-			compatibilityVersion = "Xcode 13.0";
+			buildConfigurationList = 2DF8212A272177C8009C2932 /* Build configuration list for PBXProject "Ajkunee" */;
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -599,7 +599,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2DF8212A272177C8009C2932 /* Build configuration list for PBXProject "Ajkune" */ = {
+		2DF8212A272177C8009C2932 /* Build configuration list for PBXProject "Ajkunee" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2DF82141272177CA009C2932 /* Debug */,
