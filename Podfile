@@ -1,5 +1,5 @@
 # Uncomment the next line to define a global platform for your project
- platform :ios, '12.0'
+ platform :ios, '10.0'
 
 target 'Ajkune' do
   # Comment the next line if you don't want to use dynamic frameworks
@@ -12,8 +12,14 @@ target 'Ajkune' do
   pod 'NVActivityIndicatorView'
   pod 'GradientProgressBar'
   pod 'SearchTextField'
+  pod "PinCodeInputView"
   pod 'Kingfisher'
   pod 'DropDown'
   pod 'Cosmos'
+  pod 'Alamofire'
+  pod 'AlamofireImage'
+  pod 'KeychainAccess'
+  pod 'SwiftyJSON'
+  pod 'SkyFloatingLabelTextField'
 
 end

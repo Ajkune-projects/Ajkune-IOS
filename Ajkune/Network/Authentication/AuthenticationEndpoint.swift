@@ -11,13 +11,16 @@ enum TDAuthenticationEndpoint: TDAPIConfiguration {
     
     case login(email:String, password:String)
     case signUp(userModel: UserSignUpModel)
+    case requestForgotPassword(email: String)
+    case checkResetPasswordCode(resetPasswordCode: String)
+    case requestResetPassword(data: ResetPasswordModel)
 
     
     
     // MARK: - HTTPMethod
     var method: HTTPMethod {
         switch self {
-        case .login,.signUp:
+        case .login,.signUp, .requestForgotPassword, .checkResetPasswordCode, .requestResetPassword:
             return .post
 //        case :
 //            return .get
@@ -35,8 +38,13 @@ enum TDAuthenticationEndpoint: TDAPIConfiguration {
             return "/login"
         case .signUp:
             return "/register"
-            
-    }
+        case .requestForgotPassword:
+            return "/forgotEmail"
+        case .checkResetPasswordCode:
+            return "/forgotEmail/code"
+        case .requestResetPassword(data: let data):
+            return "/forgotEmail/changePassword"
+        }
     }
     
     // MARK: - Parameters
@@ -49,6 +57,15 @@ enum TDAuthenticationEndpoint: TDAPIConfiguration {
             return[  "name":userModel.name,
                      "email":userModel.email,
                      "password":userModel.password]
+        case .requestForgotPassword(let email):
+            return ["email":email]
+        case .checkResetPasswordCode(let resetPasswordCode):
+            return ["code":resetPasswordCode]
+        case .requestResetPassword(let data):
+            return [ "code":data.code,
+                     "email":data.email,
+                     "password":data.password,
+                     "confirmation_password":data.confirmation_password]
         }
     }
     

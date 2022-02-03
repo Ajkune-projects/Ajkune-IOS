@@ -35,6 +35,15 @@ extension UIStoryboard {
     static var firstScreen: UIStoryboard {
         return UIStoryboard(name: "FirstScreen", bundle: nil)
     }
+    static var forgetPassword: UIStoryboard {
+         return UIStoryboard(name: "ForgotPassword", bundle: nil)
+    }
+    static var forgetPasswordVerification: UIStoryboard {
+         return UIStoryboard(name: "ForgotPasswordVerification", bundle: nil)
+    }
+    static var resetPassword: UIStoryboard {
+         return UIStoryboard(name: "ResetPassword", bundle: nil)
+    }
 }
 
 

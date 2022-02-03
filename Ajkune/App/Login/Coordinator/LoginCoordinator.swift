@@ -17,7 +17,7 @@ class LoginCoordinator: TDDefaultCoordinator{
     var viewModel : LoginViewModelProtocol
     var coordinatorDelegate : LoginCoordinatorDelegate?
     var signUpCoordinator: SignUpCoordinator?
-//    var forgotPasswordCoordinator: TDForgotPasswordCoordinator?
+    var forgotPasswordCoordinator: ForgotPasswordCoordinator?
     
     init(viewModel: LoginViewModelProtocol) {
         self.viewModel = viewModel
@@ -36,8 +36,8 @@ extension LoginCoordinator: LoginViewModelCoordinatorDelegate{
         signUpCoordinator?.start()
     }
     func showForgotPassword() {
-//        forgotPasswordCoordinator = TDForgotPasswordCoordinator(viewModel: TDForgotPasswordViewModel(), navigationController: self.viewController?.navigationController)
-//        forgotPasswordCoordinator?.start()
+        forgotPasswordCoordinator = ForgotPasswordCoordinator(viewModel: ForgotPasswordViewModel(), navigationController: self.viewController?.navigationController)
+        forgotPasswordCoordinator?.start()
     }
     
     func loginSuccessful() {

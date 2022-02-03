@@ -1,54 +1,79 @@
 PODS:
+  - Alamofire (5.4.4)
+  - AlamofireImage (4.2.0):
+    - Alamofire (~> 5.4)
   - Cosmos (23.0.0)
   - DropDown (2.3.13)
   - GradientProgressBar (2.0.3):
     - LightweightObservable (~> 2.0)
   - IQKeyboardManagerSwift (6.5.6)
+  - KeychainAccess (4.2.2)
   - Kingfisher (7.1.1)
   - LightweightObservable (2.1.2)
   - NVActivityIndicatorView (5.1.1):
     - NVActivityIndicatorView/Base (= 5.1.1)
   - NVActivityIndicatorView/Base (5.1.1)
+  - PinCodeInputView (1.0.0)
   - PromisedFuture (1.0.2)
   - SearchTextField (1.2.4)
+  - SkyFloatingLabelTextField (4.0.0)
+  - SwiftyJSON (5.0.1)
   - TextFieldEffects (1.6.0)
 
 DEPENDENCIES:
+  - Alamofire
+  - AlamofireImage
   - Cosmos
   - DropDown
   - GradientProgressBar
   - IQKeyboardManagerSwift
+  - KeychainAccess
   - Kingfisher
   - NVActivityIndicatorView
+  - PinCodeInputView
   - PromisedFuture
   - SearchTextField
+  - SkyFloatingLabelTextField
+  - SwiftyJSON
   - TextFieldEffects
 
 SPEC REPOS:
   trunk:
+    - Alamofire
+    - AlamofireImage
     - Cosmos
     - DropDown
     - GradientProgressBar
     - IQKeyboardManagerSwift
+    - KeychainAccess
     - Kingfisher
     - LightweightObservable
     - NVActivityIndicatorView
+    - PinCodeInputView
     - PromisedFuture
     - SearchTextField
+    - SkyFloatingLabelTextField
+    - SwiftyJSON
     - TextFieldEffects
 
 SPEC CHECKSUMS:
+  Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
+  AlamofireImage: 34a2d90b0e5fe6a5605f85ae4b7b01e784c60192
   Cosmos: b5c6a9a637e28a061b54c8f8b1d8529d7d4db73f
   DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
   GradientProgressBar: f11fb57cffc615a4794da558ce283171a992130a
   IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
+  KeychainAccess: c0c4f7f38f6fc7bbe58f5702e25f7bd2f65abf51
   Kingfisher: f738f9c4a3415823b8e2985d10aa2d6a9f37bc4d
   LightweightObservable: c5ac85423a5edbed9a920b4d5c7b8f94ab3688c4
   NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
+  PinCodeInputView: 0a7361aaec76b639ff6521f1b6c38ed27b8144e3
   PromisedFuture: 15ab3542f9d9c9d62886e2228c606a3e0fd16ccd
   SearchTextField: 40dc3cc57def5a211f263cac263622c163bbc25a
+  SkyFloatingLabelTextField: 79ddc40e4ad59707fedbb48d605417aee48bb78a
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
   TextFieldEffects: 529b8aff706fb40f82c41c780c0777941a893796
 
-PODFILE CHECKSUM: 0ae7a7379df086726b3ddd34113a4264ace2c46f
+PODFILE CHECKSUM: bdae9dfbdf0b2aa22573cdd4100d114eb51f7dd6
 
 COCOAPODS: 1.11.2

@@ -14,5 +14,13 @@ class TDAuthenticationClient {
     static func signUp(model: UserSignUpModel) -> Future<ServerResponse, Error> {
         return TDAPIClient.performRequest(route: TDAuthenticationEndpoint.signUp(userModel: model))
     }
-   
+    static func requestForgotPassword(email: String) -> Future<ServerResponse, Error> {
+        return TDAPIClient.performRequest(route: TDAuthenticationEndpoint.requestForgotPassword(email: email))
+    }
+    static func checkResetPasswordCode(resetPasswordCode: String) -> Future<ServerResponse, Error> {
+        return TDAPIClient.performRequest(route: TDAuthenticationEndpoint.checkResetPasswordCode(resetPasswordCode: resetPasswordCode))
+    }
+    static func requestResetPassword(data: ResetPasswordModel) -> Future<ServerResponse, Error> {
+        return TDAPIClient.performRequest(route: TDAuthenticationEndpoint.requestResetPassword(data: data))
+    }
 }

@@ -17,14 +17,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ajkuneLogo" translatesAutoresizingMaskIntoConstraints="NO" id="hxM-Fy-Vh4">
-                                <rect key="frame" x="20" y="134" width="173" height="63"/>
+                                <rect key="frame" x="20" y="104" width="173" height="63"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="63" id="5l2-1C-BWN"/>
                                     <constraint firstAttribute="width" constant="173" id="zxF-q2-erf"/>
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5cp-N3-Yca" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                                <rect key="frame" x="20" y="237" width="374" height="40"/>
+                                <rect key="frame" x="20" y="207" width="374" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="5Rz-Xx-Cx0"/>
                                 </constraints>
@@ -39,7 +39,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="you-KP-puI" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                                <rect key="frame" x="20" y="317" width="374" height="40"/>
+                                <rect key="frame" x="20" y="287" width="374" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="MAY-rl-23b"/>
                                 </constraints>
@@ -54,7 +54,7 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Daz-rI-2P1">
-                                <rect key="frame" x="20" y="397" width="374" height="96"/>
+                                <rect key="frame" x="20" y="367" width="374" height="96"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jcB-HV-oKT">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
@@ -68,7 +68,7 @@
                                             <attributedString key="attributedTitle">
                                                 <fragment content="LOGIN IN">
                                                     <attributes>
-                                                        <font key="NSFont" size="12" name="Avenir-Heavy"/>
+                                                        <font key="NSFont" size="14" name="Avenir-Heavy"/>
                                                     </attributes>
                                                 </fragment>
                                             </attributedString>
@@ -94,7 +94,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OPc-PI-uBn">
-                                <rect key="frame" x="100" y="523" width="214.5" height="31"/>
+                                <rect key="frame" x="100" y="493" width="214.5" height="31"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DjG-LA-4tk">
                                         <rect key="frame" x="0.0" y="0.0" width="137" height="31"/>
@@ -114,7 +114,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XL2-pL-Quf">
-                                <rect key="frame" x="374" y="327" width="20" height="20"/>
+                                <rect key="frame" x="374" y="297" width="20" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="20" id="QNl-ZH-KJa"/>
                                     <constraint firstAttribute="height" constant="20" id="V9Y-tv-hkC"/>
@@ -138,7 +138,7 @@
                             <constraint firstItem="hxM-Fy-Vh4" firstAttribute="leading" secondItem="ERq-VR-Srr" secondAttribute="leading" constant="20" id="ovg-Qu-bXW"/>
                             <constraint firstItem="you-KP-puI" firstAttribute="leading" secondItem="5cp-N3-Yca" secondAttribute="leading" id="qZQ-hF-XM2"/>
                             <constraint firstItem="Daz-rI-2P1" firstAttribute="trailing" secondItem="you-KP-puI" secondAttribute="trailing" id="spv-yJ-tsQ"/>
-                            <constraint firstItem="hxM-Fy-Vh4" firstAttribute="top" secondItem="ERq-VR-Srr" secondAttribute="top" constant="90" id="u7G-X6-TQj"/>
+                            <constraint firstItem="hxM-Fy-Vh4" firstAttribute="top" secondItem="ERq-VR-Srr" secondAttribute="top" constant="60" id="u7G-X6-TQj"/>
                             <constraint firstItem="you-KP-puI" firstAttribute="top" secondItem="5cp-N3-Yca" secondAttribute="bottom" constant="40" id="vnF-uG-zEY"/>
                             <constraint firstItem="OPc-PI-uBn" firstAttribute="centerX" secondItem="0kI-eh-NWt" secondAttribute="centerX" id="w4z-HH-3ee"/>
                             <constraint firstItem="5cp-N3-Yca" firstAttribute="top" secondItem="hxM-Fy-Vh4" secondAttribute="bottom" constant="40" id="xHa-sX-a4r"/>

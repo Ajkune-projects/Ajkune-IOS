@@ -81,7 +81,7 @@ Always.</string>
                                                 <fragment content="REGISTER">
                                                     <attributes>
                                                         <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
-                                                        <font key="NSFont" size="12" name="Avenir-Heavy"/>
+                                                        <font key="NSFont" size="14" name="Avenir-Heavy"/>
                                                         <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                     </attributes>
                                                 </fragment>
@@ -111,7 +111,7 @@ Always.</string>
                                             <attributedString key="attributedTitle">
                                                 <fragment content="LOGIN IN">
                                                     <attributes>
-                                                        <font key="NSFont" size="12" name="Avenir-Heavy"/>
+                                                        <font key="NSFont" size="14" name="Avenir-Heavy"/>
                                                     </attributes>
                                                 </fragment>
                                             </attributedString>

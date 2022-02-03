@@ -110,7 +110,7 @@ class LoginViewController: UIViewController, Storyboarded {
     }
     
     @IBAction func forgotPassword(_ sender: Any) {
-//        self.viewModel?.showForgotPassword()
+        self.viewModel?.showForgotPassword()
     }
     
 }

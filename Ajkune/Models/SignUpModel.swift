@@ -10,3 +10,6 @@ import Foundation
 struct UserSignUpModel: Codable{
         var name, email, password: String?
     }
+struct ResetPasswordModel: Codable {
+    var code, email, password, confirmation_password: String?
+}
