@@ -1,0 +1,6 @@
+framework module Pods_Ajkune {
+  umbrella header "Pods-Ajkune-umbrella.h"
+
+  export *
+  module * { export * }
+}

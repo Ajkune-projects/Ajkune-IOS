@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--First Screen View Controller-->
+        <scene sceneID="vK2-gm-5h1">
+            <objects>
+                <viewController storyboardIdentifier="FirstScreenViewController" id="UxQ-rf-IhS" customClass="FirstScreenViewController" customModule="BaseProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GIj-cb-hwQ">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="398-yD-Z5f">
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vLU-75-ED0">
+                                        <rect key="frame" x="50" y="796" width="328" height="80"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="mJ5-es-5jc"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Go to second screen"/>
+                                        <connections>
+                                            <action selector="goToSecondScreenButtonPressed:" destination="UxQ-rf-IhS" eventType="touchUpInside" id="rdv-a8-O8H"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="vLU-75-ED0" secondAttribute="trailing" constant="50" id="K4w-BM-YP9"/>
+                                    <constraint firstItem="vLU-75-ED0" firstAttribute="leading" secondItem="398-yD-Z5f" secondAttribute="leading" constant="50" id="NjU-Rs-yxq"/>
+                                    <constraint firstAttribute="bottom" secondItem="vLU-75-ED0" secondAttribute="bottom" constant="50" id="gmF-Ow-Q8I"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LOM-Z6-0Mw"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="398-yD-Z5f" firstAttribute="top" secondItem="GIj-cb-hwQ" secondAttribute="top" id="QFH-oJ-NjH"/>
+                            <constraint firstAttribute="bottom" secondItem="398-yD-Z5f" secondAttribute="bottom" id="SPb-BZ-Auq"/>
+                            <constraint firstItem="398-yD-Z5f" firstAttribute="leading" secondItem="LOM-Z6-0Mw" secondAttribute="leading" id="eZo-Nu-AjB"/>
+                            <constraint firstItem="398-yD-Z5f" firstAttribute="trailing" secondItem="LOM-Z6-0Mw" secondAttribute="trailing" id="mRX-do-ml8"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dpJ-9Y-fsf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-639.25233644859804" y="7.7753779697624195"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

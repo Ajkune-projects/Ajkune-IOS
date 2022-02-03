@@ -1,0 +1,54 @@
+PODS:
+  - Cosmos (23.0.0)
+  - DropDown (2.3.13)
+  - GradientProgressBar (2.0.3):
+    - LightweightObservable (~> 2.0)
+  - IQKeyboardManagerSwift (6.5.6)
+  - Kingfisher (7.1.1)
+  - LightweightObservable (2.1.2)
+  - NVActivityIndicatorView (5.1.1):
+    - NVActivityIndicatorView/Base (= 5.1.1)
+  - NVActivityIndicatorView/Base (5.1.1)
+  - PromisedFuture (1.0.2)
+  - SearchTextField (1.2.4)
+  - TextFieldEffects (1.6.0)
+
+DEPENDENCIES:
+  - Cosmos
+  - DropDown
+  - GradientProgressBar
+  - IQKeyboardManagerSwift
+  - Kingfisher
+  - NVActivityIndicatorView
+  - PromisedFuture
+  - SearchTextField
+  - TextFieldEffects
+
+SPEC REPOS:
+  trunk:
+    - Cosmos
+    - DropDown
+    - GradientProgressBar
+    - IQKeyboardManagerSwift
+    - Kingfisher
+    - LightweightObservable
+    - NVActivityIndicatorView
+    - PromisedFuture
+    - SearchTextField
+    - TextFieldEffects
+
+SPEC CHECKSUMS:
+  Cosmos: b5c6a9a637e28a061b54c8f8b1d8529d7d4db73f
+  DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
+  GradientProgressBar: f11fb57cffc615a4794da558ce283171a992130a
+  IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
+  Kingfisher: f738f9c4a3415823b8e2985d10aa2d6a9f37bc4d
+  LightweightObservable: c5ac85423a5edbed9a920b4d5c7b8f94ab3688c4
+  NVActivityIndicatorView: 1f6c5687f1171810aa27a3296814dc2d7dec3667
+  PromisedFuture: 15ab3542f9d9c9d62886e2228c606a3e0fd16ccd
+  SearchTextField: 40dc3cc57def5a211f263cac263622c163bbc25a
+  TextFieldEffects: 529b8aff706fb40f82c41c780c0777941a893796
+
+PODFILE CHECKSUM: 0ae7a7379df086726b3ddd34113a4264ace2c46f
+
+COCOAPODS: 1.11.2
