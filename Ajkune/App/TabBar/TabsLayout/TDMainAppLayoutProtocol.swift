@@ -18,7 +18,8 @@ class MainAppLayout: MainAppLayoutProtocol {
     var orderedTabs: [TabLayout] {
         get {
             return [
-                TDHomeTabLayout(coordinator: FirstScreenCoordinator(viewModel: FirstScreenViewModel())),
+                TDHomeTabLayout(coordinator: HomeTabCoordinator(viewModel: HomeTabViewModel())),
+                TDHomeTabLayout(coordinator: HomeTabCoordinator(viewModel: HomeTabViewModel())), TDHomeTabLayout(coordinator: HomeTabCoordinator(viewModel: HomeTabViewModel())), TDHomeTabLayout(coordinator: HomeTabCoordinator(viewModel: HomeTabViewModel())), 
             ]
         }
     }

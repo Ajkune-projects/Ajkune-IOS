@@ -32,8 +32,8 @@ extension UIStoryboard {
     static var signUp: UIStoryboard {
          return UIStoryboard(name: "SignUp", bundle: nil)
     }
-    static var firstScreen: UIStoryboard {
-        return UIStoryboard(name: "FirstScreen", bundle: nil)
+    static var homeTab: UIStoryboard {
+        return UIStoryboard(name: "HomeTab", bundle: nil)
     }
     static var forgetPassword: UIStoryboard {
          return UIStoryboard(name: "ForgotPassword", bundle: nil)

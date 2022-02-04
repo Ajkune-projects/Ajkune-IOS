@@ -25,11 +25,11 @@ class TDHomeTabLayout<C:TDDefaultCoordinator> : TabLayout {
     }
     
     func tabBarItem() -> UITabBarItem {
-        return UITabBarItem(title: nil, image: UIImage(named: "deselectedHome"), selectedImage: UIImage(named: "selectedHomeT"))
+        return UITabBarItem(title: "Home", image: UIImage(named: "deselectedHome"), selectedImage: UIImage(named: "selectedHome"))
     }
     
     func imageInsets() -> UIEdgeInsets {
-        return UIEdgeInsets(top: 5, left: 0, bottom: -5, right: 0)
+        return UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
     }
     
     func tabViewController() -> UIViewController? {

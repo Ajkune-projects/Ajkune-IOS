@@ -15,7 +15,7 @@ class CustomTabBar: UITabBar {
         roundedView.backgroundColor = .red
 //        roundedView.layer.borderWidth = 2.0
         
-        roundedView.layer.cornerRadius = 18
+//        roundedView.layer.cornerRadius = 18
 //        roundedView.clipsToBounds = true
 //        roundedView.layer.masksToBounds = false
 //        roundedView.layer.shadowRadius = 2

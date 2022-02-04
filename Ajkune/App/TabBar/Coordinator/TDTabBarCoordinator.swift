@@ -12,8 +12,8 @@ class TabBarCoordinator: TDCoordinator {
     private(set) var appLayout : MainAppLayoutProtocol
     var tabsCoordinator : [TDCoordinator] = []
     
-    var homeTabCoordinator : FirstScreenCoordinator? {
-        return tabsCoordinator.first{$0 is FirstScreenCoordinator} as? FirstScreenCoordinator
+    var homeTabCoordinator : HomeTabCoordinator? {
+        return tabsCoordinator.first{$0 is HomeTabCoordinator} as? HomeTabCoordinator
     }
     
     init(tabBarController: UITabBarController, appLayout: MainAppLayoutProtocol) {

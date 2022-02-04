@@ -31,13 +31,13 @@
 		57570F0327AB33F100D0DFB1 /* TDTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57570F0027AB33F100D0DFB1 /* TDTabBar.storyboard */; };
 		57570F0427AB33F100D0DFB1 /* CustomTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57570F0127AB33F100D0DFB1 /* CustomTabbar.swift */; };
 		57570F0527AB33F100D0DFB1 /* TDMainTabBarContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57570F0227AB33F100D0DFB1 /* TDMainTabBarContainer.swift */; };
-		57570F0727AB34BE00D0DFB1 /* FirstScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57570F0627AB34BE00D0DFB1 /* FirstScreenViewModel.swift */; };
-		57570F0927AB34C700D0DFB1 /* FirstScreenCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57570F0827AB34C700D0DFB1 /* FirstScreenCoordinator.swift */; };
-		57570F0C27AB34D400D0DFB1 /* FirstScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57570F0A27AB34D400D0DFB1 /* FirstScreenViewController.swift */; };
-		57570F0D27AB34D400D0DFB1 /* FirstScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57570F0B27AB34D400D0DFB1 /* FirstScreen.storyboard */; };
+		57570F0727AB34BE00D0DFB1 /* HomeTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57570F0627AB34BE00D0DFB1 /* HomeTabViewModel.swift */; };
+		57570F0927AB34C700D0DFB1 /* HomeTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57570F0827AB34C700D0DFB1 /* HomeTabCoordinator.swift */; };
+		57570F0C27AB34D400D0DFB1 /* HomeTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57570F0A27AB34D400D0DFB1 /* HomeTabViewController.swift */; };
+		57570F0D27AB34D400D0DFB1 /* HomeTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57570F0B27AB34D400D0DFB1 /* HomeTab.storyboard */; };
 		57570F0F27AB353800D0DFB1 /* TDTabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57570F0E27AB353800D0DFB1 /* TDTabBarCoordinator.swift */; };
-		57570F1227AB35DB00D0DFB1 /* FirstScreenViewModelCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57570F1027AB35DB00D0DFB1 /* FirstScreenViewModelCoordinatorDelegate.swift */; };
-		57570F1327AB35DB00D0DFB1 /* FirstScreenViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57570F1127AB35DB00D0DFB1 /* FirstScreenViewModelProtocol.swift */; };
+		57570F1227AB35DB00D0DFB1 /* HomeTabViewModelCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57570F1027AB35DB00D0DFB1 /* HomeTabViewModelCoordinatorDelegate.swift */; };
+		57570F1327AB35DB00D0DFB1 /* HomeTabViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57570F1127AB35DB00D0DFB1 /* HomeTabViewModelProtocol.swift */; };
 		57CB252027AAC5EC004B8767 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CB251C27AAC5EB004B8767 /* BaseViewModel.swift */; };
 		57CB252127AAC5EC004B8767 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CB251D27AAC5EB004B8767 /* BaseNavigationController.swift */; };
 		57CB252227AAC5EC004B8767 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CB251E27AAC5EB004B8767 /* AppCoordinator.swift */; };
@@ -125,13 +125,13 @@
 		57570F0027AB33F100D0DFB1 /* TDTabBar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TDTabBar.storyboard; sourceTree = "<group>"; };
 		57570F0127AB33F100D0DFB1 /* CustomTabbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabbar.swift; sourceTree = "<group>"; };
 		57570F0227AB33F100D0DFB1 /* TDMainTabBarContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDMainTabBarContainer.swift; sourceTree = "<group>"; };
-		57570F0627AB34BE00D0DFB1 /* FirstScreenViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstScreenViewModel.swift; sourceTree = "<group>"; };
-		57570F0827AB34C700D0DFB1 /* FirstScreenCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstScreenCoordinator.swift; sourceTree = "<group>"; };
-		57570F0A27AB34D400D0DFB1 /* FirstScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstScreenViewController.swift; sourceTree = "<group>"; };
-		57570F0B27AB34D400D0DFB1 /* FirstScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = FirstScreen.storyboard; sourceTree = "<group>"; };
+		57570F0627AB34BE00D0DFB1 /* HomeTabViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabViewModel.swift; sourceTree = "<group>"; };
+		57570F0827AB34C700D0DFB1 /* HomeTabCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabCoordinator.swift; sourceTree = "<group>"; };
+		57570F0A27AB34D400D0DFB1 /* HomeTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabViewController.swift; sourceTree = "<group>"; };
+		57570F0B27AB34D400D0DFB1 /* HomeTab.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeTab.storyboard; sourceTree = "<group>"; };
 		57570F0E27AB353800D0DFB1 /* TDTabBarCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDTabBarCoordinator.swift; sourceTree = "<group>"; };
-		57570F1027AB35DB00D0DFB1 /* FirstScreenViewModelCoordinatorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstScreenViewModelCoordinatorDelegate.swift; sourceTree = "<group>"; };
-		57570F1127AB35DB00D0DFB1 /* FirstScreenViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstScreenViewModelProtocol.swift; sourceTree = "<group>"; };
+		57570F1027AB35DB00D0DFB1 /* HomeTabViewModelCoordinatorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabViewModelCoordinatorDelegate.swift; sourceTree = "<group>"; };
+		57570F1127AB35DB00D0DFB1 /* HomeTabViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabViewModelProtocol.swift; sourceTree = "<group>"; };
 		57CB251C27AAC5EB004B8767 /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		57CB251D27AAC5EB004B8767 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		57CB251E27AAC5EB004B8767 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
@@ -574,7 +574,7 @@
 		57CB256927AAC97D004B8767 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				57570F0627AB34BE00D0DFB1 /* FirstScreenViewModel.swift */,
+				57570F0627AB34BE00D0DFB1 /* HomeTabViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -582,8 +582,8 @@
 		57CB256A27AAC986004B8767 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				57570F0B27AB34D400D0DFB1 /* FirstScreen.storyboard */,
-				57570F0A27AB34D400D0DFB1 /* FirstScreenViewController.swift */,
+				57570F0B27AB34D400D0DFB1 /* HomeTab.storyboard */,
+				57570F0A27AB34D400D0DFB1 /* HomeTabViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -591,7 +591,7 @@
 		57CB256B27AAC9FD004B8767 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				57570F0827AB34C700D0DFB1 /* FirstScreenCoordinator.swift */,
+				57570F0827AB34C700D0DFB1 /* HomeTabCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -599,8 +599,8 @@
 		57CB256C27AACA1A004B8767 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				57570F1027AB35DB00D0DFB1 /* FirstScreenViewModelCoordinatorDelegate.swift */,
-				57570F1127AB35DB00D0DFB1 /* FirstScreenViewModelProtocol.swift */,
+				57570F1027AB35DB00D0DFB1 /* HomeTabViewModelCoordinatorDelegate.swift */,
+				57570F1127AB35DB00D0DFB1 /* HomeTabViewModelProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -880,7 +880,7 @@
 				2DF8213C272177CA009C2932 /* Assets.xcassets in Resources */,
 				57D823BD27AC402B004AB232 /* ForgotPassword.storyboard in Resources */,
 				57D823CD27AC492C004AB232 /* ForgotPasswordVerification.storyboard in Resources */,
-				57570F0D27AB34D400D0DFB1 /* FirstScreen.storyboard in Resources */,
+				57570F0D27AB34D400D0DFB1 /* HomeTab.storyboard in Resources */,
 				57D823E927AC78E3004AB232 /* ResetPassword.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -941,7 +941,7 @@
 				57570EE127AB23F000D0DFB1 /* LoginViewController.swift in Sources */,
 				57CB254427AAC78A004B8767 /* UIView+Additions.swift in Sources */,
 				57D823AA27AC2A67004AB232 /* SignUpModel.swift in Sources */,
-				57570F1327AB35DB00D0DFB1 /* FirstScreenViewModelProtocol.swift in Sources */,
+				57570F1327AB35DB00D0DFB1 /* HomeTabViewModelProtocol.swift in Sources */,
 				57D823C427AC403E004AB232 /* ForgotPasswordCoordinator.swift in Sources */,
 				57CB256727AAC958004B8767 /* TDSplashViewModelCoordinatorDelegate.swift in Sources */,
 				57D823DE27AC50A3004AB232 /* ResetPasswordViewModelProtocol.swift in Sources */,
@@ -949,7 +949,7 @@
 				57D823D427AC4BAB004AB232 /* UnderlineItemView.swift in Sources */,
 				57CB253F27AAC78A004B8767 /* UITextField+Additions.swift in Sources */,
 				57570ECC27AB233100D0DFB1 /* TDInitialScreenCoordinator.swift in Sources */,
-				57570F0727AB34BE00D0DFB1 /* FirstScreenViewModel.swift in Sources */,
+				57570F0727AB34BE00D0DFB1 /* HomeTabViewModel.swift in Sources */,
 				57570ED427AB234F00D0DFB1 /* TDInitialScreenViewModelCoordinatorDelegate.swift in Sources */,
 				57D823A027AC17EF004AB232 /* TDSignUpViewController.swift in Sources */,
 				57CB254E27AAC85E004B8767 /* APIConstants.swift in Sources */,
@@ -957,7 +957,7 @@
 				57D823A327AC17FD004AB232 /* SignUpViewModelProtocol.swift in Sources */,
 				57CB255127AAC85E004B8767 /* APIClient.swift in Sources */,
 				57D823BE27AC402B004AB232 /* ForgotPasswordViewController.swift in Sources */,
-				57570F1227AB35DB00D0DFB1 /* FirstScreenViewModelCoordinatorDelegate.swift in Sources */,
+				57570F1227AB35DB00D0DFB1 /* HomeTabViewModelCoordinatorDelegate.swift in Sources */,
 				57D823DA27AC5068004AB232 /* ResetPasswordCoordinator.swift in Sources */,
 				57D823C227AC4035004AB232 /* ForgotPasswordViewModelCoordinatorDelegate.swift in Sources */,
 				57570EF827AB33E600D0DFB1 /* TDMainAppLayoutProtocol.swift in Sources */,
@@ -975,10 +975,10 @@
 				57CB255A27AAC89E004B8767 /* Loader.swift in Sources */,
 				57CB252227AAC5EC004B8767 /* AppCoordinator.swift in Sources */,
 				57CB255727AAC88B004B8767 /* Colors.swift in Sources */,
-				57570F0C27AB34D400D0DFB1 /* FirstScreenViewController.swift in Sources */,
+				57570F0C27AB34D400D0DFB1 /* HomeTabViewController.swift in Sources */,
 				57570EF927AB33E600D0DFB1 /* TDTabLayout.swift in Sources */,
 				57570ECA27AB232D00D0DFB1 /* TDInitialScreenViewModel.swift in Sources */,
-				57570F0927AB34C700D0DFB1 /* FirstScreenCoordinator.swift in Sources */,
+				57570F0927AB34C700D0DFB1 /* HomeTabCoordinator.swift in Sources */,
 				57CB252F27AAC75B004B8767 /* TDHelper.swift in Sources */,
 				57CB256427AAC94E004B8767 /* TDSplashViewController.swift in Sources */,
 				57570F0527AB33F100D0DFB1 /* TDMainTabBarContainer.swift in Sources */,
