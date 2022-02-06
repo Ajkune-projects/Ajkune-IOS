@@ -18,7 +18,7 @@ public func ShowLoaderWithMessage(message:String) {
 }
 
 public func SHOW_CUSTOM_LOADER() { //useing this
-    startActivityAnimating(size: CGSize(width:56, height:56), message: nil, type: NVActivityIndicatorType.ballSpinFadeLoader, color: UIColor.white, padding: 2,isFromOnView: false)
+    startActivityAnimating(size: CGSize(width:56, height:56), message: nil, type: NVActivityIndicatorType.ballSpinFadeLoader, color: Colors.overcastBlueColor, padding: 2,isFromOnView: false)
 }
 
 public func SHOW_CUSTOM_LOADER_MSG(message: String) {

@@ -14,7 +14,7 @@ class SignUpViewModel: SignUpViewModelProtocol {
         self.coordinatorDelegate?.showLogin()
     }
     func requestSignUp(model: UserSignUpModel, completion: @escaping ((ServerResponse?) -> Void)) {
-        let login = TDAuthenticationClient.signUp(model: model)
+        let login = AuthenticationClient.signUp(model: model)
         login.execute(onSuccess: { user in
             completion(user)
         }, onFailure: {error in

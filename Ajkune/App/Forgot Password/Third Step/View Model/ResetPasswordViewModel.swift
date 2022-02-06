@@ -10,7 +10,7 @@ class ResetPasswordViewModel: ResetPasswordViewModelProtocol {
     weak var coordinatorDelegate: ResetPasswordViewModelCoordinatorDelegate?
     
     func requestResetPassword(data: ResetPasswordModel, completion: @escaping ((ServerResponse?) -> Void)) {
-        let client = TDAuthenticationClient.requestResetPassword(data: data)
+        let client = AuthenticationClient.requestResetPassword(data: data)
         client.execute(onSuccess: { response in
             completion(response)
         }, onFailure: {error in

@@ -15,7 +15,7 @@ class ForgotPasswordViewModel: ForgotPasswordViewModelProtocol {
     
     //API
     func requestForgotPassword(email: String, completion: @escaping ((ServerResponse?) -> Void)) {
-        let client = TDAuthenticationClient.requestForgotPassword(email: email)
+        let client = AuthenticationClient.requestForgotPassword(email: email)
         client.execute(onSuccess: { response in
             completion(response)
         }, onFailure: {error in

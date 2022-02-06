@@ -8,5 +8,5 @@
 import Foundation
 protocol HomeTabViewModelCoordinatorDelegate: AnyObject {
     func HomeTabShown()
-    //func goToMain()
+    func showProductDetails(id:Int)
 }

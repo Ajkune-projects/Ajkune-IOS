@@ -44,6 +44,10 @@ extension UIStoryboard {
     static var resetPassword: UIStoryboard {
          return UIStoryboard(name: "ResetPassword", bundle: nil)
     }
+
+    static var productDetails: UIStoryboard {
+         return UIStoryboard(name: "ProductDetails", bundle: nil)
+    }
 }
 
 

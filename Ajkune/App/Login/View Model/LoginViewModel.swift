@@ -21,7 +21,7 @@ class LoginViewModel: LoginViewModelProtocol{
     }
     
     func requestLogin(email: String, password: String, completion: @escaping ((LoginResponse?) -> Void)) {
-        let login = TDAuthenticationClient.login(email: email, password: password)
+        let login = AuthenticationClient.login(email: email, password: password)
         login.execute(onSuccess: { user in
             completion(user)
          }, onFailure: {error in

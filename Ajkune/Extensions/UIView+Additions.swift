@@ -123,3 +123,23 @@ extension String {
     var onlyDigits: String { return onlyCharacters(charSets: [.decimalDigits]) }
     var onlyLetters: String { return onlyCharacters(charSets: [.letters]) }
 }
+
+extension UIView {
+    func shadowView(){
+        layer.cornerRadius = 2
+        layer.shadowRadius = 2
+        layer.shadowColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+        layer.shadowOpacity = 0.5
+        layer.shadowOffset = CGSize(width: 0.6, height: 0.6)
+        layer.backgroundColor = UIColor.white.cgColor
+        layer.masksToBounds = false
+    }
+    
+        func addBottomBorder(with color: UIColor?, andWidth borderWidth: CGFloat) {
+            let border = UIView()
+            border.backgroundColor = color
+            border.autoresizingMask = [.flexibleWidth, .flexibleTopMargin]
+            border.frame = CGRect(x: 0, y: frame.size.height - borderWidth, width: frame.size.width, height: borderWidth)
+            addSubview(border)
+        }
+}

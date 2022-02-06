@@ -14,16 +14,20 @@ enum TDAuthenticationEndpoint: TDAPIConfiguration {
     case requestForgotPassword(email: String)
     case checkResetPasswordCode(resetPasswordCode: String)
     case requestResetPassword(data: ResetPasswordModel)
-
-    
+    case getBanner
+//Products
+    case getProducts
+    case getProductsByID(Id:Int)
+    case getProductDetails(Id:Int)
+    case getCategories
     
     // MARK: - HTTPMethod
     var method: HTTPMethod {
         switch self {
         case .login,.signUp, .requestForgotPassword, .checkResetPasswordCode, .requestResetPassword:
             return .post
-//        case :
-//            return .get
+        case .getProducts, .getProductsByID,.getCategories,.getBanner,.getProductDetails:
+            return .get
 //        case :
 //            return .delete
 //        case :
@@ -42,8 +46,18 @@ enum TDAuthenticationEndpoint: TDAPIConfiguration {
             return "/forgotEmail"
         case .checkResetPasswordCode:
             return "/forgotEmail/code"
-        case .requestResetPassword(data: let data):
+        case .requestResetPassword:
             return "/forgotEmail/changePassword"
+        case . getProducts:
+            return "/products"
+        case .getProductsByID(let id):
+            return "/categories/\(id)"
+        case .getCategories:
+           return  "/categories"
+        case .getBanner:
+            return "/banner"
+        case .getProductDetails(let id):
+            return" /products/\(id)"
         }
     }
     
@@ -66,6 +80,8 @@ enum TDAuthenticationEndpoint: TDAPIConfiguration {
                      "email":data.email,
                      "password":data.password,
                      "confirmation_password":data.confirmation_password]
+        case .getProducts,.getProductsByID,.getCategories,.getBanner,.getProductDetails:
+            return nil
         }
     }
     

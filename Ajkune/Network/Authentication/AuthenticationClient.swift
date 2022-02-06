@@ -7,7 +7,11 @@
 
 import Alamofire
 import PromisedFuture
-class TDAuthenticationClient {
+class AuthenticationClient {
+    
+    static func getBanner() -> Future<[Banner], Error> {
+        return TDAPIClient.performRequest(route: TDAuthenticationEndpoint.getBanner)
+    }
     static func login(email: String, password: String) -> Future<LoginResponse, Error> {
         return TDAPIClient.performRequest(route: TDAuthenticationEndpoint.login(email: email, password: password))
     }
@@ -22,5 +26,17 @@ class TDAuthenticationClient {
     }
     static func requestResetPassword(data: ResetPasswordModel) -> Future<ServerResponse, Error> {
         return TDAPIClient.performRequest(route: TDAuthenticationEndpoint.requestResetPassword(data: data))
+    }
+    static func getALLProducts() -> Future<[Products], Error> {
+        return TDAPIClient.performRequest(route: TDAuthenticationEndpoint.getProducts)
+    }
+    static func getCategories() -> Future<[Categories], Error> {
+        return TDAPIClient.performRequest(route: TDAuthenticationEndpoint.getCategories)
+    }
+    static func getProductsByID(id:Int) -> Future<[Products], Error> {
+        return TDAPIClient.performRequest(route: TDAuthenticationEndpoint.getProductsByID(Id: id))
+    }
+    static func getProductDetails(id:Int) -> Future<[Products], Error> {
+        return TDAPIClient.performRequest(route: TDAuthenticationEndpoint.getProductDetails(Id: id))
     }
 }

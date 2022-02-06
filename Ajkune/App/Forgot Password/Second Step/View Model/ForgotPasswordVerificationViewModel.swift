@@ -15,7 +15,7 @@ class ForgotPasswordVerificationViewModel: ForgotPasswordVerificationViewModelPr
     
     //API
     func checkResetPasswordCode(resetPasswordCode: String, completion: @escaping ((ServerResponse?) -> Void)) {
-        let client = TDAuthenticationClient.checkResetPasswordCode(resetPasswordCode: resetPasswordCode)
+        let client = AuthenticationClient.checkResetPasswordCode(resetPasswordCode: resetPasswordCode)
         client.execute(onSuccess: { response in
             completion(response)
         }, onFailure: {error in
