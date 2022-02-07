@@ -48,6 +48,10 @@ extension UIStoryboard {
     static var productDetails: UIStoryboard {
          return UIStoryboard(name: "ProductDetails", bundle: nil)
     }
+    static var webView: UIStoryboard {
+         return UIStoryboard(name: "WebView", bundle: nil)
+    }
+    
 }
 
 

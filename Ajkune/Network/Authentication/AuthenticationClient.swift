@@ -39,4 +39,7 @@ class AuthenticationClient {
     static func getProductDetails(id:Int) -> Future<[Products], Error> {
         return TDAPIClient.performRequest(route: TDAuthenticationEndpoint.getProductDetails(Id: id))
     }
+    static func addComment(product_id:String,title:String, comment:String) -> Future<[Products], Error> {
+        return TDAPIClient.performRequest(route: TDAuthenticationEndpoint.addComment(product_id: product_id, title: title, comment: comment))
+    }
 }

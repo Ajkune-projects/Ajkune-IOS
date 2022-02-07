@@ -11,5 +11,5 @@ import UIKit
 
 class Colors {
     static let overcastBlueColor = UIColor(hexString: "#a8466f")
-
+    static let lightGray = UIColor(hexString: "#C4C4C4")
 }

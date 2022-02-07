@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol ProductDetailsViewModelCoordinatorDelegate: class {
-    
+protocol ProductDetailsViewModelCoordinatorDelegate: class{
+    func showWebView(url:String)
 }

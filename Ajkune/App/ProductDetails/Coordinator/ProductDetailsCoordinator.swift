@@ -13,12 +13,21 @@ class ProductDetailsCoordinator: TDPushCoordinator{
     var viewController : ProductDetailsViewController?
     var navigationController: UINavigationController?
     var viewModel : ProductDetailsViewModelProtocol
+    var webViewCoordinator: WebViewCoordinator?
     
     init(viewModel: ProductDetailsViewModelProtocol, navigationController:UINavigationController?, id:Int) {
         self.viewModel = viewModel
-//        self.viewModel.coordinatorDelegate = self
+        self.viewModel.coordinatorDelegate = self
         self.navigationController = navigationController
         self.viewController = ProductDetailsViewController.instantiate(.productDetails)
         self.viewController?.id = id
+        self.viewController?.viewModel = viewModel
+    }
+}
+
+extension ProductDetailsCoordinator:ProductDetailsViewModelCoordinatorDelegate{
+    func showWebView(url: String) {
+        webViewCoordinator = WebViewCoordinator(viewModel:WebViewViewModel(), navigationController: self.viewController?.navigationController, responseUrl: url)
+        webViewCoordinator?.start()
     }
 }
