@@ -40,8 +40,11 @@ extension CategoryDataSource: UICollectionViewDelegateFlowLayout {
 extension CategoryDataSource: UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if let cell = collectionView.cellForItem(at: indexPath) as? CategoriesCell {
+            globalData.categoryIndexPath = indexPath
+            collectionView.scrollToItem(at: globalData.categoryIndexPath , at: .centeredHorizontally, animated: true)
             cell.categoryCell.addBottomBorder(with: Colors.overcastBlueColor, andWidth: 2)
             self.delegate?.categoryTapped(id: categories?[indexPath.row].id ?? 0)
+           
         }
     }
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {

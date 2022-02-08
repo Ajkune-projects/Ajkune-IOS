@@ -118,6 +118,15 @@
 		57D8242627B09477004AB232 /* CommentDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D8242527B09477004AB232 /* CommentDataSource.swift */; };
 		57D8242A27B096D8004AB232 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D8242827B096D8004AB232 /* CommentCell.swift */; };
 		57D8242B27B096D8004AB232 /* CommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57D8242927B096D8004AB232 /* CommentCell.xib */; };
+		57D8243327B1BC56004AB232 /* SeeAllCategoriesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D8243227B1BC56004AB232 /* SeeAllCategoriesDataSource.swift */; };
+		57D8243627B1BD39004AB232 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D8243427B1BD39004AB232 /* CategoryCell.swift */; };
+		57D8243727B1BD39004AB232 /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57D8243527B1BD39004AB232 /* CategoryCell.xib */; };
+		57D8243927B1BE6A004AB232 /* SeeAllCategoriesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D8243827B1BE6A004AB232 /* SeeAllCategoriesCoordinator.swift */; };
+		57D8243B27B1BE7A004AB232 /* SeeAllCategoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D8243A27B1BE7A004AB232 /* SeeAllCategoriesViewModel.swift */; };
+		57D8243D27B1BE86004AB232 /* SeeAllCategoriesViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D8243C27B1BE86004AB232 /* SeeAllCategoriesViewModelProtocol.swift */; };
+		57D8243F27B1BEA0004AB232 /* SeeAllCategoriesViewModelCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D8243E27B1BEA0004AB232 /* SeeAllCategoriesViewModelCoordinatorDelegate.swift */; };
+		57D8244227B1C1A6004AB232 /* SeeAllCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D8244127B1C1A6004AB232 /* SeeAllCategoryViewController.swift */; };
+		57D8244427B1C1BF004AB232 /* SeeAllCategories.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57D8244327B1C1BF004AB232 /* SeeAllCategories.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -238,6 +247,15 @@
 		57D8242527B09477004AB232 /* CommentDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentDataSource.swift; sourceTree = "<group>"; };
 		57D8242827B096D8004AB232 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		57D8242927B096D8004AB232 /* CommentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentCell.xib; sourceTree = "<group>"; };
+		57D8243227B1BC56004AB232 /* SeeAllCategoriesDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeAllCategoriesDataSource.swift; sourceTree = "<group>"; };
+		57D8243427B1BD39004AB232 /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		57D8243527B1BD39004AB232 /* CategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
+		57D8243827B1BE6A004AB232 /* SeeAllCategoriesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeAllCategoriesCoordinator.swift; sourceTree = "<group>"; };
+		57D8243A27B1BE7A004AB232 /* SeeAllCategoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeAllCategoriesViewModel.swift; sourceTree = "<group>"; };
+		57D8243C27B1BE86004AB232 /* SeeAllCategoriesViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeAllCategoriesViewModelProtocol.swift; sourceTree = "<group>"; };
+		57D8243E27B1BEA0004AB232 /* SeeAllCategoriesViewModelCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeAllCategoriesViewModelCoordinatorDelegate.swift; sourceTree = "<group>"; };
+		57D8244127B1C1A6004AB232 /* SeeAllCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeAllCategoryViewController.swift; sourceTree = "<group>"; };
+		57D8244327B1C1BF004AB232 /* SeeAllCategories.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SeeAllCategories.storyboard; sourceTree = "<group>"; };
 		FADA4A3D66EEA9031909013B /* Pods-Ajkune.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ajkune.release.xcconfig"; path = "Target Support Files/Pods-Ajkune/Pods-Ajkune.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -473,14 +491,15 @@
 		57CB252527AAC5FB004B8767 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				57D8242C27B1BBCD004AB232 /* SeeAllCategories */,
 				57D8241327B07858004AB232 /* WebView */,
 				57D8240027AF39B3004AB232 /* ProductDetails */,
+				57CB252427AAC5F3004B8767 /* HomeTab */,
 				57D823AB27AC3BA5004AB232 /* Forgot Password */,
 				57D8239827AC171B004AB232 /* SignUp */,
 				57570EEC27AB33A500D0DFB1 /* TabBar */,
 				57570ED527AB239300D0DFB1 /* Login */,
 				57CB251B27AAC5DD004B8767 /* Base */,
-				57CB252427AAC5F3004B8767 /* HomeTab */,
 				57570EC427AB22DA00D0DFB1 /* Initial Screen */,
 				57CB252627AAC653004B8767 /* Splash */,
 			);
@@ -985,6 +1004,70 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		57D8242C27B1BBCD004AB232 /* SeeAllCategories */ = {
+			isa = PBXGroup;
+			children = (
+				57D8243127B1BBF6004AB232 /* DataSource */,
+				57D8243027B1BBE9004AB232 /* Coordinator */,
+				57D8242F27B1BBE4004AB232 /* Protocols */,
+				57D8242E27B1BBDC004AB232 /* ViewModel */,
+				57D8242D27B1BBD7004AB232 /* View */,
+			);
+			path = SeeAllCategories;
+			sourceTree = "<group>";
+		};
+		57D8242D27B1BBD7004AB232 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				57D8244027B1C14B004AB232 /* Cells */,
+				57D8244127B1C1A6004AB232 /* SeeAllCategoryViewController.swift */,
+				57D8244327B1C1BF004AB232 /* SeeAllCategories.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		57D8242E27B1BBDC004AB232 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				57D8243A27B1BE7A004AB232 /* SeeAllCategoriesViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		57D8242F27B1BBE4004AB232 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				57D8243C27B1BE86004AB232 /* SeeAllCategoriesViewModelProtocol.swift */,
+				57D8243E27B1BEA0004AB232 /* SeeAllCategoriesViewModelCoordinatorDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		57D8243027B1BBE9004AB232 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				57D8243827B1BE6A004AB232 /* SeeAllCategoriesCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		57D8243127B1BBF6004AB232 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				57D8243227B1BC56004AB232 /* SeeAllCategoriesDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		57D8244027B1C14B004AB232 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				57D8243427B1BD39004AB232 /* CategoryCell.swift */,
+				57D8243527B1BD39004AB232 /* CategoryCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		F8A7D7715BFE7A03CE520705 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1068,6 +1151,8 @@
 				57570F0D27AB34D400D0DFB1 /* HomeTab.storyboard in Resources */,
 				57D823E927AC78E3004AB232 /* ResetPassword.storyboard in Resources */,
 				57D8241227AF3F10004AB232 /* ProductDetails.storyboard in Resources */,
+				57D8244427B1C1BF004AB232 /* SeeAllCategories.storyboard in Resources */,
+				57D8243727B1BD39004AB232 /* CategoryCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1120,16 +1205,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57D8243D27B1BE86004AB232 /* SeeAllCategoriesViewModelProtocol.swift in Sources */,
+				57D8243F27B1BEA0004AB232 /* SeeAllCategoriesViewModelCoordinatorDelegate.swift in Sources */,
 				57D8242A27B096D8004AB232 /* CommentCell.swift in Sources */,
 				57570EEA27AB31BC00D0DFB1 /* AuthenticationClient.swift in Sources */,
 				57D823DD27AC50A3004AB232 /* ResetPasswordViewModelCoordinatorDelegate.swift in Sources */,
 				57570EE427AB240400D0DFB1 /* LoginViewModelCoordinatorDelegate.swift in Sources */,
+				57D8243327B1BC56004AB232 /* SeeAllCategoriesDataSource.swift in Sources */,
 				57570F0F27AB353800D0DFB1 /* TDTabBarCoordinator.swift in Sources */,
 				57570EE127AB23F000D0DFB1 /* LoginViewController.swift in Sources */,
 				57CB254427AAC78A004B8767 /* UIView+Additions.swift in Sources */,
 				57D8240A27AF3B8A004AB232 /* ProductDetailsViewModel.swift in Sources */,
 				57D823AA27AC2A67004AB232 /* SignUpModel.swift in Sources */,
+				57D8243B27B1BE7A004AB232 /* SeeAllCategoriesViewModel.swift in Sources */,
 				57570F1327AB35DB00D0DFB1 /* HomeTabViewModelProtocol.swift in Sources */,
+				57D8243627B1BD39004AB232 /* CategoryCell.swift in Sources */,
 				57D8241927B078D8004AB232 /* WebViewViewController.swift in Sources */,
 				57D8241D27B07908004AB232 /* WebViewViewModel.swift in Sources */,
 				57D823C427AC403E004AB232 /* ForgotPasswordCoordinator.swift in Sources */,
@@ -1179,6 +1269,7 @@
 				57D823A627AC1807004AB232 /* SignUpCoordinator.swift in Sources */,
 				57CB257527AACEE5004B8767 /* TDNotificationObservers.swift in Sources */,
 				57D823C827AC491D004AB232 /* ForgotPasswordVerificationViewModel.swift in Sources */,
+				57D8244227B1C1A6004AB232 /* SeeAllCategoryViewController.swift in Sources */,
 				57CB257427AACEE5004B8767 /* Reachability.swift in Sources */,
 				57570ECF27AB233F00D0DFB1 /* TDInitialScreenViewController.swift in Sources */,
 				57D823FB27AEB383004AB232 /* CategoriesModel.swift in Sources */,
@@ -1214,6 +1305,7 @@
 				57D8242327B07957004AB232 /* WebViewCoordinator.swift in Sources */,
 				57CB254627AAC78A004B8767 /* Storyboarded.swift in Sources */,
 				57D823C627AC4059004AB232 /* ForgotPasswordViewModel.swift in Sources */,
+				57D8243927B1BE6A004AB232 /* SeeAllCategoriesCoordinator.swift in Sources */,
 				57CB255C27AAC915004B8767 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

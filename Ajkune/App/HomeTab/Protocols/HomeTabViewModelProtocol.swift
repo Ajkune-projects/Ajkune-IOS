@@ -16,6 +16,7 @@ protocol HomeTabViewModelProtocol : BaseViewModel {
     func getProductsByID(products:[Products]?)
     func getCategorie(cat:[Categories]?)
     func showProductDetails(id:Int)
+    func seeAllCategories()
     
     //API
     func getALLProducts(completion: @escaping (([Products]?) -> Void))

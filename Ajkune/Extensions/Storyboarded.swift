@@ -51,6 +51,9 @@ extension UIStoryboard {
     static var webView: UIStoryboard {
          return UIStoryboard(name: "WebView", bundle: nil)
     }
+    static var seeAllCategories: UIStoryboard {
+         return UIStoryboard(name: "SeeAllCategories", bundle: nil)
+    }
     
 }
 

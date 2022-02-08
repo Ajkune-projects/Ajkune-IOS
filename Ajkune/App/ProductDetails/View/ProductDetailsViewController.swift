@@ -23,7 +23,7 @@ class ProductDetailsViewController: UIViewController, Storyboarded, UITextViewDe
     //MARK:Properties
     var coordinator: ProductDetailsCoordinator?
     var viewModel: ProductDetailsViewModelProtocol?
-    var product = [Products]()
+    var product = [ProductDetails]()
     var id:Int?
     
     override func viewDidLoad() {
@@ -91,7 +91,7 @@ class ProductDetailsViewController: UIViewController, Storyboarded, UITextViewDe
         self.viewModel?.getProductDetails(id:self.id ?? 0, completion: { response in
             HIDE_CUSTOM_LOADER()
             if response?.count ?? 0 > 0{
-                self.product = response ?? [Products]()
+                self.product = response ?? [ProductDetails]()
                 self.viewModel?.getComments(comments: response?.first?.comments ?? [Comment]())
                 print("comment:\(response?.first?.comments.reversed() ?? [Comment]())")
                 dispatch {

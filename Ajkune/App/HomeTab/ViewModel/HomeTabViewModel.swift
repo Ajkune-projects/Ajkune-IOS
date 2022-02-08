@@ -39,6 +39,9 @@ class HomeTabViewModel: HomeTabViewModelProtocol{
         self.coordinatorDelegate?.showProductDetails(id: id)
     }
     
+    func seeAllCategories() {
+        self.coordinatorDelegate?.seeAllCategories()
+    }
 
     //API
     func getALLProducts(completion: @escaping (([Products]?) -> Void)) {

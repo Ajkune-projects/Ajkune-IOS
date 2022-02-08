@@ -18,6 +18,7 @@ final class ProductsDataSource: NSObject, UICollectionViewDataSource {
     //MARK: - Properties
     weak var delegate : ProductsDataSourceProtocol?
     var products:[Products]?
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return products?.count ?? 0
     }

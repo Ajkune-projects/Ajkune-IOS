@@ -12,28 +12,36 @@ class HomeTabViewController: UIViewController, Storyboarded{
     @IBOutlet weak var productsCollectionView: UICollectionView!
     @IBOutlet weak var banner: UIImageView!
     @IBOutlet weak var bannerTitle: UILabel!
-    
     @IBOutlet weak var priceLabel: UILabel!
+    
     var viewModel: HomeTabViewModelProtocol?
+    var categoryID:Int?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.viewModel?.viewDelegate = self
         setupProductsCollectionView()
         setupCategoriesCollectionView()
-        getALLCategories()
+        filterData()
         getALLProducts()
         getBanner()
     }
-    
-    
-    override func viewDidAppear(_ animated: Bool) {
-        let ind =  IndexPath(item: 1, section: 0)
-        self.categoryCollectionView.selectItem(at:ind, animated: false, scrollPosition: UICollectionView.ScrollPosition.centeredHorizontally)
-//        categoryCollectionView(self.categoryCollectionView, didSelectItemAt:ind)
-//        categoryCollectionView(
+    override func viewWillAppear(_ animated: Bool) {
+        filterData()
     }
-    
+    func filterData(){
+        if globalData.fromAllCategories == true {
+            if globalData.categorySelected == 0 {
+                getALLProducts()
+                globalData.categoryIndexPath = IndexPath(row: 0, section: 0)
+               self.categoryCollectionView?.selectItem(at: globalData.categoryIndexPath, animated: false, scrollPosition: .top)
+            }else{
+            getCategoryByID(id: globalData.categorySelected)
+            }
+        }else{
+            getALLCategories()
+        }
+    }
     func setupProductsCollectionView(){
         self.productsCollectionView.register(ProductCell.self)
         self.productsCollectionView.delegate = self.viewModel?.productDataSource
@@ -70,12 +78,29 @@ class HomeTabViewController: UIViewController, Storyboarded{
                 self.viewModel?.getCategorie(cat: category)
                 dispatch {
                     self.categoryCollectionView.reloadData()
-                    let indexPath:IndexPath = IndexPath(row: 0, section: 0)
-                    self.categoryCollectionView?.selectItem(at: indexPath, animated: false, scrollPosition: .top)
+//                    let index:IndexPath = IndexPath(row: 2, section: 0)
+                    self.categoryCollectionView?.selectItem(at: globalData.categoryIndexPath, animated: false, scrollPosition: .top)
+                    
                 }
             }
         })
     }
+    
+    func getCategoryByID (id:Int){
+        SHOW_CUSTOM_LOADER()
+        self.viewModel?.getProductsByID(id: id, completion: { response in
+            HIDE_CUSTOM_LOADER()
+            if response?.count != nil{
+                self.viewModel?.getALLProducts(products: response)
+                dispatch {
+                    self.productsCollectionView.reloadData()
+                    self.categoryCollectionView?.selectItem(at: globalData.categoryIndexPath, animated: false, scrollPosition: .top)
+                    self.categoryCollectionView.scrollToItem(at: globalData.categoryIndexPath, at: .centeredHorizontally, animated: true)
+                }
+            }
+        })
+    }
+    
     
     func getBanner(){
         SHOW_CUSTOM_LOADER()
@@ -87,6 +112,9 @@ class HomeTabViewController: UIViewController, Storyboarded{
                 self.priceLabel.text = response?.first?.price ?? ""
             }
         })
+    }
+    @IBAction func seeAllCategoriesPressed(_ sender: Any) {
+        self.viewModel?.seeAllCategories()
     }
 }
 extension HomeTabViewController: HomeTabViewModelViewDelegate{

@@ -13,6 +13,6 @@ protocol ProductDetailsViewModelProtocol: BaseViewModel {
     func showWebView(url:String)
     
     //API
-    func getProductDetails(id:Int, completion: @escaping (([Products]?) -> Void))
-    func addComment(product_id:String,title:String, comment:String, completion: @escaping (([Products]?) -> Void)) 
+    func getProductDetails(id:Int, completion: @escaping (([ProductDetails]?) -> Void))
+    func addComment(product_id:String,title:String, comment:String, completion: @escaping (([ProductDetails]?) -> Void)) 
 }

@@ -23,7 +23,7 @@ class ProductDetailsViewModel: ProductDetailsViewModelProtocol {
         
     }
     //API
-    func getProductDetails(id: Int, completion: @escaping (([Products]?) -> Void)) {
+    func getProductDetails(id: Int, completion: @escaping (([ProductDetails]?) -> Void)) {
             let products = AuthenticationClient.getProductDetails(id: id)
             products.execute(onSuccess: { product in
                 completion(product)
@@ -31,7 +31,7 @@ class ProductDetailsViewModel: ProductDetailsViewModelProtocol {
                 completion(nil)
              })
     }
-    func addComment(product_id:String,title:String, comment:String, completion: @escaping (([Products]?) -> Void)) {
+    func addComment(product_id:String,title:String, comment:String, completion: @escaping (([ProductDetails]?) -> Void)) {
         let comment = AuthenticationClient.addComment(product_id: product_id, title: title, comment: comment)
         comment.execute(onSuccess: { comment in
             completion(comment)
