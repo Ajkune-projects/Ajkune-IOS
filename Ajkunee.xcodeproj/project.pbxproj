@@ -127,6 +127,12 @@
 		57D8243F27B1BEA0004AB232 /* SeeAllCategoriesViewModelCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D8243E27B1BEA0004AB232 /* SeeAllCategoriesViewModelCoordinatorDelegate.swift */; };
 		57D8244227B1C1A6004AB232 /* SeeAllCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D8244127B1C1A6004AB232 /* SeeAllCategoryViewController.swift */; };
 		57D8244427B1C1BF004AB232 /* SeeAllCategories.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57D8244327B1C1BF004AB232 /* SeeAllCategories.storyboard */; };
+		57D8244B27B1F153004AB232 /* FilterProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D8244A27B1F153004AB232 /* FilterProductsViewController.swift */; };
+		57D8244D27B1F177004AB232 /* FilterProducts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57D8244C27B1F177004AB232 /* FilterProducts.storyboard */; };
+		57D8244F27B1F193004AB232 /* FilterProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D8244E27B1F193004AB232 /* FilterProductsViewModel.swift */; };
+		57D8245127B1F19F004AB232 /* FilterProductsViewModelProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D8245027B1F19F004AB232 /* FilterProductsViewModelProtocols.swift */; };
+		57D8245327B1F1BC004AB232 /* FilterProductsViewModelCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D8245227B1F1BC004AB232 /* FilterProductsViewModelCoordinatorDelegate.swift */; };
+		57D8245527B1F1CB004AB232 /* FilterProductsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57D8245427B1F1CB004AB232 /* FilterProductsCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -256,6 +262,12 @@
 		57D8243E27B1BEA0004AB232 /* SeeAllCategoriesViewModelCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeAllCategoriesViewModelCoordinatorDelegate.swift; sourceTree = "<group>"; };
 		57D8244127B1C1A6004AB232 /* SeeAllCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeAllCategoryViewController.swift; sourceTree = "<group>"; };
 		57D8244327B1C1BF004AB232 /* SeeAllCategories.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SeeAllCategories.storyboard; sourceTree = "<group>"; };
+		57D8244A27B1F153004AB232 /* FilterProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterProductsViewController.swift; sourceTree = "<group>"; };
+		57D8244C27B1F177004AB232 /* FilterProducts.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FilterProducts.storyboard; sourceTree = "<group>"; };
+		57D8244E27B1F193004AB232 /* FilterProductsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterProductsViewModel.swift; sourceTree = "<group>"; };
+		57D8245027B1F19F004AB232 /* FilterProductsViewModelProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterProductsViewModelProtocols.swift; sourceTree = "<group>"; };
+		57D8245227B1F1BC004AB232 /* FilterProductsViewModelCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterProductsViewModelCoordinatorDelegate.swift; sourceTree = "<group>"; };
+		57D8245427B1F1CB004AB232 /* FilterProductsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterProductsCoordinator.swift; sourceTree = "<group>"; };
 		FADA4A3D66EEA9031909013B /* Pods-Ajkune.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ajkune.release.xcconfig"; path = "Target Support Files/Pods-Ajkune/Pods-Ajkune.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -491,6 +503,7 @@
 		57CB252527AAC5FB004B8767 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				57D8244527B1EFE7004AB232 /* Filter Products */,
 				57D8242C27B1BBCD004AB232 /* SeeAllCategories */,
 				57D8241327B07858004AB232 /* WebView */,
 				57D8240027AF39B3004AB232 /* ProductDetails */,
@@ -1068,6 +1081,51 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		57D8244527B1EFE7004AB232 /* Filter Products */ = {
+			isa = PBXGroup;
+			children = (
+				57D8244927B1F0E6004AB232 /* Coordinator */,
+				57D8244827B1F0DA004AB232 /* Protocols */,
+				57D8244727B1EFFB004AB232 /* View Model */,
+				57D8244627B1EFF6004AB232 /* View */,
+			);
+			path = "Filter Products";
+			sourceTree = "<group>";
+		};
+		57D8244627B1EFF6004AB232 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				57D8244A27B1F153004AB232 /* FilterProductsViewController.swift */,
+				57D8244C27B1F177004AB232 /* FilterProducts.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		57D8244727B1EFFB004AB232 /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				57D8244E27B1F193004AB232 /* FilterProductsViewModel.swift */,
+			);
+			path = "View Model";
+			sourceTree = "<group>";
+		};
+		57D8244827B1F0DA004AB232 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				57D8245027B1F19F004AB232 /* FilterProductsViewModelProtocols.swift */,
+				57D8245227B1F1BC004AB232 /* FilterProductsViewModelCoordinatorDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		57D8244927B1F0E6004AB232 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				57D8245427B1F1CB004AB232 /* FilterProductsCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
 		F8A7D7715BFE7A03CE520705 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1142,6 +1200,7 @@
 				57570EC127AADC6400D0DFB1 /* TDSplash.storyboard in Resources */,
 				57D8239F27AC17EF004AB232 /* SignUp.storyboard in Resources */,
 				57570EE027AB23F000D0DFB1 /* Login.storyboard in Resources */,
+				57D8244D27B1F177004AB232 /* FilterProducts.storyboard in Resources */,
 				57D823FF27AF04BA004AB232 /* CategoriesCell.xib in Resources */,
 				2DF8213C272177CA009C2932 /* Assets.xcassets in Resources */,
 				57D823EE27AEA58F004AB232 /* ProductCell.xib in Resources */,
@@ -1239,6 +1298,7 @@
 				57CB255127AAC85E004B8767 /* APIClient.swift in Sources */,
 				57D823BE27AC402B004AB232 /* ForgotPasswordViewController.swift in Sources */,
 				57570F1227AB35DB00D0DFB1 /* HomeTabViewModelCoordinatorDelegate.swift in Sources */,
+				57D8245527B1F1CB004AB232 /* FilterProductsCoordinator.swift in Sources */,
 				57D823DA27AC5068004AB232 /* ResetPasswordCoordinator.swift in Sources */,
 				57D823C227AC4035004AB232 /* ForgotPasswordViewModelCoordinatorDelegate.swift in Sources */,
 				57570EF827AB33E600D0DFB1 /* TDMainAppLayoutProtocol.swift in Sources */,
@@ -1247,9 +1307,11 @@
 				57CB254027AAC78A004B8767 /* Array+Additions.swift in Sources */,
 				57570EFD27AB33E600D0DFB1 /* TDHomeTabLayout.swift in Sources */,
 				57D823E127AC5110004AB232 /* ResetPasswordViewController.swift in Sources */,
+				57D8245127B1F19F004AB232 /* FilterProductsViewModelProtocols.swift in Sources */,
 				57CB256027AAC945004B8767 /* TDSplashCoordinator.swift in Sources */,
 				57CB257727AAD041004B8767 /* TDCoordinator.swift in Sources */,
 				57D8242627B09477004AB232 /* CommentDataSource.swift in Sources */,
+				57D8244B27B1F153004AB232 /* FilterProductsViewController.swift in Sources */,
 				57D8240C27AF3BA2004AB232 /* ProductDetailsViewModelCoordinatorDelegate.swift in Sources */,
 				57D823C127AC4035004AB232 /* ForgotPasswordViewModelProtocol.swift in Sources */,
 				57D823F927AEB0A8004AB232 /* ProductsModel.swift in Sources */,
@@ -1290,6 +1352,7 @@
 				57D823F127AEA64E004AB232 /* ProductsDataSource.swift in Sources */,
 				57CB254727AAC78A004B8767 /* UIColor+Additions.swift in Sources */,
 				57570EDD27AB23DF00D0DFB1 /* LoginCoordinator.swift in Sources */,
+				57D8244F27B1F193004AB232 /* FilterProductsViewModel.swift in Sources */,
 				57D823D627AC4BF0004AB232 /* GlobalData.swift in Sources */,
 				57D823A427AC17FD004AB232 /* SignUpViewModelCoordinatorDelegate.swift in Sources */,
 				57CB255027AAC85E004B8767 /* ServerResponse.swift in Sources */,
@@ -1298,6 +1361,7 @@
 				57D823F627AEAD52004AB232 /* CategoryDataSource.swift in Sources */,
 				57D823ED27AEA58F004AB232 /* ProductCell.swift in Sources */,
 				57570F0427AB33F100D0DFB1 /* CustomTabbar.swift in Sources */,
+				57D8245327B1F1BC004AB232 /* FilterProductsViewModelCoordinatorDelegate.swift in Sources */,
 				57570ED327AB234F00D0DFB1 /* TDInitialScreenViewModelProtocol.swift in Sources */,
 				57D823CA27AC4923004AB232 /* ForgotPasswordVerificationCoordinator.swift in Sources */,
 				57D823A827AC1816004AB232 /* SignUpViewModel.swift in Sources */,

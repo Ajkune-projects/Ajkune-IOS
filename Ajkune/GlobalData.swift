@@ -16,4 +16,6 @@ struct globalData{
     static var categoryIndexPath = IndexPath(row: 0, section: 0)
     static var fromAllCategories: Bool = false
     static var categorySelected:Int = 0
+    static var filteredProducts = [Products]()
+    static var fromFilter = false
 }

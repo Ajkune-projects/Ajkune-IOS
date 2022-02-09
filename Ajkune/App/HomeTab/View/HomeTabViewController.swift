@@ -38,9 +38,19 @@ class HomeTabViewController: UIViewController, Storyboarded{
             }else{
             getCategoryByID(id: globalData.categorySelected)
             }
+        }else if globalData.fromFilter == true{
+            self.viewModel?.getALLProducts(products: globalData.filteredProducts)
+            globalData.categoryIndexPath = IndexPath(row: 0, section: 0)
+           self.categoryCollectionView?.selectItem(at: globalData.categoryIndexPath, animated: false, scrollPosition: .top)
+            self.categoryCollectionView.scrollToItem(at: globalData.categoryIndexPath, at: .centeredHorizontally, animated: true)
+            dispatch {
+                self.productsCollectionView.reloadData()
+            }
         }else{
             getALLCategories()
         }
+        globalData.fromFilter = false
+        globalData.fromAllCategories = false
     }
     func setupProductsCollectionView(){
         self.productsCollectionView.register(ProductCell.self)
@@ -116,6 +126,11 @@ class HomeTabViewController: UIViewController, Storyboarded{
     @IBAction func seeAllCategoriesPressed(_ sender: Any) {
         self.viewModel?.seeAllCategories()
     }
+    
+    @IBAction func filterProducts(_ sender: Any) {
+        self.viewModel?.filterProducts()
+    }
+    
 }
 extension HomeTabViewController: HomeTabViewModelViewDelegate{
     func productDetails(id: Int) {

@@ -15,3 +15,4 @@ ${BUILT_PRODUCTS_DIR}/SearchTextField/SearchTextField.framework
 ${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework
 ${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework
 ${BUILT_PRODUCTS_DIR}/TextFieldEffects/TextFieldEffects.framework
+${BUILT_PRODUCTS_DIR}/WARangeSlider/WARangeSlider.framework

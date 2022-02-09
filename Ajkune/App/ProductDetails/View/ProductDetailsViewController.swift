@@ -26,12 +26,17 @@ class ProductDetailsViewController: UIViewController, Storyboarded, UITextViewDe
     var product = [ProductDetails]()
     var id:Int?
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
         self.getProduct()
         setupTitleComment()
+//
         setupCommentView()
         setupTableView()
+       
+       
+       
     }
     
     //MARK: - Functions
@@ -80,9 +85,12 @@ class ProductDetailsViewController: UIViewController, Storyboarded, UITextViewDe
     }
     
     func setupTableView(){
+        self.commentTableView.rowHeight = 160
+        self.commentTableView.estimatedRowHeight = UITableView.automaticDimension
         self.commentTableView.register(CommentCell.self)
         self.commentTableView.delegate = self.viewModel?.commentDataSource
         self.commentTableView.dataSource = self.viewModel?.commentDataSource
+        
     }
     
     //API
@@ -96,6 +104,7 @@ class ProductDetailsViewController: UIViewController, Storyboarded, UITextViewDe
                 print("comment:\(response?.first?.comments.reversed() ?? [Comment]())")
                 dispatch {
                     self.commentTableView.reloadData()
+                   
                 }
                 self.fillData()
             }

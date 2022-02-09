@@ -21,5 +21,5 @@ target 'Ajkune' do
   pod 'KeychainAccess'
   pod 'SwiftyJSON'
   pod 'SkyFloatingLabelTextField'
-
+  pod "WARangeSlider"
 end

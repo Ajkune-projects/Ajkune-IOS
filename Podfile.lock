@@ -19,6 +19,7 @@ PODS:
   - SkyFloatingLabelTextField (4.0.0)
   - SwiftyJSON (5.0.1)
   - TextFieldEffects (1.6.0)
+  - WARangeSlider (1.1.1)
 
 DEPENDENCIES:
   - Alamofire
@@ -36,6 +37,7 @@ DEPENDENCIES:
   - SkyFloatingLabelTextField
   - SwiftyJSON
   - TextFieldEffects
+  - WARangeSlider
 
 SPEC REPOS:
   trunk:
@@ -55,6 +57,7 @@ SPEC REPOS:
     - SkyFloatingLabelTextField
     - SwiftyJSON
     - TextFieldEffects
+    - WARangeSlider
 
 SPEC CHECKSUMS:
   Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
@@ -73,7 +76,8 @@ SPEC CHECKSUMS:
   SkyFloatingLabelTextField: 79ddc40e4ad59707fedbb48d605417aee48bb78a
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
   TextFieldEffects: 529b8aff706fb40f82c41c780c0777941a893796
+  WARangeSlider: 54b3e0853b8d16c444fd539005901aecee86837d
 
-PODFILE CHECKSUM: bdae9dfbdf0b2aa22573cdd4100d114eb51f7dd6
+PODFILE CHECKSUM: 290c25d046c6ebdfe73d7289aab918886375d0f8
 
 COCOAPODS: 1.11.2

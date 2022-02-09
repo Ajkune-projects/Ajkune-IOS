@@ -12,6 +12,7 @@ class HomeTabCoordinator: TDDefaultCoordinator{
     var viewModel : HomeTabViewModelProtocol
     var productDetailsCoordinator: ProductDetailsCoordinator?
     var seeCategoriesCoordinator: SeeAllCategoriesCoordinator?
+    var filterProductsCoordinator:FilterProductsCoordinator?
     
     init(viewModel: HomeTabViewModelProtocol = HomeTabViewModel()) {
         self.viewModel = viewModel
@@ -25,6 +26,11 @@ class HomeTabCoordinator: TDDefaultCoordinator{
 }
 
 extension HomeTabCoordinator: HomeTabViewModelCoordinatorDelegate{
+    func filterProducts() {
+        filterProductsCoordinator = FilterProductsCoordinator(viewModel:FilterProductsViewModel(), navigationController: self.viewController?.navigationController)
+        filterProductsCoordinator?.start()
+    }
+    
     func seeAllCategories() {
         seeCategoriesCoordinator = SeeAllCategoriesCoordinator(viewModel:SeeAllCategoriesViewModel(), navigationController: self.viewController?.navigationController, id: 0)
         seeCategoriesCoordinator?.start()

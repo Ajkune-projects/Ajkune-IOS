@@ -10,4 +10,5 @@ protocol HomeTabViewModelCoordinatorDelegate: AnyObject {
     func HomeTabShown()
     func showProductDetails(id:Int)
     func seeAllCategories()
+    func filterProducts()
 }

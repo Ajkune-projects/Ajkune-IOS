@@ -54,6 +54,9 @@ extension UIStoryboard {
     static var seeAllCategories: UIStoryboard {
          return UIStoryboard(name: "SeeAllCategories", bundle: nil)
     }
+    static var filterProducts: UIStoryboard {
+         return UIStoryboard(name: "FilterProducts", bundle: nil)
+    }
     
 }
 

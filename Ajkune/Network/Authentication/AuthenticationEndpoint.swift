@@ -21,13 +21,14 @@ enum TDAuthenticationEndpoint: TDAPIConfiguration {
     case getProductDetails(Id:Int)
     case getCategories
     case addComment(product_id:String,title:String, comment:String)
+    case filterProducts(minValue:String,maxValue:String,type:String)
     
     // MARK: - HTTPMethod
     var method: HTTPMethod {
         switch self {
         case .login,.signUp, .requestForgotPassword, .checkResetPasswordCode, .requestResetPassword,.addComment:
             return .post
-        case .getProducts, .getProductsByID,.getCategories,.getBanner,.getProductDetails:
+        case .getProducts, .getProductsByID,.getCategories,.getBanner,.getProductDetails,.filterProducts:
             return .get
 //        case :
 //            return .delete
@@ -61,6 +62,8 @@ enum TDAuthenticationEndpoint: TDAPIConfiguration {
             return "/products/\(id)"
         case .addComment:
             return "/comment/new"
+        case .filterProducts(let minValue, let maxValue, let type):
+            return "/filter/\(minValue)/\(maxValue)/\(type)"
         }
     }
     
@@ -83,7 +86,7 @@ enum TDAuthenticationEndpoint: TDAPIConfiguration {
                      "email":data.email,
                      "password":data.password,
                      "confirmation_password":data.confirmation_password]
-        case .getProducts,.getProductsByID,.getCategories,.getBanner,.getProductDetails:
+        case .getProducts,.getProductsByID,.getCategories,.getBanner,.getProductDetails,.filterProducts:
             return nil
         case .addComment(let product_id, let title, let comment):
             return ["product_id":product_id,
