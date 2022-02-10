@@ -25,19 +25,32 @@
 		57570EE527AB240400D0DFB1 /* LoginViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57570EE327AB240400D0DFB1 /* LoginViewModelProtocol.swift */; };
 		57570EEA27AB31BC00D0DFB1 /* AuthenticationClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57570EE827AB31BC00D0DFB1 /* AuthenticationClient.swift */; };
 		57570EEB27AB31BC00D0DFB1 /* AuthenticationEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57570EE927AB31BC00D0DFB1 /* AuthenticationEndpoint.swift */; };
-		57570EF827AB33E600D0DFB1 /* TDMainAppLayoutProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57570EF027AB33E500D0DFB1 /* TDMainAppLayoutProtocol.swift */; };
-		57570EF927AB33E600D0DFB1 /* TDTabLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57570EF127AB33E500D0DFB1 /* TDTabLayout.swift */; };
-		57570EFD27AB33E600D0DFB1 /* TDHomeTabLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57570EF527AB33E500D0DFB1 /* TDHomeTabLayout.swift */; };
-		57570F0327AB33F100D0DFB1 /* TDTabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57570F0027AB33F100D0DFB1 /* TDTabBar.storyboard */; };
+		57570EF827AB33E600D0DFB1 /* MainAppLayoutProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57570EF027AB33E500D0DFB1 /* MainAppLayoutProtocol.swift */; };
+		57570EF927AB33E600D0DFB1 /* TabLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57570EF127AB33E500D0DFB1 /* TabLayout.swift */; };
+		57570EFD27AB33E600D0DFB1 /* HomeTabLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57570EF527AB33E500D0DFB1 /* HomeTabLayout.swift */; };
+		57570F0327AB33F100D0DFB1 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57570F0027AB33F100D0DFB1 /* TabBar.storyboard */; };
 		57570F0427AB33F100D0DFB1 /* CustomTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57570F0127AB33F100D0DFB1 /* CustomTabbar.swift */; };
 		57570F0527AB33F100D0DFB1 /* TDMainTabBarContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57570F0227AB33F100D0DFB1 /* TDMainTabBarContainer.swift */; };
 		57570F0727AB34BE00D0DFB1 /* HomeTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57570F0627AB34BE00D0DFB1 /* HomeTabViewModel.swift */; };
 		57570F0927AB34C700D0DFB1 /* HomeTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57570F0827AB34C700D0DFB1 /* HomeTabCoordinator.swift */; };
 		57570F0C27AB34D400D0DFB1 /* HomeTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57570F0A27AB34D400D0DFB1 /* HomeTabViewController.swift */; };
 		57570F0D27AB34D400D0DFB1 /* HomeTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57570F0B27AB34D400D0DFB1 /* HomeTab.storyboard */; };
-		57570F0F27AB353800D0DFB1 /* TDTabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57570F0E27AB353800D0DFB1 /* TDTabBarCoordinator.swift */; };
+		57570F0F27AB353800D0DFB1 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57570F0E27AB353800D0DFB1 /* TabBarCoordinator.swift */; };
 		57570F1227AB35DB00D0DFB1 /* HomeTabViewModelCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57570F1027AB35DB00D0DFB1 /* HomeTabViewModelCoordinatorDelegate.swift */; };
 		57570F1327AB35DB00D0DFB1 /* HomeTabViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57570F1127AB35DB00D0DFB1 /* HomeTabViewModelProtocol.swift */; };
+		576900F727B45B8400F58BF0 /* SettingsTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576900F627B45B8400F58BF0 /* SettingsTabCoordinator.swift */; };
+		576900F927B45D6D00F58BF0 /* SettingsTabViewModelCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576900F827B45D6D00F58BF0 /* SettingsTabViewModelCoordinatorDelegate.swift */; };
+		576900FB27B45D7B00F58BF0 /* SettingsTabViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576900FA27B45D7B00F58BF0 /* SettingsTabViewModelProtocol.swift */; };
+		576900FD27B45D8F00F58BF0 /* SettingsTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576900FC27B45D8F00F58BF0 /* SettingsTabViewModel.swift */; };
+		5769010127B45EED00F58BF0 /* SettingsTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5769010027B45EED00F58BF0 /* SettingsTabViewController.swift */; };
+		5769010327B45F1400F58BF0 /* SettingsTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5769010227B45F1400F58BF0 /* SettingsTab.storyboard */; };
+		5769010527B46D0700F58BF0 /* SettingsTabLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5769010427B46D0700F58BF0 /* SettingsTabLayout.swift */; };
+		5769010C27B4733500F58BF0 /* ProfileCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5769010B27B4733500F58BF0 /* ProfileCoordinator.swift */; };
+		5769010E27B4743F00F58BF0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5769010D27B4743F00F58BF0 /* ProfileViewController.swift */; };
+		5769011027B4744E00F58BF0 /* ProfileViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5769010F27B4744E00F58BF0 /* ProfileViewModelProtocol.swift */; };
+		5769011227B4746C00F58BF0 /* ProfileViewModelCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5769011127B4746C00F58BF0 /* ProfileViewModelCoordinatorDelegate.swift */; };
+		5769011427B4747F00F58BF0 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5769011327B4747F00F58BF0 /* ProfileViewModel.swift */; };
+		5769011627B4757300F58BF0 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5769011527B4757300F58BF0 /* Profile.storyboard */; };
 		57CB252027AAC5EC004B8767 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CB251C27AAC5EB004B8767 /* BaseViewModel.swift */; };
 		57CB252127AAC5EC004B8767 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CB251D27AAC5EB004B8767 /* BaseNavigationController.swift */; };
 		57CB252227AAC5EC004B8767 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CB251E27AAC5EB004B8767 /* AppCoordinator.swift */; };
@@ -157,19 +170,32 @@
 		57570EE327AB240400D0DFB1 /* LoginViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModelProtocol.swift; sourceTree = "<group>"; };
 		57570EE827AB31BC00D0DFB1 /* AuthenticationClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationClient.swift; sourceTree = "<group>"; };
 		57570EE927AB31BC00D0DFB1 /* AuthenticationEndpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationEndpoint.swift; sourceTree = "<group>"; };
-		57570EF027AB33E500D0DFB1 /* TDMainAppLayoutProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDMainAppLayoutProtocol.swift; sourceTree = "<group>"; };
-		57570EF127AB33E500D0DFB1 /* TDTabLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDTabLayout.swift; sourceTree = "<group>"; };
-		57570EF527AB33E500D0DFB1 /* TDHomeTabLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDHomeTabLayout.swift; sourceTree = "<group>"; };
-		57570F0027AB33F100D0DFB1 /* TDTabBar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TDTabBar.storyboard; sourceTree = "<group>"; };
+		57570EF027AB33E500D0DFB1 /* MainAppLayoutProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainAppLayoutProtocol.swift; sourceTree = "<group>"; };
+		57570EF127AB33E500D0DFB1 /* TabLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabLayout.swift; sourceTree = "<group>"; };
+		57570EF527AB33E500D0DFB1 /* HomeTabLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabLayout.swift; sourceTree = "<group>"; };
+		57570F0027AB33F100D0DFB1 /* TabBar.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		57570F0127AB33F100D0DFB1 /* CustomTabbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabbar.swift; sourceTree = "<group>"; };
 		57570F0227AB33F100D0DFB1 /* TDMainTabBarContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDMainTabBarContainer.swift; sourceTree = "<group>"; };
 		57570F0627AB34BE00D0DFB1 /* HomeTabViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabViewModel.swift; sourceTree = "<group>"; };
 		57570F0827AB34C700D0DFB1 /* HomeTabCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabCoordinator.swift; sourceTree = "<group>"; };
 		57570F0A27AB34D400D0DFB1 /* HomeTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabViewController.swift; sourceTree = "<group>"; };
 		57570F0B27AB34D400D0DFB1 /* HomeTab.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HomeTab.storyboard; sourceTree = "<group>"; };
-		57570F0E27AB353800D0DFB1 /* TDTabBarCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDTabBarCoordinator.swift; sourceTree = "<group>"; };
+		57570F0E27AB353800D0DFB1 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
 		57570F1027AB35DB00D0DFB1 /* HomeTabViewModelCoordinatorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabViewModelCoordinatorDelegate.swift; sourceTree = "<group>"; };
 		57570F1127AB35DB00D0DFB1 /* HomeTabViewModelProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTabViewModelProtocol.swift; sourceTree = "<group>"; };
+		576900F627B45B8400F58BF0 /* SettingsTabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTabCoordinator.swift; sourceTree = "<group>"; };
+		576900F827B45D6D00F58BF0 /* SettingsTabViewModelCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTabViewModelCoordinatorDelegate.swift; sourceTree = "<group>"; };
+		576900FA27B45D7B00F58BF0 /* SettingsTabViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTabViewModelProtocol.swift; sourceTree = "<group>"; };
+		576900FC27B45D8F00F58BF0 /* SettingsTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTabViewModel.swift; sourceTree = "<group>"; };
+		5769010027B45EED00F58BF0 /* SettingsTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTabViewController.swift; sourceTree = "<group>"; };
+		5769010227B45F1400F58BF0 /* SettingsTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingsTab.storyboard; sourceTree = "<group>"; };
+		5769010427B46D0700F58BF0 /* SettingsTabLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTabLayout.swift; sourceTree = "<group>"; };
+		5769010B27B4733500F58BF0 /* ProfileCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCoordinator.swift; sourceTree = "<group>"; };
+		5769010D27B4743F00F58BF0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		5769010F27B4744E00F58BF0 /* ProfileViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModelProtocol.swift; sourceTree = "<group>"; };
+		5769011127B4746C00F58BF0 /* ProfileViewModelCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModelCoordinatorDelegate.swift; sourceTree = "<group>"; };
+		5769011327B4747F00F58BF0 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		5769011527B4757300F58BF0 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
 		57CB251C27AAC5EB004B8767 /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		57CB251D27AAC5EB004B8767 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		57CB251E27AAC5EB004B8767 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
@@ -451,9 +477,10 @@
 		57570EED27AB33C300D0DFB1 /* TabsLayout */ = {
 			isa = PBXGroup;
 			children = (
-				57570EF527AB33E500D0DFB1 /* TDHomeTabLayout.swift */,
-				57570EF027AB33E500D0DFB1 /* TDMainAppLayoutProtocol.swift */,
-				57570EF127AB33E500D0DFB1 /* TDTabLayout.swift */,
+				57570EF527AB33E500D0DFB1 /* HomeTabLayout.swift */,
+				57570EF027AB33E500D0DFB1 /* MainAppLayoutProtocol.swift */,
+				57570EF127AB33E500D0DFB1 /* TabLayout.swift */,
+				5769010427B46D0700F58BF0 /* SettingsTabLayout.swift */,
 			);
 			path = TabsLayout;
 			sourceTree = "<group>";
@@ -463,7 +490,7 @@
 			children = (
 				57570F0127AB33F100D0DFB1 /* CustomTabbar.swift */,
 				57570F0227AB33F100D0DFB1 /* TDMainTabBarContainer.swift */,
-				57570F0027AB33F100D0DFB1 /* TDTabBar.storyboard */,
+				57570F0027AB33F100D0DFB1 /* TabBar.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -471,7 +498,97 @@
 		57570EEF27AB33D300D0DFB1 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				57570F0E27AB353800D0DFB1 /* TDTabBarCoordinator.swift */,
+				57570F0E27AB353800D0DFB1 /* TabBarCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		576900F127B4578700F58BF0 /* SettingsTab */ = {
+			isa = PBXGroup;
+			children = (
+				576900F527B457F300F58BF0 /* Coordinator */,
+				576900F427B457EC00F58BF0 /* Protocols */,
+				576900F327B457E700F58BF0 /* ViewModel */,
+				576900F227B457E200F58BF0 /* View */,
+			);
+			path = SettingsTab;
+			sourceTree = "<group>";
+		};
+		576900F227B457E200F58BF0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5769010027B45EED00F58BF0 /* SettingsTabViewController.swift */,
+				5769010227B45F1400F58BF0 /* SettingsTab.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		576900F327B457E700F58BF0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				576900FC27B45D8F00F58BF0 /* SettingsTabViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		576900F427B457EC00F58BF0 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				576900F827B45D6D00F58BF0 /* SettingsTabViewModelCoordinatorDelegate.swift */,
+				576900FA27B45D7B00F58BF0 /* SettingsTabViewModelProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		576900F527B457F300F58BF0 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				576900F627B45B8400F58BF0 /* SettingsTabCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		5769010627B472CE00F58BF0 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				5769010A27B472EB00F58BF0 /* Coordinator */,
+				5769010927B472E400F58BF0 /* Protocols */,
+				5769010827B472DF00F58BF0 /* ViewModel */,
+				5769010727B472D900F58BF0 /* View */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		5769010727B472D900F58BF0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5769010D27B4743F00F58BF0 /* ProfileViewController.swift */,
+				5769011527B4757300F58BF0 /* Profile.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5769010827B472DF00F58BF0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5769011327B4747F00F58BF0 /* ProfileViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5769010927B472E400F58BF0 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				5769010F27B4744E00F58BF0 /* ProfileViewModelProtocol.swift */,
+				5769011127B4746C00F58BF0 /* ProfileViewModelCoordinatorDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		5769010A27B472EB00F58BF0 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				5769010B27B4733500F58BF0 /* ProfileCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -503,6 +620,8 @@
 		57CB252527AAC5FB004B8767 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				5769010627B472CE00F58BF0 /* Profile */,
+				576900F127B4578700F58BF0 /* SettingsTab */,
 				57D8244527B1EFE7004AB232 /* Filter Products */,
 				57D8242C27B1BBCD004AB232 /* SeeAllCategories */,
 				57D8241327B07858004AB232 /* WebView */,
@@ -1196,7 +1315,9 @@
 			files = (
 				57D8242B27B096D8004AB232 /* CommentCell.xib in Resources */,
 				57570ED027AB233F00D0DFB1 /* TDInitialScreen.storyboard in Resources */,
-				57570F0327AB33F100D0DFB1 /* TDTabBar.storyboard in Resources */,
+				5769011627B4757300F58BF0 /* Profile.storyboard in Resources */,
+				5769010327B45F1400F58BF0 /* SettingsTab.storyboard in Resources */,
+				57570F0327AB33F100D0DFB1 /* TabBar.storyboard in Resources */,
 				57570EC127AADC6400D0DFB1 /* TDSplash.storyboard in Resources */,
 				57D8239F27AC17EF004AB232 /* SignUp.storyboard in Resources */,
 				57570EE027AB23F000D0DFB1 /* Login.storyboard in Resources */,
@@ -1271,16 +1392,21 @@
 				57D823DD27AC50A3004AB232 /* ResetPasswordViewModelCoordinatorDelegate.swift in Sources */,
 				57570EE427AB240400D0DFB1 /* LoginViewModelCoordinatorDelegate.swift in Sources */,
 				57D8243327B1BC56004AB232 /* SeeAllCategoriesDataSource.swift in Sources */,
-				57570F0F27AB353800D0DFB1 /* TDTabBarCoordinator.swift in Sources */,
+				57570F0F27AB353800D0DFB1 /* TabBarCoordinator.swift in Sources */,
 				57570EE127AB23F000D0DFB1 /* LoginViewController.swift in Sources */,
 				57CB254427AAC78A004B8767 /* UIView+Additions.swift in Sources */,
+				5769010C27B4733500F58BF0 /* ProfileCoordinator.swift in Sources */,
 				57D8240A27AF3B8A004AB232 /* ProductDetailsViewModel.swift in Sources */,
 				57D823AA27AC2A67004AB232 /* SignUpModel.swift in Sources */,
 				57D8243B27B1BE7A004AB232 /* SeeAllCategoriesViewModel.swift in Sources */,
+				5769011427B4747F00F58BF0 /* ProfileViewModel.swift in Sources */,
 				57570F1327AB35DB00D0DFB1 /* HomeTabViewModelProtocol.swift in Sources */,
 				57D8243627B1BD39004AB232 /* CategoryCell.swift in Sources */,
 				57D8241927B078D8004AB232 /* WebViewViewController.swift in Sources */,
+				576900F727B45B8400F58BF0 /* SettingsTabCoordinator.swift in Sources */,
+				5769010127B45EED00F58BF0 /* SettingsTabViewController.swift in Sources */,
 				57D8241D27B07908004AB232 /* WebViewViewModel.swift in Sources */,
+				576900F927B45D6D00F58BF0 /* SettingsTabViewModelCoordinatorDelegate.swift in Sources */,
 				57D823C427AC403E004AB232 /* ForgotPasswordCoordinator.swift in Sources */,
 				57CB256727AAC958004B8767 /* TDSplashViewModelCoordinatorDelegate.swift in Sources */,
 				57D823DE27AC50A3004AB232 /* ResetPasswordViewModelProtocol.swift in Sources */,
@@ -1297,20 +1423,23 @@
 				57D823A327AC17FD004AB232 /* SignUpViewModelProtocol.swift in Sources */,
 				57CB255127AAC85E004B8767 /* APIClient.swift in Sources */,
 				57D823BE27AC402B004AB232 /* ForgotPasswordViewController.swift in Sources */,
+				576900FB27B45D7B00F58BF0 /* SettingsTabViewModelProtocol.swift in Sources */,
 				57570F1227AB35DB00D0DFB1 /* HomeTabViewModelCoordinatorDelegate.swift in Sources */,
 				57D8245527B1F1CB004AB232 /* FilterProductsCoordinator.swift in Sources */,
 				57D823DA27AC5068004AB232 /* ResetPasswordCoordinator.swift in Sources */,
 				57D823C227AC4035004AB232 /* ForgotPasswordViewModelCoordinatorDelegate.swift in Sources */,
-				57570EF827AB33E600D0DFB1 /* TDMainAppLayoutProtocol.swift in Sources */,
+				57570EF827AB33E600D0DFB1 /* MainAppLayoutProtocol.swift in Sources */,
 				57D823D227AC4933004AB232 /* ForgotPasswordVerificationViewModelCoordinatorDelegate.swift in Sources */,
 				57CB254527AAC78A004B8767 /* UILabel+Additions.swift in Sources */,
 				57CB254027AAC78A004B8767 /* Array+Additions.swift in Sources */,
-				57570EFD27AB33E600D0DFB1 /* TDHomeTabLayout.swift in Sources */,
+				57570EFD27AB33E600D0DFB1 /* HomeTabLayout.swift in Sources */,
 				57D823E127AC5110004AB232 /* ResetPasswordViewController.swift in Sources */,
 				57D8245127B1F19F004AB232 /* FilterProductsViewModelProtocols.swift in Sources */,
 				57CB256027AAC945004B8767 /* TDSplashCoordinator.swift in Sources */,
+				5769011227B4746C00F58BF0 /* ProfileViewModelCoordinatorDelegate.swift in Sources */,
 				57CB257727AAD041004B8767 /* TDCoordinator.swift in Sources */,
 				57D8242627B09477004AB232 /* CommentDataSource.swift in Sources */,
+				576900FD27B45D8F00F58BF0 /* SettingsTabViewModel.swift in Sources */,
 				57D8244B27B1F153004AB232 /* FilterProductsViewController.swift in Sources */,
 				57D8240C27AF3BA2004AB232 /* ProductDetailsViewModelCoordinatorDelegate.swift in Sources */,
 				57D823C127AC4035004AB232 /* ForgotPasswordViewModelProtocol.swift in Sources */,
@@ -1318,11 +1447,12 @@
 				57CB254827AAC78A004B8767 /* UIViewController+Additions.swift in Sources */,
 				57D823D127AC4933004AB232 /* ForgotPasswordVerificationViewModelProtocol.swift in Sources */,
 				57CB252D27AAC755004B8767 /* Constants.swift in Sources */,
+				5769011027B4744E00F58BF0 /* ProfileViewModelProtocol.swift in Sources */,
 				57CB255A27AAC89E004B8767 /* Loader.swift in Sources */,
 				57CB252227AAC5EC004B8767 /* AppCoordinator.swift in Sources */,
 				57CB255727AAC88B004B8767 /* Colors.swift in Sources */,
 				57570F0C27AB34D400D0DFB1 /* HomeTabViewController.swift in Sources */,
-				57570EF927AB33E600D0DFB1 /* TDTabLayout.swift in Sources */,
+				57570EF927AB33E600D0DFB1 /* TabLayout.swift in Sources */,
 				57570ECA27AB232D00D0DFB1 /* TDInitialScreenViewModel.swift in Sources */,
 				57570F0927AB34C700D0DFB1 /* HomeTabCoordinator.swift in Sources */,
 				57CB252F27AAC75B004B8767 /* TDHelper.swift in Sources */,
@@ -1344,6 +1474,7 @@
 				57CB254227AAC78A004B8767 /* UITableView+UICollectionView.swift in Sources */,
 				57570EC327AADF2A00D0DFB1 /* AccountManager.swift in Sources */,
 				57D823D827AC5062004AB232 /* ResetPasswordViewModel.swift in Sources */,
+				5769010527B46D0700F58BF0 /* SettingsTabLayout.swift in Sources */,
 				57CB254127AAC78A004B8767 /* Date+Additions.swift in Sources */,
 				57D8240727AF3B60004AB232 /* ProductDetailsViewController.swift in Sources */,
 				57D823CE27AC492C004AB232 /* ForgotPasswordVerificationViewController.swift in Sources */,
@@ -1364,6 +1495,7 @@
 				57D8245327B1F1BC004AB232 /* FilterProductsViewModelCoordinatorDelegate.swift in Sources */,
 				57570ED327AB234F00D0DFB1 /* TDInitialScreenViewModelProtocol.swift in Sources */,
 				57D823CA27AC4923004AB232 /* ForgotPasswordVerificationCoordinator.swift in Sources */,
+				5769010E27B4743F00F58BF0 /* ProfileViewController.swift in Sources */,
 				57D823A827AC1816004AB232 /* SignUpViewModel.swift in Sources */,
 				57CB252027AAC5EC004B8767 /* BaseViewModel.swift in Sources */,
 				57D8242327B07957004AB232 /* WebViewCoordinator.swift in Sources */,

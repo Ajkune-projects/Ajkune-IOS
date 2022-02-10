@@ -24,7 +24,7 @@ extension UIStoryboard {
         return UIStoryboard(name: "TDSplash", bundle: nil)
     }
     static var tabbar: UIStoryboard {
-        return UIStoryboard(name: "TDTabBar", bundle: nil)
+        return UIStoryboard(name: "TabBar", bundle: nil)
     }
     static var login: UIStoryboard {
         return UIStoryboard(name: "Login", bundle: nil)
@@ -35,6 +35,10 @@ extension UIStoryboard {
     static var homeTab: UIStoryboard {
         return UIStoryboard(name: "HomeTab", bundle: nil)
     }
+    static var settingsTab: UIStoryboard {
+         return UIStoryboard(name: "SettingsTab", bundle: nil)
+    }
+    
     static var forgetPassword: UIStoryboard {
          return UIStoryboard(name: "ForgotPassword", bundle: nil)
     }
@@ -57,7 +61,9 @@ extension UIStoryboard {
     static var filterProducts: UIStoryboard {
          return UIStoryboard(name: "FilterProducts", bundle: nil)
     }
-    
+    static var profile: UIStoryboard {
+         return UIStoryboard(name: "Profile", bundle: nil)
+    }
 }
 
 

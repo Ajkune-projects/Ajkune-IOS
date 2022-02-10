@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Settings Tab View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="SettingsTabViewController" id="Y6W-OH-hqX" customClass="SettingsTabViewController" customModule="Ajkune" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2dz-0Y-bxT">
+                                <rect key="frame" x="20" y="86" width="374" height="2"/>
+                                <color key="backgroundColor" red="0.92156862750000001" green="0.94117647059999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="xSi-2g-0ON"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="foE-5b-l83">
+                                <rect key="frame" x="20" y="44" width="374" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="END-5Q-BQp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Account">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Fhr-vf-gcy">
+                                <rect key="frame" x="20" y="108" width="374" height="150"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ex3-xV-oGT">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="36.5"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
+                                        <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Profile" image="profileIcon">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="showProfileAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="9je-Lk-NBg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zvy-1I-ReF">
+                                        <rect key="frame" x="0.0" y="56.5" width="374" height="37"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
+                                        <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Language" image="languageIcon">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="chooseLanguageAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="hdg-7r-gjG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Us7-2C-Dp3">
+                                        <rect key="frame" x="0.0" y="113.5" width="374" height="36.5"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
+                                        <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Log out" image="logoutIcon">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="logOutAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="JEc-Uo-LmH"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="2be-mC-8C7"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="foE-5b-l83" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="4kZ-fd-Apl"/>
+                            <constraint firstItem="2dz-0Y-bxT" firstAttribute="leading" secondItem="foE-5b-l83" secondAttribute="leading" id="9rU-QA-Gqb"/>
+                            <constraint firstItem="Fhr-vf-gcy" firstAttribute="trailing" secondItem="foE-5b-l83" secondAttribute="trailing" id="IhX-g8-yid"/>
+                            <constraint firstAttribute="trailing" secondItem="foE-5b-l83" secondAttribute="trailing" constant="20" id="KkM-ZJ-4b5"/>
+                            <constraint firstItem="Fhr-vf-gcy" firstAttribute="leading" secondItem="foE-5b-l83" secondAttribute="leading" id="Nuh-fT-GfT"/>
+                            <constraint firstItem="2dz-0Y-bxT" firstAttribute="top" secondItem="foE-5b-l83" secondAttribute="bottom" constant="2" id="RiN-L9-kf1"/>
+                            <constraint firstItem="2dz-0Y-bxT" firstAttribute="trailing" secondItem="foE-5b-l83" secondAttribute="trailing" id="Vbc-Ye-fFQ"/>
+                            <constraint firstItem="2dz-0Y-bxT" firstAttribute="top" secondItem="foE-5b-l83" secondAttribute="bottom" constant="2" id="dbf-rV-zyj"/>
+                            <constraint firstItem="Fhr-vf-gcy" firstAttribute="top" secondItem="2dz-0Y-bxT" secondAttribute="bottom" constant="20" id="eRl-Pa-kHi"/>
+                            <constraint firstItem="foE-5b-l83" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" constant="20" id="gNf-aS-lQa"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4" y="72"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="languageIcon" width="20" height="20"/>
+        <image name="logoutIcon" width="18" height="18"/>
+        <image name="profileIcon" width="16" height="16"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

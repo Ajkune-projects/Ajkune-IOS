@@ -36,9 +36,6 @@ extension HomeTabCoordinator: HomeTabViewModelCoordinatorDelegate{
         seeCategoriesCoordinator?.start()
     }
     
-    func HomeTabShown() {
-        //
-    }
     
     func showProductDetails(id: Int) {
         productDetailsCoordinator = ProductDetailsCoordinator(viewModel:ProductDetailsViewModel(), navigationController: self.viewController?.navigationController, id: id)

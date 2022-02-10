@@ -23,12 +23,15 @@ enum TDAuthenticationEndpoint: TDAPIConfiguration {
     case addComment(product_id:String,title:String, comment:String)
     case filterProducts(minValue:String,maxValue:String,type:String)
     
+    //User
+    case getUserDetails
+    
     // MARK: - HTTPMethod
     var method: HTTPMethod {
         switch self {
         case .login,.signUp, .requestForgotPassword, .checkResetPasswordCode, .requestResetPassword,.addComment:
             return .post
-        case .getProducts, .getProductsByID,.getCategories,.getBanner,.getProductDetails,.filterProducts:
+        case .getProducts, .getProductsByID,.getCategories,.getBanner,.getProductDetails,.filterProducts,.getUserDetails:
             return .get
 //        case :
 //            return .delete
@@ -64,6 +67,8 @@ enum TDAuthenticationEndpoint: TDAPIConfiguration {
             return "/comment/new"
         case .filterProducts(let minValue, let maxValue, let type):
             return "/filter/\(minValue)/\(maxValue)/\(type)"
+        case .getUserDetails:
+            return "/get_user"
         }
     }
     
@@ -92,6 +97,9 @@ enum TDAuthenticationEndpoint: TDAPIConfiguration {
             return ["product_id":product_id,
                     "title":title,
                     "comment":comment]
+        case .getUserDetails:
+            let token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC80NS43Ny41NC4xNThcL2FwaVwvbG9naW4iLCJpYXQiOjE2NDQxOTM3MDUsImV4cCI6MTY0NTcwNTcwNSwibmJmIjoxNjQ0MTkzNzA1LCJqdGkiOiIxeTBXQ3pYYVZpRGRHUW9PIiwic3ViIjo3LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.2jahgdRDc1nJEpSLX6GXf7k2Ou44pC4r-OUrre9iA40"
+            return ["token":token]
         }
     }
     

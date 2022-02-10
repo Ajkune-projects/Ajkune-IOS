@@ -19,3 +19,7 @@ struct globalData{
     static var filteredProducts = [Products]()
     static var fromFilter = false
 }
+
+struct ProfileDetails{
+    static var address:String = ""
+}

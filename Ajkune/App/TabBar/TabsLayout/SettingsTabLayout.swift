@@ -1,9 +1,8 @@
 //
-//  NotificationsLayout.swift
-//  Bayyinah
+//  SettingsTabLayout.swift
+//  Ajkune
 //
-//  Created by Drenushe Imeraj on 4.2.20.
-//  Copyright © 2020 Zombie Soup. All rights reserved.
+//  Created by Djellza- INNO on 2/9/22.
 //
 
 import UIKit
@@ -13,7 +12,7 @@ import UIKit
  - Parameters:
      - Coorindator: DefaultCoordinator that handles routing for the Notifications Tab Bar
  */
-class TDHomeTabLayout<C:TDDefaultCoordinator> : TabLayout {
+class SettingsTabLayout<C:TDDefaultCoordinator> : TabLayout {
     
     let coordinator : C
     init(coordinator:C) {
@@ -21,11 +20,11 @@ class TDHomeTabLayout<C:TDDefaultCoordinator> : TabLayout {
     }
 
     var tabIdentifier : String {
-        return "HomeTab"
+        return "SettingsTab"
     }
     
     func tabBarItem() -> UITabBarItem {
-        return UITabBarItem(title: "Home", image: UIImage(named: "deselectedHome"), selectedImage: UIImage(named: "selectedHome"))
+        return UITabBarItem(title: "Account", image: UIImage(named: "deselectedSettings"), selectedImage: UIImage(named: "selectedSettings"))
     }
     
     func imageInsets() -> UIEdgeInsets {

@@ -17,7 +17,7 @@ class HomeTabViewModel: HomeTabViewModelProtocol{
     weak var coordinatorDelegate : HomeTabViewModelCoordinatorDelegate?
     
     func HomeTabShown() {
-        coordinatorDelegate?.HomeTabShown()
+//        coordinatorDelegate?.HomeTabShown()
     }
     public init(){
         self.categoryDataSource = CategoryDataSource()

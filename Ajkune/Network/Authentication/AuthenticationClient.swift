@@ -45,4 +45,7 @@ class AuthenticationClient {
     static func filterProducts(maxValue:String, minValue:String, type:String) -> Future<[Products], Error> {
         return TDAPIClient.performRequest(route: TDAuthenticationEndpoint.filterProducts(minValue: minValue, maxValue: maxValue, type: type))
     }
+    static func getUserDetails() -> Future<[Users], Error> {
+        return TDAPIClient.performRequest(route: TDAuthenticationEndpoint.getUserDetails)
+    }
 }

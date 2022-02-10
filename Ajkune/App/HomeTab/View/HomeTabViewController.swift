@@ -34,14 +34,14 @@ class HomeTabViewController: UIViewController, Storyboarded{
             if globalData.categorySelected == 0 {
                 getALLProducts()
                 globalData.categoryIndexPath = IndexPath(row: 0, section: 0)
-               self.categoryCollectionView?.selectItem(at: globalData.categoryIndexPath, animated: false, scrollPosition: .top)
+                self.categoryCollectionView?.selectItem(at: globalData.categoryIndexPath, animated: false, scrollPosition: .top)
             }else{
-            getCategoryByID(id: globalData.categorySelected)
+                getCategoryByID(id: globalData.categorySelected)
             }
         }else if globalData.fromFilter == true{
             self.viewModel?.getALLProducts(products: globalData.filteredProducts)
             globalData.categoryIndexPath = IndexPath(row: 0, section: 0)
-           self.categoryCollectionView?.selectItem(at: globalData.categoryIndexPath, animated: false, scrollPosition: .top)
+            self.categoryCollectionView?.selectItem(at: globalData.categoryIndexPath, animated: false, scrollPosition: .top)
             self.categoryCollectionView.scrollToItem(at: globalData.categoryIndexPath, at: .centeredHorizontally, animated: true)
             dispatch {
                 self.productsCollectionView.reloadData()
@@ -76,7 +76,7 @@ class HomeTabViewController: UIViewController, Storyboarded{
             }
         })
     }
-
+    
     func getALLCategories(){
         SHOW_CUSTOM_LOADER()
         self.viewModel?.getCategories(completion: { response in
@@ -88,7 +88,7 @@ class HomeTabViewController: UIViewController, Storyboarded{
                 self.viewModel?.getCategorie(cat: category)
                 dispatch {
                     self.categoryCollectionView.reloadData()
-//                    let index:IndexPath = IndexPath(row: 2, section: 0)
+                    //                    let index:IndexPath = IndexPath(row: 2, section: 0)
                     self.categoryCollectionView?.selectItem(at: globalData.categoryIndexPath, animated: false, scrollPosition: .top)
                     
                 }
@@ -141,16 +141,16 @@ extension HomeTabViewController: HomeTabViewModelViewDelegate{
         if id == 0 {
             getALLProducts()
         }else{
-        SHOW_CUSTOM_LOADER()
-        self.viewModel?.getProductsByID(id: id, completion: { response in
-            HIDE_CUSTOM_LOADER()
-            if response?.count != nil{
-                self.viewModel?.getALLProducts(products: response)
-                dispatch {
-                    self.productsCollectionView.reloadData()
+            SHOW_CUSTOM_LOADER()
+            self.viewModel?.getProductsByID(id: id, completion: { response in
+                HIDE_CUSTOM_LOADER()
+                if response?.count != nil{
+                    self.viewModel?.getALLProducts(products: response)
+                    dispatch {
+                        self.productsCollectionView.reloadData()
+                    }
                 }
-            }
-        })
+            })
         }
     }
     

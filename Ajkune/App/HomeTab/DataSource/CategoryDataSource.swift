@@ -17,7 +17,7 @@ final class CategoryDataSource: NSObject, UICollectionViewDataSource {
     //MARK: - Properties
     weak var delegate : CategoryDataSourceProtocol?
     var categories:[Categories]?
-    
+    var starWidth:CGFloat?
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return categories?.count ?? 0
     }
@@ -28,14 +28,24 @@ final class CategoryDataSource: NSObject, UICollectionViewDataSource {
             self.collectionView(collectionView, didSelectItemAt: indexPath)
         }
         cell.lblName.text = categories?[indexPath.row].name
+        starWidth = categories?[indexPath.row].name?.widthOfString(usingFont: UIFont.systemFont(ofSize: 14)) ?? 0  + 16
         return cell
     }
 }
 
-extension CategoryDataSource: UICollectionViewDelegateFlowLayout {
+extension CategoryDataSource: UICollectionViewDelegateFlowLayout{
+    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 100, height: 40)
+        return CGSize(width: starWidth ?? 0, height: collectionView.bounds.height)
+        }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 3
     }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return 3
+    }
+
 }
 extension CategoryDataSource: UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
