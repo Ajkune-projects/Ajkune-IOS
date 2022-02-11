@@ -48,4 +48,7 @@ class AuthenticationClient {
     static func getUserDetails() -> Future<[Users], Error> {
         return TDAPIClient.performRequest(route: TDAuthenticationEndpoint.getUserDetails)
     }
+    static func verificationProfile() -> Future<[Users], Error> {
+        return TDAPIClient.performRequest(route: TDAuthenticationEndpoint.getUserDetails)
+    }
 }

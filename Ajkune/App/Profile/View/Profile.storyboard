@@ -8,16 +8,10 @@
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Roboto-Regular.ttf">
-            <string>Roboto-Regular</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--Profile View Controller-->
         <scene sceneID="50m-lJ-qd6">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ChN-cz-oYh" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="ProfileViewController" hidesBottomBarWhenPushed="YES" id="58E-bN-fUn" customClass="ProfileViewController" customModule="Ajkune" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ihp-ph-EcC"/>
@@ -31,10 +25,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DPA-1o-1OK">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="701"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Avatar" translatesAutoresizingMaskIntoConstraints="NO" id="6Eg-vA-gnK">
-                                                <rect key="frame" x="162" y="116" width="90" height="90"/>
+                                                <rect key="frame" x="162" y="72" width="90" height="90"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="90" id="eEs-VF-PTo"/>
                                                     <constraint firstAttribute="height" constant="90" id="mGk-dD-KrA"/>
@@ -43,17 +37,23 @@
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                                         <real key="value" value="45"/>
                                                     </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" systemColor="systemYellowColor"/>
+                                                    </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </imageView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y97-Fx-8rR">
-                                                <rect key="frame" x="20" y="94" width="374" height="2"/>
+                                                <rect key="frame" x="20" y="50" width="374" height="2"/>
                                                 <color key="backgroundColor" red="0.92156862750000001" green="0.94117647059999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="2" id="qKw-H6-MDO"/>
                                                 </constraints>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="0hP-lz-Ewk">
-                                                <rect key="frame" x="20" y="231" width="374" height="370"/>
+                                                <rect key="frame" x="20" y="202" width="374" height="370"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vho-98-BV4" customClass="HoshiTextField" customModule="TextFieldEffects">
                                                         <rect key="frame" x="0.0" y="0.0" width="374" height="45"/>
@@ -61,7 +61,7 @@
                                                             <constraint firstAttribute="height" constant="45" id="i6h-fK-1Qp"/>
                                                         </constraints>
                                                         <color key="textColor" red="0.23137254900000001" green="0.29803921570000003" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
@@ -84,7 +84,7 @@
                                                             <constraint firstAttribute="height" constant="45" id="d1c-0D-vVa"/>
                                                         </constraints>
                                                         <color key="textColor" red="0.23137254900000001" green="0.29803921570000003" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
@@ -107,7 +107,7 @@
                                                             <constraint firstAttribute="height" constant="45" id="Xhs-am-oJb"/>
                                                         </constraints>
                                                         <color key="textColor" red="0.23137254900000001" green="0.29803921570000003" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
@@ -130,7 +130,7 @@
                                                             <constraint firstAttribute="height" constant="45" id="slf-Zr-Vri"/>
                                                         </constraints>
                                                         <color key="textColor" red="0.23137254900000001" green="0.29803921570000003" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
@@ -153,7 +153,7 @@
                                                             <constraint firstAttribute="height" constant="45" id="5dQ-Rh-EA7"/>
                                                         </constraints>
                                                         <color key="textColor" red="0.23137254900000001" green="0.29803921570000003" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
@@ -176,7 +176,7 @@
                                                             <constraint firstAttribute="height" constant="45" id="s9n-2s-IfC"/>
                                                         </constraints>
                                                         <color key="textColor" red="0.23137254900000001" green="0.29803921570000003" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                         <userDefinedRuntimeAttributes>
                                                             <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
@@ -199,14 +199,14 @@
                                                 </constraints>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BBg-hG-WlS">
-                                                <rect key="frame" x="20" y="52" width="374" height="40"/>
+                                                <rect key="frame" x="20" y="8" width="374" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="Gg9-VO-wqd"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
                                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" title="Settings" image="vector">
+                                                <state key="normal" title="Profile" image="vector">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
@@ -214,7 +214,7 @@
                                                 </connections>
                                             </button>
                                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J6i-xO-vIt">
-                                                <rect key="frame" x="20" y="481" width="374" height="120"/>
+                                                <rect key="frame" x="20" y="439" width="374" height="120"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="BvW-zS-uHM">
                                                         <rect key="frame" x="0.0" y="8" width="374" height="112"/>
@@ -225,7 +225,7 @@
                                                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                 <state key="normal" title="Female">
-                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <connections>
                                                                     <action selector="femalePressed:" destination="58E-bN-fUn" eventType="touchUpInside" id="Yle-d5-2hy"/>
@@ -237,7 +237,7 @@
                                                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                 <state key="normal" title="Male">
-                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <connections>
                                                                     <action selector="malePressed:" destination="58E-bN-fUn" eventType="touchUpInside" id="dbA-qE-JlJ"/>
@@ -249,7 +249,7 @@
                                                                 <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                 <state key="normal" title="Other">
-                                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <connections>
                                                                     <action selector="otherPressed:" destination="58E-bN-fUn" eventType="touchUpInside" id="aAd-lI-JfU"/>
@@ -266,29 +266,96 @@
                                                     <constraint firstAttribute="trailing" secondItem="BvW-zS-uHM" secondAttribute="trailing" id="uhz-ip-HZG"/>
                                                 </constraints>
                                             </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Djellza Rrustemi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VD9-sA-lKQ">
+                                                <rect key="frame" x="146.5" y="184" width="121" height="15"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="15" id="cdA-Kn-BS7"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="16"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="verifiedIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Tlw-Oz-66c">
+                                                <rect key="frame" x="277.5" y="184" width="15" height="15"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="15" id="0Hj-62-uIZ"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="10" id="KGr-dE-aIS"/>
+                                                    <constraint firstAttribute="width" constant="15" id="z08-vz-Mgl"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No added address yet!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hwc-hR-apE">
+                                                <rect key="frame" x="20" y="592" width="374" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="1vF-Y0-EOh"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSO-JL-8ww">
+                                                <rect key="frame" x="20" y="706" width="374" height="50"/>
+                                                <color key="backgroundColor" red="0.7843137255" green="0.80392156859999997" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="CJT-0C-yWT"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="SAVE">
+                                                    <color key="titleColor" red="0.52549019607843139" green="0.54117647058823526" blue="0.5490196078431373" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="msc-YT-6eX">
+                                                <rect key="frame" x="20" y="652" width="374" height="34"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="ADD ADDRESS">
+                                                    <color key="titleColor" red="0.6588235294" green="0.27450980390000002" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="showAddress:" destination="58E-bN-fUn" eventType="touchUpInside" id="1Wr-7N-AnK"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstItem="J6i-xO-vIt" firstAttribute="trailing" secondItem="bfx-IQ-euL" secondAttribute="trailing" id="0AO-Wn-cZD"/>
-                                            <constraint firstAttribute="bottom" secondItem="0hP-lz-Ewk" secondAttribute="bottom" constant="100" id="1dJ-TO-6Uq"/>
+                                            <constraint firstAttribute="bottom" secondItem="SSO-JL-8ww" secondAttribute="bottom" constant="140" id="0th-pq-8MY"/>
                                             <constraint firstItem="y97-Fx-8rR" firstAttribute="top" secondItem="BBg-hG-WlS" secondAttribute="bottom" constant="2" id="4Jv-oj-9qG"/>
-                                            <constraint firstItem="0hP-lz-Ewk" firstAttribute="top" secondItem="6Eg-vA-gnK" secondAttribute="bottom" constant="25" id="AoV-Zm-niV"/>
+                                            <constraint firstItem="VD9-sA-lKQ" firstAttribute="top" secondItem="6Eg-vA-gnK" secondAttribute="bottom" constant="22" id="8HR-Si-otH"/>
+                                            <constraint firstItem="0hP-lz-Ewk" firstAttribute="top" secondItem="6Eg-vA-gnK" secondAttribute="bottom" constant="40" id="AoV-Zm-niV"/>
                                             <constraint firstItem="0hP-lz-Ewk" firstAttribute="trailing" secondItem="BBg-hG-WlS" secondAttribute="trailing" id="CYB-r3-IaX"/>
                                             <constraint firstItem="J6i-xO-vIt" firstAttribute="firstBaseline" secondItem="bfx-IQ-euL" secondAttribute="firstBaseline" constant="15" id="IUs-wZ-fxq"/>
+                                            <constraint firstItem="SSO-JL-8ww" firstAttribute="top" secondItem="msc-YT-6eX" secondAttribute="bottom" constant="20" id="Jq6-Iy-0UX"/>
                                             <constraint firstItem="0hP-lz-Ewk" firstAttribute="leading" secondItem="BBg-hG-WlS" secondAttribute="leading" id="K4b-P7-leQ"/>
                                             <constraint firstItem="y97-Fx-8rR" firstAttribute="trailing" secondItem="BBg-hG-WlS" secondAttribute="trailing" id="KGQ-46-p29"/>
                                             <constraint firstItem="y97-Fx-8rR" firstAttribute="top" secondItem="BBg-hG-WlS" secondAttribute="bottom" constant="2" id="MJ9-gm-uNW"/>
                                             <constraint firstItem="BBg-hG-WlS" firstAttribute="top" secondItem="DPA-1o-1OK" secondAttribute="topMargin" id="Mhu-eA-FGx"/>
+                                            <constraint firstItem="msc-YT-6eX" firstAttribute="leading" secondItem="Hwc-hR-apE" secondAttribute="leading" id="Pyi-Eb-Cyj"/>
+                                            <constraint firstItem="msc-YT-6eX" firstAttribute="trailing" secondItem="Hwc-hR-apE" secondAttribute="trailing" id="RVR-AR-S0T"/>
+                                            <constraint firstItem="VD9-sA-lKQ" firstAttribute="centerX" secondItem="6Eg-vA-gnK" secondAttribute="centerX" id="V9Z-SD-fpF"/>
+                                            <constraint firstItem="Hwc-hR-apE" firstAttribute="leading" secondItem="0hP-lz-Ewk" secondAttribute="leading" id="Wfy-Va-ErP"/>
                                             <constraint firstAttribute="trailing" secondItem="BBg-hG-WlS" secondAttribute="trailing" constant="20" id="WgQ-0n-Ah5"/>
                                             <constraint firstItem="6Eg-vA-gnK" firstAttribute="centerX" secondItem="DPA-1o-1OK" secondAttribute="centerX" id="Z8f-VF-ukK"/>
                                             <constraint firstItem="BBg-hG-WlS" firstAttribute="leading" secondItem="DPA-1o-1OK" secondAttribute="leading" constant="20" id="aPz-5O-ikh"/>
                                             <constraint firstItem="y97-Fx-8rR" firstAttribute="leading" secondItem="BBg-hG-WlS" secondAttribute="leading" id="anh-Dw-ZiT"/>
+                                            <constraint firstItem="Tlw-Oz-66c" firstAttribute="leading" secondItem="VD9-sA-lKQ" secondAttribute="trailing" constant="10" id="bib-Ao-PrU"/>
+                                            <constraint firstItem="Hwc-hR-apE" firstAttribute="trailing" secondItem="0hP-lz-Ewk" secondAttribute="trailing" id="cJD-Ys-Sj1"/>
+                                            <constraint firstItem="SSO-JL-8ww" firstAttribute="leading" secondItem="Hwc-hR-apE" secondAttribute="leading" id="crM-ZA-rFD"/>
                                             <constraint firstItem="J6i-xO-vIt" firstAttribute="leading" secondItem="bfx-IQ-euL" secondAttribute="leading" id="dSF-gn-qLI"/>
+                                            <constraint firstItem="VD9-sA-lKQ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="DPA-1o-1OK" secondAttribute="leading" constant="10" id="dUU-jB-dXY"/>
+                                            <constraint firstItem="VD9-sA-lKQ" firstAttribute="centerY" secondItem="Tlw-Oz-66c" secondAttribute="centerY" id="m2R-zw-30m"/>
+                                            <constraint firstItem="Hwc-hR-apE" firstAttribute="top" secondItem="0hP-lz-Ewk" secondAttribute="bottom" constant="20" id="pZg-3P-QZ2"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Tlw-Oz-66c" secondAttribute="trailing" constant="10" id="uYB-Wx-yvb"/>
+                                            <constraint firstItem="msc-YT-6eX" firstAttribute="top" secondItem="Hwc-hR-apE" secondAttribute="bottom" constant="10" id="vXd-vg-oEs"/>
+                                            <constraint firstItem="SSO-JL-8ww" firstAttribute="trailing" secondItem="Hwc-hR-apE" secondAttribute="trailing" id="y2J-Ci-duI"/>
                                             <constraint firstItem="6Eg-vA-gnK" firstAttribute="top" secondItem="y97-Fx-8rR" secondAttribute="bottom" constant="20" id="yOm-oe-7Gd"/>
                                         </constraints>
                                     </view>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bottomArrow" translatesAutoresizingMaskIntoConstraints="NO" id="GMJ-Fj-6Ns">
-                                        <rect key="frame" x="384" y="443.5" width="10" height="10"/>
+                                        <rect key="frame" x="384" y="414.5" width="10" height="10"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="10" id="CKI-ME-uHP"/>
                                             <constraint firstAttribute="height" constant="10" id="j3N-PT-mfw"/>
@@ -317,45 +384,54 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="addressButton" destination="msc-YT-6eX" id="PvU-h9-f9c"/>
+                        <outlet property="addressLabel" destination="Hwc-hR-apE" id="zo4-Ea-Og3"/>
                         <outlet property="birthdate" destination="Mvy-Cp-OID" id="flU-24-DNb"/>
                         <outlet property="chooseGender" destination="bfx-IQ-euL" id="trp-9a-9wy"/>
                         <outlet property="emailTextField" destination="cOn-iw-dda" id="XKI-kC-LtF"/>
                         <outlet property="firstNameTextfield" destination="Vho-98-BV4" id="74X-9G-DAF"/>
                         <outlet property="genderOptionsView" destination="J6i-xO-vIt" id="PIc-iv-XIW"/>
                         <outlet property="lastNameTextfield" destination="GBO-F6-L9d" id="qfP-AD-pwS"/>
+                        <outlet property="nameLabel" destination="VD9-sA-lKQ" id="5id-tu-N8g"/>
                         <outlet property="phoneNumberTextfield" destination="N0O-4h-OAG" id="6rX-59-lV5"/>
+                        <outlet property="verifiedImage" destination="Tlw-Oz-66c" id="bDg-n0-7AW"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ChN-cz-oYh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="138.0809595202399"/>
         </scene>
     </scenes>
     <designables>
         <designable name="GBO-F6-L9d">
-            <size key="intrinsicContentSize" width="49.5" height="18"/>
+            <size key="intrinsicContentSize" width="49.5" height="21"/>
         </designable>
         <designable name="Mvy-Cp-OID">
-            <size key="intrinsicContentSize" width="82" height="18"/>
+            <size key="intrinsicContentSize" width="83" height="21"/>
         </designable>
         <designable name="N0O-4h-OAG">
-            <size key="intrinsicContentSize" width="92.5" height="18"/>
+            <size key="intrinsicContentSize" width="93" height="21"/>
         </designable>
         <designable name="Vho-98-BV4">
-            <size key="intrinsicContentSize" width="66" height="18"/>
+            <size key="intrinsicContentSize" width="67" height="21"/>
         </designable>
         <designable name="bfx-IQ-euL">
-            <size key="intrinsicContentSize" width="99" height="18"/>
+            <size key="intrinsicContentSize" width="100.5" height="21"/>
         </designable>
         <designable name="cOn-iw-dda">
-            <size key="intrinsicContentSize" width="49.5" height="18"/>
+            <size key="intrinsicContentSize" width="49.5" height="21"/>
         </designable>
     </designables>
     <resources>
         <image name="Avatar" width="178" height="196"/>
         <image name="bottomArrow" width="12" height="8"/>
         <image name="vector" width="16" height="16"/>
+        <image name="verifiedIcon" width="20" height="20"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

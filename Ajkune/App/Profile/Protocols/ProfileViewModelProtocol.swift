@@ -8,7 +8,7 @@
 import Foundation
 protocol ProfileViewModelProtocol: BaseViewModel {
     var coordinatorDelegate : ProfileViewModelCoordinatorDelegate? {get set}
-    
+    func showUserAddress()
     //API
     func getUserDetails(completion: @escaping (([Users]?) -> Void))
 }

@@ -25,6 +25,7 @@ enum TDAuthenticationEndpoint: TDAPIConfiguration {
     
     //User
     case getUserDetails
+//    case verificationUser()
     
     // MARK: - HTTPMethod
     var method: HTTPMethod {
@@ -98,8 +99,8 @@ enum TDAuthenticationEndpoint: TDAPIConfiguration {
                     "title":title,
                     "comment":comment]
         case .getUserDetails:
-            let token = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC80NS43Ny41NC4xNThcL2FwaVwvbG9naW4iLCJpYXQiOjE2NDQxOTM3MDUsImV4cCI6MTY0NTcwNTcwNSwibmJmIjoxNjQ0MTkzNzA1LCJqdGkiOiIxeTBXQ3pYYVZpRGRHUW9PIiwic3ViIjo3LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.2jahgdRDc1nJEpSLX6GXf7k2Ou44pC4r-OUrre9iA40"
-            return ["token":token]
+            let token = (UserDefaults.standard.value(forKey: "USER_TOKEN") ?? "")
+            return ["token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC80NS43Ny41NC4xNThcL2FwaVwvbG9naW4iLCJpYXQiOjE2NDQxOTM3MDUsImV4cCI6MTY0NTcwNTcwNSwibmJmIjoxNjQ0MTkzNzA1LCJqdGkiOiIxeTBXQ3pYYVZpRGRHUW9PIiwic3ViIjo3LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.2jahgdRDc1nJEpSLX6GXf7k2Ou44pC4r-OUrre9iA40"]
         }
     }
     

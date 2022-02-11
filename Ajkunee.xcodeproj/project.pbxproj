@@ -51,6 +51,12 @@
 		5769011227B4746C00F58BF0 /* ProfileViewModelCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5769011127B4746C00F58BF0 /* ProfileViewModelCoordinatorDelegate.swift */; };
 		5769011427B4747F00F58BF0 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5769011327B4747F00F58BF0 /* ProfileViewModel.swift */; };
 		5769011627B4757300F58BF0 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5769011527B4757300F58BF0 /* Profile.storyboard */; };
+		57A7818F27B5DA42004CA286 /* UserAddressCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A7818E27B5DA42004CA286 /* UserAddressCoordinator.swift */; };
+		57A7819127B5DA63004CA286 /* UserAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A7819027B5DA63004CA286 /* UserAddressViewController.swift */; };
+		57A7819327B5DA73004CA286 /* UserAddressViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A7819227B5DA73004CA286 /* UserAddressViewModelProtocol.swift */; };
+		57A7819527B5DA85004CA286 /* UserAddressViewModelCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A7819427B5DA85004CA286 /* UserAddressViewModelCoordinatorDelegate.swift */; };
+		57A7819727B5DAB9004CA286 /* UserAddressViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A7819627B5DAB9004CA286 /* UserAddressViewModel.swift */; };
+		57A7819927B5DB1D004CA286 /* UserAddress.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57A7819827B5DB1D004CA286 /* UserAddress.storyboard */; };
 		57CB252027AAC5EC004B8767 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CB251C27AAC5EB004B8767 /* BaseViewModel.swift */; };
 		57CB252127AAC5EC004B8767 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CB251D27AAC5EB004B8767 /* BaseNavigationController.swift */; };
 		57CB252227AAC5EC004B8767 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CB251E27AAC5EB004B8767 /* AppCoordinator.swift */; };
@@ -196,6 +202,12 @@
 		5769011127B4746C00F58BF0 /* ProfileViewModelCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModelCoordinatorDelegate.swift; sourceTree = "<group>"; };
 		5769011327B4747F00F58BF0 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		5769011527B4757300F58BF0 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		57A7818E27B5DA42004CA286 /* UserAddressCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAddressCoordinator.swift; sourceTree = "<group>"; };
+		57A7819027B5DA63004CA286 /* UserAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAddressViewController.swift; sourceTree = "<group>"; };
+		57A7819227B5DA73004CA286 /* UserAddressViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAddressViewModelProtocol.swift; sourceTree = "<group>"; };
+		57A7819427B5DA85004CA286 /* UserAddressViewModelCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAddressViewModelCoordinatorDelegate.swift; sourceTree = "<group>"; };
+		57A7819627B5DAB9004CA286 /* UserAddressViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAddressViewModel.swift; sourceTree = "<group>"; };
+		57A7819827B5DB1D004CA286 /* UserAddress.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserAddress.storyboard; sourceTree = "<group>"; };
 		57CB251C27AAC5EB004B8767 /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		57CB251D27AAC5EB004B8767 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		57CB251E27AAC5EB004B8767 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
@@ -593,6 +605,51 @@
 			path = Coordinator;
 			sourceTree = "<group>";
 		};
+		57A7818927B5D94F004CA286 /* UserAddress */ = {
+			isa = PBXGroup;
+			children = (
+				57A7818D27B5D971004CA286 /* Coordinator */,
+				57A7818C27B5D969004CA286 /* Protocols */,
+				57A7818B27B5D964004CA286 /* ViewModel */,
+				57A7818A27B5D960004CA286 /* View */,
+			);
+			path = UserAddress;
+			sourceTree = "<group>";
+		};
+		57A7818A27B5D960004CA286 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				57A7819027B5DA63004CA286 /* UserAddressViewController.swift */,
+				57A7819827B5DB1D004CA286 /* UserAddress.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		57A7818B27B5D964004CA286 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				57A7819627B5DAB9004CA286 /* UserAddressViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		57A7818C27B5D969004CA286 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				57A7819227B5DA73004CA286 /* UserAddressViewModelProtocol.swift */,
+				57A7819427B5DA85004CA286 /* UserAddressViewModelCoordinatorDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		57A7818D27B5D971004CA286 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				57A7818E27B5DA42004CA286 /* UserAddressCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
 		57CB251B27AAC5DD004B8767 /* Base */ = {
 			isa = PBXGroup;
 			children = (
@@ -620,6 +677,7 @@
 		57CB252527AAC5FB004B8767 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				57A7818927B5D94F004CA286 /* UserAddress */,
 				5769010627B472CE00F58BF0 /* Profile */,
 				576900F127B4578700F58BF0 /* SettingsTab */,
 				57D8244527B1EFE7004AB232 /* Filter Products */,
@@ -1320,6 +1378,7 @@
 				57570F0327AB33F100D0DFB1 /* TabBar.storyboard in Resources */,
 				57570EC127AADC6400D0DFB1 /* TDSplash.storyboard in Resources */,
 				57D8239F27AC17EF004AB232 /* SignUp.storyboard in Resources */,
+				57A7819927B5DB1D004CA286 /* UserAddress.storyboard in Resources */,
 				57570EE027AB23F000D0DFB1 /* Login.storyboard in Resources */,
 				57D8244D27B1F177004AB232 /* FilterProducts.storyboard in Resources */,
 				57D823FF27AF04BA004AB232 /* CategoriesCell.xib in Resources */,
@@ -1385,12 +1444,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57A7819527B5DA85004CA286 /* UserAddressViewModelCoordinatorDelegate.swift in Sources */,
 				57D8243D27B1BE86004AB232 /* SeeAllCategoriesViewModelProtocol.swift in Sources */,
 				57D8243F27B1BEA0004AB232 /* SeeAllCategoriesViewModelCoordinatorDelegate.swift in Sources */,
 				57D8242A27B096D8004AB232 /* CommentCell.swift in Sources */,
 				57570EEA27AB31BC00D0DFB1 /* AuthenticationClient.swift in Sources */,
 				57D823DD27AC50A3004AB232 /* ResetPasswordViewModelCoordinatorDelegate.swift in Sources */,
 				57570EE427AB240400D0DFB1 /* LoginViewModelCoordinatorDelegate.swift in Sources */,
+				57A7819127B5DA63004CA286 /* UserAddressViewController.swift in Sources */,
 				57D8243327B1BC56004AB232 /* SeeAllCategoriesDataSource.swift in Sources */,
 				57570F0F27AB353800D0DFB1 /* TabBarCoordinator.swift in Sources */,
 				57570EE127AB23F000D0DFB1 /* LoginViewController.swift in Sources */,
@@ -1449,11 +1510,13 @@
 				57CB252D27AAC755004B8767 /* Constants.swift in Sources */,
 				5769011027B4744E00F58BF0 /* ProfileViewModelProtocol.swift in Sources */,
 				57CB255A27AAC89E004B8767 /* Loader.swift in Sources */,
+				57A7818F27B5DA42004CA286 /* UserAddressCoordinator.swift in Sources */,
 				57CB252227AAC5EC004B8767 /* AppCoordinator.swift in Sources */,
 				57CB255727AAC88B004B8767 /* Colors.swift in Sources */,
 				57570F0C27AB34D400D0DFB1 /* HomeTabViewController.swift in Sources */,
 				57570EF927AB33E600D0DFB1 /* TabLayout.swift in Sources */,
 				57570ECA27AB232D00D0DFB1 /* TDInitialScreenViewModel.swift in Sources */,
+				57A7819727B5DAB9004CA286 /* UserAddressViewModel.swift in Sources */,
 				57570F0927AB34C700D0DFB1 /* HomeTabCoordinator.swift in Sources */,
 				57CB252F27AAC75B004B8767 /* TDHelper.swift in Sources */,
 				57CB256427AAC94E004B8767 /* TDSplashViewController.swift in Sources */,
@@ -1463,6 +1526,7 @@
 				57D823C827AC491D004AB232 /* ForgotPasswordVerificationViewModel.swift in Sources */,
 				57D8244227B1C1A6004AB232 /* SeeAllCategoryViewController.swift in Sources */,
 				57CB257427AACEE5004B8767 /* Reachability.swift in Sources */,
+				57A7819327B5DA73004CA286 /* UserAddressViewModelProtocol.swift in Sources */,
 				57570ECF27AB233F00D0DFB1 /* TDInitialScreenViewController.swift in Sources */,
 				57D823FB27AEB383004AB232 /* CategoriesModel.swift in Sources */,
 				57D8242127B07931004AB232 /* WebViewViewModelProtocol.swift in Sources */,

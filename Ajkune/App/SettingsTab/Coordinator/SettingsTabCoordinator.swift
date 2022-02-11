@@ -27,6 +27,4 @@ extension SettingsTabCoordinator: SettingsTabViewModelCoordinatorDelegate{
         profileCoordinator = ProfileCoordinator(viewModel:ProfileViewModel(), navigationController: self.viewController?.navigationController)
         profileCoordinator?.start()
     }
-    
-   
 }

@@ -49,3 +49,20 @@ struct Usr: Codable {
         case hasGift = "has_gift"
     }
 }
+
+struct UserProfile: Codable {
+    var name, lastName, gender, dateOfBirth: String?
+    var phone, address, street, zipCode: String?
+    var country, base64Img: String?
+
+    enum CodingKeys: String, CodingKey {
+        case name
+        case lastName = "last_name"
+        case gender
+        case dateOfBirth = "date_of_birth"
+        case phone, address, street
+        case zipCode = "zip_code"
+        case country
+        case base64Img = "base64_img"
+    }
+}

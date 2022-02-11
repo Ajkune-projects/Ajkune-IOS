@@ -9,6 +9,11 @@ import Foundation
 
 class ProfileViewModel: ProfileViewModelProtocol{
     weak var coordinatorDelegate : ProfileViewModelCoordinatorDelegate?
+    func showUserAddress(){
+        self.coordinatorDelegate?.showUserAddress()
+    }
+    
+    //API
     func getUserDetails(completion: @escaping (([Users]?) -> Void)) {
         let user = AuthenticationClient.getUserDetails()
         user.execute(onSuccess: { user in

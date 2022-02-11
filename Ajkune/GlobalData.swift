@@ -21,5 +21,9 @@ struct globalData{
 }
 
 struct ProfileDetails{
-    static var address:String = ""
+    static var fullAddress:String = ""
+    static var street:String = ""
+    static var city:String = ""
+    static var zipCode:String = ""
+    static var country:String = ""
 }

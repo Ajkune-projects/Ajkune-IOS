@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--User Address View Controller-->
+        <scene sceneID="lam-eg-g6o">
+            <objects>
+                <viewController storyboardIdentifier="UserAddressViewController" id="poB-qr-toM" customClass="UserAddressViewController" customModule="Ajkune" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hmU-8Z-y0V"/>
+                        <viewControllerLayoutGuide type="bottom" id="0Ac-aY-ZnV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7ej-Pk-7qQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U8C-Tm-Ush">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Pb-A2-Z15">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="827"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HXZ-yw-Ec7">
+                                                <rect key="frame" x="20" y="8" width="374" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="40" id="YK3-ZL-HtT"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="16"/>
+                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Add new address" image="vector">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="backPressed:" destination="poB-qr-toM" eventType="touchUpInside" id="X6F-cp-3cy"/>
+                                                </connections>
+                                            </button>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qqy-BL-VgW">
+                                                <rect key="frame" x="20" y="58" width="374" height="2"/>
+                                                <color key="backgroundColor" red="0.92156862750000001" green="0.94117647059999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="2" id="dMA-MG-Sa0"/>
+                                                </constraints>
+                                            </view>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="REa-tZ-DmF">
+                                                <rect key="frame" x="20" y="90" width="374" height="300"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Street" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CZW-q1-ev1" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="60"/>
+                                                        <color key="textColor" red="0.23137254900000001" green="0.29803921570000003" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                                                <color key="value" red="0.85098039219999999" green="0.85098039219999999" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                                                <color key="value" red="0.6588235294" green="0.27450980390000002" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                                <color key="value" red="0.01176470588" green="0.0039215686269999999" blue="0.29803921570000003" alpha="0.5" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                                                <real key="value" value="0.80000000000000004"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="City" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3q2-gQ-Ndx" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                                        <rect key="frame" x="0.0" y="80" width="374" height="60"/>
+                                                        <color key="textColor" red="0.23137254900000001" green="0.29803921570000003" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                                                <color key="value" red="0.85098039219999999" green="0.85098039219999999" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                                                <color key="value" red="0.6588235294" green="0.27450980390000002" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                                <color key="value" red="0.01176470588" green="0.0039215686269999999" blue="0.29803921570000003" alpha="0.5" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                                                <real key="value" value="0.80000000000000004"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Zip Code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6jU-kb-Jcg" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                                        <rect key="frame" x="0.0" y="160" width="374" height="60"/>
+                                                        <color key="textColor" red="0.23137254900000001" green="0.29803921570000003" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                                                <color key="value" red="0.85098039219999999" green="0.85098039219999999" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                                                <color key="value" red="0.6588235294" green="0.27450980390000002" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                                <color key="value" red="0.01176470588" green="0.0039215686269999999" blue="0.29803921570000003" alpha="0.5" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                                                <real key="value" value="0.80000000000000004"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Country" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="paE-mB-pdQ" customClass="HoshiTextField" customModule="TextFieldEffects">
+                                                        <rect key="frame" x="0.0" y="240" width="374" height="60"/>
+                                                        <color key="textColor" red="0.23137254900000001" green="0.29803921570000003" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                                                <color key="value" red="0.85098039219999999" green="0.85098039219999999" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                                                <color key="value" red="0.6588235294" green="0.27450980390000002" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                                <color key="value" red="0.01176470588" green="0.0039215686269999999" blue="0.29803921570000003" alpha="0.5" colorSpace="calibratedRGB"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="placeholderFontScale">
+                                                                <real key="value" value="0.80000000000000004"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="300" id="9O2-Y6-yr7"/>
+                                                </constraints>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SfC-Gt-Fyv">
+                                                <rect key="frame" x="20" y="420" width="374" height="50"/>
+                                                <color key="backgroundColor" red="0.6588235294" green="0.27450980390000002" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="2zk-WZ-gJ2"/>
+                                                </constraints>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="SAVE">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="15"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="savePressed:" destination="poB-qr-toM" eventType="touchUpInside" id="xhe-bf-gIg"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstItem="SfC-Gt-Fyv" firstAttribute="trailing" secondItem="REa-tZ-DmF" secondAttribute="trailing" id="2DI-ML-Jet"/>
+                                            <constraint firstItem="qqy-BL-VgW" firstAttribute="leading" secondItem="HXZ-yw-Ec7" secondAttribute="leading" id="CU7-UP-EvD"/>
+                                            <constraint firstItem="HXZ-yw-Ec7" firstAttribute="top" secondItem="3Pb-A2-Z15" secondAttribute="topMargin" id="EUL-JP-ILq"/>
+                                            <constraint firstItem="REa-tZ-DmF" firstAttribute="leading" secondItem="HXZ-yw-Ec7" secondAttribute="leading" id="Gxc-5o-edI"/>
+                                            <constraint firstAttribute="bottom" secondItem="SfC-Gt-Fyv" secondAttribute="bottom" constant="357" id="HRk-51-jkH"/>
+                                            <constraint firstItem="qqy-BL-VgW" firstAttribute="top" secondItem="HXZ-yw-Ec7" secondAttribute="bottom" constant="10" id="Ira-Ri-d4N"/>
+                                            <constraint firstItem="SfC-Gt-Fyv" firstAttribute="top" secondItem="REa-tZ-DmF" secondAttribute="bottom" constant="30" id="LDV-ci-Wpj"/>
+                                            <constraint firstItem="HXZ-yw-Ec7" firstAttribute="leading" secondItem="3Pb-A2-Z15" secondAttribute="leading" constant="20" id="M4F-m2-G2I"/>
+                                            <constraint firstAttribute="trailing" secondItem="HXZ-yw-Ec7" secondAttribute="trailing" constant="20" id="X6O-es-kDl"/>
+                                            <constraint firstItem="qqy-BL-VgW" firstAttribute="trailing" secondItem="HXZ-yw-Ec7" secondAttribute="trailing" id="cdQ-bS-SJW"/>
+                                            <constraint firstItem="REa-tZ-DmF" firstAttribute="top" secondItem="qqy-BL-VgW" secondAttribute="bottom" constant="30" id="g3g-bU-AwY"/>
+                                            <constraint firstItem="REa-tZ-DmF" firstAttribute="trailing" secondItem="HXZ-yw-Ec7" secondAttribute="trailing" id="hRh-kX-rC0"/>
+                                            <constraint firstItem="SfC-Gt-Fyv" firstAttribute="leading" secondItem="REa-tZ-DmF" secondAttribute="leading" id="lWV-6E-PLw"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="3Pb-A2-Z15" firstAttribute="leading" secondItem="U8C-Tm-Ush" secondAttribute="leading" id="5Gh-7u-qIg"/>
+                                    <constraint firstAttribute="bottom" secondItem="3Pb-A2-Z15" secondAttribute="bottom" id="IrR-XB-ZHD"/>
+                                    <constraint firstAttribute="trailing" secondItem="3Pb-A2-Z15" secondAttribute="trailing" id="boz-3a-wf6"/>
+                                    <constraint firstItem="3Pb-A2-Z15" firstAttribute="top" secondItem="U8C-Tm-Ush" secondAttribute="top" id="mut-W8-JGB"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="y1f-xx-3rj"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="3Pb-A2-Z15" firstAttribute="height" secondItem="7ej-Pk-7qQ" secondAttribute="height" priority="250" id="8RD-fW-ojh"/>
+                            <constraint firstAttribute="trailing" secondItem="U8C-Tm-Ush" secondAttribute="trailing" id="J9E-FS-o2k"/>
+                            <constraint firstItem="U8C-Tm-Ush" firstAttribute="top" secondItem="7ej-Pk-7qQ" secondAttribute="top" id="OvT-bc-LYD"/>
+                            <constraint firstItem="U8C-Tm-Ush" firstAttribute="leading" secondItem="7ej-Pk-7qQ" secondAttribute="leading" id="UzO-T5-4I3"/>
+                            <constraint firstItem="3Pb-A2-Z15" firstAttribute="width" secondItem="7ej-Pk-7qQ" secondAttribute="width" id="W1T-GH-khB"/>
+                            <constraint firstItem="0Ac-aY-ZnV" firstAttribute="top" secondItem="U8C-Tm-Ush" secondAttribute="bottom" id="eA7-8b-xmd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cityTextfield" destination="3q2-gQ-Ndx" id="FJd-fB-ORe"/>
+                        <outlet property="countryTextfield" destination="paE-mB-pdQ" id="ihD-Uj-tua"/>
+                        <outlet property="streetTextfield" destination="CZW-q1-ev1" id="Twp-Lx-9db"/>
+                        <outlet property="zipCodeTextfield" destination="6jU-kb-Jcg" id="pex-Ga-TM1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JQW-cM-IT6" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="849" y="72"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="3q2-gQ-Ndx">
+            <size key="intrinsicContentSize" width="25.5" height="21"/>
+        </designable>
+        <designable name="6jU-kb-Jcg">
+            <size key="intrinsicContentSize" width="59" height="21"/>
+        </designable>
+        <designable name="CZW-q1-ev1">
+            <size key="intrinsicContentSize" width="39" height="21"/>
+        </designable>
+        <designable name="paE-mB-pdQ">
+            <size key="intrinsicContentSize" width="51.5" height="21"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="vector" width="16" height="16"/>
+    </resources>
+</document>

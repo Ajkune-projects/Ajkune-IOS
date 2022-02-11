@@ -82,7 +82,7 @@ class HomeTabViewController: UIViewController, Storyboarded{
         self.viewModel?.getCategories(completion: { response in
             HIDE_CUSTOM_LOADER()
             if response?.count != nil{
-                let newCategory = Categories(id: 0, name: "All products", position: 0, status: 1, created_at: "1", updated_at: "2")
+                let newCategory = Categories(id: 0, name: "ALL PRODUCTS", position: 0, status: 1, created_at: "1", updated_at: "2")
                 var category = response
                 category?.insert(newCategory, at: 0)
                 self.viewModel?.getCategorie(cat: category)

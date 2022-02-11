@@ -14,7 +14,7 @@ class ProfileCoordinator: TDPushCoordinator{
     var viewController : ProfileViewController?
     var navigationController: UINavigationController?
     var viewModel : ProfileViewModelProtocol
-    var homeTabCoordinator: HomeTabCoordinator?
+    var addAddressCoordinator: UserAddressCoordinator?
 
     
     init(viewModel: ProfileViewModelProtocol, navigationController:UINavigationController?) {
@@ -28,4 +28,8 @@ class ProfileCoordinator: TDPushCoordinator{
 }
 
 extension ProfileCoordinator:ProfileViewModelCoordinatorDelegate{
+    func showUserAddress() {
+        addAddressCoordinator = UserAddressCoordinator(viewModel:UserAddressViewModel(), navigationController: self.viewController?.navigationController)
+        addAddressCoordinator?.start()
+    }
 }

@@ -172,19 +172,19 @@
     </scenes>
     <designables>
         <designable name="0ya-e8-nlT">
-            <size key="intrinsicContentSize" width="69" height="18.5"/>
+            <size key="intrinsicContentSize" width="374" height="39.220703125"/>
         </designable>
         <designable name="4Bh-VS-qlM">
-            <size key="intrinsicContentSize" width="90" height="18.5"/>
+            <size key="intrinsicContentSize" width="374" height="39.220703125"/>
         </designable>
         <designable name="8Qc-Rr-6bI">
-            <size key="intrinsicContentSize" width="70" height="18.5"/>
+            <size key="intrinsicContentSize" width="374" height="39.220703125"/>
         </designable>
         <designable name="RTo-1y-bff">
-            <size key="intrinsicContentSize" width="117.5" height="17"/>
+            <size key="intrinsicContentSize" width="374" height="39.220703125"/>
         </designable>
         <designable name="nFy-NK-9ev">
-            <size key="intrinsicContentSize" width="62.5" height="17"/>
+            <size key="intrinsicContentSize" width="374" height="39.220703125"/>
         </designable>
     </designables>
     <resources>

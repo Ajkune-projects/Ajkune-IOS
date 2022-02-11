@@ -16,6 +16,10 @@ class ProfileViewController: UIViewController , Storyboarded, UITextFieldDelegat
     @IBOutlet weak var birthdate: HoshiTextField!
     @IBOutlet weak var emailTextField: HoshiTextField!
     @IBOutlet weak var phoneNumberTextfield: HoshiTextField!
+    @IBOutlet weak var verifiedImage: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var addressButton: UIButton!
+    @IBOutlet weak var addressLabel: UILabel!
     
     //MARK: - Properties
     var viewModel: ProfileViewModelProtocol?
@@ -26,8 +30,12 @@ class ProfileViewController: UIViewController , Storyboarded, UITextFieldDelegat
     override func viewDidLoad() {
         setupFields()
         getUserDetails()
+        setupLabel()
         genderOptionsView.shadowView()
         setupDatePicker()
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        setupLabel()
     }
     
     func setupFields(){
@@ -40,6 +48,16 @@ class ProfileViewController: UIViewController , Storyboarded, UITextFieldDelegat
         birthdate.addDoneButtonToKeyboard(myAction:  #selector(self.birthdate.resignFirstResponder))
         phoneNumberTextfield.addDoneButtonToKeyboard(myAction:  #selector(self.phoneNumberTextfield.resignFirstResponder))
     }
+    
+    func setupLabel(){
+        if ProfileDetails.fullAddress == "" {
+            addressLabel.text = "No added address yet!"
+        }else{
+            addressButton.setTitle("EDIT ADDRESS", for: .normal)
+            addressLabel.text = ProfileDetails.fullAddress
+        }
+    }
+    
     func setupDatePicker(){
         birthdate.inputView = datePicker
         if #available(iOS 13.4, *) {
@@ -96,6 +114,9 @@ class ProfileViewController: UIViewController , Storyboarded, UITextFieldDelegat
     }
     @IBAction func backPressed(_ sender: Any) {
         coordinator?.stop()
+    }
+    @IBAction func showAddress(_ sender: Any) {
+        self.viewModel?.showUserAddress()
     }
     
     

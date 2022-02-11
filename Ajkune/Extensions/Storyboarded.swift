@@ -64,6 +64,9 @@ extension UIStoryboard {
     static var profile: UIStoryboard {
          return UIStoryboard(name: "Profile", bundle: nil)
     }
+    static var userAddress: UIStoryboard {
+         return UIStoryboard(name: "UserAddress", bundle: nil)
+    }
 }
 
 
