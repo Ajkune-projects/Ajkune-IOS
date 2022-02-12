@@ -10,5 +10,6 @@ protocol ProfileViewModelProtocol: BaseViewModel {
     var coordinatorDelegate : ProfileViewModelCoordinatorDelegate? {get set}
     func showUserAddress()
     //API
-    func getUserDetails(completion: @escaping (([Users]?) -> Void))
+    func getUserDetails(completion: @escaping ((Users?) -> Void))
+    func verificationProfile(user:UserProfile?, completion: @escaping ((UserResponse?) -> Void))
 }

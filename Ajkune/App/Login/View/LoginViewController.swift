@@ -78,12 +78,12 @@ class LoginViewController: UIViewController, Storyboarded {
     func login(){
         guard let email = emailTextField.text, !email.isEmpty else {
             self.emailTextField.becomeFirstResponder()
-            self.showAlertWith(title: "Teed Up", message: "Veuillez entrer votre e-mail.")
+            self.showAlertWith(title: "Ajkune", message: "Please enter your email.")
             return
         }
         guard let password = passwordTextField.text, !password.isEmpty else {
             self.passwordTextField.becomeFirstResponder()
-            self.showAlertWith(title: "Teed Up", message: "S'il vous plait entrez votre mot de passe.")
+            self.showAlertWith(title: "Ajkune", message: "Please enter your password.")
             return
         }
         SHOW_CUSTOM_LOADER()
@@ -94,7 +94,7 @@ class LoginViewController: UIViewController, Storyboarded {
                         self.viewModel?.loginSuccessful()
             }
             else{
-                self.showAlertWith(title: "OUPS !", message: "ERROR! ")
+                self.showAlertWith(title: "OUPS !", message: "The username or password is incorrect")
             }
         })
     }

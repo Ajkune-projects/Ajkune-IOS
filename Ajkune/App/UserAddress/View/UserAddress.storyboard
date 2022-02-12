@@ -24,10 +24,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Pb-A2-Z15">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="827"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="821"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HXZ-yw-Ec7">
-                                                <rect key="frame" x="20" y="8" width="374" height="40"/>
+                                                <rect key="frame" x="20" y="52" width="374" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="YK3-ZL-HtT"/>
                                                 </constraints>
@@ -42,17 +42,17 @@
                                                 </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qqy-BL-VgW">
-                                                <rect key="frame" x="20" y="58" width="374" height="2"/>
+                                                <rect key="frame" x="20" y="102" width="374" height="2"/>
                                                 <color key="backgroundColor" red="0.92156862750000001" green="0.94117647059999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="2" id="dMA-MG-Sa0"/>
                                                 </constraints>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="REa-tZ-DmF">
-                                                <rect key="frame" x="20" y="90" width="374" height="300"/>
+                                                <rect key="frame" x="20" y="134" width="374" height="250"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Street" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CZW-q1-ev1" customClass="HoshiTextField" customModule="TextFieldEffects">
-                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="60"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="47.5"/>
                                                         <color key="textColor" red="0.23137254900000001" green="0.29803921570000003" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -72,7 +72,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="City" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3q2-gQ-Ndx" customClass="HoshiTextField" customModule="TextFieldEffects">
-                                                        <rect key="frame" x="0.0" y="80" width="374" height="60"/>
+                                                        <rect key="frame" x="0.0" y="67.5" width="374" height="47.5"/>
                                                         <color key="textColor" red="0.23137254900000001" green="0.29803921570000003" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -92,7 +92,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Zip Code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6jU-kb-Jcg" customClass="HoshiTextField" customModule="TextFieldEffects">
-                                                        <rect key="frame" x="0.0" y="160" width="374" height="60"/>
+                                                        <rect key="frame" x="0.0" y="135" width="374" height="47.5"/>
                                                         <color key="textColor" red="0.23137254900000001" green="0.29803921570000003" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -112,7 +112,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </textField>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Country" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="paE-mB-pdQ" customClass="HoshiTextField" customModule="TextFieldEffects">
-                                                        <rect key="frame" x="0.0" y="240" width="374" height="60"/>
+                                                        <rect key="frame" x="0.0" y="202.5" width="374" height="47.5"/>
                                                         <color key="textColor" red="0.23137254900000001" green="0.29803921570000003" blue="0.40784313729999999" alpha="1" colorSpace="calibratedRGB"/>
                                                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -133,11 +133,11 @@
                                                     </textField>
                                                 </subviews>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="300" id="9O2-Y6-yr7"/>
+                                                    <constraint firstAttribute="height" constant="250" id="9O2-Y6-yr7"/>
                                                 </constraints>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SfC-Gt-Fyv">
-                                                <rect key="frame" x="20" y="420" width="374" height="50"/>
+                                                <rect key="frame" x="20" y="414" width="374" height="50"/>
                                                 <color key="backgroundColor" red="0.6588235294" green="0.27450980390000002" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="2zk-WZ-gJ2"/>
@@ -197,6 +197,7 @@
                         <outlet property="cityTextfield" destination="3q2-gQ-Ndx" id="FJd-fB-ORe"/>
                         <outlet property="countryTextfield" destination="paE-mB-pdQ" id="ihD-Uj-tua"/>
                         <outlet property="streetTextfield" destination="CZW-q1-ev1" id="Twp-Lx-9db"/>
+                        <outlet property="titleButton" destination="HXZ-yw-Ec7" id="B5r-oi-5AP"/>
                         <outlet property="zipCodeTextfield" destination="6jU-kb-Jcg" id="pex-Ga-TM1"/>
                     </connections>
                 </viewController>

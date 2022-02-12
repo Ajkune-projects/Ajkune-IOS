@@ -10,6 +10,5 @@ import Foundation
 protocol SettingsTabViewModelProtocol : BaseViewModel {
     var coordinatorDelegate : SettingsTabViewModelCoordinatorDelegate? {get set}
     func showProfile()
-    //API
-    //func getALLProducts(completion: @escaping (([Products]?) -> Void))
+    func showLanguage()
 }

@@ -27,7 +27,7 @@ class WebViewViewController: UIViewController,WKUIDelegate, Storyboarded {
         super.viewDidLoad()
         
         setupUI()
-        
+
         let myURL = URL(string: (responseUrl))
         let myRequest = URLRequest(url: myURL ?? URL(fileURLWithPath: "") )
         webView.load(myRequest)

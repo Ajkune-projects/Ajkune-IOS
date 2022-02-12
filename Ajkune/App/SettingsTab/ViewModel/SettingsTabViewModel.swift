@@ -12,6 +12,8 @@ class SettingsTabViewModel: SettingsTabViewModelProtocol{
     func showProfile() {
         coordinatorDelegate?.showProfile()
     }
-    
+    func showLanguage() {
+        coordinatorDelegate?.showLanguage()
+    }
     
 }

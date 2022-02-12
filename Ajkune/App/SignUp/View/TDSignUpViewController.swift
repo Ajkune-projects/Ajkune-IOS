@@ -186,8 +186,10 @@ class SignUpViewController: UIViewController, Storyboarded {
         self.viewModel?.requestSignUp(model: model, completion: { response in
             HIDE_CUSTOM_LOADER()
             if response?.success == true{
-                self.showOKAlert(title: "Success", message: "You did it!!!!")
+                Account.shared.initLogin()
                 
+            }else{
+                self.showOKAlert(title: "Error", message: "Problem with registration")
             }
         })
     }

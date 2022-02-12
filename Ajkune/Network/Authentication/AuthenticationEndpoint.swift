@@ -25,12 +25,12 @@ enum TDAuthenticationEndpoint: TDAPIConfiguration {
     
     //User
     case getUserDetails
-//    case verificationUser()
+    case verificationUser(user:UserProfile?)
     
     // MARK: - HTTPMethod
     var method: HTTPMethod {
         switch self {
-        case .login,.signUp, .requestForgotPassword, .checkResetPasswordCode, .requestResetPassword,.addComment:
+        case .login,.signUp, .requestForgotPassword, .checkResetPasswordCode, .requestResetPassword,.addComment,.verificationUser:
             return .post
         case .getProducts, .getProductsByID,.getCategories,.getBanner,.getProductDetails,.filterProducts,.getUserDetails:
             return .get
@@ -70,6 +70,8 @@ enum TDAuthenticationEndpoint: TDAPIConfiguration {
             return "/filter/\(minValue)/\(maxValue)/\(type)"
         case .getUserDetails:
             return "/get_user"
+        case .verificationUser:
+            return "/profile/verification"
         }
     }
     
@@ -92,15 +94,24 @@ enum TDAuthenticationEndpoint: TDAPIConfiguration {
                      "email":data.email,
                      "password":data.password,
                      "confirmation_password":data.confirmation_password]
-        case .getProducts,.getProductsByID,.getCategories,.getBanner,.getProductDetails,.filterProducts:
+        case .getProducts,.getProductsByID,.getCategories,.getBanner,.getProductDetails,.filterProducts,.getUserDetails:
             return nil
         case .addComment(let product_id, let title, let comment):
             return ["product_id":product_id,
                     "title":title,
                     "comment":comment]
-        case .getUserDetails:
-            let token = (UserDefaults.standard.value(forKey: "USER_TOKEN") ?? "")
-            return ["token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC80NS43Ny41NC4xNThcL2FwaVwvbG9naW4iLCJpYXQiOjE2NDQxOTM3MDUsImV4cCI6MTY0NTcwNTcwNSwibmJmIjoxNjQ0MTkzNzA1LCJqdGkiOiIxeTBXQ3pYYVZpRGRHUW9PIiwic3ViIjo3LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.2jahgdRDc1nJEpSLX6GXf7k2Ou44pC4r-OUrre9iA40"]
+        case .verificationUser(let user):
+            return ["name": user?.name,
+                    "last_name": user?.last_name,
+                    "gender": user?.gender,
+                    "date_of_birth": user?.date_of_birth,
+                    "phone": user?.phone,
+                    "address": user?.address,
+                    "street": user?.street,
+                    "zip_code": user?.zip_code,
+                    "country": user?.country,
+                    "base64_img":user?.base64_img]
+            
         }
     }
     

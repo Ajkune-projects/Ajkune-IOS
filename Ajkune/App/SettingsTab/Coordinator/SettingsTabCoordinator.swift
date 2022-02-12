@@ -10,6 +10,7 @@ class SettingsTabCoordinator: TDDefaultCoordinator{
     var viewController : SettingsTabViewController?
     var viewModel : SettingsTabViewModelProtocol
     var profileCoordinator: ProfileCoordinator?
+    var languageCoordinator:LanguageCoordinator?
     
     init(viewModel: SettingsTabViewModelProtocol = SettingsTabViewModel()) {
         self.viewModel = viewModel
@@ -27,4 +28,9 @@ extension SettingsTabCoordinator: SettingsTabViewModelCoordinatorDelegate{
         profileCoordinator = ProfileCoordinator(viewModel:ProfileViewModel(), navigationController: self.viewController?.navigationController)
         profileCoordinator?.start()
     }
+    func showLanguage() {
+        languageCoordinator = LanguageCoordinator(viewModel:LanguageViewModel(), navigationController: self.viewController?.navigationController)
+        languageCoordinator?.start()
+    }
+    
 }

@@ -8,4 +8,5 @@
 import Foundation
 protocol SettingsTabViewModelCoordinatorDelegate: AnyObject {
     func showProfile()
+    func showLanguage() 
 }

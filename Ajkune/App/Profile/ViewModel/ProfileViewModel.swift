@@ -14,7 +14,7 @@ class ProfileViewModel: ProfileViewModelProtocol{
     }
     
     //API
-    func getUserDetails(completion: @escaping (([Users]?) -> Void)) {
+    func getUserDetails(completion: @escaping ((Users?) -> Void)) {
         let user = AuthenticationClient.getUserDetails()
         user.execute(onSuccess: { user in
             completion(user)
@@ -22,5 +22,14 @@ class ProfileViewModel: ProfileViewModelProtocol{
             completion(nil)
          })
     }
+    func verificationProfile(user: UserProfile?, completion: @escaping ((UserResponse?) -> Void)) {
+        let user = AuthenticationClient.verificationProfile(user: user)
+        user.execute(onSuccess: { user in
+            completion(user)
+         }, onFailure: {error in
+            completion(nil)
+         })
+    }
+    
     
 }

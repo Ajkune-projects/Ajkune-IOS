@@ -21,6 +21,7 @@ class SettingsTabViewController: UIViewController, Storyboarded {
         self.viewModel?.showProfile()
     }
     @IBAction func chooseLanguageAction(_ sender: Any) {
+        self.viewModel?.showLanguage()
     }
     @IBAction func logOutAction(_ sender: Any) {
         Account.shared.clear()
