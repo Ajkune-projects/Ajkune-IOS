@@ -23,6 +23,10 @@ enum TDAuthenticationEndpoint: TDAPIConfiguration {
     case addComment(product_id:String,title:String, comment:String)
     case filterProducts(minValue:String,maxValue:String,type:String)
     
+//Offer
+    case getProductsFromOffer
+    case getProductsByIdOffer(Id:Int)
+    
     //User
     case getUserDetails
     case verificationUser(user:UserProfile?)
@@ -32,7 +36,7 @@ enum TDAuthenticationEndpoint: TDAPIConfiguration {
         switch self {
         case .login,.signUp, .requestForgotPassword, .checkResetPasswordCode, .requestResetPassword,.addComment,.verificationUser:
             return .post
-        case .getProducts, .getProductsByID,.getCategories,.getBanner,.getProductDetails,.filterProducts,.getUserDetails:
+        case .getProducts, .getProductsByID,.getCategories,.getBanner,.getProductDetails,.filterProducts,.getUserDetails,.getProductsFromOffer,.getProductsByIdOffer:
             return .get
 //        case :
 //            return .delete
@@ -56,8 +60,12 @@ enum TDAuthenticationEndpoint: TDAPIConfiguration {
             return "/forgotEmail/changePassword"
         case . getProducts:
             return "/products"
+        case . getProductsFromOffer:
+            return "/offers"
         case .getProductsByID(let id):
             return "/categories/\(id)"
+        case .getProductsByIdOffer(let id):
+            return "/offers/\(id)"
         case .getCategories:
            return  "/categories"
         case .getBanner:
@@ -94,7 +102,7 @@ enum TDAuthenticationEndpoint: TDAPIConfiguration {
                      "email":data.email,
                      "password":data.password,
                      "confirmation_password":data.confirmation_password]
-        case .getProducts,.getProductsByID,.getCategories,.getBanner,.getProductDetails,.filterProducts,.getUserDetails:
+        case .getProducts,.getProductsByID,.getCategories,.getBanner,.getProductDetails,.filterProducts,.getUserDetails,.getProductsByIdOffer,.getProductsFromOffer:
             return nil
         case .addComment(let product_id, let title, let comment):
             return ["product_id":product_id,

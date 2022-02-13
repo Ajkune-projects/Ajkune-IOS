@@ -57,6 +57,16 @@
 		578BF45A27B85747004005D7 /* LanguageViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578BF45927B85747004005D7 /* LanguageViewModelProtocol.swift */; };
 		578BF45C27B85795004005D7 /* Language.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 578BF45B27B85795004005D7 /* Language.storyboard */; };
 		578BF45E27B85EDF004005D7 /* LanguageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578BF45D27B85EDF004005D7 /* LanguageViewModel.swift */; };
+		578BF46627B86DBA004005D7 /* OfferDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578BF46527B86DBA004005D7 /* OfferDataSource.swift */; };
+		578BF46827B86DD9004005D7 /* OfferTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578BF46727B86DD9004005D7 /* OfferTabCoordinator.swift */; };
+		578BF46A27B86E9C004005D7 /* OfferTabViewModelCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578BF46927B86E9C004005D7 /* OfferTabViewModelCoordinatorDelegate.swift */; };
+		578BF46C27B86EC5004005D7 /* OfferTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578BF46B27B86EC5004005D7 /* OfferTabViewController.swift */; };
+		578BF46E27B86ED5004005D7 /* OfferTabViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578BF46D27B86ED5004005D7 /* OfferTabViewModelProtocol.swift */; };
+		578BF47027B86F77004005D7 /* OfferTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578BF46F27B86F77004005D7 /* OfferTabViewModel.swift */; };
+		578BF47227B87423004005D7 /* OfferTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 578BF47127B87423004005D7 /* OfferTab.storyboard */; };
+		578BF47427B874B6004005D7 /* OfferTabLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578BF47327B874B6004005D7 /* OfferTabLayout.swift */; };
+		578BF47A27B87FDD004005D7 /* OfferProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 578BF47827B87FDD004005D7 /* OfferProductCell.xib */; };
+		578BF47D27B88043004005D7 /* OfferProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578BF47C27B88043004005D7 /* OfferProductCell.swift */; };
 		57A7818F27B5DA42004CA286 /* UserAddressCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A7818E27B5DA42004CA286 /* UserAddressCoordinator.swift */; };
 		57A7819127B5DA63004CA286 /* UserAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A7819027B5DA63004CA286 /* UserAddressViewController.swift */; };
 		57A7819327B5DA73004CA286 /* UserAddressViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A7819227B5DA73004CA286 /* UserAddressViewModelProtocol.swift */; };
@@ -214,6 +224,16 @@
 		578BF45927B85747004005D7 /* LanguageViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageViewModelProtocol.swift; sourceTree = "<group>"; };
 		578BF45B27B85795004005D7 /* Language.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Language.storyboard; sourceTree = "<group>"; };
 		578BF45D27B85EDF004005D7 /* LanguageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageViewModel.swift; sourceTree = "<group>"; };
+		578BF46527B86DBA004005D7 /* OfferDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferDataSource.swift; sourceTree = "<group>"; };
+		578BF46727B86DD9004005D7 /* OfferTabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferTabCoordinator.swift; sourceTree = "<group>"; };
+		578BF46927B86E9C004005D7 /* OfferTabViewModelCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferTabViewModelCoordinatorDelegate.swift; sourceTree = "<group>"; };
+		578BF46B27B86EC5004005D7 /* OfferTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferTabViewController.swift; sourceTree = "<group>"; };
+		578BF46D27B86ED5004005D7 /* OfferTabViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferTabViewModelProtocol.swift; sourceTree = "<group>"; };
+		578BF46F27B86F77004005D7 /* OfferTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferTabViewModel.swift; sourceTree = "<group>"; };
+		578BF47127B87423004005D7 /* OfferTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OfferTab.storyboard; sourceTree = "<group>"; };
+		578BF47327B874B6004005D7 /* OfferTabLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferTabLayout.swift; sourceTree = "<group>"; };
+		578BF47827B87FDD004005D7 /* OfferProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OfferProductCell.xib; sourceTree = "<group>"; };
+		578BF47C27B88043004005D7 /* OfferProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferProductCell.swift; sourceTree = "<group>"; };
 		57A7818E27B5DA42004CA286 /* UserAddressCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAddressCoordinator.swift; sourceTree = "<group>"; };
 		57A7819027B5DA63004CA286 /* UserAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAddressViewController.swift; sourceTree = "<group>"; };
 		57A7819227B5DA73004CA286 /* UserAddressViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAddressViewModelProtocol.swift; sourceTree = "<group>"; };
@@ -505,6 +525,7 @@
 				57570EF027AB33E500D0DFB1 /* MainAppLayoutProtocol.swift */,
 				57570EF127AB33E500D0DFB1 /* TabLayout.swift */,
 				5769010427B46D0700F58BF0 /* SettingsTabLayout.swift */,
+				578BF47327B874B6004005D7 /* OfferTabLayout.swift */,
 			);
 			path = TabsLayout;
 			sourceTree = "<group>";
@@ -662,6 +683,70 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
+		578BF45F27B86CB5004005D7 /* Offer */ = {
+			isa = PBXGroup;
+			children = (
+				578BF46427B86D5D004005D7 /* ViewModel */,
+				578BF46327B86D58004005D7 /* View */,
+				578BF46227B86D48004005D7 /* Coordinator */,
+				578BF46127B86D42004005D7 /* Protocols */,
+				578BF46027B86CCB004005D7 /* DataSource */,
+			);
+			path = Offer;
+			sourceTree = "<group>";
+		};
+		578BF46027B86CCB004005D7 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				578BF46527B86DBA004005D7 /* OfferDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		578BF46127B86D42004005D7 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				578BF46927B86E9C004005D7 /* OfferTabViewModelCoordinatorDelegate.swift */,
+				578BF46D27B86ED5004005D7 /* OfferTabViewModelProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		578BF46227B86D48004005D7 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				578BF46727B86DD9004005D7 /* OfferTabCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		578BF46327B86D58004005D7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				578BF47B27B87FE5004005D7 /* Cells */,
+				578BF46B27B86EC5004005D7 /* OfferTabViewController.swift */,
+				578BF47127B87423004005D7 /* OfferTab.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		578BF46427B86D5D004005D7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				578BF46F27B86F77004005D7 /* OfferTabViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		578BF47B27B87FE5004005D7 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				578BF47827B87FDD004005D7 /* OfferProductCell.xib */,
+				578BF47C27B88043004005D7 /* OfferProductCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		57A7818927B5D94F004CA286 /* UserAddress */ = {
 			isa = PBXGroup;
 			children = (
@@ -734,6 +819,7 @@
 		57CB252527AAC5FB004B8767 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				578BF45F27B86CB5004005D7 /* Offer */,
 				578BF44E27B85328004005D7 /* Language */,
 				57A7818927B5D94F004CA286 /* UserAddress */,
 				5769010627B472CE00F58BF0 /* Profile */,
@@ -1432,6 +1518,7 @@
 				57D8242B27B096D8004AB232 /* CommentCell.xib in Resources */,
 				57570ED027AB233F00D0DFB1 /* TDInitialScreen.storyboard in Resources */,
 				5769011627B4757300F58BF0 /* Profile.storyboard in Resources */,
+				578BF47227B87423004005D7 /* OfferTab.storyboard in Resources */,
 				5769010327B45F1400F58BF0 /* SettingsTab.storyboard in Resources */,
 				578BF45C27B85795004005D7 /* Language.storyboard in Resources */,
 				57570F0327AB33F100D0DFB1 /* TabBar.storyboard in Resources */,
@@ -1444,6 +1531,7 @@
 				2DF8213C272177CA009C2932 /* Assets.xcassets in Resources */,
 				57D823EE27AEA58F004AB232 /* ProductCell.xib in Resources */,
 				57D823BD27AC402B004AB232 /* ForgotPassword.storyboard in Resources */,
+				578BF47A27B87FDD004005D7 /* OfferProductCell.xib in Resources */,
 				57D823CD27AC492C004AB232 /* ForgotPasswordVerification.storyboard in Resources */,
 				57D8241B27B078E7004AB232 /* WebView.storyboard in Resources */,
 				57570F0D27AB34D400D0DFB1 /* HomeTab.storyboard in Resources */,
@@ -1507,6 +1595,7 @@
 				57D8243D27B1BE86004AB232 /* SeeAllCategoriesViewModelProtocol.swift in Sources */,
 				57D8243F27B1BEA0004AB232 /* SeeAllCategoriesViewModelCoordinatorDelegate.swift in Sources */,
 				57D8242A27B096D8004AB232 /* CommentCell.swift in Sources */,
+				578BF47D27B88043004005D7 /* OfferProductCell.swift in Sources */,
 				57570EEA27AB31BC00D0DFB1 /* AuthenticationClient.swift in Sources */,
 				57D823DD27AC50A3004AB232 /* ResetPasswordViewModelCoordinatorDelegate.swift in Sources */,
 				578BF45827B8573A004005D7 /* LanguageViewModelCoordinatorDelegate.swift in Sources */,
@@ -1534,6 +1623,7 @@
 				57CB255E27AAC936004B8767 /* TDSplashViewModel.swift in Sources */,
 				57D823D427AC4BAB004AB232 /* UnderlineItemView.swift in Sources */,
 				57CB253F27AAC78A004B8767 /* UITextField+Additions.swift in Sources */,
+				578BF47027B86F77004005D7 /* OfferTabViewModel.swift in Sources */,
 				57570ECC27AB233100D0DFB1 /* TDInitialScreenCoordinator.swift in Sources */,
 				57570F0727AB34BE00D0DFB1 /* HomeTabViewModel.swift in Sources */,
 				57D8241F27B0791C004AB232 /* WebViewViewModelCoordinatorDelegate.swift in Sources */,
@@ -1555,6 +1645,7 @@
 				57570EF827AB33E600D0DFB1 /* MainAppLayoutProtocol.swift in Sources */,
 				57D823D227AC4933004AB232 /* ForgotPasswordVerificationViewModelCoordinatorDelegate.swift in Sources */,
 				57CB254527AAC78A004B8767 /* UILabel+Additions.swift in Sources */,
+				578BF47427B874B6004005D7 /* OfferTabLayout.swift in Sources */,
 				57CB254027AAC78A004B8767 /* Array+Additions.swift in Sources */,
 				57570EFD27AB33E600D0DFB1 /* HomeTabLayout.swift in Sources */,
 				57D823E127AC5110004AB232 /* ResetPasswordViewController.swift in Sources */,
@@ -1576,11 +1667,13 @@
 				57A7818F27B5DA42004CA286 /* UserAddressCoordinator.swift in Sources */,
 				57CB252227AAC5EC004B8767 /* AppCoordinator.swift in Sources */,
 				57CB255727AAC88B004B8767 /* Colors.swift in Sources */,
+				578BF46827B86DD9004005D7 /* OfferTabCoordinator.swift in Sources */,
 				57570F0C27AB34D400D0DFB1 /* HomeTabViewController.swift in Sources */,
 				57570EF927AB33E600D0DFB1 /* TabLayout.swift in Sources */,
 				57570ECA27AB232D00D0DFB1 /* TDInitialScreenViewModel.swift in Sources */,
 				57A7819727B5DAB9004CA286 /* UserAddressViewModel.swift in Sources */,
 				57570F0927AB34C700D0DFB1 /* HomeTabCoordinator.swift in Sources */,
+				578BF46E27B86ED5004005D7 /* OfferTabViewModelProtocol.swift in Sources */,
 				57CB252F27AAC75B004B8767 /* TDHelper.swift in Sources */,
 				57CB256427AAC94E004B8767 /* TDSplashViewController.swift in Sources */,
 				57570F0527AB33F100D0DFB1 /* TDMainTabBarContainer.swift in Sources */,
@@ -1598,6 +1691,7 @@
 				57570EE527AB240400D0DFB1 /* LoginViewModelProtocol.swift in Sources */,
 				57D823FE27AF04BA004AB232 /* CategoriesCell.swift in Sources */,
 				57D8240E27AF3BBE004AB232 /* ProductDetailsViewModelProtocol.swift in Sources */,
+				578BF46A27B86E9C004005D7 /* OfferTabViewModelCoordinatorDelegate.swift in Sources */,
 				57CB254327AAC78A004B8767 /* UIImageView+Additions.swift in Sources */,
 				57CB254227AAC78A004B8767 /* UITableView+UICollectionView.swift in Sources */,
 				57570EC327AADF2A00D0DFB1 /* AccountManager.swift in Sources */,
@@ -1624,9 +1718,11 @@
 				57570ED327AB234F00D0DFB1 /* TDInitialScreenViewModelProtocol.swift in Sources */,
 				57D823CA27AC4923004AB232 /* ForgotPasswordVerificationCoordinator.swift in Sources */,
 				5769010E27B4743F00F58BF0 /* ProfileViewController.swift in Sources */,
+				578BF46627B86DBA004005D7 /* OfferDataSource.swift in Sources */,
 				57D823A827AC1816004AB232 /* SignUpViewModel.swift in Sources */,
 				57CB252027AAC5EC004B8767 /* BaseViewModel.swift in Sources */,
 				57D8242327B07957004AB232 /* WebViewCoordinator.swift in Sources */,
+				578BF46C27B86EC5004005D7 /* OfferTabViewController.swift in Sources */,
 				57CB254627AAC78A004B8767 /* Storyboarded.swift in Sources */,
 				57D823C627AC4059004AB232 /* ForgotPasswordViewModel.swift in Sources */,
 				57D8243927B1BE6A004AB232 /* SeeAllCategoriesCoordinator.swift in Sources */,

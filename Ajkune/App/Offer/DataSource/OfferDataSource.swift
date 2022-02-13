@@ -1,8 +1,8 @@
 //
-//  ProductsDataSource.swift
+//  OfferDataSource.swift
 //  Ajkune
 //
-//  Created by Djellza- INNO on 2/5/22.
+//  Created by Djellza- INNO on 2/12/22.
 //
 
 import Foundation
@@ -10,13 +10,13 @@ import UIKit
 import Cosmos
 
 import UIKit
-protocol ProductsDataSourceProtocol: class {
+protocol OfferDataSourceProtocol: class {
     func productDetails(id: Int)
 }
-final class ProductsDataSource: NSObject, UICollectionViewDataSource {
+final class OfferDataSource: NSObject, UICollectionViewDataSource {
     
     //MARK: - Properties
-    weak var delegate : ProductsDataSourceProtocol?
+    weak var delegate : OfferDataSourceProtocol?
     var products:[Products]?
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -24,7 +24,7 @@ final class ProductsDataSource: NSObject, UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeue(ProductCell.self, for: indexPath)
+        let cell = collectionView.dequeue(OfferProductCell.self, for: indexPath)
         if let product = products?[indexPath.row]{
             if let image = product.image{
                 cell.productImage.setImage(with: image
@@ -33,6 +33,7 @@ final class ProductsDataSource: NSObject, UICollectionViewDataSource {
             cell.productImage.shadowView()
             cell.descriptionProductLbl.text = product.name
             cell.productPriceLbl.text = "\(product.price ?? "0.0")CHF"
+            cell.initialPrice.text = "\(product.initial_price ?? "0.0")CHF"
             cell.raiting.rating = Double(product.rating ?? 0)
             cell.raiting.settings.updateOnTouch = false
             cell.mainView.shadowView()
@@ -41,7 +42,7 @@ final class ProductsDataSource: NSObject, UICollectionViewDataSource {
     }
 }
 
-extension ProductsDataSource: UICollectionViewDelegate{
+extension OfferDataSource: UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if let product = products?[indexPath.row].id{
         delegate?.productDetails(id: product)

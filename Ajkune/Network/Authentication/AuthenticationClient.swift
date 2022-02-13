@@ -30,11 +30,17 @@ class AuthenticationClient {
     static func getALLProducts() -> Future<[Products], Error> {
         return TDAPIClient.performRequest(route: TDAuthenticationEndpoint.getProducts)
     }
+    static func getALLProductsFromOffer() -> Future<[Products], Error> {
+        return TDAPIClient.performRequest(route: TDAuthenticationEndpoint.getProductsFromOffer)
+    }
     static func getCategories() -> Future<[Categories], Error> {
         return TDAPIClient.performRequest(route: TDAuthenticationEndpoint.getCategories)
     }
     static func getProductsByID(id:Int) -> Future<[Products], Error> {
         return TDAPIClient.performRequest(route: TDAuthenticationEndpoint.getProductsByID(Id: id))
+    }
+    static func getProductsByIdOffer(id:Int) -> Future<[Products], Error> {
+        return TDAPIClient.performRequest(route: TDAuthenticationEndpoint.getProductsByIdOffer(Id: id))
     }
     static func getProductDetails(id:Int) -> Future<[ProductDetails], Error> {
         return TDAPIClient.performRequest(route: TDAuthenticationEndpoint.getProductDetails(Id: id))

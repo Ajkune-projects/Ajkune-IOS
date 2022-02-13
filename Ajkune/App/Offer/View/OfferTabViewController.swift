@@ -1,11 +1,13 @@
 //
-//  HomeTabViewController.swift
+//  OfferTabViewController.swift
+//  Ajkune
 //
-//  Created by Djellza Rrustemi
+//  Created by Djellza- INNO on 2/12/22.
 //
 
+import Foundation
 import UIKit
-class HomeTabViewController: UIViewController, Storyboarded{
+class OfferTabViewController: UIViewController, Storyboarded{
     
     //MARK: - Properties
     @IBOutlet weak var categoryCollectionView: UICollectionView!
@@ -13,8 +15,9 @@ class HomeTabViewController: UIViewController, Storyboarded{
     @IBOutlet weak var banner: UIImageView!
     @IBOutlet weak var bannerTitle: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var initialPrice: UILabel!
     
-    var viewModel: HomeTabViewModelProtocol?
+    var viewModel: OfferTabViewModelProtocol?
     var categoryID:Int?
     
     override func viewDidLoad() {
@@ -31,18 +34,18 @@ class HomeTabViewController: UIViewController, Storyboarded{
     }
     func filterData(){
         if globalData.fromAllCategories == true {
-            if globalData.categorySelected == 0 {
+            if globalData.categorySelectedOffer == 0 {
                 getALLProducts()
-                globalData.categoryIndexPath = IndexPath(row: 0, section: 0)
-                self.categoryCollectionView?.selectItem(at: globalData.categoryIndexPath, animated: false, scrollPosition: .top)
+                globalData.categoryIndexPathOffer = IndexPath(row: 0, section: 0)
+                self.categoryCollectionView?.selectItem(at: globalData.categoryIndexPathOffer, animated: false, scrollPosition: .top)
             }else{
-                getCategoryByID(id: globalData.categorySelected)
+                getCategoryByID(id: globalData.categorySelectedOffer)
             }
         }else if globalData.fromFilter == true{
             self.viewModel?.getALLProducts(products: globalData.filteredProducts)
-            globalData.categoryIndexPath = IndexPath(row: 0, section: 0)
-            self.categoryCollectionView?.selectItem(at: globalData.categoryIndexPath, animated: false, scrollPosition: .top)
-            self.categoryCollectionView.scrollToItem(at: globalData.categoryIndexPath, at: .centeredHorizontally, animated: true)
+            globalData.categoryIndexPathOffer = IndexPath(row: 0, section: 0)
+            self.categoryCollectionView?.selectItem(at: globalData.categoryIndexPathOffer, animated: false, scrollPosition: .top)
+            self.categoryCollectionView.scrollToItem(at: globalData.categoryIndexPathOffer, at: .centeredHorizontally, animated: true)
             dispatch {
                 self.productsCollectionView.reloadData()
             }
@@ -53,7 +56,7 @@ class HomeTabViewController: UIViewController, Storyboarded{
         globalData.fromAllCategories = false
     }
     func setupProductsCollectionView(){
-        self.productsCollectionView.register(ProductCell.self)
+        self.productsCollectionView.register(OfferProductCell.self)
         self.productsCollectionView.delegate = self.viewModel?.productDataSource
         self.productsCollectionView.dataSource = self.viewModel?.productDataSource
     }
@@ -89,7 +92,7 @@ class HomeTabViewController: UIViewController, Storyboarded{
                 dispatch {
                     self.categoryCollectionView.reloadData()
                     //                    let index:IndexPath = IndexPath(row: 2, section: 0)
-                    self.categoryCollectionView?.selectItem(at: globalData.categoryIndexPath, animated: false, scrollPosition: .top)
+                    self.categoryCollectionView?.selectItem(at: globalData.categoryIndexPathOffer, animated: false, scrollPosition: .top)
                     
                 }
             }
@@ -104,8 +107,8 @@ class HomeTabViewController: UIViewController, Storyboarded{
                 self.viewModel?.getALLProducts(products: response)
                 dispatch {
                     self.productsCollectionView.reloadData()
-                    self.categoryCollectionView?.selectItem(at: globalData.categoryIndexPath, animated: false, scrollPosition: .top)
-                    self.categoryCollectionView.scrollToItem(at: globalData.categoryIndexPath, at: .centeredHorizontally, animated: true)
+                    self.categoryCollectionView?.selectItem(at: globalData.categoryIndexPathOffer, animated: false, scrollPosition: .top)
+                    self.categoryCollectionView.scrollToItem(at: globalData.categoryIndexPathOffer, at: .centeredHorizontally, animated: true)
                 }
             }
         })
@@ -120,6 +123,7 @@ class HomeTabViewController: UIViewController, Storyboarded{
                 self.banner.setImage(with: response?.first?.image_path ?? "")
                 self.bannerTitle.text = response?.first?.title ?? ""
                 self.priceLabel.text = response?.first?.price ?? ""
+                self.initialPrice.text = response?.first?.initial_price ?? ""
             }
         })
     }
@@ -128,12 +132,11 @@ class HomeTabViewController: UIViewController, Storyboarded{
     }
     
     @IBAction func filterProducts(_ sender: Any) {
-        globalData.fromAllCategoriesOffer = true
         self.viewModel?.filterProducts()
     }
     
 }
-extension HomeTabViewController: HomeTabViewModelViewDelegate{
+extension OfferTabViewController: OfferTabViewModelViewDelegate{
     func productDetails(id: Int) {
         self.viewModel?.showProductDetails(id: id)
     }

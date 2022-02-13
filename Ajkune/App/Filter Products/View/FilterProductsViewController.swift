@@ -43,12 +43,31 @@ class FilterProductsViewController: UIViewController , Storyboarded{
         self.viewModel?.filterProducts(maxValue: max, minValue: min, type: "product", completion: { response in
             if response != nil {
                 globalData.filteredProducts = response ?? [Products]()
+                if let tabBarController = self.tabBarController{
+                    tabBarController.selectedIndex = 0
+                }
                 self.coordinator?.stop()
             }
+            
         })
+                
         
     }
     @IBAction func offerAction(_ sender: Any) {
+        globalData.fromFilter = true
+        let max = "\(rangeSlider.upperValue.roundToPlaces(places: 2))"
+        let min = "\(rangeSlider.lowerValue.roundToPlaces(places: 2))"
+        
+        self.viewModel?.filterProducts(maxValue: max, minValue: min, type: "offer", completion: { response in
+            if response != nil {
+                globalData.filteredProducts = response ?? [Products]()
+            }
+            if let tabBarController = self.tabBarController{
+                tabBarController.selectedIndex = 1
+            }
+            self.coordinator?.stop()
+        })
+       
     }
     
 

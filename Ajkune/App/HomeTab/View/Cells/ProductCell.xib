@@ -47,15 +47,27 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oTy-TP-Xsl">
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="hBe-E6-4GB">
                                                 <rect key="frame" x="5" y="185" width="148" height="20"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="20" id="flC-yG-YFf"/>
-                                                </constraints>
-                                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="13"/>
-                                                <color key="textColor" red="0.61176472900000001" green="0.29803922770000002" blue="0.43137252329999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oTy-TP-Xsl">
+                                                        <rect key="frame" x="0.0" y="0.0" width="126" height="20"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="20" id="flC-yG-YFf"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="13"/>
+                                                        <color key="textColor" red="0.61176472900000001" green="0.29803922770000002" blue="0.43137252329999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gHR-ax-DHG">
+                                                        <rect key="frame" x="128" y="0.0" width="20" height="20"/>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="20" id="6Ol-4a-Bop"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AJV-z6-HAN" customClass="CosmosView" customModule="Cosmos">
                                                 <rect key="frame" x="5" y="205" width="148" height="18"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -77,18 +89,18 @@
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="oTy-TP-Xsl" secondAttribute="trailing" constant="5" id="9Mt-eH-ejg"/>
+                                            <constraint firstItem="AJV-z6-HAN" firstAttribute="top" secondItem="hBe-E6-4GB" secondAttribute="bottom" id="4z9-bq-xTM"/>
                                             <constraint firstItem="q9p-mC-aX6" firstAttribute="leading" secondItem="3Cy-4y-rWz" secondAttribute="leading" constant="5" id="FmL-Ei-avA"/>
-                                            <constraint firstItem="oTy-TP-Xsl" firstAttribute="top" secondItem="rvA-Z1-61S" secondAttribute="bottom" constant="5" id="GTI-us-M1l"/>
                                             <constraint firstAttribute="trailing" secondItem="rvA-Z1-61S" secondAttribute="trailing" constant="5" id="IOa-Kc-i6i"/>
                                             <constraint firstItem="rvA-Z1-61S" firstAttribute="top" secondItem="q9p-mC-aX6" secondAttribute="bottom" constant="5" id="JpM-hv-kgB"/>
                                             <constraint firstAttribute="trailing" secondItem="q9p-mC-aX6" secondAttribute="trailing" constant="5" id="OO7-6l-gYu"/>
                                             <constraint firstItem="q9p-mC-aX6" firstAttribute="top" secondItem="3Cy-4y-rWz" secondAttribute="top" constant="5" id="ROY-wW-JKF"/>
                                             <constraint firstAttribute="trailing" secondItem="AJV-z6-HAN" secondAttribute="trailing" constant="5" id="USI-jb-sx4"/>
-                                            <constraint firstItem="oTy-TP-Xsl" firstAttribute="leading" secondItem="3Cy-4y-rWz" secondAttribute="leading" constant="5" id="Vuw-Qr-VgR"/>
-                                            <constraint firstItem="AJV-z6-HAN" firstAttribute="top" secondItem="oTy-TP-Xsl" secondAttribute="bottom" id="fo1-GX-Rwl"/>
+                                            <constraint firstItem="hBe-E6-4GB" firstAttribute="trailing" secondItem="rvA-Z1-61S" secondAttribute="trailing" id="Xg7-rr-0Mr"/>
                                             <constraint firstItem="AJV-z6-HAN" firstAttribute="leading" secondItem="3Cy-4y-rWz" secondAttribute="leading" constant="5" id="jMy-RQ-7R6"/>
                                             <constraint firstAttribute="bottom" secondItem="AJV-z6-HAN" secondAttribute="bottom" constant="7" id="mz0-WZ-Qlg"/>
+                                            <constraint firstItem="hBe-E6-4GB" firstAttribute="top" secondItem="rvA-Z1-61S" secondAttribute="bottom" constant="5" id="sUC-Eu-ang"/>
+                                            <constraint firstItem="hBe-E6-4GB" firstAttribute="leading" secondItem="rvA-Z1-61S" secondAttribute="leading" id="vQe-TT-umt"/>
                                             <constraint firstItem="rvA-Z1-61S" firstAttribute="leading" secondItem="3Cy-4y-rWz" secondAttribute="leading" constant="5" id="zZ6-z6-xaQ"/>
                                         </constraints>
                                     </view>
@@ -127,7 +139,7 @@
                 <outlet property="productPriceLbl" destination="oTy-TP-Xsl" id="O3c-wL-dCo"/>
                 <outlet property="raiting" destination="AJV-z6-HAN" id="Ffq-8f-6Ak"/>
             </connections>
-            <point key="canvasLocation" x="215.94202898550725" y="146.65178571428569"/>
+            <point key="canvasLocation" x="215.94202898550725" y="145.98214285714286"/>
         </collectionViewCell>
     </objects>
     <designables>

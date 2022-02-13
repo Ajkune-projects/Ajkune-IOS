@@ -70,6 +70,9 @@ extension UIStoryboard {
     static var language: UIStoryboard {
          return UIStoryboard(name: "Language", bundle: nil)
     }
+    static var offerTab: UIStoryboard {
+        return UIStoryboard(name: "OfferTab", bundle: nil)
+    }
 }
 
 

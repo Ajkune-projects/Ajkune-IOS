@@ -36,6 +36,7 @@ class ProfileViewController: UIViewController , Storyboarded, UITextFieldDelegat
         getUserDetails()
         genderOptionsView.shadowView()
         setupDatePicker()
+        rightImageView()
         let tap = UITapGestureRecognizer(target: self, action: #selector(self.tappedMe))
         userImage.addGestureRecognizer(tap)
         userImage.isUserInteractionEnabled = true
@@ -63,6 +64,22 @@ class ProfileViewController: UIViewController , Storyboarded, UITextFieldDelegat
             addressButton.setTitle("EDIT ADDRESS", for: .normal)
             addressLabel.text = ProfileDetails.fullAddress
         }
+    }
+    
+    func rightImageView(){
+        let calendar = UIButton(frame: CGRect(x: 0, y: 0, width: 15, height: 15))
+        calendar.setImage(UIImage(named: "calendar"), for: UIControl.State())
+        let container = UIView(frame: calendar.frame)
+        container.addSubview(calendar)
+        birthdate.rightView = container
+        birthdate.rightViewMode = .always
+        
+        let phone = UIButton(frame: CGRect(x: 0, y: 0, width: 10, height: 15))
+        phone.setImage(UIImage(named: "phone"), for: UIControl.State())
+        let containerPhone = UIView(frame: phone.frame)
+        containerPhone.addSubview(phone)
+        phoneNumberTextfield.rightView = containerPhone
+        phoneNumberTextfield.rightViewMode = .always
     }
     
     func setupDatePicker(){
@@ -122,8 +139,10 @@ class ProfileViewController: UIViewController , Storyboarded, UITextFieldDelegat
     
     func saveUserDetails(){
         let user = UserProfile(name: firstNameTextfield.text ?? "", last_name: lastNameTextfield.text ?? "", gender: chooseGender.text ?? "", date_of_birth: birthdate.text ?? "", phone: phoneNumberTextfield.text ?? "", address:ProfileDetails.city, street: ProfileDetails.street, zip_code: ProfileDetails.zipCode, country: ProfileDetails.country, base64_img: profilePic)
+        SHOW_CUSTOM_LOADER()
         self.viewModel?.verificationProfile(user: user, completion: { response in
             if response != nil{
+                HIDE_CUSTOM_LOADER()
                 if response?.user?.image_name != ""{
                     self.userImage.borderColor = UIColor(hexString: "#FFD700")
                     self.verifiedImage.isHidden = false
