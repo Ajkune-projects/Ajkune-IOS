@@ -1,6 +1,5 @@
 //
 //  MainAppLayoutProtocol.swift
-
 //
 //  Created by Djellza Rrustemi
 //

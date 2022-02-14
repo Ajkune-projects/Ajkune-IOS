@@ -12,9 +12,10 @@ class CustomTabBar: UITabBar {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        roundedView.backgroundColor = .red
+//        roundedView.backgroundColor = .red
         roundedView.layer.shadowColor = UIColor(red: 0, green: 0, blue: 0, alpha: 0.16).cgColor
         roundedView.isUserInteractionEnabled = false
+        self.tintColor = Colors.overcastBlueColor
      //   roundedView.layer.borderColor = UIColor.black.cgColor
         self.addSubview(roundedView)
     }

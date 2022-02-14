@@ -20,6 +20,7 @@ class ProductDetailsViewController: UIViewController, Storyboarded, UITextViewDe
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var commentTableView: UITableView!
     
+    @IBOutlet weak var tableViewHeightConst: NSLayoutConstraint!
     //MARK:Properties
     var coordinator: ProductDetailsCoordinator?
     var viewModel: ProductDetailsViewModelProtocol?
@@ -34,8 +35,6 @@ class ProductDetailsViewController: UIViewController, Storyboarded, UITextViewDe
 //
         setupCommentView()
         setupTableView()
-       
-       
        
     }
     
@@ -104,6 +103,9 @@ class ProductDetailsViewController: UIViewController, Storyboarded, UITextViewDe
                 print("comment:\(response?.first?.comments.reversed() ?? [Comment]())")
                 dispatch {
                     self.commentTableView.reloadData()
+                    self.view.layoutIfNeeded()
+                    self.tableViewHeightConst.constant = self.commentTableView.contentSize.height
+                     self.view.layoutIfNeeded()
                    
                 }
                 self.fillData()
@@ -140,6 +142,9 @@ class ProductDetailsViewController: UIViewController, Storyboarded, UITextViewDe
                 print("comment:\(response?.first?.comments ?? [Comment]())")
                 dispatch {
                     self.commentTableView.reloadData()
+                    self.view.layoutIfNeeded()
+                    self.tableViewHeightConst.constant = self.commentTableView.contentSize.height
+                    self.view.layoutIfNeeded()
                 }
             }
         })

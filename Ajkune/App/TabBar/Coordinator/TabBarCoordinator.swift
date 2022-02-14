@@ -36,6 +36,7 @@ class TabBarCoordinator: TDCoordinator {
             tabsCoordinator.append(coordinator)
             if let controller = tabLayout.tabViewController() {
                 controller.tabBarItem = tabLayout.tabBarItem()
+                tabLayout.tabBarItem()
                 controller.tabBarItem.imageInsets = tabLayout.imageInsets()
                 viewControllers.append(controller)
             }

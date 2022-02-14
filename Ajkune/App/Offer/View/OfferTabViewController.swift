@@ -16,6 +16,7 @@ class OfferTabViewController: UIViewController, Storyboarded{
     @IBOutlet weak var bannerTitle: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var initialPrice: UILabel!
+    @IBOutlet weak var tableViewHeightConst: NSLayoutConstraint!
     
     var viewModel: OfferTabViewModelProtocol?
     var categoryID:Int?
@@ -54,6 +55,9 @@ class OfferTabViewController: UIViewController, Storyboarded{
                 self.viewModel?.getALLProducts(products: response)
                 dispatch {
                     self.productsCollectionView.reloadData()
+                    self.view.layoutIfNeeded()
+                   self.tableViewHeightConst.constant = self.productsCollectionView.contentSize.height
+                            self.view.layoutIfNeeded()
                 }
             }
         })

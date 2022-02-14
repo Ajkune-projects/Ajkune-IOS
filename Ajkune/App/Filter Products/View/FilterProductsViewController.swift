@@ -63,7 +63,7 @@ class FilterProductsViewController: UIViewController , Storyboarded{
                 globalData.filteredProducts = response ?? [Products]()
             }
             if let tabBarController = self.tabBarController{
-                tabBarController.selectedIndex = 1
+                tabBarController.selectedIndex = 2
             }
             self.coordinator?.stop()
         })

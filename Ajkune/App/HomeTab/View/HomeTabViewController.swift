@@ -13,6 +13,7 @@ class HomeTabViewController: UIViewController, Storyboarded{
     @IBOutlet weak var banner: UIImageView!
     @IBOutlet weak var bannerTitle: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
+    @IBOutlet weak var tableViewHeightConst: NSLayoutConstraint!
     
     var viewModel: HomeTabViewModelProtocol?
     var categoryID:Int?
@@ -22,13 +23,17 @@ class HomeTabViewController: UIViewController, Storyboarded{
         self.viewModel?.viewDelegate = self
         setupProductsCollectionView()
         setupCategoriesCollectionView()
+        productsCollectionView.isScrollEnabled = false
+//        productsCollectionView.isUserInteractionEnabled = false
         filterData()
         getALLProducts()
         getBanner()
     }
+
     override func viewWillAppear(_ animated: Bool) {
         filterData()
     }
+    
     func filterData(){
         if globalData.fromAllCategories == true {
             if globalData.categorySelected == 0 {
@@ -77,6 +82,10 @@ class HomeTabViewController: UIViewController, Storyboarded{
                 self.viewModel?.getALLProducts(products: response)
                 dispatch {
                     self.productsCollectionView.reloadData()
+                    self.view.layoutIfNeeded()
+                   self.tableViewHeightConst.constant = self.productsCollectionView.contentSize.height
+                            self.view.layoutIfNeeded()
+                    
                 }
             }
         })
@@ -93,7 +102,7 @@ class HomeTabViewController: UIViewController, Storyboarded{
                 self.viewModel?.getCategorie(cat: category)
                 dispatch {
                     self.categoryCollectionView.reloadData()
-                    //                    let index:IndexPath = IndexPath(row: 2, section: 0)
+                
                     self.categoryCollectionView?.selectItem(at: globalData.categoryIndexPath, animated: false, scrollPosition: .top)
                     
                 }
@@ -109,6 +118,7 @@ class HomeTabViewController: UIViewController, Storyboarded{
                 self.viewModel?.getALLProducts(products: response)
                 dispatch {
                     self.productsCollectionView.reloadData()
+//
                     self.categoryCollectionView?.selectItem(at: globalData.categoryIndexPath, animated: false, scrollPosition: .top)
                     self.categoryCollectionView.scrollToItem(at: globalData.categoryIndexPath, at: .centeredHorizontally, animated: true)
                 }

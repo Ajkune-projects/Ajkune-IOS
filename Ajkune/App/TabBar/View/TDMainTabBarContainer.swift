@@ -12,6 +12,8 @@ class MainTabBarContainer: UITabBarController, Storyboarded {
    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tabBar.unselectedItemTintColor = UIColor.gray
+        self.tabBar.tintColor = Colors.overcastBlueColor
         self.navigationController?.navigationBar.isHidden = true
         tabBar.layer.shadowColor = UIColor.lightGray.cgColor
                 tabBar.layer.shadowOpacity = 0.2
@@ -28,7 +30,7 @@ class MainTabBarContainer: UITabBarController, Storyboarded {
             items.forEach { item in item.imageInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0) }
         }
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.gray], for: .normal)
-            let color = UIColor(red: 0.66, green: 0.27, blue: 0.44, alpha: 1.00)
+        let color = Colors.overcastBlueColor
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: color], for: .selected)
 
 //        self.tabBar.itemWidth = 23.0

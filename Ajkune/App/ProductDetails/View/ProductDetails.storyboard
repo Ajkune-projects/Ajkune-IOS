@@ -39,6 +39,9 @@
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="buyProductAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="cSQ-52-emw"/>
@@ -48,7 +51,7 @@
                                 <rect key="frame" x="0.0" y="84" width="414" height="733"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8CP-V1-8TC">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="959"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TWv-rW-WrF">
                                                 <rect key="frame" x="5" y="5" width="404" height="240"/>
@@ -57,16 +60,16 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ajkune Professional Volumen Shampoo 290 ml Professional " lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hgb-1M-Vlk">
-                                                <rect key="frame" x="20" y="275" width="374" height="44"/>
+                                                <rect key="frame" x="20" y="275" width="374" height="40"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="J78-4i-yd7"/>
+                                                    <constraint firstAttribute="height" constant="40" id="J78-4i-yd7"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="16"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="19.90 CHF" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aYd-NG-nGk">
-                                                <rect key="frame" x="20" y="354" width="374" height="20"/>
+                                                <rect key="frame" x="20" y="350" width="374" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="Icy-md-J2P"/>
                                                 </constraints>
@@ -75,7 +78,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="plo-YP-G2i" customClass="CosmosView" customModule="Cosmos">
-                                                <rect key="frame" x="20" y="329" width="374" height="20"/>
+                                                <rect key="frame" x="20" y="325" width="374" height="20"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="FRF-Iy-iep"/>
@@ -96,7 +99,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Specification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="63w-x4-YlW">
-                                                <rect key="frame" x="20" y="384" width="374" height="21"/>
+                                                <rect key="frame" x="20" y="380" width="374" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="21" id="eLr-Di-QE1"/>
                                                 </constraints>
@@ -105,7 +108,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Specification" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6dS-sA-s7Y">
-                                                <rect key="frame" x="20" y="410" width="374" height="50"/>
+                                                <rect key="frame" x="20" y="406" width="374" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="L7A-xV-msf"/>
                                                 </constraints>
@@ -114,7 +117,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Write a comment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AG7-h2-Nsv">
-                                                <rect key="frame" x="20" y="480" width="374" height="21"/>
+                                                <rect key="frame" x="20" y="476" width="374" height="21"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="21" id="7NO-d5-Jbc"/>
                                                 </constraints>
@@ -123,7 +126,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NBT-SI-P97">
-                                                <rect key="frame" x="20" y="521" width="374" height="168"/>
+                                                <rect key="frame" x="20" y="517" width="374" height="168"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Title*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UJV-dw-aU3" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
                                                         <rect key="frame" x="0.0" y="0.0" width="374" height="40"/>
@@ -160,7 +163,7 @@
                                                 </constraints>
                                             </stackView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kBr-HZ-6io">
-                                                <rect key="frame" x="20" y="713" width="374" height="40"/>
+                                                <rect key="frame" x="20" y="709" width="374" height="40"/>
                                                 <color key="backgroundColor" red="0.61176472900000001" green="0.29803922770000002" blue="0.43137252329999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="cPv-Uc-24u"/>
@@ -182,14 +185,20 @@
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                         <integer key="value" value="10"/>
                                                     </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="6"/>
+                                                    </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                                 <connections>
                                                     <action selector="commentAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="0ly-E7-nu7"/>
                                                 </connections>
                                             </button>
-                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JXo-ul-Kpe">
-                                                <rect key="frame" x="0.0" y="763" width="414" height="437"/>
+                                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JXo-ul-Kpe">
+                                                <rect key="frame" x="0.0" y="759" width="414" height="200"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="200" id="Wy0-gg-6OA"/>
+                                                </constraints>
                                             </tableView>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -219,7 +228,6 @@
                                             <constraint firstItem="TWv-rW-WrF" firstAttribute="top" secondItem="8CP-V1-8TC" secondAttribute="top" constant="5" id="fR8-gm-ict"/>
                                             <constraint firstItem="63w-x4-YlW" firstAttribute="leading" secondItem="8CP-V1-8TC" secondAttribute="leading" constant="20" id="fXk-jv-cHW"/>
                                             <constraint firstItem="JXo-ul-Kpe" firstAttribute="top" secondItem="kBr-HZ-6io" secondAttribute="bottom" constant="10" id="lkB-cl-9HJ"/>
-                                            <constraint firstAttribute="height" constant="1200" id="pxe-dO-1Kv"/>
                                             <constraint firstItem="NBT-SI-P97" firstAttribute="top" secondItem="AG7-h2-Nsv" secondAttribute="bottom" constant="20" id="r5s-ge-kyB"/>
                                             <constraint firstItem="NBT-SI-P97" firstAttribute="trailing" secondItem="AG7-h2-Nsv" secondAttribute="trailing" id="uDW-SS-frh"/>
                                             <constraint firstItem="plo-YP-G2i" firstAttribute="top" secondItem="Hgb-1M-Vlk" secondAttribute="bottom" constant="10" id="vkV-ok-6GL"/>
@@ -279,6 +287,7 @@
                         <outlet property="productImage" destination="TWv-rW-WrF" id="Pb9-Mm-tRD"/>
                         <outlet property="productName" destination="Hgb-1M-Vlk" id="xf1-v3-gn1"/>
                         <outlet property="productRaiting" destination="plo-YP-G2i" id="Icq-Bf-lXv"/>
+                        <outlet property="tableViewHeightConst" destination="Wy0-gg-6OA" id="Qcy-O6-IjN"/>
                         <outlet property="titleComment" destination="UJV-dw-aU3" id="MgJ-Hv-f99"/>
                     </connections>
                 </viewController>
