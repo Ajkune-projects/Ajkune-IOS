@@ -67,6 +67,24 @@
 		578BF47427B874B6004005D7 /* OfferTabLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578BF47327B874B6004005D7 /* OfferTabLayout.swift */; };
 		578BF47A27B87FDD004005D7 /* OfferProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 578BF47827B87FDD004005D7 /* OfferProductCell.xib */; };
 		578BF47D27B88043004005D7 /* OfferProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578BF47C27B88043004005D7 /* OfferProductCell.swift */; };
+		578BF48127B9A169004005D7 /* ProductsEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578BF48027B9A169004005D7 /* ProductsEmptyView.swift */; };
+		578BF48327B9A17A004005D7 /* ProductsEmptyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 578BF48227B9A17A004005D7 /* ProductsEmptyView.xib */; };
+		578BF48927B9AFB5004005D7 /* GiftTabCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578BF48827B9AFB5004005D7 /* GiftTabCoordinator.swift */; };
+		578BF48B27B9B01F004005D7 /* GiftTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578BF48A27B9B01F004005D7 /* GiftTabViewController.swift */; };
+		578BF48D27B9B043004005D7 /* GiftTabViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578BF48C27B9B043004005D7 /* GiftTabViewModelProtocol.swift */; };
+		578BF48F27B9B052004005D7 /* GiftTabViewModelCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578BF48E27B9B052004005D7 /* GiftTabViewModelCoordinatorDelegate.swift */; };
+		578BF49127B9B05F004005D7 /* GiftTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578BF49027B9B05F004005D7 /* GiftTabViewModel.swift */; };
+		578BF49327B9B131004005D7 /* GiftTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 578BF49227B9B131004005D7 /* GiftTab.storyboard */; };
+		578BF49527B9B5E7004005D7 /* GiftTabLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578BF49427B9B5E7004005D7 /* GiftTabLayout.swift */; };
+		578BF49C27B9C16E004005D7 /* LuckyWheelCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578BF49B27B9C16E004005D7 /* LuckyWheelCoordinator.swift */; };
+		578BF49E27B9C1A7004005D7 /* LuckyWheelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578BF49D27B9C1A7004005D7 /* LuckyWheelViewController.swift */; };
+		578BF4A027B9C1B1004005D7 /* LuckyWheelViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578BF49F27B9C1B1004005D7 /* LuckyWheelViewModelProtocol.swift */; };
+		578BF4A227B9C1BF004005D7 /* LuckyWheelViewModelCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578BF4A127B9C1BF004005D7 /* LuckyWheelViewModelCoordinatorDelegate.swift */; };
+		578BF4A427B9C1EA004005D7 /* LuckyWheelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578BF4A327B9C1EA004005D7 /* LuckyWheelViewModel.swift */; };
+		578BF4A627B9C259004005D7 /* LuckyWheel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 578BF4A527B9C259004005D7 /* LuckyWheel.storyboard */; };
+		578BF4AA27B9CBD9004005D7 /* SwiftFortuneWheel in Resources */ = {isa = PBXBuildFile; fileRef = 578BF4A927B9CBD9004005D7 /* SwiftFortuneWheel */; };
+		578BF4AD27B9CCB9004005D7 /* SwiftFortuneWheel in Frameworks */ = {isa = PBXBuildFile; productRef = 578BF4AC27B9CCB9004005D7 /* SwiftFortuneWheel */; };
+		578BF4AF27B9D233004005D7 /* SFWConfiguration+VariousWheelPodium.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578BF4AE27B9D232004005D7 /* SFWConfiguration+VariousWheelPodium.swift */; };
 		57A7818F27B5DA42004CA286 /* UserAddressCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A7818E27B5DA42004CA286 /* UserAddressCoordinator.swift */; };
 		57A7819127B5DA63004CA286 /* UserAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A7819027B5DA63004CA286 /* UserAddressViewController.swift */; };
 		57A7819327B5DA73004CA286 /* UserAddressViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A7819227B5DA73004CA286 /* UserAddressViewModelProtocol.swift */; };
@@ -234,6 +252,23 @@
 		578BF47327B874B6004005D7 /* OfferTabLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferTabLayout.swift; sourceTree = "<group>"; };
 		578BF47827B87FDD004005D7 /* OfferProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OfferProductCell.xib; sourceTree = "<group>"; };
 		578BF47C27B88043004005D7 /* OfferProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferProductCell.swift; sourceTree = "<group>"; };
+		578BF48027B9A169004005D7 /* ProductsEmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsEmptyView.swift; sourceTree = "<group>"; };
+		578BF48227B9A17A004005D7 /* ProductsEmptyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductsEmptyView.xib; sourceTree = "<group>"; };
+		578BF48827B9AFB5004005D7 /* GiftTabCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftTabCoordinator.swift; sourceTree = "<group>"; };
+		578BF48A27B9B01F004005D7 /* GiftTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftTabViewController.swift; sourceTree = "<group>"; };
+		578BF48C27B9B043004005D7 /* GiftTabViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftTabViewModelProtocol.swift; sourceTree = "<group>"; };
+		578BF48E27B9B052004005D7 /* GiftTabViewModelCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftTabViewModelCoordinatorDelegate.swift; sourceTree = "<group>"; };
+		578BF49027B9B05F004005D7 /* GiftTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftTabViewModel.swift; sourceTree = "<group>"; };
+		578BF49227B9B131004005D7 /* GiftTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GiftTab.storyboard; sourceTree = "<group>"; };
+		578BF49427B9B5E7004005D7 /* GiftTabLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftTabLayout.swift; sourceTree = "<group>"; };
+		578BF49B27B9C16E004005D7 /* LuckyWheelCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyWheelCoordinator.swift; sourceTree = "<group>"; };
+		578BF49D27B9C1A7004005D7 /* LuckyWheelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyWheelViewController.swift; sourceTree = "<group>"; };
+		578BF49F27B9C1B1004005D7 /* LuckyWheelViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyWheelViewModelProtocol.swift; sourceTree = "<group>"; };
+		578BF4A127B9C1BF004005D7 /* LuckyWheelViewModelCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyWheelViewModelCoordinatorDelegate.swift; sourceTree = "<group>"; };
+		578BF4A327B9C1EA004005D7 /* LuckyWheelViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyWheelViewModel.swift; sourceTree = "<group>"; };
+		578BF4A527B9C259004005D7 /* LuckyWheel.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LuckyWheel.storyboard; sourceTree = "<group>"; };
+		578BF4A927B9CBD9004005D7 /* SwiftFortuneWheel */ = {isa = PBXFileReference; lastKnownFileType = folder; path = SwiftFortuneWheel; sourceTree = "<group>"; };
+		578BF4AE27B9D232004005D7 /* SFWConfiguration+VariousWheelPodium.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SFWConfiguration+VariousWheelPodium.swift"; sourceTree = "<group>"; };
 		57A7818E27B5DA42004CA286 /* UserAddressCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAddressCoordinator.swift; sourceTree = "<group>"; };
 		57A7819027B5DA63004CA286 /* UserAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAddressViewController.swift; sourceTree = "<group>"; };
 		57A7819227B5DA73004CA286 /* UserAddressViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAddressViewModelProtocol.swift; sourceTree = "<group>"; };
@@ -346,6 +381,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				578BF4AD27B9CCB9004005D7 /* SwiftFortuneWheel in Frameworks */,
 				17CF361B830D2A9611E4A5EB /* Pods_Ajkune.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -526,6 +562,7 @@
 				57570EF127AB33E500D0DFB1 /* TabLayout.swift */,
 				5769010427B46D0700F58BF0 /* SettingsTabLayout.swift */,
 				578BF47327B874B6004005D7 /* OfferTabLayout.swift */,
+				578BF49427B9B5E7004005D7 /* GiftTabLayout.swift */,
 			);
 			path = TabsLayout;
 			sourceTree = "<group>";
@@ -747,6 +784,106 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		578BF47E27B9A133004005D7 /* Gifts */ = {
+			isa = PBXGroup;
+			children = (
+				578BF48727B9AF9A004005D7 /* Coordinator */,
+				578BF48627B9AF91004005D7 /* Protocols */,
+				578BF48527B9AF8A004005D7 /* ViewModel */,
+				578BF48427B9AF85004005D7 /* View */,
+			);
+			path = Gifts;
+			sourceTree = "<group>";
+		};
+		578BF47F27B9A152004005D7 /* EmptyView */ = {
+			isa = PBXGroup;
+			children = (
+				578BF48027B9A169004005D7 /* ProductsEmptyView.swift */,
+				578BF48227B9A17A004005D7 /* ProductsEmptyView.xib */,
+			);
+			path = EmptyView;
+			sourceTree = "<group>";
+		};
+		578BF48427B9AF85004005D7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				578BF48A27B9B01F004005D7 /* GiftTabViewController.swift */,
+				578BF49227B9B131004005D7 /* GiftTab.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		578BF48527B9AF8A004005D7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				578BF49027B9B05F004005D7 /* GiftTabViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		578BF48627B9AF91004005D7 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				578BF48C27B9B043004005D7 /* GiftTabViewModelProtocol.swift */,
+				578BF48E27B9B052004005D7 /* GiftTabViewModelCoordinatorDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		578BF48727B9AF9A004005D7 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				578BF48827B9AFB5004005D7 /* GiftTabCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		578BF49627B9B9E9004005D7 /* LuckyWheel */ = {
+			isa = PBXGroup;
+			children = (
+				578BF49A27B9BA05004005D7 /* Coordinator */,
+				578BF49927B9B9FF004005D7 /* Protocols */,
+				578BF49827B9B9F9004005D7 /* ViewModel */,
+				578BF49727B9B9F4004005D7 /* View */,
+			);
+			path = LuckyWheel;
+			sourceTree = "<group>";
+		};
+		578BF49727B9B9F4004005D7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				578BF4AE27B9D232004005D7 /* SFWConfiguration+VariousWheelPodium.swift */,
+				578BF49D27B9C1A7004005D7 /* LuckyWheelViewController.swift */,
+				578BF4A527B9C259004005D7 /* LuckyWheel.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		578BF49827B9B9F9004005D7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				578BF4A327B9C1EA004005D7 /* LuckyWheelViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		578BF49927B9B9FF004005D7 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				578BF4A127B9C1BF004005D7 /* LuckyWheelViewModelCoordinatorDelegate.swift */,
+				578BF49F27B9C1B1004005D7 /* LuckyWheelViewModelProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		578BF49A27B9BA05004005D7 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				578BF49B27B9C16E004005D7 /* LuckyWheelCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
 		57A7818927B5D94F004CA286 /* UserAddress */ = {
 			isa = PBXGroup;
 			children = (
@@ -819,6 +956,8 @@
 		57CB252527AAC5FB004B8767 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				578BF49627B9B9E9004005D7 /* LuckyWheel */,
+				578BF47E27B9A133004005D7 /* Gifts */,
 				578BF45F27B86CB5004005D7 /* Offer */,
 				578BF44E27B85328004005D7 /* Language */,
 				57A7818927B5D94F004CA286 /* UserAddress */,
@@ -888,6 +1027,7 @@
 		57CB252B27AAC743004B8767 /* CostumClasses */ = {
 			isa = PBXGroup;
 			children = (
+				578BF4A927B9CBD9004005D7 /* SwiftFortuneWheel */,
 				57D823D327AC4BAB004AB232 /* UnderlineItemView.swift */,
 				57CB252C27AAC755004B8767 /* Constants.swift */,
 				57CB252E27AAC75B004B8767 /* TDHelper.swift */,
@@ -986,6 +1126,7 @@
 		57CB256A27AAC986004B8767 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				578BF47F27B9A152004005D7 /* EmptyView */,
 				57D823EA27AEA55F004AB232 /* Cells */,
 				57570F0B27AB34D400D0DFB1 /* HomeTab.storyboard */,
 				57570F0A27AB34D400D0DFB1 /* HomeTabViewController.swift */,
@@ -1473,6 +1614,9 @@
 			dependencies = (
 			);
 			name = Ajkune;
+			packageProductDependencies = (
+				578BF4AC27B9CCB9004005D7 /* SwiftFortuneWheel */,
+			);
 			productName = Ajkune;
 			productReference = 2DF8212F272177C8009C2932 /* Ajkune.app */;
 			productType = "com.apple.product-type.application";
@@ -1501,6 +1645,9 @@
 				Base,
 			);
 			mainGroup = 2DF82126272177C8009C2932;
+			packageReferences = (
+				578BF4AB27B9CCB9004005D7 /* XCRemoteSwiftPackageReference "SwiftFortuneWheel" */,
+			);
 			productRefGroup = 2DF82130272177C8009C2932 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1517,7 +1664,10 @@
 			files = (
 				57D8242B27B096D8004AB232 /* CommentCell.xib in Resources */,
 				57570ED027AB233F00D0DFB1 /* TDInitialScreen.storyboard in Resources */,
+				578BF49327B9B131004005D7 /* GiftTab.storyboard in Resources */,
+				578BF4A627B9C259004005D7 /* LuckyWheel.storyboard in Resources */,
 				5769011627B4757300F58BF0 /* Profile.storyboard in Resources */,
+				578BF48327B9A17A004005D7 /* ProductsEmptyView.xib in Resources */,
 				578BF47227B87423004005D7 /* OfferTab.storyboard in Resources */,
 				5769010327B45F1400F58BF0 /* SettingsTab.storyboard in Resources */,
 				578BF45C27B85795004005D7 /* Language.storyboard in Resources */,
@@ -1538,6 +1688,7 @@
 				57D823E927AC78E3004AB232 /* ResetPassword.storyboard in Resources */,
 				57D8241227AF3F10004AB232 /* ProductDetails.storyboard in Resources */,
 				57D8244427B1C1BF004AB232 /* SeeAllCategories.storyboard in Resources */,
+				578BF4AA27B9CBD9004005D7 /* SwiftFortuneWheel in Resources */,
 				57D8243727B1BD39004AB232 /* CategoryCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1599,10 +1750,12 @@
 				57570EEA27AB31BC00D0DFB1 /* AuthenticationClient.swift in Sources */,
 				57D823DD27AC50A3004AB232 /* ResetPasswordViewModelCoordinatorDelegate.swift in Sources */,
 				578BF45827B8573A004005D7 /* LanguageViewModelCoordinatorDelegate.swift in Sources */,
+				578BF48927B9AFB5004005D7 /* GiftTabCoordinator.swift in Sources */,
 				57570EE427AB240400D0DFB1 /* LoginViewModelCoordinatorDelegate.swift in Sources */,
 				57A7819127B5DA63004CA286 /* UserAddressViewController.swift in Sources */,
 				57D8243327B1BC56004AB232 /* SeeAllCategoriesDataSource.swift in Sources */,
 				57570F0F27AB353800D0DFB1 /* TabBarCoordinator.swift in Sources */,
+				578BF4A027B9C1B1004005D7 /* LuckyWheelViewModelProtocol.swift in Sources */,
 				57570EE127AB23F000D0DFB1 /* LoginViewController.swift in Sources */,
 				57CB254427AAC78A004B8767 /* UIView+Additions.swift in Sources */,
 				5769010C27B4733500F58BF0 /* ProfileCoordinator.swift in Sources */,
@@ -1610,10 +1763,13 @@
 				57D823AA27AC2A67004AB232 /* SignUpModel.swift in Sources */,
 				57D8243B27B1BE7A004AB232 /* SeeAllCategoriesViewModel.swift in Sources */,
 				5769011427B4747F00F58BF0 /* ProfileViewModel.swift in Sources */,
+				578BF4A427B9C1EA004005D7 /* LuckyWheelViewModel.swift in Sources */,
 				57570F1327AB35DB00D0DFB1 /* HomeTabViewModelProtocol.swift in Sources */,
+				578BF48B27B9B01F004005D7 /* GiftTabViewController.swift in Sources */,
 				57D8243627B1BD39004AB232 /* CategoryCell.swift in Sources */,
 				57D8241927B078D8004AB232 /* WebViewViewController.swift in Sources */,
 				576900F727B45B8400F58BF0 /* SettingsTabCoordinator.swift in Sources */,
+				578BF4AF27B9D233004005D7 /* SFWConfiguration+VariousWheelPodium.swift in Sources */,
 				5769010127B45EED00F58BF0 /* SettingsTabViewController.swift in Sources */,
 				57D8241D27B07908004AB232 /* WebViewViewModel.swift in Sources */,
 				576900F927B45D6D00F58BF0 /* SettingsTabViewModelCoordinatorDelegate.swift in Sources */,
@@ -1631,6 +1787,7 @@
 				57570ED427AB234F00D0DFB1 /* TDInitialScreenViewModelCoordinatorDelegate.swift in Sources */,
 				57D823A027AC17EF004AB232 /* TDSignUpViewController.swift in Sources */,
 				57CB254E27AAC85E004B8767 /* APIConstants.swift in Sources */,
+				578BF49127B9B05F004005D7 /* GiftTabViewModel.swift in Sources */,
 				57570EEB27AB31BC00D0DFB1 /* AuthenticationEndpoint.swift in Sources */,
 				57D823A327AC17FD004AB232 /* SignUpViewModelProtocol.swift in Sources */,
 				57CB255127AAC85E004B8767 /* APIClient.swift in Sources */,
@@ -1661,6 +1818,8 @@
 				57D823F927AEB0A8004AB232 /* ProductsModel.swift in Sources */,
 				57CB254827AAC78A004B8767 /* UIViewController+Additions.swift in Sources */,
 				57D823D127AC4933004AB232 /* ForgotPasswordVerificationViewModelProtocol.swift in Sources */,
+				578BF49527B9B5E7004005D7 /* GiftTabLayout.swift in Sources */,
+				578BF48D27B9B043004005D7 /* GiftTabViewModelProtocol.swift in Sources */,
 				57CB252D27AAC755004B8767 /* Constants.swift in Sources */,
 				5769011027B4744E00F58BF0 /* ProfileViewModelProtocol.swift in Sources */,
 				57CB255A27AAC89E004B8767 /* Loader.swift in Sources */,
@@ -1699,6 +1858,7 @@
 				5769010527B46D0700F58BF0 /* SettingsTabLayout.swift in Sources */,
 				57CB254127AAC78A004B8767 /* Date+Additions.swift in Sources */,
 				57D8240727AF3B60004AB232 /* ProductDetailsViewController.swift in Sources */,
+				578BF49E27B9C1A7004005D7 /* LuckyWheelViewController.swift in Sources */,
 				57D823CE27AC492C004AB232 /* ForgotPasswordVerificationViewController.swift in Sources */,
 				57CB254F27AAC85E004B8767 /* APIConfiguration.swift in Sources */,
 				57D8241027AF3BD5004AB232 /* ProductDetailsCoordinator.swift in Sources */,
@@ -1708,6 +1868,7 @@
 				57D8244F27B1F193004AB232 /* FilterProductsViewModel.swift in Sources */,
 				57D823D627AC4BF0004AB232 /* GlobalData.swift in Sources */,
 				57D823A427AC17FD004AB232 /* SignUpViewModelCoordinatorDelegate.swift in Sources */,
+				578BF48127B9A169004005D7 /* ProductsEmptyView.swift in Sources */,
 				57CB255027AAC85E004B8767 /* ServerResponse.swift in Sources */,
 				57CB256827AAC958004B8767 /* TDSplashViewModelProtocol.swift in Sources */,
 				57CB252127AAC5EC004B8767 /* BaseNavigationController.swift in Sources */,
@@ -1720,6 +1881,8 @@
 				5769010E27B4743F00F58BF0 /* ProfileViewController.swift in Sources */,
 				578BF46627B86DBA004005D7 /* OfferDataSource.swift in Sources */,
 				57D823A827AC1816004AB232 /* SignUpViewModel.swift in Sources */,
+				578BF49C27B9C16E004005D7 /* LuckyWheelCoordinator.swift in Sources */,
+				578BF48F27B9B052004005D7 /* GiftTabViewModelCoordinatorDelegate.swift in Sources */,
 				57CB252027AAC5EC004B8767 /* BaseViewModel.swift in Sources */,
 				57D8242327B07957004AB232 /* WebViewCoordinator.swift in Sources */,
 				578BF46C27B86EC5004005D7 /* OfferTabViewController.swift in Sources */,
@@ -1727,6 +1890,7 @@
 				57D823C627AC4059004AB232 /* ForgotPasswordViewModel.swift in Sources */,
 				57D8243927B1BE6A004AB232 /* SeeAllCategoriesCoordinator.swift in Sources */,
 				57CB255C27AAC915004B8767 /* AppDelegate.swift in Sources */,
+				578BF4A227B9C1BF004005D7 /* LuckyWheelViewModelCoordinatorDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1931,6 +2095,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		578BF4AB27B9CCB9004005D7 /* XCRemoteSwiftPackageReference "SwiftFortuneWheel" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sh-khashimov/SwiftFortuneWheel.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		578BF4AC27B9CCB9004005D7 /* SwiftFortuneWheel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 578BF4AB27B9CCB9004005D7 /* XCRemoteSwiftPackageReference "SwiftFortuneWheel" */;
+			productName = SwiftFortuneWheel;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2DF82127272177C8009C2932 /* Project object */;
 }

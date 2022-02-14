@@ -22,4 +22,6 @@ target 'Ajkune' do
   pod 'SwiftyJSON'
   pod 'SkyFloatingLabelTextField'
   pod "WARangeSlider"
+  pod 'EmptyDataSet-Swift'
+  pod 'TTFortuneWheel'
 end

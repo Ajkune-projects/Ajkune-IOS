@@ -56,3 +56,25 @@ struct UsrResponse: Codable {
     var image_name: String?
     var has_gift: Int?
 }
+
+// MARK: - Gift
+struct Gift: Codable {
+    var success: Bool?
+    var message: String?
+    var userHasGift: Bool?
+}
+struct GiftListElement: Codable {
+    var id: Int?
+    var title, giftListDescription: String?
+    var imageURL: String?
+    var status: Int?
+
+    enum CodingKeys: String, CodingKey {
+        case id, title
+        case giftListDescription = "description"
+        case imageURL = "image_url"
+        case status
+    }
+}
+
+typealias GiftList = [GiftListElement]

@@ -142,11 +142,6 @@
             <point key="canvasLocation" x="215.94202898550725" y="145.98214285714286"/>
         </collectionViewCell>
     </objects>
-    <designables>
-        <designable name="AJV-z6-HAN">
-            <size key="intrinsicContentSize" width="95" height="15"/>
-        </designable>
-    </designables>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

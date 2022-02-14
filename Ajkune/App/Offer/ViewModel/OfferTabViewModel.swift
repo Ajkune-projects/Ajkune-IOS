@@ -6,7 +6,6 @@
 //
 import Foundation
 protocol OfferTabViewModelViewDelegate: class {
-    func selectedCategory(id: Int)
     func productDetails(id: Int)
 }
 class OfferTabViewModel: OfferTabViewModelProtocol{
@@ -22,7 +21,6 @@ class OfferTabViewModel: OfferTabViewModelProtocol{
         self.categoryDataSource = CategoryDataSource()
         self.productDataSource = OfferDataSource()
         self.productDataSource?.delegate = self
-        self.categoryDataSource?.delegate = self
     }
     func getALLProducts(products: [Products]?) {
         productDataSource?.products = products ?? [Products]()
@@ -79,12 +77,6 @@ class OfferTabViewModel: OfferTabViewModelProtocol{
          })
     }
     
-}
-
-extension OfferTabViewModel:CategoryDataSourceProtocol{
-    func categoryTapped(id: Int) {
-        self.viewDelegate?.selectedCategory(id: id)
-    }
 }
 
 extension OfferTabViewModel:OfferDataSourceProtocol{

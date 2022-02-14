@@ -56,6 +56,11 @@ class HomeTabViewController: UIViewController, Storyboarded{
         self.productsCollectionView.register(ProductCell.self)
         self.productsCollectionView.delegate = self.viewModel?.productDataSource
         self.productsCollectionView.dataSource = self.viewModel?.productDataSource
+        self.productsCollectionView.emptyDataSetSource = self.viewModel?.productDataSource
+        self.productsCollectionView.emptyDataSetDelegate = self.viewModel?.productDataSource
+        productsCollectionView.emptyDataSetView { [weak self] view in
+            view.customView(ProductsEmptyView(frame: CGRect(x: 0, y: 0, width: 300, height: 100))).verticalOffset(-200)
+        }
     }
     
     func setupCategoriesCollectionView(){
