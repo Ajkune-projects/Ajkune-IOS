@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import UIKit
+import SwiftFortuneWheel
 
 struct UserSignUpModel: Codable{
         var name, email, password: String?

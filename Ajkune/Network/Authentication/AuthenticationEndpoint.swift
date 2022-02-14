@@ -32,6 +32,7 @@ enum TDAuthenticationEndpoint: TDAPIConfiguration {
     case verificationUser(user:UserProfile?)
 //Gift
     case hasGiftUser
+    case luckyWheelGifts
     
     
     // MARK: - HTTPMethod
@@ -39,7 +40,7 @@ enum TDAuthenticationEndpoint: TDAPIConfiguration {
         switch self {
         case .login,.signUp, .requestForgotPassword, .checkResetPasswordCode, .requestResetPassword,.addComment,.verificationUser:
             return .post
-        case .getProducts, .getProductsByID,.getCategories,.getBanner,.getProductDetails,.filterProducts,.getUserDetails,.getProductsFromOffer,.getProductsByIdOffer,.hasGiftUser:
+        case .getProducts, .getProductsByID,.getCategories,.getBanner,.getProductDetails,.filterProducts,.getUserDetails,.getProductsFromOffer,.getProductsByIdOffer,.hasGiftUser,.luckyWheelGifts:
             return .get
 //        case :
 //            return .delete
@@ -85,6 +86,8 @@ enum TDAuthenticationEndpoint: TDAPIConfiguration {
             return "/profile/verification"
         case .hasGiftUser:
             return "/gift/hasGiftUser"
+        case .luckyWheelGifts:
+            return "/gift/list"
         }
     }
     
@@ -107,7 +110,7 @@ enum TDAuthenticationEndpoint: TDAPIConfiguration {
                      "email":data.email,
                      "password":data.password,
                      "confirmation_password":data.confirmation_password]
-        case .getProducts,.getProductsByID,.getCategories,.getBanner,.getProductDetails,.filterProducts,.getUserDetails,.getProductsByIdOffer,.getProductsFromOffer,.hasGiftUser:
+        case .getProducts,.getProductsByID,.getCategories,.getBanner,.getProductDetails,.filterProducts,.getUserDetails,.getProductsByIdOffer,.getProductsFromOffer,.hasGiftUser,.luckyWheelGifts:
             return nil
         case .addComment(let product_id, let title, let comment):
             return ["product_id":product_id,

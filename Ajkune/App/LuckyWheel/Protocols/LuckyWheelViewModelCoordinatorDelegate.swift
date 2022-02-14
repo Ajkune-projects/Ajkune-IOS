@@ -7,4 +7,5 @@
 
 import Foundation
 protocol LuckyWheelViewModelCoordinatorDelegate: class{
+    
 }

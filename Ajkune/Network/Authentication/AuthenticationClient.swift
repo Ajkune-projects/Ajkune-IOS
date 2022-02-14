@@ -60,4 +60,7 @@ class AuthenticationClient {
     static func hasGiftUser() -> Future<Gift, Error> {
         return TDAPIClient.performRequest(route: TDAuthenticationEndpoint.hasGiftUser)
     }
+    static func luckyWheelGifts() -> Future<[GiftListElement], Error> {
+        return TDAPIClient.performRequest(route: TDAuthenticationEndpoint.luckyWheelGifts)
+    }
 }

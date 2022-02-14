@@ -62,7 +62,8 @@ public extension TextPreferences {
 
 public extension ImagePreferences {
     static var variousWheelPodiumImage: ImagePreferences {
-        let imagePreferences = ImagePreferences(preferredSize: CGSize(width: 25, height: 25), verticalOffset: 5)
+        let imagePreferences = ImagePreferences(preferredSize: CGSize(width: 40, height: 40), verticalOffset: 5)
+        
         return imagePreferences
     }
 }

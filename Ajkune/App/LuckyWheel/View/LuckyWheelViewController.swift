@@ -14,23 +14,46 @@ class LuckyWheelViewController: UIViewController , Storyboarded, UITextFieldDele
     @IBOutlet weak var wheelControl: SwiftFortuneWheel! {
         didSet {
             wheelControl.configuration = .variousWheelPodiumConfiguration
-            wheelControl.slices = slices
         }
     }
 
     //MARK: - Properties
     var viewModel: LuckyWheelViewModelProtocol?
     var coordinator: LuckyWheelCoordinator?
-//    var gift:[GiftListElement] = []
-//    var slices:[Slice] = []
-    
+    var gift:[GiftListElement] = []
+    var slices: [Slice] = []
+    var image: UIImage?
     override func viewDidLoad() {
         super.viewDidLoad()
-//        let list = GiftListElement(id: 1, title: "Test", giftListDescription: "hello", imageURL: "", status: 1)
-//        gift.append(list)
-//        sl()
+        getListOfGifts()
+       
+
+    }
+    func getListOfGifts(){
+        self.viewModel?.luckyWheelGifts(completion: { response in
+            if response != nil{
+                self.gift = response ?? [GiftListElement]()
+                self.fillData()
+                self.wheelControl.slices = self.slices
+            }
+        })
     }
     
+    func fillData(){
+        
+        for prize in gift {
+            
+            let url = URL(string:prize.imageURL ?? "")
+                if let img = try? Data(contentsOf: url!)
+                {
+                    self.image = UIImage(data: img) ?? UIImage()
+                }
+            let sliceContent = [Slice.ContentType.image(image: image ?? UIImage(), preferences: .variousWheelPodiumImage),
+                                Slice.ContentType.text(text: prize.title ?? "", preferences: .variousWheelPodiumText(textColor: .white))]
+            var slice = Slice(contents: sliceContent, backgroundColor: generateRandomColor())
+            slices.append(slice)
+        }
+    }
 
     func generateRandomColor() -> UIColor {
       let hue : CGFloat = CGFloat(arc4random() % 256) / 256 // use 256 to get full range from 0.0 to 1.0
@@ -40,27 +63,10 @@ class LuckyWheelViewController: UIViewController , Storyboarded, UITextFieldDele
       return UIColor(hue: hue, saturation: saturation, brightness: brightness, alpha: 1)
     }
     
-    
-    var prizes = [(name: "MONEY",imageName: "Avatar", textColor: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)),
-                  (name: "GRAPHIC", imageName: "smileIcon", textColor: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)),
-                  (name: "HOME",imageName: "smileIcon", textColor: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)),
-                  (name: "33", imageName: "smileIcon", textColor: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)),
-                  (name: "44", imageName: "smileIcon", textColor: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)),
-                  (name: "555", imageName: "smileIcon", textColor: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)),
-                  (name: "666", imageName: "smileIcon", textColor: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)),
-                  (name: "111", imageName: "smileIcon", textColor: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)),
-                  (name: "2222", imageName: "smileIcon", textColor: #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))]
-    
-    lazy var slices: [Slice] = {
-        var slices: [Slice] = []
-        for prize in prizes {
-            let sliceContent = [Slice.ContentType.assetImage(name: prize.imageName, preferences: .variousWheelPodiumImage),
-                                Slice.ContentType.text(text: prize.name, preferences: .variousWheelPodiumText(textColor: prize.textColor))]
-            var slice = Slice(contents: sliceContent, backgroundColor: generateRandomColor())
-            slices.append(slice)
-        }
-        return slices
-    }()
+//    lazy var slices: [Slice] = {
+//
+//        return slices
+//    }()
 
     var finishIndex: Int {
         return Int.random(in: 0..<wheelControl.slices.count)
@@ -69,7 +75,7 @@ class LuckyWheelViewController: UIViewController , Storyboarded, UITextFieldDele
     
     @IBAction func rotateTap(_ sender: Any) {
         wheelControl.startRotationAnimation(finishIndex: finishIndex, continuousRotationTime: 1) { (finished) in
-            print(self.prizes[self.finishIndex])
+            print(self.gift[self.finishIndex])
             self.coordinator?.stop()
         }
 

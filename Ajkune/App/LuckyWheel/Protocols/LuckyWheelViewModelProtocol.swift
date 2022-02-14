@@ -8,4 +8,7 @@
 import Foundation
 protocol LuckyWheelViewModelProtocol: BaseViewModel {
     var coordinatorDelegate : LuckyWheelViewModelCoordinatorDelegate? {get set}
+    
+    //API
+    func luckyWheelGifts(completion: @escaping (([GiftListElement]?) -> Void)) 
 }
