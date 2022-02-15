@@ -16,7 +16,7 @@ class LuckyWheelViewController: UIViewController , Storyboarded, UITextFieldDele
             wheelControl.configuration = .variousWheelPodiumConfiguration
         }
     }
-
+    
     //MARK: - Properties
     var viewModel: LuckyWheelViewModelProtocol?
     var coordinator: LuckyWheelCoordinator?
@@ -26,8 +26,8 @@ class LuckyWheelViewController: UIViewController , Storyboarded, UITextFieldDele
     override func viewDidLoad() {
         super.viewDidLoad()
         getListOfGifts()
-       
-
+        
+        
     }
     func getListOfGifts(){
         self.viewModel?.luckyWheelGifts(completion: { response in
@@ -40,48 +40,47 @@ class LuckyWheelViewController: UIViewController , Storyboarded, UITextFieldDele
     }
     
     func fillData(){
-        
         for prize in gift {
-            
             let url = URL(string:prize.imageURL ?? "")
-                if let img = try? Data(contentsOf: url!)
-                {
-                    self.image = UIImage(data: img) ?? UIImage()
-                }
+            if let img = try? Data(contentsOf: url!)
+            {
+                self.image = UIImage(data: img) ?? UIImage()
+            }
             let sliceContent = [Slice.ContentType.image(image: image ?? UIImage(), preferences: .variousWheelPodiumImage),
                                 Slice.ContentType.text(text: prize.title ?? "", preferences: .variousWheelPodiumText(textColor: .white))]
             var slice = Slice(contents: sliceContent, backgroundColor: generateRandomColor())
             slices.append(slice)
         }
     }
-
+    
     func generateRandomColor() -> UIColor {
-      let hue : CGFloat = CGFloat(arc4random() % 256) / 256 // use 256 to get full range from 0.0 to 1.0
-      let saturation : CGFloat = CGFloat(arc4random() % 128) / 256 + 0.5 // from 0.5 to 1.0 to stay away from white
-      let brightness : CGFloat = CGFloat(arc4random() % 128) / 256 + 0.5 // from 0.5 to 1.0 to stay away from black
-
-      return UIColor(hue: hue, saturation: saturation, brightness: brightness, alpha: 1)
+        let hue : CGFloat = CGFloat(arc4random() % 256) / 256 // use 256 to get full range from 0.0 to 1.0
+        let saturation : CGFloat = CGFloat(arc4random() % 128) / 256 + 0.5 // from 0.5 to 1.0 to stay away from white
+        let brightness : CGFloat = CGFloat(arc4random() % 128) / 256 + 0.5 // from 0.5 to 1.0 to stay away from black
+        
+        return UIColor(hue: hue, saturation: saturation, brightness: brightness, alpha: 1)
     }
     
-//    lazy var slices: [Slice] = {
-//
-//        return slices
-//    }()
-
     var finishIndex: Int {
         return Int.random(in: 0..<wheelControl.slices.count)
     }
-
+    
     
     @IBAction func rotateTap(_ sender: Any) {
         wheelControl.startRotationAnimation(finishIndex: finishIndex, continuousRotationTime: 1) { (finished) in
             print(self.gift[self.finishIndex])
-            self.coordinator?.stop()
+            self.viewModel?.addGift(id: self.gift[self.finishIndex].id ?? 0, completion: { response in
+                if response?.success == true {
+                self.viewModel?.showModal(gift: self.gift[self.finishIndex])
+                self.coordinator?.stop()
+                                }
+            })
+            //            self.coordinator?.stop()
         }
-
+        
     }
     //MARK: - IBActions
-
+    
     @IBAction func backButtonPressed(_ sender: Any) {
         coordinator?.stop()
     }

@@ -79,6 +79,9 @@ extension UIStoryboard {
     static var luckyWheel: UIStoryboard {
         return UIStoryboard(name: "LuckyWheel", bundle: nil)
     }
+    static var congrats: UIStoryboard {
+        return UIStoryboard(name: "Congrats", bundle: nil)
+    }
 }
 
 

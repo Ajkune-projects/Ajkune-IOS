@@ -17,6 +17,9 @@ class ProductDetailsViewModel: ProductDetailsViewModelProtocol {
     func getComments(comments: [Comment]) {
         commentDataSource?.comment = comments
     }
+    func getOfferComments(comments: [CommentsOffer]) {
+        commentDataSource?.commentOffer = comments
+    }
     
     public init(){
         self.commentDataSource = CommentDataSource()
@@ -31,6 +34,16 @@ class ProductDetailsViewModel: ProductDetailsViewModelProtocol {
                 completion(nil)
              })
     }
+    
+    func getOfferDetails(id: Int, completion: @escaping (([OfferDetail]?) -> Void)) {
+            let products = AuthenticationClient.getOfferDetails(id: id)
+            products.execute(onSuccess: { product in
+                completion(product)
+             }, onFailure: {error in
+                completion(nil)
+             })
+    }
+    
     func addComment(product_id:String,title:String, comment:String, completion: @escaping (([ProductDetails]?) -> Void)) {
         let comment = AuthenticationClient.addComment(product_id: product_id, title: title, comment: comment)
         comment.execute(onSuccess: { comment in
@@ -38,8 +51,15 @@ class ProductDetailsViewModel: ProductDetailsViewModelProtocol {
          }, onFailure: {error in
             completion(nil)
          })
-        
     }
     
+    func addOfferComment(product_id:String,title:String, comment:String, completion: @escaping (([OfferDetail]?) -> Void)) {
+        let comment = AuthenticationClient.addOfferComment(product_id: product_id, title: title, comment: comment)
+        comment.execute(onSuccess: { comment in
+            completion(comment)
+         }, onFailure: {error in
+            completion(nil)
+         })
+    }
     
 }

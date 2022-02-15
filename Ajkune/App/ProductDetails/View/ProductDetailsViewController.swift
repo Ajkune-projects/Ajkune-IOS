@@ -19,20 +19,29 @@ class ProductDetailsViewController: UIViewController, Storyboarded, UITextViewDe
     @IBOutlet weak var titleComment: SkyFloatingLabelTextField!
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var commentTableView: UITableView!
-    
+    @IBOutlet weak var line: UIView!
+    @IBOutlet weak var initialLabel: UILabel!
     @IBOutlet weak var tableViewHeightConst: NSLayoutConstraint!
     //MARK:Properties
     var coordinator: ProductDetailsCoordinator?
     var viewModel: ProductDetailsViewModelProtocol?
     var product = [ProductDetails]()
+    var offer = [OfferDetail]()
+    var isOffer:Bool?
     var id:Int?
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.getProduct()
+        globalData.isOffer = isOffer
+        if isOffer == true{
+            self.getOffer()
+        }else{
+            initialLabel.isHidden = true
+            line.isHidden = true
+            self.getProduct()
+        }
         setupTitleComment()
-//
         setupCommentView()
         setupTableView()
        
@@ -44,6 +53,19 @@ class ProductDetailsViewController: UIViewController, Storyboarded, UITextViewDe
         if let img = prod?.image{
         self.productImage.setImage(with: img)
         }
+        self.productName.text = prod?.name ?? ""
+        self.productRaiting.rating = Double(prod?.rating ?? 0 )
+        self.productDetails.text = prod?.desc_en
+        self.productRaiting.settings.updateOnTouch = false
+        self.backButton.setTitle(prod?.name, for: .normal)
+    }
+    
+    func fillOfferData(){
+        let prod = offer.first
+        if let img = prod?.image{
+        self.productImage.setImage(with: img)
+        }
+        self.initialLabel.text = "\(prod?.initial_price ?? "")CH"
         self.productName.text = prod?.name ?? ""
         self.productRaiting.rating = Double(prod?.rating ?? 0 )
         self.productDetails.text = prod?.desc_en
@@ -113,6 +135,26 @@ class ProductDetailsViewController: UIViewController, Storyboarded, UITextViewDe
         })
     }
     
+    func getOffer(){
+        SHOW_CUSTOM_LOADER()
+        self.viewModel?.getOfferDetails(id:self.id ?? 0, completion: { response in
+            HIDE_CUSTOM_LOADER()
+            if response?.count ?? 0 > 0{
+                self.offer = response ?? [OfferDetail]()
+                self.viewModel?.getOfferComments(comments: response?.first?.comments_offer ?? [CommentsOffer]())
+                print("comment:\(response?.first?.comments_offer?.reversed() ?? [CommentsOffer]())")
+                dispatch {
+                    self.commentTableView.reloadData()
+                    self.view.layoutIfNeeded()
+                    self.tableViewHeightConst.constant = self.commentTableView.contentSize.height
+                     self.view.layoutIfNeeded()
+                   
+                }
+                self.fillOfferData()
+            }
+        })
+    }
+    
     //MARK: - IBActions
     @IBAction func backButtonPressed(_ sender: Any) {
         self.coordinator?.stop()
@@ -136,6 +178,26 @@ class ProductDetailsViewController: UIViewController, Storyboarded, UITextViewDe
             self.showAlertWith(title: "Ajkune", message: "Please write comment!")
             return
         }
+        addComment()
+        commentTextView.text = ""
+        titleComment.text = ""
+        commentTextView.endEditing(true)
+        titleComment.endEditing(true)
+    }
+    func addComment(){
+        if isOffer == true{
+            self.viewModel?.addOfferComment(product_id: String(offer.first?.id ?? 0), title: titleComment.text ?? "", comment: commentTextView.text, completion: { response in
+                if response?.count != nil {
+                    self.viewModel?.getOfferComments(comments: response?.first?.comments_offer ?? [CommentsOffer]())
+                    dispatch {
+                        self.commentTableView.reloadData()
+                        self.view.layoutIfNeeded()
+                        self.tableViewHeightConst.constant = self.commentTableView.contentSize.height
+                        self.view.layoutIfNeeded()
+                    }
+                }
+            })
+        }else{
         self.viewModel?.addComment(product_id: String(product.first?.id ?? 0), title: titleComment.text ?? "", comment: commentTextView.text, completion: { response in
             if response?.count != nil {
                 self.viewModel?.getComments(comments: response?.first?.comments.reversed() ?? [Comment]())
@@ -148,10 +210,7 @@ class ProductDetailsViewController: UIViewController, Storyboarded, UITextViewDe
                 }
             }
         })
-        commentTextView.text = ""
-        titleComment.text = ""
-        commentTextView.endEditing(true)
-        titleComment.endEditing(true)
+    }
     }
     
 }

@@ -129,7 +129,7 @@ class ProfileViewController: UIViewController , Storyboarded, UITextFieldDelegat
                 ProfileDetails.country = response?.user?.country ?? ""
                 ProfileDetails.fullAddress = "\(response?.user?.street ?? "") \n\(response?.user?.address ?? "")\n\(response?.user?.zip_code ?? 0 )\n\(response?.user?.country ?? "")"
                 self.addressLabel.text = ProfileDetails.fullAddress
-                if response?.user?.image_name != ""{
+                if response?.user?.active_profile == 1{
                     self.userImage.borderColor = UIColor(hexString: "#FFD700")
                     self.verifiedImage.isHidden = false
                 }
@@ -143,10 +143,13 @@ class ProfileViewController: UIViewController , Storyboarded, UITextFieldDelegat
         self.viewModel?.verificationProfile(user: user, completion: { response in
             if response != nil{
                 HIDE_CUSTOM_LOADER()
-                if response?.user?.image_name != ""{
+                if response?.user?.active_profile == 1{
                     self.userImage.borderColor = UIColor(hexString: "#FFD700")
                     self.verifiedImage.isHidden = false
                 }
+                self.showOKAlert(title: "Ajkune", message: "Data saved successfully")
+            }else{
+                self.showOKAlert(title: "Error", message: "Error")
             }
         })
     }

@@ -21,6 +21,7 @@ struct globalData{
     static var categorySelected:Int = 0
     static var filteredProducts = [Products]()
     static var fromFilter = false
+    static var isOffer:Bool? = false
 }
 
 struct ProfileDetails{

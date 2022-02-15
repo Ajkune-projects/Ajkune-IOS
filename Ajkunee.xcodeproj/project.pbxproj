@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		17CF361B830D2A9611E4A5EB /* Pods_Ajkune.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53D374A1CCAA65073ED38186 /* Pods_Ajkune.framework */; };
 		2DF8213C272177CA009C2932 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DF8213B272177CA009C2932 /* Assets.xcassets */; };
+		574E4B2C27BC31CF00BCE294 /* CongratsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574E4B2B27BC31CF00BCE294 /* CongratsCoordinator.swift */; };
+		574E4B2E27BC31EA00BCE294 /* CongratsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574E4B2D27BC31EA00BCE294 /* CongratsViewController.swift */; };
+		574E4B3027BC31F600BCE294 /* CongratsViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574E4B2F27BC31F600BCE294 /* CongratsViewModelProtocol.swift */; };
+		574E4B3227BC322B00BCE294 /* CongratsViewModelCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574E4B3127BC322B00BCE294 /* CongratsViewModelCoordinatorDelegate.swift */; };
+		574E4B3427BC323D00BCE294 /* CongratsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574E4B3327BC323D00BCE294 /* CongratsViewModel.swift */; };
+		574E4B3627BC340700BCE294 /* Congrats.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 574E4B3527BC340700BCE294 /* Congrats.storyboard */; };
 		57570EC127AADC6400D0DFB1 /* TDSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57570EC027AADC6400D0DFB1 /* TDSplash.storyboard */; };
 		57570EC327AADF2A00D0DFB1 /* AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57570EC227AADF2A00D0DFB1 /* AccountManager.swift */; };
 		57570ECA27AB232D00D0DFB1 /* TDInitialScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57570EC927AB232D00D0DFB1 /* TDInitialScreenViewModel.swift */; };
@@ -194,6 +200,12 @@
 		2DF82140272177CA009C2932 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3090A3A63AC4D253DEFF8762 /* Pods-Ajkune.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Ajkune.debug.xcconfig"; path = "Target Support Files/Pods-Ajkune/Pods-Ajkune.debug.xcconfig"; sourceTree = "<group>"; };
 		53D374A1CCAA65073ED38186 /* Pods_Ajkune.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Ajkune.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		574E4B2B27BC31CF00BCE294 /* CongratsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratsCoordinator.swift; sourceTree = "<group>"; };
+		574E4B2D27BC31EA00BCE294 /* CongratsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratsViewController.swift; sourceTree = "<group>"; };
+		574E4B2F27BC31F600BCE294 /* CongratsViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratsViewModelProtocol.swift; sourceTree = "<group>"; };
+		574E4B3127BC322B00BCE294 /* CongratsViewModelCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratsViewModelCoordinatorDelegate.swift; sourceTree = "<group>"; };
+		574E4B3327BC323D00BCE294 /* CongratsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratsViewModel.swift; sourceTree = "<group>"; };
+		574E4B3527BC340700BCE294 /* Congrats.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Congrats.storyboard; sourceTree = "<group>"; };
 		57570EC027AADC6400D0DFB1 /* TDSplash.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TDSplash.storyboard; sourceTree = "<group>"; };
 		57570EC227AADF2A00D0DFB1 /* AccountManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountManager.swift; sourceTree = "<group>"; };
 		57570EC927AB232D00D0DFB1 /* TDInitialScreenViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDInitialScreenViewModel.swift; sourceTree = "<group>"; };
@@ -433,6 +445,51 @@
 				2DF82140272177CA009C2932 /* Info.plist */,
 			);
 			path = Ajkune;
+			sourceTree = "<group>";
+		};
+		574E4B2627BC2D1400BCE294 /* CongratsModal */ = {
+			isa = PBXGroup;
+			children = (
+				574E4B2A27BC2D3E00BCE294 /* Coordinator */,
+				574E4B2927BC2D3300BCE294 /* Protocols */,
+				574E4B2827BC2D2700BCE294 /* ViewModel */,
+				574E4B2727BC2D2200BCE294 /* View */,
+			);
+			path = CongratsModal;
+			sourceTree = "<group>";
+		};
+		574E4B2727BC2D2200BCE294 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				574E4B2D27BC31EA00BCE294 /* CongratsViewController.swift */,
+				574E4B3527BC340700BCE294 /* Congrats.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		574E4B2827BC2D2700BCE294 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				574E4B3327BC323D00BCE294 /* CongratsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		574E4B2927BC2D3300BCE294 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				574E4B2F27BC31F600BCE294 /* CongratsViewModelProtocol.swift */,
+				574E4B3127BC322B00BCE294 /* CongratsViewModelCoordinatorDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		574E4B2A27BC2D3E00BCE294 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				574E4B2B27BC31CF00BCE294 /* CongratsCoordinator.swift */,
+			);
+			path = Coordinator;
 			sourceTree = "<group>";
 		};
 		57570EC427AB22DA00D0DFB1 /* Initial Screen */ = {
@@ -956,6 +1013,7 @@
 		57CB252527AAC5FB004B8767 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				574E4B2627BC2D1400BCE294 /* CongratsModal */,
 				578BF49627B9B9E9004005D7 /* LuckyWheel */,
 				578BF47E27B9A133004005D7 /* Gifts */,
 				578BF45F27B86CB5004005D7 /* Offer */,
@@ -1676,6 +1734,7 @@
 				57D8239F27AC17EF004AB232 /* SignUp.storyboard in Resources */,
 				57A7819927B5DB1D004CA286 /* UserAddress.storyboard in Resources */,
 				57570EE027AB23F000D0DFB1 /* Login.storyboard in Resources */,
+				574E4B3627BC340700BCE294 /* Congrats.storyboard in Resources */,
 				57D8244D27B1F177004AB232 /* FilterProducts.storyboard in Resources */,
 				57D823FF27AF04BA004AB232 /* CategoriesCell.xib in Resources */,
 				2DF8213C272177CA009C2932 /* Assets.xcassets in Resources */,
@@ -1782,6 +1841,7 @@
 				578BF47027B86F77004005D7 /* OfferTabViewModel.swift in Sources */,
 				57570ECC27AB233100D0DFB1 /* TDInitialScreenCoordinator.swift in Sources */,
 				57570F0727AB34BE00D0DFB1 /* HomeTabViewModel.swift in Sources */,
+				574E4B2E27BC31EA00BCE294 /* CongratsViewController.swift in Sources */,
 				57D8241F27B0791C004AB232 /* WebViewViewModelCoordinatorDelegate.swift in Sources */,
 				578BF45E27B85EDF004005D7 /* LanguageViewModel.swift in Sources */,
 				57570ED427AB234F00D0DFB1 /* TDInitialScreenViewModelCoordinatorDelegate.swift in Sources */,
@@ -1813,6 +1873,7 @@
 				57D8242627B09477004AB232 /* CommentDataSource.swift in Sources */,
 				576900FD27B45D8F00F58BF0 /* SettingsTabViewModel.swift in Sources */,
 				57D8244B27B1F153004AB232 /* FilterProductsViewController.swift in Sources */,
+				574E4B2C27BC31CF00BCE294 /* CongratsCoordinator.swift in Sources */,
 				57D8240C27AF3BA2004AB232 /* ProductDetailsViewModelCoordinatorDelegate.swift in Sources */,
 				57D823C127AC4035004AB232 /* ForgotPasswordViewModelProtocol.swift in Sources */,
 				57D823F927AEB0A8004AB232 /* ProductsModel.swift in Sources */,
@@ -1824,6 +1885,7 @@
 				5769011027B4744E00F58BF0 /* ProfileViewModelProtocol.swift in Sources */,
 				57CB255A27AAC89E004B8767 /* Loader.swift in Sources */,
 				57A7818F27B5DA42004CA286 /* UserAddressCoordinator.swift in Sources */,
+				574E4B3227BC322B00BCE294 /* CongratsViewModelCoordinatorDelegate.swift in Sources */,
 				57CB252227AAC5EC004B8767 /* AppCoordinator.swift in Sources */,
 				57CB255727AAC88B004B8767 /* Colors.swift in Sources */,
 				578BF46827B86DD9004005D7 /* OfferTabCoordinator.swift in Sources */,
@@ -1852,6 +1914,7 @@
 				57D8240E27AF3BBE004AB232 /* ProductDetailsViewModelProtocol.swift in Sources */,
 				578BF46A27B86E9C004005D7 /* OfferTabViewModelCoordinatorDelegate.swift in Sources */,
 				57CB254327AAC78A004B8767 /* UIImageView+Additions.swift in Sources */,
+				574E4B3427BC323D00BCE294 /* CongratsViewModel.swift in Sources */,
 				57CB254227AAC78A004B8767 /* UITableView+UICollectionView.swift in Sources */,
 				57570EC327AADF2A00D0DFB1 /* AccountManager.swift in Sources */,
 				57D823D827AC5062004AB232 /* ResetPasswordViewModel.swift in Sources */,
@@ -1861,6 +1924,7 @@
 				578BF49E27B9C1A7004005D7 /* LuckyWheelViewController.swift in Sources */,
 				57D823CE27AC492C004AB232 /* ForgotPasswordVerificationViewController.swift in Sources */,
 				57CB254F27AAC85E004B8767 /* APIConfiguration.swift in Sources */,
+				574E4B3027BC31F600BCE294 /* CongratsViewModelProtocol.swift in Sources */,
 				57D8241027AF3BD5004AB232 /* ProductDetailsCoordinator.swift in Sources */,
 				57D823F127AEA64E004AB232 /* ProductsDataSource.swift in Sources */,
 				57CB254727AAC78A004B8767 /* UIColor+Additions.swift in Sources */,

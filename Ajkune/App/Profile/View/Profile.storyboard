@@ -214,7 +214,7 @@
                                                 </connections>
                                             </button>
                                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J6i-xO-vIt">
-                                                <rect key="frame" x="20" y="419" width="374" height="120"/>
+                                                <rect key="frame" x="20" y="431" width="374" height="120"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="BvW-zS-uHM">
                                                         <rect key="frame" x="0.0" y="8" width="374" height="112"/>
@@ -294,13 +294,14 @@
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSO-JL-8ww">
                                                 <rect key="frame" x="20" y="686" width="374" height="50"/>
-                                                <color key="backgroundColor" red="0.7843137255" green="0.80392156859999997" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.61176470589999998" green="0.29803921570000003" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="CJT-0C-yWT"/>
                                                 </constraints>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="SAVE">
-                                                    <color key="titleColor" red="0.52549019607843139" green="0.54117647058823526" blue="0.5490196078431373" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">

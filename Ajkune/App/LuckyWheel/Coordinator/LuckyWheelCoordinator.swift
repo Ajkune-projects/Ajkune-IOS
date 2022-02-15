@@ -14,7 +14,7 @@ class LuckyWheelCoordinator: TDPushCoordinator{
     var viewController : LuckyWheelViewController?
     var navigationController: UINavigationController?
     var viewModel : LuckyWheelViewModelProtocol
-    var homeTabCoordinator: HomeTabCoordinator?
+    var giftCoordinator: CongratsCoordinator?
 
     
     init(viewModel: LuckyWheelViewModelProtocol, navigationController:UINavigationController?) {
@@ -22,10 +22,15 @@ class LuckyWheelCoordinator: TDPushCoordinator{
         self.viewModel.coordinatorDelegate = self
         self.navigationController = navigationController
         self.viewController = LuckyWheelViewController.instantiate(.luckyWheel)
-//        self.viewController?.id = id
         self.viewController?.viewModel = viewModel
     }
 }
 
 extension LuckyWheelCoordinator:LuckyWheelViewModelCoordinatorDelegate{
+    func showModal(gift: GiftListElement) {
+        giftCoordinator = CongratsCoordinator(viewModel: CongratsViewModel(), navigationController: self.viewController?.navigationController, details: gift)
+        giftCoordinator?.start()
+    }
+    
+    
 }

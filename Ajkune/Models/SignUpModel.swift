@@ -65,6 +65,11 @@ struct Gift: Codable {
     var message: String?
     var userHasGift: Bool?
 }
+//struct AddGift: Codable {
+//    var success: Bool?
+//    var message: String?
+//    var gift: GiftListElement?
+//}
 struct GiftListElement: Codable {
     var id: Int?
     var title, giftListDescription: String?
@@ -79,4 +84,43 @@ struct GiftListElement: Codable {
     }
 }
 
-typealias GiftList = [GiftListElement]
+struct AddGift: Codable {
+    var success: Bool?
+    var message: String?
+    var gift: Gift1?
+}
+
+// MARK: - Gift
+struct Gift1: Codable {
+    var id: Int?
+    var title, giftDescription: String?
+    var imageURL: String?
+    var status: Int?
+
+    enum CodingKeys: String, CodingKey {
+        case id, title
+        case giftDescription = "description"
+        case imageURL = "image_url"
+        case status
+    }
+}
+struct OfferDetail: Codable {
+    var id: Int?
+    var name, initial_price, price: String?
+    var rating: Int?
+    var desc_de, desc_en, desc_fr, desc_it: String?
+    var image: String?
+    var wp_product_url: String?
+    var status: Int?
+    var created_at, updated_at: String?
+    var has_time: Int?
+    var comments_offer: [CommentsOffer]?
+}
+
+// MARK: - CommentsOffer
+struct CommentsOffer: Codable {
+    var id, user_id, product_id: Int?
+    var title, comment, created_at, updated_at: String?
+    var laravel_through_key: Int?
+    var user: User?
+}

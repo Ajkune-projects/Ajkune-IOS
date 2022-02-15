@@ -25,7 +25,9 @@ class GiftTabViewController: UIViewController, Storyboarded {
         self.viewModel?.hasGifts(completion: { response in
             if response?.userHasGift == true{
                 self.giftView.isHidden = false
+                self.emptyView.isHidden = true
             }else{
+                self.giftView.isHidden = true
                 self.emptyView.isHidden = false
             }
         })

@@ -37,7 +37,7 @@ extension OfferTabCoordinator: OfferTabViewModelCoordinatorDelegate{
     
     
     func showProductDetails(id: Int) {
-        productDetailsCoordinator = ProductDetailsCoordinator(viewModel:ProductDetailsViewModel(), navigationController: self.viewController?.navigationController, id: id)
+        productDetailsCoordinator = ProductDetailsCoordinator(viewModel:ProductDetailsViewModel(), navigationController: self.viewController?.navigationController, id: id, isOffer: true)
         productDetailsCoordinator?.start()
     }
 }

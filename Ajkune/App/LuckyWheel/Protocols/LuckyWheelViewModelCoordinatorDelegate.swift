@@ -7,5 +7,5 @@
 
 import Foundation
 protocol LuckyWheelViewModelCoordinatorDelegate: class{
-    
+    func showModal(gift:GiftListElement)
 }

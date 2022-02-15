@@ -26,6 +26,7 @@ enum TDAuthenticationEndpoint: TDAPIConfiguration {
 //Offer
     case getProductsFromOffer
     case getProductsByIdOffer(Id:Int)
+    case addOfferComment(product_id:String,title:String, comment:String)
     
 //User
     case getUserDetails
@@ -33,12 +34,13 @@ enum TDAuthenticationEndpoint: TDAPIConfiguration {
 //Gift
     case hasGiftUser
     case luckyWheelGifts
+    case addGift(Id:Int)
     
     
     // MARK: - HTTPMethod
     var method: HTTPMethod {
         switch self {
-        case .login,.signUp, .requestForgotPassword, .checkResetPasswordCode, .requestResetPassword,.addComment,.verificationUser:
+        case .login,.signUp, .requestForgotPassword, .checkResetPasswordCode, .requestResetPassword,.addComment,.addOfferComment,.verificationUser,.addGift:
             return .post
         case .getProducts, .getProductsByID,.getCategories,.getBanner,.getProductDetails,.filterProducts,.getUserDetails,.getProductsFromOffer,.getProductsByIdOffer,.hasGiftUser,.luckyWheelGifts:
             return .get
@@ -88,6 +90,10 @@ enum TDAuthenticationEndpoint: TDAPIConfiguration {
             return "/gift/hasGiftUser"
         case .luckyWheelGifts:
             return "/gift/list"
+        case .addGift:
+            return "/gift/add"
+        case .addOfferComment:
+            return "/commentOffer/new"
         }
     }
     
@@ -116,6 +122,10 @@ enum TDAuthenticationEndpoint: TDAPIConfiguration {
             return ["product_id":product_id,
                     "title":title,
                     "comment":comment]
+        case .addOfferComment(let product_id, let title, let comment):
+            return ["product_id":product_id,
+                    "title":title,
+                    "comment":comment]
         case .verificationUser(let user):
             return ["name": user?.name,
                     "last_name": user?.last_name,
@@ -127,6 +137,8 @@ enum TDAuthenticationEndpoint: TDAPIConfiguration {
                     "zip_code": user?.zip_code,
                     "country": user?.country,
                     "base64_img":user?.base64_img]
+        case .addGift(let id):
+            return ["gift_list_id":id]
             
         }
     }

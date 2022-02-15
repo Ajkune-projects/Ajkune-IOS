@@ -45,8 +45,14 @@ class AuthenticationClient {
     static func getProductDetails(id:Int) -> Future<[ProductDetails], Error> {
         return TDAPIClient.performRequest(route: TDAuthenticationEndpoint.getProductDetails(Id: id))
     }
+    static func getOfferDetails(id:Int) -> Future<[OfferDetail], Error> {
+        return TDAPIClient.performRequest(route: TDAuthenticationEndpoint.getProductsByIdOffer(Id: id))
+    }
     static func addComment(product_id:String,title:String, comment:String) -> Future<[ProductDetails], Error> {
         return TDAPIClient.performRequest(route: TDAuthenticationEndpoint.addComment(product_id: product_id, title: title, comment: comment))
+    }
+    static func addOfferComment(product_id:String,title:String, comment:String) -> Future<[OfferDetail], Error> {
+        return TDAPIClient.performRequest(route: TDAuthenticationEndpoint.addOfferComment(product_id: product_id, title: title, comment: comment))
     }
     static func filterProducts(maxValue:String, minValue:String, type:String) -> Future<[Products], Error> {
         return TDAPIClient.performRequest(route: TDAuthenticationEndpoint.filterProducts(minValue: minValue, maxValue: maxValue, type: type))
@@ -62,5 +68,8 @@ class AuthenticationClient {
     }
     static func luckyWheelGifts() -> Future<[GiftListElement], Error> {
         return TDAPIClient.performRequest(route: TDAuthenticationEndpoint.luckyWheelGifts)
+    }
+    static func addGift(id:Int) -> Future<AddGift, Error> {
+        return TDAPIClient.performRequest(route: TDAuthenticationEndpoint.addGift(Id: id))
     }
 }

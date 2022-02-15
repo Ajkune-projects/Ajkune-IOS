@@ -28,7 +28,7 @@ final class CategoryDataSource: NSObject, UICollectionViewDataSource {
             self.collectionView(collectionView, didSelectItemAt: indexPath)
         }
         cell.lblName.text = categories?[indexPath.row].name
-        starWidth = categories?[indexPath.row].name?.widthOfString(usingFont: UIFont.systemFont(ofSize: 14)) ?? 0  + 16
+        starWidth = categories?[indexPath.row].name?.widthOfString(usingFont: UIFont.systemFont(ofSize: 14)) ?? 0
         return cell
     }
 }
