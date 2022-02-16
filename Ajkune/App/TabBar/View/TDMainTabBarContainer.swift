@@ -29,6 +29,8 @@ class MainTabBarContainer: UITabBarController, Storyboarded {
         if let items = self.tabBar.items {
             items.forEach { item in item.imageInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0) }
         }
+    
+        
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: UIColor.gray], for: .normal)
         let color = Colors.overcastBlueColor
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.foregroundColor: color], for: .selected)

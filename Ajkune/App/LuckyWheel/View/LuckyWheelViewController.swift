@@ -13,6 +13,7 @@ class LuckyWheelViewController: UIViewController , Storyboarded, UITextFieldDele
     //MARK: - IBOutlets
     @IBOutlet weak var wheelControl: SwiftFortuneWheel! {
         didSet {
+            SHOW_CUSTOM_LOADER()
             wheelControl.configuration = .variousWheelPodiumConfiguration
         }
     }
@@ -30,6 +31,7 @@ class LuckyWheelViewController: UIViewController , Storyboarded, UITextFieldDele
         
     }
     func getListOfGifts(){
+       
         self.viewModel?.luckyWheelGifts(completion: { response in
             if response != nil{
                 self.gift = response ?? [GiftListElement]()
@@ -40,7 +42,9 @@ class LuckyWheelViewController: UIViewController , Storyboarded, UITextFieldDele
     }
     
     func fillData(){
+       
         for prize in gift {
+            HIDE_CUSTOM_LOADER()
             let url = URL(string:prize.imageURL ?? "")
             if let img = try? Data(contentsOf: url!)
             {

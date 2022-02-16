@@ -24,6 +24,13 @@
 		574E4B4B27BC73F500BCE294 /* GiftCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574E4B4927BC73F500BCE294 /* GiftCell.swift */; };
 		574E4B4C27BC73F500BCE294 /* GiftCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 574E4B4A27BC73F500BCE294 /* GiftCell.xib */; };
 		574E4B4F27BC74A000BCE294 /* MyGiftsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574E4B4E27BC74A000BCE294 /* MyGiftsDataSource.swift */; };
+		574E4B5627BD6C3600BCE294 /* AppointmentTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574E4B5527BD6C3600BCE294 /* AppointmentTab.swift */; };
+		574E4B5827BD6C6E00BCE294 /* AppointmentTabViewModelCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574E4B5727BD6C6E00BCE294 /* AppointmentTabViewModelCoordinatorDelegate.swift */; };
+		574E4B5A27BD6C7A00BCE294 /* AppointmentTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574E4B5927BD6C7A00BCE294 /* AppointmentTabViewController.swift */; };
+		574E4B5C27BD6C8C00BCE294 /* AppointmentTabViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574E4B5B27BD6C8C00BCE294 /* AppointmentTabViewModelProtocol.swift */; };
+		574E4B5E27BD6C9F00BCE294 /* AppointmentTabViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574E4B5D27BD6C9F00BCE294 /* AppointmentTabViewModel.swift */; };
+		574E4B6027BD6CC100BCE294 /* AppointmentTab.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 574E4B5F27BD6CC100BCE294 /* AppointmentTab.storyboard */; };
+		574E4B6227BD6DC700BCE294 /* AppointmentTabLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574E4B6127BD6DC700BCE294 /* AppointmentTabLayout.swift */; };
 		57570EC127AADC6400D0DFB1 /* TDSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57570EC027AADC6400D0DFB1 /* TDSplash.storyboard */; };
 		57570EC327AADF2A00D0DFB1 /* AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57570EC227AADF2A00D0DFB1 /* AccountManager.swift */; };
 		57570ECA27AB232D00D0DFB1 /* TDInitialScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57570EC927AB232D00D0DFB1 /* TDInitialScreenViewModel.swift */; };
@@ -224,6 +231,13 @@
 		574E4B4927BC73F500BCE294 /* GiftCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftCell.swift; sourceTree = "<group>"; };
 		574E4B4A27BC73F500BCE294 /* GiftCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GiftCell.xib; sourceTree = "<group>"; };
 		574E4B4E27BC74A000BCE294 /* MyGiftsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGiftsDataSource.swift; sourceTree = "<group>"; };
+		574E4B5527BD6C3600BCE294 /* AppointmentTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentTab.swift; sourceTree = "<group>"; };
+		574E4B5727BD6C6E00BCE294 /* AppointmentTabViewModelCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentTabViewModelCoordinatorDelegate.swift; sourceTree = "<group>"; };
+		574E4B5927BD6C7A00BCE294 /* AppointmentTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentTabViewController.swift; sourceTree = "<group>"; };
+		574E4B5B27BD6C8C00BCE294 /* AppointmentTabViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentTabViewModelProtocol.swift; sourceTree = "<group>"; };
+		574E4B5D27BD6C9F00BCE294 /* AppointmentTabViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentTabViewModel.swift; sourceTree = "<group>"; };
+		574E4B5F27BD6CC100BCE294 /* AppointmentTab.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AppointmentTab.storyboard; sourceTree = "<group>"; };
+		574E4B6127BD6DC700BCE294 /* AppointmentTabLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentTabLayout.swift; sourceTree = "<group>"; };
 		57570EC027AADC6400D0DFB1 /* TDSplash.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TDSplash.storyboard; sourceTree = "<group>"; };
 		57570EC227AADF2A00D0DFB1 /* AccountManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountManager.swift; sourceTree = "<group>"; };
 		57570EC927AB232D00D0DFB1 /* TDInitialScreenViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDInitialScreenViewModel.swift; sourceTree = "<group>"; };
@@ -574,6 +588,51 @@
 			path = DataSource;
 			sourceTree = "<group>";
 		};
+		574E4B5027BD6B9B00BCE294 /* AppointmentTab */ = {
+			isa = PBXGroup;
+			children = (
+				574E4B5427BD6BB300BCE294 /* Coordinator */,
+				574E4B5327BD6BAC00BCE294 /* Protocols */,
+				574E4B5227BD6BA700BCE294 /* ViewModel */,
+				574E4B5127BD6BA300BCE294 /* View */,
+			);
+			path = AppointmentTab;
+			sourceTree = "<group>";
+		};
+		574E4B5127BD6BA300BCE294 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				574E4B5927BD6C7A00BCE294 /* AppointmentTabViewController.swift */,
+				574E4B5F27BD6CC100BCE294 /* AppointmentTab.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		574E4B5227BD6BA700BCE294 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				574E4B5D27BD6C9F00BCE294 /* AppointmentTabViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		574E4B5327BD6BAC00BCE294 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				574E4B5727BD6C6E00BCE294 /* AppointmentTabViewModelCoordinatorDelegate.swift */,
+				574E4B5B27BD6C8C00BCE294 /* AppointmentTabViewModelProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		574E4B5427BD6BB300BCE294 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				574E4B5527BD6C3600BCE294 /* AppointmentTab.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
 		57570EC427AB22DA00D0DFB1 /* Initial Screen */ = {
 			isa = PBXGroup;
 			children = (
@@ -702,6 +761,7 @@
 				5769010427B46D0700F58BF0 /* SettingsTabLayout.swift */,
 				578BF47327B874B6004005D7 /* OfferTabLayout.swift */,
 				578BF49427B9B5E7004005D7 /* GiftTabLayout.swift */,
+				574E4B6127BD6DC700BCE294 /* AppointmentTabLayout.swift */,
 			);
 			path = TabsLayout;
 			sourceTree = "<group>";
@@ -1095,6 +1155,7 @@
 		57CB252527AAC5FB004B8767 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				574E4B5027BD6B9B00BCE294 /* AppointmentTab */,
 				574E4B3727BC6E8500BCE294 /* MyGifts */,
 				574E4B2627BC2D1400BCE294 /* CongratsModal */,
 				578BF49627B9B9E9004005D7 /* LuckyWheel */,
@@ -1825,6 +1886,7 @@
 				2DF8213C272177CA009C2932 /* Assets.xcassets in Resources */,
 				57D823EE27AEA58F004AB232 /* ProductCell.xib in Resources */,
 				57D823BD27AC402B004AB232 /* ForgotPassword.storyboard in Resources */,
+				574E4B6027BD6CC100BCE294 /* AppointmentTab.storyboard in Resources */,
 				578BF47A27B87FDD004005D7 /* OfferProductCell.xib in Resources */,
 				57D823CD27AC492C004AB232 /* ForgotPasswordVerification.storyboard in Resources */,
 				57D8241B27B078E7004AB232 /* WebView.storyboard in Resources */,
@@ -1894,6 +1956,7 @@
 				57570EEA27AB31BC00D0DFB1 /* AuthenticationClient.swift in Sources */,
 				57D823DD27AC50A3004AB232 /* ResetPasswordViewModelCoordinatorDelegate.swift in Sources */,
 				578BF45827B8573A004005D7 /* LanguageViewModelCoordinatorDelegate.swift in Sources */,
+				574E4B5827BD6C6E00BCE294 /* AppointmentTabViewModelCoordinatorDelegate.swift in Sources */,
 				578BF48927B9AFB5004005D7 /* GiftTabCoordinator.swift in Sources */,
 				57570EE427AB240400D0DFB1 /* LoginViewModelCoordinatorDelegate.swift in Sources */,
 				57A7819127B5DA63004CA286 /* UserAddressViewController.swift in Sources */,
@@ -1922,6 +1985,7 @@
 				57CB256727AAC958004B8767 /* TDSplashViewModelCoordinatorDelegate.swift in Sources */,
 				57D823DE27AC50A3004AB232 /* ResetPasswordViewModelProtocol.swift in Sources */,
 				57CB255E27AAC936004B8767 /* TDSplashViewModel.swift in Sources */,
+				574E4B5C27BD6C8C00BCE294 /* AppointmentTabViewModelProtocol.swift in Sources */,
 				57D823D427AC4BAB004AB232 /* UnderlineItemView.swift in Sources */,
 				57CB253F27AAC78A004B8767 /* UITextField+Additions.swift in Sources */,
 				578BF47027B86F77004005D7 /* OfferTabViewModel.swift in Sources */,
@@ -1963,6 +2027,7 @@
 				574E4B4F27BC74A000BCE294 /* MyGiftsDataSource.swift in Sources */,
 				57D8244B27B1F153004AB232 /* FilterProductsViewController.swift in Sources */,
 				574E4B2C27BC31CF00BCE294 /* CongratsCoordinator.swift in Sources */,
+				574E4B5627BD6C3600BCE294 /* AppointmentTab.swift in Sources */,
 				57D8240C27AF3BA2004AB232 /* ProductDetailsViewModelCoordinatorDelegate.swift in Sources */,
 				57D823C127AC4035004AB232 /* ForgotPasswordViewModelProtocol.swift in Sources */,
 				57D823F927AEB0A8004AB232 /* ProductsModel.swift in Sources */,
@@ -1980,6 +2045,7 @@
 				57CB255727AAC88B004B8767 /* Colors.swift in Sources */,
 				578BF46827B86DD9004005D7 /* OfferTabCoordinator.swift in Sources */,
 				57570F0C27AB34D400D0DFB1 /* HomeTabViewController.swift in Sources */,
+				574E4B6227BD6DC700BCE294 /* AppointmentTabLayout.swift in Sources */,
 				57570EF927AB33E600D0DFB1 /* TabLayout.swift in Sources */,
 				574E4B4327BC6F5A00BCE294 /* MyGiftsViewModelProtocol.swift in Sources */,
 				57570ECA27AB232D00D0DFB1 /* TDInitialScreenViewModel.swift in Sources */,
@@ -1990,10 +2056,12 @@
 				57CB256427AAC94E004B8767 /* TDSplashViewController.swift in Sources */,
 				57570F0527AB33F100D0DFB1 /* TDMainTabBarContainer.swift in Sources */,
 				57D823A627AC1807004AB232 /* SignUpCoordinator.swift in Sources */,
+				574E4B5A27BD6C7A00BCE294 /* AppointmentTabViewController.swift in Sources */,
 				57CB257527AACEE5004B8767 /* TDNotificationObservers.swift in Sources */,
 				57D823C827AC491D004AB232 /* ForgotPasswordVerificationViewModel.swift in Sources */,
 				57D8244227B1C1A6004AB232 /* SeeAllCategoryViewController.swift in Sources */,
 				57CB257427AACEE5004B8767 /* Reachability.swift in Sources */,
+				574E4B5E27BD6C9F00BCE294 /* AppointmentTabViewModel.swift in Sources */,
 				57A7819327B5DA73004CA286 /* UserAddressViewModelProtocol.swift in Sources */,
 				578BF45A27B85747004005D7 /* LanguageViewModelProtocol.swift in Sources */,
 				57570ECF27AB233F00D0DFB1 /* TDInitialScreenViewController.swift in Sources */,

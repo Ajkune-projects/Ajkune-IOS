@@ -254,12 +254,44 @@
                                                     <constraint firstItem="7D5-Vt-6tg" firstAttribute="leading" secondItem="J1Y-zH-Ghz" secondAttribute="leading" id="zKP-b3-IwQ"/>
                                                 </constraints>
                                             </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffo-BV-9Bp">
+                                                <rect key="frame" x="20" y="808" width="374" height="48"/>
+                                                <color key="backgroundColor" red="0.6588235294" green="0.27450980390000002" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="4M6-Py-PUN"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="14"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Done">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="2"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="6"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="filterProducts:" destination="vEh-cn-K3S" eventType="touchUpInside" id="Csg-o3-Msg"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="iYd-0g-l2X" firstAttribute="width" secondItem="3aW-Xs-Z1z" secondAttribute="width" id="4vI-zH-N2M"/>
                                             <constraint firstItem="iYd-0g-l2X" firstAttribute="leading" secondItem="60Z-xi-fwA" secondAttribute="leading" id="51B-jB-AoP"/>
+                                            <constraint firstItem="ffo-BV-9Bp" firstAttribute="leading" secondItem="3aW-Xs-Z1z" secondAttribute="leading" constant="20" id="JTn-E2-z4i"/>
+                                            <constraint firstItem="3aW-Xs-Z1z" firstAttribute="bottom" secondItem="ffo-BV-9Bp" secondAttribute="bottom" constant="40" id="LvD-Il-RDB"/>
                                             <constraint firstItem="iYd-0g-l2X" firstAttribute="trailing" secondItem="60Z-xi-fwA" secondAttribute="trailing" id="Pra-pI-tr0"/>
                                             <constraint firstItem="iYd-0g-l2X" firstAttribute="bottom" secondItem="60Z-xi-fwA" secondAttribute="bottom" id="UEH-Wc-2sm"/>
+                                            <constraint firstItem="3aW-Xs-Z1z" firstAttribute="trailing" secondItem="ffo-BV-9Bp" secondAttribute="trailing" constant="20" id="cc6-wq-A2H"/>
                                             <constraint firstItem="iYd-0g-l2X" firstAttribute="top" secondItem="60Z-xi-fwA" secondAttribute="top" id="eWa-7G-AMS"/>
                                         </constraints>
                                         <viewLayoutGuide key="contentLayoutGuide" id="60Z-xi-fwA"/>
@@ -287,6 +319,8 @@
                     <connections>
                         <outlet property="maxValue" destination="iTW-WZ-9T0" id="Yas-zk-9KC"/>
                         <outlet property="minValue" destination="uMv-eg-bgm" id="Wa2-s2-3pj"/>
+                        <outlet property="offerBtn" destination="ik4-aw-RLy" id="UTG-WW-aQq"/>
+                        <outlet property="productBtn" destination="zsc-re-arX" id="223-lJ-0fu"/>
                         <outlet property="rangeSlider" destination="7D5-Vt-6tg" id="JzQ-7y-yq1"/>
                     </connections>
                 </viewController>

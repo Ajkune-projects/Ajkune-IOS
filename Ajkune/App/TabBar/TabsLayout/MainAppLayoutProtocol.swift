@@ -17,7 +17,7 @@ class MainAppLayout: MainAppLayoutProtocol {
     var orderedTabs: [TabLayout] {
         get {
             return [
-                HomeTabLayout(coordinator: HomeTabCoordinator(viewModel: HomeTabViewModel())), GiftTabLayout(coordinator: GiftTabCoordinator(viewModel: GiftTabViewModel())),OfferTabLayout(coordinator: OfferTabCoordinator(viewModel: OfferTabViewModel())),SettingsTabLayout(coordinator: SettingsTabCoordinator(viewModel: SettingsTabViewModel())), 
+                HomeTabLayout(coordinator: HomeTabCoordinator(viewModel: HomeTabViewModel())), AppointmentTabLayout(coordinator: AppointmentTabCoordinator(viewModel: AppointmentTabViewModel())), GiftTabLayout(coordinator: GiftTabCoordinator(viewModel: GiftTabViewModel())),OfferTabLayout(coordinator: OfferTabCoordinator(viewModel: OfferTabViewModel())),SettingsTabLayout(coordinator: SettingsTabCoordinator(viewModel: SettingsTabViewModel())), 
             ]
         }
     }

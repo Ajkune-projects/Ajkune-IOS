@@ -320,6 +320,7 @@
                         <outlet property="commentTextView" destination="8cQ-qN-6Wg" id="VHP-pu-Lin"/>
                         <outlet property="initialLabel" destination="aYd-NG-nGk" id="m4l-1s-jUa"/>
                         <outlet property="line" destination="BFo-eD-5Nz" id="pt8-Pi-e3R"/>
+                        <outlet property="priceLabe" destination="FBG-N0-T3p" id="C1L-67-tWE"/>
                         <outlet property="productDetails" destination="6dS-sA-s7Y" id="lhf-04-5Xr"/>
                         <outlet property="productImage" destination="TWv-rW-WrF" id="Pb9-Mm-tRD"/>
                         <outlet property="productName" destination="Hgb-1M-Vlk" id="xf1-v3-gn1"/>
@@ -335,10 +336,7 @@
     </scenes>
     <designables>
         <designable name="UJV-dw-aU3">
-            <size key="intrinsicContentSize" width="374" height="41.637671874999995"/>
-        </designable>
-        <designable name="plo-YP-G2i">
-            <size key="intrinsicContentSize" width="95" height="15"/>
+            <size key="intrinsicContentSize" width="34.5" height="21"/>
         </designable>
     </designables>
     <resources>

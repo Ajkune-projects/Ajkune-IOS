@@ -5,7 +5,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -18,45 +17,55 @@
                 <rect key="frame" x="0.0" y="0.0" width="442" height="168"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OeR-uJ-3aX">
-                        <rect key="frame" x="0.0" y="8" width="442" height="152"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
                     <view contentMode="scaleToFill" id="Lbh-hB-Koa">
-                        <rect key="frame" x="0.0" y="0.0" width="439" height="167"/>
+                        <rect key="frame" x="1" y="0.0" width="439" height="167"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="etP-Os-JK4">
-                                <rect key="frame" x="140" y="43.5" width="279" height="80"/>
-                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="14"/>
-                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selectedGift" translatesAutoresizingMaskIntoConstraints="NO" id="EIr-eX-9Yg">
-                                <rect key="frame" x="30" y="43.5" width="80" height="80"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kmi-1m-qCs">
+                                <rect key="frame" x="5" y="10" width="429" height="147"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selectedGift" translatesAutoresizingMaskIntoConstraints="NO" id="EIr-eX-9Yg">
+                                        <rect key="frame" x="20" y="33.5" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="1ph-aI-PCF"/>
+                                            <constraint firstAttribute="height" constant="80" id="5O0-UF-cop"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="40"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="etP-Os-JK4">
+                                        <rect key="frame" x="120" y="33.5" width="299" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="80" id="SQz-US-QqD"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="14"/>
+                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.99215686274509807" green="0.97647058823529409" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="1ph-aI-PCF"/>
-                                    <constraint firstAttribute="height" constant="80" id="5O0-UF-cop"/>
+                                    <constraint firstAttribute="trailing" secondItem="etP-Os-JK4" secondAttribute="trailing" constant="10" id="Bnq-U4-qEs"/>
+                                    <constraint firstItem="etP-Os-JK4" firstAttribute="leading" secondItem="EIr-eX-9Yg" secondAttribute="trailing" constant="20" id="G9b-LL-2qB"/>
+                                    <constraint firstItem="EIr-eX-9Yg" firstAttribute="leading" secondItem="Kmi-1m-qCs" secondAttribute="leading" constant="20" id="UM4-dc-FFr"/>
+                                    <constraint firstItem="EIr-eX-9Yg" firstAttribute="centerY" secondItem="Kmi-1m-qCs" secondAttribute="centerY" id="qhS-W5-kdO"/>
+                                    <constraint firstItem="etP-Os-JK4" firstAttribute="centerY" secondItem="EIr-eX-9Yg" secondAttribute="centerY" id="rgD-oc-TvH"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="15"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="20"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </imageView>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YsJ-U5-oSP"/>
-                        <color key="backgroundColor" red="0.99215686274509807" green="0.97647058823529409" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="etP-Os-JK4" firstAttribute="top" secondItem="EIr-eX-9Yg" secondAttribute="top" id="2ZX-6z-bzd"/>
-                            <constraint firstItem="YsJ-U5-oSP" firstAttribute="trailing" secondItem="etP-Os-JK4" secondAttribute="trailing" constant="20" id="9SX-1I-6U9"/>
-                            <constraint firstItem="EIr-eX-9Yg" firstAttribute="leading" secondItem="Lbh-hB-Koa" secondAttribute="leading" constant="30" id="mWu-H5-OA9"/>
-                            <constraint firstItem="EIr-eX-9Yg" firstAttribute="centerY" secondItem="Lbh-hB-Koa" secondAttribute="centerY" id="niX-TA-4Ir"/>
-                            <constraint firstItem="etP-Os-JK4" firstAttribute="leading" secondItem="EIr-eX-9Yg" secondAttribute="trailing" constant="30" id="poO-yr-svb"/>
-                            <constraint firstItem="etP-Os-JK4" firstAttribute="bottom" secondItem="EIr-eX-9Yg" secondAttribute="bottom" id="uot-Ki-uNl"/>
+                            <constraint firstItem="Kmi-1m-qCs" firstAttribute="leading" secondItem="YsJ-U5-oSP" secondAttribute="leading" constant="5" id="5Te-Mw-Oat"/>
+                            <constraint firstItem="YsJ-U5-oSP" firstAttribute="bottom" secondItem="Kmi-1m-qCs" secondAttribute="bottom" constant="10" id="7Sg-VK-bxC"/>
+                            <constraint firstItem="YsJ-U5-oSP" firstAttribute="trailing" secondItem="Kmi-1m-qCs" secondAttribute="trailing" constant="5" id="aV5-Xa-LdT"/>
+                            <constraint firstItem="Kmi-1m-qCs" firstAttribute="top" secondItem="YsJ-U5-oSP" secondAttribute="top" constant="10" id="rou-hJ-fZZ"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -65,12 +74,6 @@
                         </userDefinedRuntimeAttributes>
                     </view>
                 </subviews>
-                <constraints>
-                    <constraint firstAttribute="bottom" secondItem="OeR-uJ-3aX" secondAttribute="bottom" constant="8" id="PGQ-Zt-orV"/>
-                    <constraint firstAttribute="trailing" secondItem="OeR-uJ-3aX" secondAttribute="trailing" id="ay9-vE-rSH"/>
-                    <constraint firstItem="OeR-uJ-3aX" firstAttribute="leading" secondItem="yph-eF-ZBW" secondAttribute="leading" id="dfi-XQ-zzJ"/>
-                    <constraint firstItem="OeR-uJ-3aX" firstAttribute="top" secondItem="yph-eF-ZBW" secondAttribute="top" constant="8" id="fr6-NK-uwf"/>
-                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="b0k-sP-JgI"/>
             <connections>
@@ -82,8 +85,5 @@
     </objects>
     <resources>
         <image name="selectedGift" width="20" height="19"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>

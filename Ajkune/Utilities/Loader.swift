@@ -49,7 +49,7 @@ private func startActivityAnimating(size: CGSize? = nil, message: String? = nil,
     let activityIndicatorView = NVActivityIndicatorView(
         frame: CGRect(x:0, y:0, width:actualSize.width, height:actualSize.height),
         type: type!,
-        color:.lightGray,
+        color:Colors.overcastBlueColor,
         padding: padding!)
     
     activityIndicatorView.center = activityContainer.center

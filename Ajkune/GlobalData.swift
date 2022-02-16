@@ -22,6 +22,7 @@ struct globalData{
     static var filteredProducts = [Products]()
     static var fromFilter = false
     static var isOffer:Bool? = false
+    static var filterFromOffer:Bool? = false
 }
 
 struct ProfileDetails{

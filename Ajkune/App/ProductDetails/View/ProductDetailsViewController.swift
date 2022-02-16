@@ -16,6 +16,7 @@ class ProductDetailsViewController: UIViewController, Storyboarded, UITextViewDe
     @IBOutlet weak var commentBottomView: UIView!
     @IBOutlet weak var productDetails: UILabel!
     @IBOutlet weak var commentTextView: UITextView!
+    @IBOutlet weak var priceLabe: UILabel!
     @IBOutlet weak var titleComment: SkyFloatingLabelTextField!
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var commentTableView: UITableView!
@@ -54,6 +55,7 @@ class ProductDetailsViewController: UIViewController, Storyboarded, UITextViewDe
         self.productImage.setImage(with: img)
         }
         self.productName.text = prod?.name ?? ""
+        self.priceLabe.text = "\(prod?.price ?? "") CH"
         self.productRaiting.rating = Double(prod?.rating ?? 0 )
         self.productDetails.text = prod?.desc_en
         self.productRaiting.settings.updateOnTouch = false
@@ -65,7 +67,8 @@ class ProductDetailsViewController: UIViewController, Storyboarded, UITextViewDe
         if let img = prod?.image{
         self.productImage.setImage(with: img)
         }
-        self.initialLabel.text = "\(prod?.initial_price ?? "")CH"
+        self.initialLabel.text = "\(prod?.initial_price ?? "") CH"
+        self.priceLabe.text = "\(prod?.price ?? "") CH"
         self.productName.text = prod?.name ?? ""
         self.productRaiting.rating = Double(prod?.rating ?? 0 )
         self.productDetails.text = prod?.desc_en

@@ -28,10 +28,13 @@ class HomeTabViewController: UIViewController, Storyboarded{
         filterData()
         getALLProducts()
         getBanner()
+        filterData()
+        globalData.filterFromOffer = false
     }
 
     override func viewWillAppear(_ animated: Bool) {
         filterData()
+        globalData.filterFromOffer = false
     }
     
     func filterData(){
@@ -85,7 +88,6 @@ class HomeTabViewController: UIViewController, Storyboarded{
                     self.view.layoutIfNeeded()
                    self.tableViewHeightConst.constant = self.productsCollectionView.contentSize.height
                             self.view.layoutIfNeeded()
-                    
                 }
             }
         })

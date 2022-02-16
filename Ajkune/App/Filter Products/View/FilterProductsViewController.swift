@@ -10,12 +10,16 @@ import WARangeSlider
 
 class FilterProductsViewController: UIViewController , Storyboarded{
     @IBOutlet weak var rangeSlider: RangeSlider!
+    @IBOutlet weak var productBtn: UIButton!
     @IBOutlet weak var minValue: UIButton!
     @IBOutlet weak var maxValue: UIButton!
+    @IBOutlet weak var offerBtn: UIButton!
     
     //MARK: - Properties
     var viewModel: FilterProductsViewModelProtocol?
     var coordinator: FilterProductsCoordinator?
+    var type:String?
+    var filterInOffer:Bool?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +30,7 @@ class FilterProductsViewController: UIViewController , Storyboarded{
         minValue.setTitle("CHF \(rangeSlider.lowerValue.roundToPlaces(places: 2))", for: .normal)
         maxValue.setTitle("CHF \(rangeSlider.upperValue.roundToPlaces(places: 2))", for: .normal)
         rangeSlider.addTarget(self, action: #selector(rangeSliderValueChanged(_:)), for: .valueChanged)
+     setupUI()
 
     }
     @objc func rangeSliderValueChanged(_ rangeSlider: RangeSlider) {
@@ -33,41 +38,71 @@ class FilterProductsViewController: UIViewController , Storyboarded{
         minValue.setTitle("CHF \(rangeSlider.lowerValue.roundToPlaces(places: 2))", for: .normal)
         maxValue.setTitle("CHF \(rangeSlider.upperValue.roundToPlaces(places: 2))", for: .normal)
     }
+    func setupUI(){
+        if  globalData.filterFromOffer ?? false == true{
+            setupActiveButton(button: offerBtn)
+            setupInActiveButton(button: productBtn)
+            type = "offer"
+        }else{
+            setupActiveButton(button: productBtn)
+            setupInActiveButton(button: offerBtn)
+            type = "product"
+        }
+    }
+    
+    func setupActiveButton(button:UIButton){
+        button.backgroundColor = Colors.overcastBlueColor
+        button.setTitleColor(.white, for: .normal)
+        button.borderColor = .white
+        
+    }
+    func setupInActiveButton(button:UIButton){
+        button.backgroundColor = .white
+        button.borderColor = Colors.lightGray
+        button.setTitleColor(Colors.lightGray, for: .normal)
+        
+    }
     
     //IBActions
     @IBAction func productAction(_ sender: Any) {
+        setupActiveButton(button: productBtn)
+        setupInActiveButton(button: offerBtn)
+        type = "product"
+    }
+    @IBAction func offerAction(_ sender: Any) {
+        setupActiveButton(button: offerBtn)
+        setupInActiveButton(button: productBtn)
+        type = "offer"
+        
+    }
+    @IBAction func filterProducts(_ sender: Any) {
+        filterData(type:type ?? "")
+    }
+    
+    func filterData(type:String){
         globalData.fromFilter = true
+
         let max = "\(rangeSlider.upperValue.roundToPlaces(places: 2))"
         let min = "\(rangeSlider.lowerValue.roundToPlaces(places: 2))"
         
-        self.viewModel?.filterProducts(maxValue: max, minValue: min, type: "product", completion: { response in
+        self.viewModel?.filterProducts(maxValue: max, minValue: min, type: type, completion: { response in
             if response != nil {
                 globalData.filteredProducts = response ?? [Products]()
-                if let tabBarController = self.tabBarController{
-                    tabBarController.selectedIndex = 0
+                if globalData.filterFromOffer == false && type == "offer"{
+                    if let tabBarController = self.tabBarController{
+                        tabBarController.selectedIndex = 3
+                    }
+                }else if globalData.filterFromOffer == true && type == "product" {
+                    if let tabBarController = self.tabBarController{
+                        tabBarController.selectedIndex = 0
+                    }
                 }
                 self.coordinator?.stop()
+                
             }
             
         })
                 
-        
-    }
-    @IBAction func offerAction(_ sender: Any) {
-        globalData.fromFilter = true
-        let max = "\(rangeSlider.upperValue.roundToPlaces(places: 2))"
-        let min = "\(rangeSlider.lowerValue.roundToPlaces(places: 2))"
-        
-        self.viewModel?.filterProducts(maxValue: max, minValue: min, type: "offer", completion: { response in
-            if response != nil {
-                globalData.filteredProducts = response ?? [Products]()
-            }
-            if let tabBarController = self.tabBarController{
-                tabBarController.selectedIndex = 2
-            }
-            self.coordinator?.stop()
-        })
-       
     }
     
 

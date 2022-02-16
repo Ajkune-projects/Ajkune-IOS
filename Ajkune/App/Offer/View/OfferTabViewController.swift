@@ -28,9 +28,13 @@ class OfferTabViewController: UIViewController, Storyboarded{
         filterData()
         getALLProducts()
         getBanner()
+        globalData.filterFromOffer = true
     }
     override func viewWillAppear(_ animated: Bool) {
         filterData()
+    }
+    override func viewDidAppear(_ animated: Bool) {
+        globalData.filterFromOffer = true
     }
     func filterData(){
         if globalData.fromFilter == true{
