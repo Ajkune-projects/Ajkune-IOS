@@ -32,12 +32,63 @@
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                             </tableView>
+                                            <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9PU-JI-gUL">
+                                                <rect key="frame" x="57" y="335.5" width="300" height="185"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B9h-7X-vef">
+                                                        <rect key="frame" x="0.0" y="85" width="300" height="70"/>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="70" id="7Ps-cp-Ai0"/>
+                                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="86b-az-DOo"/>
+                                                        </constraints>
+                                                        <string key="text">There is no gift
+for you at the moment!</string>
+                                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="16"/>
+                                                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="20"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="rTM-Ld-FS6">
+                                                        <rect key="frame" x="127.5" y="30" width="45" height="45"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="45" id="Nn7-ai-NLC"/>
+                                                            <constraint firstAttribute="width" constant="45" id="Yz5-f6-Nqo"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.6588235294" green="0.27450980390000002" blue="0.43529411759999997" alpha="0.050000000000000003" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="B9h-7X-vef" secondAttribute="trailing" id="81u-iX-kC6"/>
+                                                    <constraint firstItem="rTM-Ld-FS6" firstAttribute="top" secondItem="9PU-JI-gUL" secondAttribute="top" constant="30" id="Iqy-Zn-Oye"/>
+                                                    <constraint firstItem="B9h-7X-vef" firstAttribute="leading" secondItem="9PU-JI-gUL" secondAttribute="leading" id="SMK-Ub-UbU"/>
+                                                    <constraint firstAttribute="bottom" secondItem="B9h-7X-vef" secondAttribute="bottom" constant="30" id="d1R-b5-f1C"/>
+                                                    <constraint firstItem="B9h-7X-vef" firstAttribute="top" secondItem="rTM-Ld-FS6" secondAttribute="bottom" constant="10" id="vXG-An-gYJ"/>
+                                                    <constraint firstItem="rTM-Ld-FS6" firstAttribute="centerX" secondItem="9PU-JI-gUL" secondAttribute="centerX" id="xnV-cs-CsB"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="6"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="bSS-Z2-5ZO" secondAttribute="bottom" id="8cu-3b-uTq"/>
                                             <constraint firstAttribute="trailing" secondItem="bSS-Z2-5ZO" secondAttribute="trailing" id="KFl-BY-XzY"/>
+                                            <constraint firstItem="9PU-JI-gUL" firstAttribute="centerX" secondItem="HhN-qV-RvV" secondAttribute="centerX" id="OdM-zT-As8"/>
                                             <constraint firstItem="bSS-Z2-5ZO" firstAttribute="leading" secondItem="HhN-qV-RvV" secondAttribute="leading" id="oXS-ac-Xa3"/>
+                                            <constraint firstItem="9PU-JI-gUL" firstAttribute="centerY" secondItem="HhN-qV-RvV" secondAttribute="centerY" constant="-20" id="w7o-pj-3oH"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vcf-Gi-Awm">
@@ -91,6 +142,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="emptyView" destination="9PU-JI-gUL" id="NdI-H0-D24"/>
                         <outlet property="tableView" destination="bSS-Z2-5ZO" id="OK9-zB-CgG"/>
                     </connections>
                 </viewController>
@@ -100,6 +152,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="smileIcon" width="44" height="44"/>
         <image name="vector" width="16" height="16"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

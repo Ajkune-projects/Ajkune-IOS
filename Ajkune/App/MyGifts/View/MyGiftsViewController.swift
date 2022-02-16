@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 import TextFieldEffects
 class MyGiftsViewController: UIViewController , Storyboarded, UITextFieldDelegate{
+    @IBOutlet weak var emptyView: UIView!
     @IBOutlet weak var tableView: UITableView!
     //MARK: - IBOutlets
 
@@ -28,6 +29,10 @@ class MyGiftsViewController: UIViewController , Storyboarded, UITextFieldDelegat
             if response != nil {
                 self.viewModel?.getGifts(gift: response ?? [Gift1]())
                 self.tableView.reloadData()
+            }
+            if response?.count == 0{
+                self.emptyView.isHidden = false
+                self.emptyView.layer.zPosition = 999
             }
         })
     }

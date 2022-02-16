@@ -33,8 +33,8 @@ class LoginViewController: UIViewController, Storyboarded {
     //MARK: - IBFunctions
     func setupUI(){
         showHidePass()
-        self.emailTextField.text = "djellzarrustemii@gmail.com"
-        self.passwordTextField.text = "123456"
+//        self.emailTextField.text = "djellzarrustemii@gmail.com"
+//        self.passwordTextField.text = "123456"
         
     }
     
