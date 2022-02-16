@@ -11,6 +11,7 @@ class SettingsTabCoordinator: TDDefaultCoordinator{
     var viewModel : SettingsTabViewModelProtocol
     var profileCoordinator: ProfileCoordinator?
     var languageCoordinator:LanguageCoordinator?
+    var myGiftsCoordinator:MyGiftsCoordinator?
     
     init(viewModel: SettingsTabViewModelProtocol = SettingsTabViewModel()) {
         self.viewModel = viewModel
@@ -32,5 +33,8 @@ extension SettingsTabCoordinator: SettingsTabViewModelCoordinatorDelegate{
         languageCoordinator = LanguageCoordinator(viewModel:LanguageViewModel(), navigationController: self.viewController?.navigationController)
         languageCoordinator?.start()
     }
-    
+    func showMyGifts() {
+        myGiftsCoordinator = MyGiftsCoordinator(viewModel:MyGiftsViewModel(), navigationController: self.viewController?.navigationController)
+        myGiftsCoordinator?.start()
+    }
 }

@@ -15,6 +15,15 @@
 		574E4B3227BC322B00BCE294 /* CongratsViewModelCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574E4B3127BC322B00BCE294 /* CongratsViewModelCoordinatorDelegate.swift */; };
 		574E4B3427BC323D00BCE294 /* CongratsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574E4B3327BC323D00BCE294 /* CongratsViewModel.swift */; };
 		574E4B3627BC340700BCE294 /* Congrats.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 574E4B3527BC340700BCE294 /* Congrats.storyboard */; };
+		574E4B3D27BC6ECB00BCE294 /* MyGiftsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574E4B3C27BC6ECB00BCE294 /* MyGiftsCoordinator.swift */; };
+		574E4B3F27BC6EFE00BCE294 /* MyGiftsViewModelCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574E4B3E27BC6EFE00BCE294 /* MyGiftsViewModelCoordinatorDelegate.swift */; };
+		574E4B4127BC6F2200BCE294 /* MyGiftsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574E4B4027BC6F2200BCE294 /* MyGiftsViewController.swift */; };
+		574E4B4327BC6F5A00BCE294 /* MyGiftsViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574E4B4227BC6F5A00BCE294 /* MyGiftsViewModelProtocol.swift */; };
+		574E4B4527BC6F7600BCE294 /* MyGiftsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574E4B4427BC6F7600BCE294 /* MyGiftsViewModel.swift */; };
+		574E4B4727BC710E00BCE294 /* MyGifts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 574E4B4627BC710E00BCE294 /* MyGifts.storyboard */; };
+		574E4B4B27BC73F500BCE294 /* GiftCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574E4B4927BC73F500BCE294 /* GiftCell.swift */; };
+		574E4B4C27BC73F500BCE294 /* GiftCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 574E4B4A27BC73F500BCE294 /* GiftCell.xib */; };
+		574E4B4F27BC74A000BCE294 /* MyGiftsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 574E4B4E27BC74A000BCE294 /* MyGiftsDataSource.swift */; };
 		57570EC127AADC6400D0DFB1 /* TDSplash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57570EC027AADC6400D0DFB1 /* TDSplash.storyboard */; };
 		57570EC327AADF2A00D0DFB1 /* AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57570EC227AADF2A00D0DFB1 /* AccountManager.swift */; };
 		57570ECA27AB232D00D0DFB1 /* TDInitialScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57570EC927AB232D00D0DFB1 /* TDInitialScreenViewModel.swift */; };
@@ -206,6 +215,15 @@
 		574E4B3127BC322B00BCE294 /* CongratsViewModelCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratsViewModelCoordinatorDelegate.swift; sourceTree = "<group>"; };
 		574E4B3327BC323D00BCE294 /* CongratsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CongratsViewModel.swift; sourceTree = "<group>"; };
 		574E4B3527BC340700BCE294 /* Congrats.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Congrats.storyboard; sourceTree = "<group>"; };
+		574E4B3C27BC6ECB00BCE294 /* MyGiftsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGiftsCoordinator.swift; sourceTree = "<group>"; };
+		574E4B3E27BC6EFE00BCE294 /* MyGiftsViewModelCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGiftsViewModelCoordinatorDelegate.swift; sourceTree = "<group>"; };
+		574E4B4027BC6F2200BCE294 /* MyGiftsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGiftsViewController.swift; sourceTree = "<group>"; };
+		574E4B4227BC6F5A00BCE294 /* MyGiftsViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGiftsViewModelProtocol.swift; sourceTree = "<group>"; };
+		574E4B4427BC6F7600BCE294 /* MyGiftsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGiftsViewModel.swift; sourceTree = "<group>"; };
+		574E4B4627BC710E00BCE294 /* MyGifts.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyGifts.storyboard; sourceTree = "<group>"; };
+		574E4B4927BC73F500BCE294 /* GiftCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftCell.swift; sourceTree = "<group>"; };
+		574E4B4A27BC73F500BCE294 /* GiftCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GiftCell.xib; sourceTree = "<group>"; };
+		574E4B4E27BC74A000BCE294 /* MyGiftsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyGiftsDataSource.swift; sourceTree = "<group>"; };
 		57570EC027AADC6400D0DFB1 /* TDSplash.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = TDSplash.storyboard; sourceTree = "<group>"; };
 		57570EC227AADF2A00D0DFB1 /* AccountManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountManager.swift; sourceTree = "<group>"; };
 		57570EC927AB232D00D0DFB1 /* TDInitialScreenViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TDInitialScreenViewModel.swift; sourceTree = "<group>"; };
@@ -490,6 +508,70 @@
 				574E4B2B27BC31CF00BCE294 /* CongratsCoordinator.swift */,
 			);
 			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		574E4B3727BC6E8500BCE294 /* MyGifts */ = {
+			isa = PBXGroup;
+			children = (
+				574E4B4D27BC749000BCE294 /* DataSource */,
+				574E4B3B27BC6EB400BCE294 /* Coordinator */,
+				574E4B3A27BC6EAC00BCE294 /* Protocols */,
+				574E4B3927BC6E9600BCE294 /* ViewModels */,
+				574E4B3827BC6E9100BCE294 /* View */,
+			);
+			path = MyGifts;
+			sourceTree = "<group>";
+		};
+		574E4B3827BC6E9100BCE294 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				574E4B4827BC73BC00BCE294 /* Cells */,
+				574E4B4027BC6F2200BCE294 /* MyGiftsViewController.swift */,
+				574E4B4627BC710E00BCE294 /* MyGifts.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		574E4B3927BC6E9600BCE294 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				574E4B4427BC6F7600BCE294 /* MyGiftsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		574E4B3A27BC6EAC00BCE294 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				574E4B3E27BC6EFE00BCE294 /* MyGiftsViewModelCoordinatorDelegate.swift */,
+				574E4B4227BC6F5A00BCE294 /* MyGiftsViewModelProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		574E4B3B27BC6EB400BCE294 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				574E4B3C27BC6ECB00BCE294 /* MyGiftsCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		574E4B4827BC73BC00BCE294 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				574E4B4927BC73F500BCE294 /* GiftCell.swift */,
+				574E4B4A27BC73F500BCE294 /* GiftCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		574E4B4D27BC749000BCE294 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				574E4B4E27BC74A000BCE294 /* MyGiftsDataSource.swift */,
+			);
+			path = DataSource;
 			sourceTree = "<group>";
 		};
 		57570EC427AB22DA00D0DFB1 /* Initial Screen */ = {
@@ -1013,6 +1095,7 @@
 		57CB252527AAC5FB004B8767 /* App */ = {
 			isa = PBXGroup;
 			children = (
+				574E4B3727BC6E8500BCE294 /* MyGifts */,
 				574E4B2627BC2D1400BCE294 /* CongratsModal */,
 				578BF49627B9B9E9004005D7 /* LuckyWheel */,
 				578BF47E27B9A133004005D7 /* Gifts */,
@@ -1732,8 +1815,10 @@
 				57570F0327AB33F100D0DFB1 /* TabBar.storyboard in Resources */,
 				57570EC127AADC6400D0DFB1 /* TDSplash.storyboard in Resources */,
 				57D8239F27AC17EF004AB232 /* SignUp.storyboard in Resources */,
+				574E4B4C27BC73F500BCE294 /* GiftCell.xib in Resources */,
 				57A7819927B5DB1D004CA286 /* UserAddress.storyboard in Resources */,
 				57570EE027AB23F000D0DFB1 /* Login.storyboard in Resources */,
+				574E4B4727BC710E00BCE294 /* MyGifts.storyboard in Resources */,
 				574E4B3627BC340700BCE294 /* Congrats.storyboard in Resources */,
 				57D8244D27B1F177004AB232 /* FilterProducts.storyboard in Resources */,
 				57D823FF27AF04BA004AB232 /* CategoriesCell.xib in Resources */,
@@ -1820,6 +1905,7 @@
 				5769010C27B4733500F58BF0 /* ProfileCoordinator.swift in Sources */,
 				57D8240A27AF3B8A004AB232 /* ProductDetailsViewModel.swift in Sources */,
 				57D823AA27AC2A67004AB232 /* SignUpModel.swift in Sources */,
+				574E4B4B27BC73F500BCE294 /* GiftCell.swift in Sources */,
 				57D8243B27B1BE7A004AB232 /* SeeAllCategoriesViewModel.swift in Sources */,
 				5769011427B4747F00F58BF0 /* ProfileViewModel.swift in Sources */,
 				578BF4A427B9C1EA004005D7 /* LuckyWheelViewModel.swift in Sources */,
@@ -1854,6 +1940,7 @@
 				57D823BE27AC402B004AB232 /* ForgotPasswordViewController.swift in Sources */,
 				578BF45427B856E0004005D7 /* LanguageCoordinator.swift in Sources */,
 				576900FB27B45D7B00F58BF0 /* SettingsTabViewModelProtocol.swift in Sources */,
+				574E4B4527BC6F7600BCE294 /* MyGiftsViewModel.swift in Sources */,
 				57570F1227AB35DB00D0DFB1 /* HomeTabViewModelCoordinatorDelegate.swift in Sources */,
 				57D8245527B1F1CB004AB232 /* FilterProductsCoordinator.swift in Sources */,
 				57D823DA27AC5068004AB232 /* ResetPasswordCoordinator.swift in Sources */,
@@ -1863,6 +1950,7 @@
 				57D823D227AC4933004AB232 /* ForgotPasswordVerificationViewModelCoordinatorDelegate.swift in Sources */,
 				57CB254527AAC78A004B8767 /* UILabel+Additions.swift in Sources */,
 				578BF47427B874B6004005D7 /* OfferTabLayout.swift in Sources */,
+				574E4B3D27BC6ECB00BCE294 /* MyGiftsCoordinator.swift in Sources */,
 				57CB254027AAC78A004B8767 /* Array+Additions.swift in Sources */,
 				57570EFD27AB33E600D0DFB1 /* HomeTabLayout.swift in Sources */,
 				57D823E127AC5110004AB232 /* ResetPasswordViewController.swift in Sources */,
@@ -1872,6 +1960,7 @@
 				57CB257727AAD041004B8767 /* TDCoordinator.swift in Sources */,
 				57D8242627B09477004AB232 /* CommentDataSource.swift in Sources */,
 				576900FD27B45D8F00F58BF0 /* SettingsTabViewModel.swift in Sources */,
+				574E4B4F27BC74A000BCE294 /* MyGiftsDataSource.swift in Sources */,
 				57D8244B27B1F153004AB232 /* FilterProductsViewController.swift in Sources */,
 				574E4B2C27BC31CF00BCE294 /* CongratsCoordinator.swift in Sources */,
 				57D8240C27AF3BA2004AB232 /* ProductDetailsViewModelCoordinatorDelegate.swift in Sources */,
@@ -1882,6 +1971,7 @@
 				578BF49527B9B5E7004005D7 /* GiftTabLayout.swift in Sources */,
 				578BF48D27B9B043004005D7 /* GiftTabViewModelProtocol.swift in Sources */,
 				57CB252D27AAC755004B8767 /* Constants.swift in Sources */,
+				574E4B3F27BC6EFE00BCE294 /* MyGiftsViewModelCoordinatorDelegate.swift in Sources */,
 				5769011027B4744E00F58BF0 /* ProfileViewModelProtocol.swift in Sources */,
 				57CB255A27AAC89E004B8767 /* Loader.swift in Sources */,
 				57A7818F27B5DA42004CA286 /* UserAddressCoordinator.swift in Sources */,
@@ -1891,6 +1981,7 @@
 				578BF46827B86DD9004005D7 /* OfferTabCoordinator.swift in Sources */,
 				57570F0C27AB34D400D0DFB1 /* HomeTabViewController.swift in Sources */,
 				57570EF927AB33E600D0DFB1 /* TabLayout.swift in Sources */,
+				574E4B4327BC6F5A00BCE294 /* MyGiftsViewModelProtocol.swift in Sources */,
 				57570ECA27AB232D00D0DFB1 /* TDInitialScreenViewModel.swift in Sources */,
 				57A7819727B5DAB9004CA286 /* UserAddressViewModel.swift in Sources */,
 				57570F0927AB34C700D0DFB1 /* HomeTabCoordinator.swift in Sources */,
@@ -1953,6 +2044,7 @@
 				57CB254627AAC78A004B8767 /* Storyboarded.swift in Sources */,
 				57D823C627AC4059004AB232 /* ForgotPasswordViewModel.swift in Sources */,
 				57D8243927B1BE6A004AB232 /* SeeAllCategoriesCoordinator.swift in Sources */,
+				574E4B4127BC6F2200BCE294 /* MyGiftsViewController.swift in Sources */,
 				57CB255C27AAC915004B8767 /* AppDelegate.swift in Sources */,
 				578BF4A227B9C1BF004005D7 /* LuckyWheelViewModelCoordinatorDelegate.swift in Sources */,
 			);

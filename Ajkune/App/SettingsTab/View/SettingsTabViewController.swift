@@ -26,5 +26,8 @@ class SettingsTabViewController: UIViewController, Storyboarded {
     @IBAction func logOutAction(_ sender: Any) {
         Account.shared.clear()
     }
+    @IBAction func myGiftsAction(_ sender: Any) {
+        self.viewModel?.showMyGifts()
+    }
     
 }

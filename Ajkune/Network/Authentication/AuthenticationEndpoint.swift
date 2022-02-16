@@ -35,6 +35,7 @@ enum TDAuthenticationEndpoint: TDAPIConfiguration {
     case hasGiftUser
     case luckyWheelGifts
     case addGift(Id:Int)
+    case getMyGifts
     
     
     // MARK: - HTTPMethod
@@ -42,7 +43,7 @@ enum TDAuthenticationEndpoint: TDAPIConfiguration {
         switch self {
         case .login,.signUp, .requestForgotPassword, .checkResetPasswordCode, .requestResetPassword,.addComment,.addOfferComment,.verificationUser,.addGift:
             return .post
-        case .getProducts, .getProductsByID,.getCategories,.getBanner,.getProductDetails,.filterProducts,.getUserDetails,.getProductsFromOffer,.getProductsByIdOffer,.hasGiftUser,.luckyWheelGifts:
+        case .getProducts, .getProductsByID,.getCategories,.getBanner,.getProductDetails,.filterProducts,.getUserDetails,.getProductsFromOffer,.getProductsByIdOffer,.hasGiftUser,.luckyWheelGifts,.getMyGifts:
             return .get
 //        case :
 //            return .delete
@@ -94,6 +95,8 @@ enum TDAuthenticationEndpoint: TDAPIConfiguration {
             return "/gift/add"
         case .addOfferComment:
             return "/commentOffer/new"
+        case .getMyGifts:
+            return "/gift/win"
         }
     }
     
@@ -116,7 +119,7 @@ enum TDAuthenticationEndpoint: TDAPIConfiguration {
                      "email":data.email,
                      "password":data.password,
                      "confirmation_password":data.confirmation_password]
-        case .getProducts,.getProductsByID,.getCategories,.getBanner,.getProductDetails,.filterProducts,.getUserDetails,.getProductsByIdOffer,.getProductsFromOffer,.hasGiftUser,.luckyWheelGifts:
+        case .getProducts,.getProductsByID,.getCategories,.getBanner,.getProductDetails,.filterProducts,.getUserDetails,.getProductsByIdOffer,.getProductsFromOffer,.hasGiftUser,.luckyWheelGifts,.getMyGifts:
             return nil
         case .addComment(let product_id, let title, let comment):
             return ["product_id":product_id,

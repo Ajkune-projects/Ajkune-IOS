@@ -11,4 +11,5 @@ protocol SettingsTabViewModelProtocol : BaseViewModel {
     var coordinatorDelegate : SettingsTabViewModelCoordinatorDelegate? {get set}
     func showProfile()
     func showLanguage()
+    func showMyGifts()
 }

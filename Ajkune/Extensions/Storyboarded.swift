@@ -82,6 +82,9 @@ extension UIStoryboard {
     static var congrats: UIStoryboard {
         return UIStoryboard(name: "Congrats", bundle: nil)
     }
+    static var myGifts: UIStoryboard {
+        return UIStoryboard(name: "MyGifts", bundle: nil)
+    }
 }
 
 

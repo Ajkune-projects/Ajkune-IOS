@@ -16,4 +16,7 @@ class SettingsTabViewModel: SettingsTabViewModelProtocol{
         coordinatorDelegate?.showLanguage()
     }
     
+    func showMyGifts() {
+        coordinatorDelegate?.showMyGifts()
+    }
 }
