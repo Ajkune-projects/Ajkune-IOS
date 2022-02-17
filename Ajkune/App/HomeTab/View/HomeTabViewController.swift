@@ -14,7 +14,7 @@ class HomeTabViewController: UIViewController, Storyboarded{
     @IBOutlet weak var bannerTitle: UILabel!
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var tableViewHeightConst: NSLayoutConstraint!
-    
+    @IBOutlet weak var emptyView: UIView!
     var viewModel: HomeTabViewModelProtocol?
     var categoryID:Int?
     
@@ -53,7 +53,15 @@ class HomeTabViewController: UIViewController, Storyboarded{
             self.categoryCollectionView.scrollToItem(at: globalData.categoryIndexPath, at: .centeredHorizontally, animated: true)
             dispatch {
                 self.productsCollectionView.reloadData()
+                if globalData.filteredProducts.count == 0 {
+                        self.tableViewHeightConst.constant = 300
+                }else{
+                    self.view.layoutIfNeeded()
+                   self.tableViewHeightConst.constant = self.productsCollectionView.contentSize.height
+                            self.view.layoutIfNeeded()
+                }
             }
+           
         }else{
             getALLCategories()
         }
@@ -67,7 +75,7 @@ class HomeTabViewController: UIViewController, Storyboarded{
         self.productsCollectionView.emptyDataSetSource = self.viewModel?.productDataSource
         self.productsCollectionView.emptyDataSetDelegate = self.viewModel?.productDataSource
         productsCollectionView.emptyDataSetView { [weak self] view in
-            view.customView(ProductsEmptyView(frame: CGRect(x: 0, y: 0, width: 300, height: 100))).verticalOffset(-200)
+            view.customView(ProductsEmptyView(frame: CGRect(x: 0, y: 0, width: 300, height: 100))).verticalOffset(-50)
         }
     }
     
@@ -89,8 +97,7 @@ class HomeTabViewController: UIViewController, Storyboarded{
                    self.tableViewHeightConst.constant = self.productsCollectionView.contentSize.height
                             self.view.layoutIfNeeded()
                 }
-            }
-        })
+            } })
     }
     
     func getALLCategories(){
@@ -104,7 +111,6 @@ class HomeTabViewController: UIViewController, Storyboarded{
                 self.viewModel?.getCategorie(cat: category)
                 dispatch {
                     self.categoryCollectionView.reloadData()
-                
                     self.categoryCollectionView?.selectItem(at: globalData.categoryIndexPath, animated: false, scrollPosition: .top)
                     
                 }
@@ -124,6 +130,13 @@ class HomeTabViewController: UIViewController, Storyboarded{
                     self.categoryCollectionView?.selectItem(at: globalData.categoryIndexPath, animated: false, scrollPosition: .top)
                     self.categoryCollectionView.scrollToItem(at: globalData.categoryIndexPath, at: .centeredHorizontally, animated: true)
                 }
+            }
+            if response?.count == 0{
+                self.tableViewHeightConst.constant = 300
+            }else{
+                self.productsCollectionView.reloadData()
+                self.tableViewHeightConst.constant = self.productsCollectionView.contentSize.height
+                         self.view.layoutIfNeeded()
             }
         })
     }
@@ -168,6 +181,10 @@ extension HomeTabViewController: HomeTabViewModelViewDelegate{
                         self.productsCollectionView.reloadData()
                     }
                 }
+                if response?.count == 0{
+                    self.tableViewHeightConst.constant = 300
+                }
+
             })
         }
     }

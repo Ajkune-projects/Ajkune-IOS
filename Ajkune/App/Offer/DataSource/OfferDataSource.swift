@@ -8,12 +8,13 @@
 import Foundation
 import UIKit
 import Cosmos
+import EmptyDataSet_Swift
 
 import UIKit
 protocol OfferDataSourceProtocol: class {
     func productDetails(id: Int)
 }
-final class OfferDataSource: NSObject, UICollectionViewDataSource {
+final class OfferDataSource: NSObject, UICollectionViewDataSource, EmptyDataSetSource,EmptyDataSetDelegate  {
     
     //MARK: - Properties
     weak var delegate : OfferDataSourceProtocol?
@@ -39,6 +40,11 @@ final class OfferDataSource: NSObject, UICollectionViewDataSource {
             cell.mainView.shadowView()
         }
         return cell
+    }
+    
+    func customView(forEmptyDataSet scrollView: UIScrollView) -> UIView? {
+        let view = ProductsEmptyView(frame: CGRect(x: 0, y: 200, width: 300, height: 160))
+        return view
     }
 }
 

@@ -39,8 +39,14 @@ class OfferTabViewController: UIViewController, Storyboarded{
     func filterData(){
         if globalData.fromFilter == true{
             self.viewModel?.getALLProducts(products: globalData.filteredProducts)
-            dispatch {
+            if globalData.filteredProducts.count == 0 {
                 self.productsCollectionView.reloadData()
+                    self.tableViewHeightConst.constant = 300
+            }else{
+                self.productsCollectionView.reloadData()
+                self.view.layoutIfNeeded()
+               self.tableViewHeightConst.constant = self.productsCollectionView.contentSize.height
+                        self.view.layoutIfNeeded()
             }
         }
         globalData.fromFilter = false
@@ -49,6 +55,11 @@ class OfferTabViewController: UIViewController, Storyboarded{
         self.productsCollectionView.register(OfferProductCell.self)
         self.productsCollectionView.delegate = self.viewModel?.productDataSource
         self.productsCollectionView.dataSource = self.viewModel?.productDataSource
+        self.productsCollectionView.emptyDataSetSource = self.viewModel?.productDataSource
+        self.productsCollectionView.emptyDataSetDelegate = self.viewModel?.productDataSource
+        productsCollectionView.emptyDataSetView { [weak self] view in
+            view.customView(ProductsEmptyView(frame: CGRect(x: 0, y: 0, width: 300, height: 100))).verticalOffset(-50)
+        }
     }
     
     func getALLProducts(){
