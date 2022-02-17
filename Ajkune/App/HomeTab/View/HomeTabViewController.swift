@@ -30,8 +30,19 @@ class HomeTabViewController: UIViewController, Storyboarded{
         getBanner()
         filterData()
         globalData.filterFromOffer = false
+        categoryCollectionView.collectionViewLayout = layoutConfig()
     }
-
+    func layoutConfig() -> UICollectionViewCompositionalLayout {
+        return UICollectionViewCompositionalLayout { (sectionNumber, env) -> NSCollectionLayoutSection? in
+            let itemSize = NSCollectionLayoutSize(widthDimension: .estimated(44), heightDimension: .fractionalHeight(1))
+            let item = NSCollectionLayoutItem(layoutSize: itemSize)
+            let groupSize = NSCollectionLayoutSize(widthDimension: .estimated(44), heightDimension: .absolute(50))
+            let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
+            let section = NSCollectionLayoutSection(group: group)
+            section.orthogonalScrollingBehavior = .continuous
+            return section
+        }
+    }
     override func viewWillAppear(_ animated: Bool) {
         filterData()
         globalData.filterFromOffer = false

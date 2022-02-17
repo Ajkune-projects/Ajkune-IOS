@@ -41,12 +41,12 @@ class OfferTabViewController: UIViewController, Storyboarded{
             self.viewModel?.getALLProducts(products: globalData.filteredProducts)
             if globalData.filteredProducts.count == 0 {
                 self.productsCollectionView.reloadData()
-                    self.tableViewHeightConst.constant = 300
+                self.tableViewHeightConst.constant = 300
             }else{
                 self.productsCollectionView.reloadData()
                 self.view.layoutIfNeeded()
-               self.tableViewHeightConst.constant = self.productsCollectionView.contentSize.height
-                        self.view.layoutIfNeeded()
+                self.tableViewHeightConst.constant = self.productsCollectionView.contentSize.height
+                self.view.layoutIfNeeded()
             }
         }
         globalData.fromFilter = false
@@ -71,8 +71,8 @@ class OfferTabViewController: UIViewController, Storyboarded{
                 dispatch {
                     self.productsCollectionView.reloadData()
                     self.view.layoutIfNeeded()
-                   self.tableViewHeightConst.constant = self.productsCollectionView.contentSize.height
-                            self.view.layoutIfNeeded()
+                    self.tableViewHeightConst.constant = self.productsCollectionView.contentSize.height
+                    self.view.layoutIfNeeded()
                 }
             }
         })

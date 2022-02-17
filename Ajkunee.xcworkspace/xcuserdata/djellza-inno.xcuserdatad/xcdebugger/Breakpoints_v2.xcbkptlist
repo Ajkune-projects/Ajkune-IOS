@@ -430,8 +430,8 @@
             filePath = "Ajkune/App/HomeTab/View/HomeTabViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "93"
-            endingLineNumber = "93"
+            startingLineNumber = "104"
+            endingLineNumber = "104"
             landmarkName = "getALLProducts()"
             landmarkType = "7">
          </BreakpointContent>
@@ -446,8 +446,8 @@
             filePath = "Ajkune/App/HomeTab/View/HomeTabViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "95"
-            endingLineNumber = "95"
+            startingLineNumber = "106"
+            endingLineNumber = "106"
             landmarkName = "getALLProducts()"
             landmarkType = "7">
          </BreakpointContent>
@@ -510,8 +510,8 @@
             filePath = "Ajkune/App/HomeTab/DataSource/CategoryDataSource.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
             landmarkName = "collectionView(_:didSelectItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -526,8 +526,8 @@
             filePath = "Ajkune/App/HomeTab/DataSource/CategoryDataSource.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
             landmarkName = "collectionView(_:didSelectItemAt:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -542,8 +542,8 @@
             filePath = "Ajkune/App/HomeTab/View/HomeTabViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "178"
-            endingLineNumber = "178"
+            startingLineNumber = "189"
+            endingLineNumber = "189"
             landmarkName = "selectedCategory(id:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -558,8 +558,8 @@
             filePath = "Ajkune/App/HomeTab/View/HomeTabViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "176"
-            endingLineNumber = "176"
+            startingLineNumber = "187"
+            endingLineNumber = "187"
             landmarkName = "selectedCategory(id:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -574,8 +574,8 @@
             filePath = "Ajkune/App/HomeTab/View/HomeTabViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "179"
-            endingLineNumber = "179"
+            startingLineNumber = "190"
+            endingLineNumber = "190"
             landmarkName = "selectedCategory(id:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -606,8 +606,8 @@
             filePath = "Ajkune/App/HomeTab/View/HomeTabViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "168"
-            endingLineNumber = "168"
+            startingLineNumber = "179"
+            endingLineNumber = "179"
             landmarkName = "productDetails(id:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1094,8 +1094,8 @@
             filePath = "Ajkune/App/HomeTab/View/HomeTabViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "114"
-            endingLineNumber = "114"
+            startingLineNumber = "125"
+            endingLineNumber = "125"
             landmarkName = "getALLCategories()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1110,8 +1110,8 @@
             filePath = "Ajkune/App/HomeTab/View/HomeTabViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "157"
-            endingLineNumber = "157"
+            startingLineNumber = "168"
+            endingLineNumber = "168"
             landmarkName = "seeAllCategoriesPressed(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1174,8 +1174,8 @@
             filePath = "Ajkune/App/HomeTab/View/HomeTabViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "36"
-            endingLineNumber = "36"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
             landmarkName = "viewWillAppear(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1222,8 +1222,8 @@
             filePath = "Ajkune/App/HomeTab/View/HomeTabViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "123"
-            endingLineNumber = "123"
+            startingLineNumber = "134"
+            endingLineNumber = "134"
             landmarkName = "getCategoryByID(id:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1238,8 +1238,8 @@
             filePath = "Ajkune/App/HomeTab/View/HomeTabViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "126"
-            endingLineNumber = "126"
+            startingLineNumber = "137"
+            endingLineNumber = "137"
             landmarkName = "getCategoryByID(id:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1254,8 +1254,8 @@
             filePath = "Ajkune/App/HomeTab/View/HomeTabViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "130"
-            endingLineNumber = "130"
+            startingLineNumber = "141"
+            endingLineNumber = "141"
             landmarkName = "getCategoryByID(id:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1270,8 +1270,8 @@
             filePath = "Ajkune/App/HomeTab/View/HomeTabViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "90"
-            endingLineNumber = "90"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
             landmarkName = "getALLProducts()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1318,8 +1318,8 @@
             filePath = "Ajkune/App/HomeTab/View/HomeTabViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
             landmarkName = "filterData()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1334,8 +1334,8 @@
             filePath = "Ajkune/App/HomeTab/View/HomeTabViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
             landmarkName = "filterData()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1526,8 +1526,8 @@
             filePath = "Ajkune/App/HomeTab/View/HomeTabViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "97"
-            endingLineNumber = "97"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
             landmarkName = "getALLProducts()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1830,8 +1830,8 @@
             filePath = "Ajkune/App/HomeTab/View/HomeTabViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "107"
-            endingLineNumber = "107"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
             landmarkName = "getALLCategories()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1942,8 +1942,8 @@
             filePath = "Ajkune/App/HomeTab/View/HomeTabViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "100"
-            endingLineNumber = "100"
+            startingLineNumber = "111"
+            endingLineNumber = "111"
             landmarkName = "getALLProducts()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1958,8 +1958,8 @@
             filePath = "Ajkune/App/HomeTab/View/HomeTabViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "133"
-            endingLineNumber = "133"
+            startingLineNumber = "144"
+            endingLineNumber = "144"
             landmarkName = "getCategoryByID(id:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1974,8 +1974,8 @@
             filePath = "Ajkune/App/HomeTab/View/HomeTabViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "125"
-            endingLineNumber = "125"
+            startingLineNumber = "136"
+            endingLineNumber = "136"
             landmarkName = "getCategoryByID(id:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1990,8 +1990,8 @@
             filePath = "Ajkune/App/HomeTab/View/HomeTabViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
             landmarkName = "getALLProducts()"
             landmarkType = "7">
          </BreakpointContent>
@@ -2006,8 +2006,8 @@
             filePath = "Ajkune/App/HomeTab/View/HomeTabViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
             landmarkName = "filterData()"
             landmarkType = "7">
          </BreakpointContent>
@@ -2022,8 +2022,8 @@
             filePath = "Ajkune/App/HomeTab/View/HomeTabViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "172"
-            endingLineNumber = "172"
+            startingLineNumber = "183"
+            endingLineNumber = "183"
             landmarkName = "selectedCategory(id:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2038,8 +2038,8 @@
             filePath = "Ajkune/App/HomeTab/View/HomeTabViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "188"
-            endingLineNumber = "188"
+            startingLineNumber = "199"
+            endingLineNumber = "199"
             landmarkName = "selectedCategory(id:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -2054,8 +2054,8 @@
             filePath = "Ajkune/App/HomeTab/View/HomeTabViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "184"
-            endingLineNumber = "184"
+            startingLineNumber = "195"
+            endingLineNumber = "195"
             landmarkName = "selectedCategory(id:)"
             landmarkType = "7">
          </BreakpointContent>
