@@ -14,7 +14,6 @@ class MyGiftsCoordinator: TDPushCoordinator{
     var viewController : MyGiftsViewController?
     var navigationController: UINavigationController?
     var viewModel : MyGiftsViewModelProtocol
-    var homeTabCoordinator: HomeTabCoordinator?
 
     
     init(viewModel: MyGiftsViewModelProtocol, navigationController:UINavigationController?) {

@@ -40,14 +40,13 @@ extension CategoryDataSource: UICollectionViewDelegate{
             collectionView.scrollToItem(at: globalData.categoryIndexPath , at: .centeredHorizontally, animated: true)
             cell.categoryCell.addBottomBorder(with: Colors.overcastBlueColor, andWidth: 2)
             self.delegate?.categoryTapped(id: categories?[indexPath.row].id ?? 0)
-           
         }
     }
+    
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
-            guard let cell = collectionView.cellForItem(at: indexPath) as? CategoriesCell else {
-                    return
-            }
-        cell.categoryCell.addBottomBorder(with: .white, andWidth: 2)
-
+        guard let cell = collectionView.cellForItem(at: indexPath) as? CategoriesCell else {
+            return
         }
+        cell.categoryCell.addBottomBorder(with: .white, andWidth: 2)
+    }
 }

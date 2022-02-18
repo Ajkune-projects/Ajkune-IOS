@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+public var changeLanguage = ""
 struct forgotPassword{
     static var  emailAddress:String? = ""
     static var  resetCode:String? = ""

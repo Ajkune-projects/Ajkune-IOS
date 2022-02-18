@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  Ajkunee
+
+  Created by Djellza- INNO on 2/17/22.
+  
+*/
+"Language" = "German";
+"Language_placeHolder" = "Sprache";
+"Language_subtitle" = "Sprache wählen";
+"TitleButton" = "Sprache ändern";
+
+
+"profile" = "ProfileGerman";
+"categoryTitle" = "category GR";

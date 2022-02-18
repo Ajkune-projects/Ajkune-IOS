@@ -1,0 +1,42 @@
+
+/* Class = "UIButton"; normalTitle = "Profile"; ObjectID = "BBg-hG-WlS"; */
+"BBg-hG-WlS.normalTitle" = "Profile";
+
+/* Class = "UIButton"; normalTitle = "Female"; ObjectID = "FcK-zK-GId"; */
+"FcK-zK-GId.normalTitle" = "Female";
+
+/* Class = "UITextField"; placeholder = "Last name"; ObjectID = "GBO-F6-L9d"; */
+"GBO-F6-L9d.placeholder" = "Last name";
+
+/* Class = "UILabel"; text = "No added address yet!"; ObjectID = "Hwc-hR-apE"; */
+"Hwc-hR-apE.text" = "No added address yet!";
+
+/* Class = "UITextField"; placeholder = "Choose Date"; ObjectID = "Mvy-Cp-OID"; */
+"Mvy-Cp-OID.placeholder" = "Choose Date";
+
+/* Class = "UITextField"; placeholder = "Phone number"; ObjectID = "N0O-4h-OAG"; */
+"N0O-4h-OAG.placeholder" = "Phone number";
+
+/* Class = "UIButton"; normalTitle = "Other"; ObjectID = "OTd-j0-NyR"; */
+"OTd-j0-NyR.normalTitle" = "Other";
+
+/* Class = "UIButton"; normalTitle = "SAVE"; ObjectID = "SSO-JL-8ww"; */
+"SSO-JL-8ww.normalTitle" = "SAVE";
+
+/* Class = "UILabel"; text = "Djellza Rrustemi"; ObjectID = "VD9-sA-lKQ"; */
+"VD9-sA-lKQ.text" = "Djellza Rrustemi";
+
+/* Class = "UITextField"; placeholder = "First name"; ObjectID = "Vho-98-BV4"; */
+"Vho-98-BV4.placeholder" = "First name";
+
+/* Class = "UITextField"; placeholder = "Choose Gender"; ObjectID = "bfx-IQ-euL"; */
+"bfx-IQ-euL.placeholder" = "Choose Gender";
+
+/* Class = "UITextField"; placeholder = "Email address"; ObjectID = "cOn-iw-dda"; */
+"cOn-iw-dda.placeholder" = "Email address";
+
+/* Class = "UIButton"; normalTitle = "Male"; ObjectID = "dDM-cN-sZV"; */
+"dDM-cN-sZV.normalTitle" = "Male";
+
+/* Class = "UIButton"; normalTitle = "ADD ADDRESS"; ObjectID = "msc-YT-6eX"; */
+"msc-YT-6eX.normalTitle" = "ADD ADDRESS";

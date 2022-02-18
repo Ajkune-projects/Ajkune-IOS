@@ -12,10 +12,10 @@ import Foundation
 class AppointmentTabViewController: UIViewController, WKUIDelegate,Storyboarded {
     
     @IBOutlet weak var mainView: UIView!
-    //Properties
+ 
     var viewModel: AppointmentTabViewModelProtocol?
     var coordinator: AppointmentTabCoordinator?
-    
+    var lang:String?
     lazy var webView: WKWebView = {
         let webConfiguration = WKWebViewConfiguration()
         let webView = WKWebView(frame: .zero, configuration: webConfiguration)
@@ -23,15 +23,14 @@ class AppointmentTabViewController: UIViewController, WKUIDelegate,Storyboarded 
         webView.translatesAutoresizingMaskIntoConstraints = false
         return webView
     }()
-    
-        var responseUrl : String = "https://connect.shore.com/bookings/ajkune-professional-spreitenbach-nbz/locations?locale=en-CH"
+   
+    var responseUrl : String?
         override func viewDidLoad() {
             super.viewDidLoad()
             SHOW_CUSTOM_LOADER()
             setupUI()
-            let myURL = URL(string: (responseUrl))
-            let myRequest = URLRequest(url: myURL ?? URL(fileURLWithPath: "") )
-            webView.load(myRequest)
+            setupWebView()
+            addObservers()
         }
         
     @IBAction func backPressed(_ sender: Any) {
@@ -39,10 +38,32 @@ class AppointmentTabViewController: UIViewController, WKUIDelegate,Storyboarded 
                 webView.goBack()
             }
     }
+    func addObservers(){
+        registerNotification(notification: Notification.Name.changeLang, selector: #selector(self.updateLang(notification:)))
+    }
+    @objc func updateLang(notification: Notification) {
+        setupWebView()
+
+    }
+    
+    func setupWebView(){
+        responseUrl = "https://connect.shore.com/bookings/ajkune-professional-spreitenbach-nbz/locations?locale=\(self.lang ?? "")-CH"
+        let myURL = URL(string: (responseUrl ?? ""))
+        let myRequest = URLRequest(url: myURL ?? URL(fileURLWithPath: "") )
+        webView.load(myRequest)
+    }
+    
         func setupUI() {
-//            self.view.backgroundColor = .white
+            if Language.language == Language.french{
+                lang = "fr"
+            }else if Language.language == Language.german{
+                lang = "de"
+            }else if Language.language == Language.italian{
+                lang = "if"
+            }else{
+                lang = "en"
+            }
             self.mainView.addSubview(webView)
-//            self.w
             
             NSLayoutConstraint.activate([
                 webView.topAnchor.constraint(equalTo: self.mainView.safeAreaLayoutGuide.topAnchor),

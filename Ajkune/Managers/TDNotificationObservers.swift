@@ -10,6 +10,7 @@ import UIKit
 
 extension Notification.Name {
     static var viewDismissed = Notification.Name.init("viewDismissed")
+    static var changeLang = Notification.Name.init("changeLang")
     static var UIKeyboardWillShow = Notification.Name.init("UIKeyboardWillShow")
     static var UIKeyboardWillHide = Notification.Name.init("UIKeyboardWillHide")
 

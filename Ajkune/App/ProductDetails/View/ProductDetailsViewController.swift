@@ -57,7 +57,15 @@ class ProductDetailsViewController: UIViewController, Storyboarded, UITextViewDe
         self.productName.text = prod?.name ?? ""
         self.priceLabe.text = "\(prod?.price ?? "") CH"
         self.productRaiting.rating = Double(prod?.rating ?? 0 )
-        self.productDetails.text = prod?.desc_en
+        if Language.language == Language.french{
+            self.productDetails.text = prod?.desc_fr
+        }else if Language.language == Language.german{
+            self.productDetails.text = prod?.desc_de
+        }else if Language.language == Language.italian{
+            self.productDetails.text = prod?.desc_it
+        }else{
+            self.productDetails.text = prod?.desc_en
+        }
         self.productRaiting.settings.updateOnTouch = false
         self.backButton.setTitle(prod?.name, for: .normal)
     }
@@ -71,7 +79,16 @@ class ProductDetailsViewController: UIViewController, Storyboarded, UITextViewDe
         self.priceLabe.text = "\(prod?.price ?? "") CH"
         self.productName.text = prod?.name ?? ""
         self.productRaiting.rating = Double(prod?.rating ?? 0 )
-        self.productDetails.text = prod?.desc_en
+        if Language.language == Language.french{
+            self.productDetails.text = prod?.desc_fr
+        }else if Language.language == Language.german{
+            self.productDetails.text = prod?.desc_de
+        }else if Language.language == Language.italian{
+            self.productDetails.text = prod?.desc_it
+        }else{
+            self.productDetails.text = prod?.desc_en
+        }
+        
         self.productRaiting.settings.updateOnTouch = false
         self.backButton.setTitle(prod?.name, for: .normal)
     }

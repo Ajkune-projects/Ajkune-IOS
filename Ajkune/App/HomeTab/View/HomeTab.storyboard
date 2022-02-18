@@ -221,6 +221,7 @@
                     <connections>
                         <outlet property="banner" destination="1hT-6r-z1Y" id="CFX-rN-9Aw"/>
                         <outlet property="bannerTitle" destination="FJg-QV-3a3" id="O5t-AV-Jll"/>
+                        <outlet property="categoriesLabel" destination="oYn-yZ-pq2" id="phq-C2-E30"/>
                         <outlet property="categoryCollectionView" destination="Uf5-sb-y7P" id="4zi-sf-KY4"/>
                         <outlet property="priceLabel" destination="oiE-bq-kbY" id="ric-lf-RfV"/>
                         <outlet property="productsCollectionView" destination="wvu-Ig-OYA" id="S8e-Vi-kLf"/>

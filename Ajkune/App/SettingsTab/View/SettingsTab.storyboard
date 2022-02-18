@@ -107,6 +107,9 @@
                             <constraint firstItem="foE-5b-l83" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" constant="20" id="gNf-aS-lQa"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="profileButton" destination="ex3-xV-oGT" id="BVB-Zu-l4l"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

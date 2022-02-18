@@ -72,7 +72,9 @@
 		5769011027B4744E00F58BF0 /* ProfileViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5769010F27B4744E00F58BF0 /* ProfileViewModelProtocol.swift */; };
 		5769011227B4746C00F58BF0 /* ProfileViewModelCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5769011127B4746C00F58BF0 /* ProfileViewModelCoordinatorDelegate.swift */; };
 		5769011427B4747F00F58BF0 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5769011327B4747F00F58BF0 /* ProfileViewModel.swift */; };
-		5769011627B4757300F58BF0 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5769011527B4757300F58BF0 /* Profile.storyboard */; };
+		5780A10227BF02CE0078E3E5 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5780A10427BF02CE0078E3E5 /* Localizable.strings */; };
+		5780A10C27BF125F0078E3E5 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5780A10E27BF125F0078E3E5 /* Profile.storyboard */; };
+		5780A11827BF16F60078E3E5 /* Languaga+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5780A11727BF16F60078E3E5 /* Languaga+Extension.swift */; };
 		578BF45427B856E0004005D7 /* LanguageCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578BF45327B856E0004005D7 /* LanguageCoordinator.swift */; };
 		578BF45627B85712004005D7 /* LanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578BF45527B85712004005D7 /* LanguageViewController.swift */; };
 		578BF45827B8573A004005D7 /* LanguageViewModelCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578BF45727B8573A004005D7 /* LanguageViewModelCoordinatorDelegate.swift */; };
@@ -279,7 +281,16 @@
 		5769010F27B4744E00F58BF0 /* ProfileViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModelProtocol.swift; sourceTree = "<group>"; };
 		5769011127B4746C00F58BF0 /* ProfileViewModelCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModelCoordinatorDelegate.swift; sourceTree = "<group>"; };
 		5769011327B4747F00F58BF0 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
-		5769011527B4757300F58BF0 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
+		5780A10327BF02CE0078E3E5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5780A10527BF02D00078E3E5 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5780A10627BF02D10078E3E5 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5780A10727BF02D20078E3E5 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5780A10D27BF125F0078E3E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Profile.storyboard; sourceTree = "<group>"; };
+		5780A11027BF12610078E3E5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Profile.strings; sourceTree = "<group>"; };
+		5780A11227BF128F0078E3E5 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Profile.strings; sourceTree = "<group>"; };
+		5780A11427BF12960078E3E5 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Profile.strings; sourceTree = "<group>"; };
+		5780A11627BF12C40078E3E5 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Profile.strings; sourceTree = "<group>"; };
+		5780A11727BF16F60078E3E5 /* Languaga+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Languaga+Extension.swift"; sourceTree = "<group>"; };
 		578BF45327B856E0004005D7 /* LanguageCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageCoordinator.swift; sourceTree = "<group>"; };
 		578BF45527B85712004005D7 /* LanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageViewController.swift; sourceTree = "<group>"; };
 		578BF45727B8573A004005D7 /* LanguageViewModelCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageViewModelCoordinatorDelegate.swift; sourceTree = "<group>"; };
@@ -844,7 +855,7 @@
 			isa = PBXGroup;
 			children = (
 				5769010D27B4743F00F58BF0 /* ProfileViewController.swift */,
-				5769011527B4757300F58BF0 /* Profile.storyboard */,
+				5780A10E27BF125F0078E3E5 /* Profile.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1305,6 +1316,8 @@
 		57CB255527AAC87F004B8767 /* Language */ = {
 			isa = PBXGroup;
 			children = (
+				5780A10427BF02CE0078E3E5 /* Localizable.strings */,
+				5780A11727BF16F60078E3E5 /* Languaga+Extension.swift */,
 			);
 			path = Language;
 			sourceTree = "<group>";
@@ -1845,6 +1858,9 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
+				it,
+				de,
 			);
 			mainGroup = 2DF82126272177C8009C2932;
 			packageReferences = (
@@ -1868,7 +1884,7 @@
 				57570ED027AB233F00D0DFB1 /* TDInitialScreen.storyboard in Resources */,
 				578BF49327B9B131004005D7 /* GiftTab.storyboard in Resources */,
 				578BF4A627B9C259004005D7 /* LuckyWheel.storyboard in Resources */,
-				5769011627B4757300F58BF0 /* Profile.storyboard in Resources */,
+				5780A10C27BF125F0078E3E5 /* Profile.storyboard in Resources */,
 				578BF48327B9A17A004005D7 /* ProductsEmptyView.xib in Resources */,
 				578BF47227B87423004005D7 /* OfferTab.storyboard in Resources */,
 				5769010327B45F1400F58BF0 /* SettingsTab.storyboard in Resources */,
@@ -1877,6 +1893,7 @@
 				57570EC127AADC6400D0DFB1 /* TDSplash.storyboard in Resources */,
 				57D8239F27AC17EF004AB232 /* SignUp.storyboard in Resources */,
 				574E4B4C27BC73F500BCE294 /* GiftCell.xib in Resources */,
+				5780A10227BF02CE0078E3E5 /* Localizable.strings in Resources */,
 				57A7819927B5DB1D004CA286 /* UserAddress.storyboard in Resources */,
 				57570EE027AB23F000D0DFB1 /* Login.storyboard in Resources */,
 				574E4B4727BC710E00BCE294 /* MyGifts.storyboard in Resources */,
@@ -2039,6 +2056,7 @@
 				574E4B3F27BC6EFE00BCE294 /* MyGiftsViewModelCoordinatorDelegate.swift in Sources */,
 				5769011027B4744E00F58BF0 /* ProfileViewModelProtocol.swift in Sources */,
 				57CB255A27AAC89E004B8767 /* Loader.swift in Sources */,
+				5780A11827BF16F60078E3E5 /* Languaga+Extension.swift in Sources */,
 				57A7818F27B5DA42004CA286 /* UserAddressCoordinator.swift in Sources */,
 				574E4B3227BC322B00BCE294 /* CongratsViewModelCoordinatorDelegate.swift in Sources */,
 				57CB252227AAC5EC004B8767 /* AppCoordinator.swift in Sources */,
@@ -2119,6 +2137,32 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5780A10427BF02CE0078E3E5 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5780A10327BF02CE0078E3E5 /* en */,
+				5780A10527BF02D00078E3E5 /* fr */,
+				5780A10627BF02D10078E3E5 /* de */,
+				5780A10727BF02D20078E3E5 /* it */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		5780A10E27BF125F0078E3E5 /* Profile.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5780A10D27BF125F0078E3E5 /* Base */,
+				5780A11027BF12610078E3E5 /* en */,
+				5780A11227BF128F0078E3E5 /* fr */,
+				5780A11427BF12960078E3E5 /* de */,
+				5780A11627BF12C40078E3E5 /* it */,
+			);
+			name = Profile.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		2DF82141272177CA009C2932 /* Debug */ = {

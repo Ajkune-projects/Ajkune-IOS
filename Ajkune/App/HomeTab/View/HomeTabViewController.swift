@@ -15,6 +15,7 @@ class HomeTabViewController: UIViewController, Storyboarded{
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var tableViewHeightConst: NSLayoutConstraint!
     @IBOutlet weak var emptyView: UIView!
+    @IBOutlet weak var categoriesLabel: UILabel!
     var viewModel: HomeTabViewModelProtocol?
     var categoryID:Int?
     
@@ -31,7 +32,14 @@ class HomeTabViewController: UIViewController, Storyboarded{
         filterData()
         globalData.filterFromOffer = false
         categoryCollectionView.collectionViewLayout = layoutConfig()
+        addObservers()
+        localized()
     }
+    
+    func localized(){
+        categoriesLabel.text = "categoryTitle".localized
+    }
+    
     func layoutConfig() -> UICollectionViewCompositionalLayout {
         return UICollectionViewCompositionalLayout { (sectionNumber, env) -> NSCollectionLayoutSection? in
             let itemSize = NSCollectionLayoutSize(widthDimension: .estimated(44), heightDimension: .fractionalHeight(1))
@@ -42,6 +50,14 @@ class HomeTabViewController: UIViewController, Storyboarded{
             section.orthogonalScrollingBehavior = .continuous
             return section
         }
+    }
+    func addObservers(){
+        registerNotification(notification: Notification.Name.changeLang, selector: #selector(self.updateLang(notification:)))
+    }
+    @objc func updateLang(notification: Notification) {
+        localized()
+        productsCollectionView.reloadData()
+
     }
     override func viewWillAppear(_ animated: Bool) {
         filterData()
