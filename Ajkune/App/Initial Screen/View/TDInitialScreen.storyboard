@@ -163,7 +163,9 @@ Always.</string>
                     </view>
                     <connections>
                         <outlet property="descriptionLabel" destination="Vgi-we-t9e" id="cdu-Tp-txp"/>
+                        <outlet property="loginBtn" destination="flt-jh-Ja0" id="mxR-TX-tCu"/>
                         <outlet property="signInButton" destination="flt-jh-Ja0" id="XVL-Zn-crm"/>
+                        <outlet property="signUpBtn" destination="1q7-9z-Gsj" id="qun-Sa-xuX"/>
                         <outlet property="signUpButton" destination="1q7-9z-Gsj" id="vUP-RL-0t8"/>
                         <outlet property="titleLabel" destination="iNS-Hl-SxN" id="uS9-xD-bd6"/>
                     </connections>

@@ -336,7 +336,10 @@
     </scenes>
     <designables>
         <designable name="UJV-dw-aU3">
-            <size key="intrinsicContentSize" width="34.5" height="21"/>
+            <size key="intrinsicContentSize" width="374" height="41.637671874999995"/>
+        </designable>
+        <designable name="plo-YP-G2i">
+            <size key="intrinsicContentSize" width="95" height="15"/>
         </designable>
     </designables>
     <resources>

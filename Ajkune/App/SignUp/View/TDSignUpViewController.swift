@@ -13,9 +13,12 @@ class SignUpViewController: UIViewController, Storyboarded {
         @IBOutlet weak var firstNameTextField: SkyFloatingLabelTextField!
         @IBOutlet weak var lastNameTextField: SkyFloatingLabelTextField!
         @IBOutlet weak var passwordTextField: SkyFloatingLabelTextField!
-        @IBOutlet weak var confirmPasswordTextField: SkyFloatingLabelTextField!
-        @IBOutlet var backView: UIView!
-        
+    @IBOutlet weak var alreadyMemberLbl: UILabel!
+    @IBOutlet weak var confirmPasswordTextField: SkyFloatingLabelTextField!
+    @IBOutlet weak var registerBtn: UIButton!
+    @IBOutlet var backView: UIView!
+    @IBOutlet weak var loginBtn: UIButton!
+    
     //MARK: - Properties
     var coordinator: SignUpCoordinator?
     var viewModel: SignUpViewModelProtocol?
@@ -26,7 +29,21 @@ class SignUpViewController: UIViewController, Storyboarded {
             super.viewDidLoad()
             setupUIDesignFields()
             showHidePass()
+            registerBtn.setTitle("register".localized, for: .normal)
+            alreadyMemberLbl.text = "already_a_member".localized
+            loginBtn.setTitle("login".localized, for: .normal)
             
+        }
+    func addObservers(){
+            registerNotification(notification: Notification.Name.changeLang, selector: #selector(self.updateLang(notification:)))
+        }
+        
+        @objc func updateLang(notification: Notification) {
+            localize()
+        }
+        //MARK: - Functions
+        func localize(){
+            setupUIDesignFields()
         }
     
     func showHidePass(){
@@ -45,7 +62,10 @@ class SignUpViewController: UIViewController, Storyboarded {
             Account.shared.clear()
         }
         
-        private func setupUIDesignFields(){
+         func setupUIDesignFields(){
+            registerBtn.setTitle("register".localized, for: .normal)
+            alreadyMemberLbl.text = "already_a_member".localized
+            loginBtn.setTitle("login".localized, for: .normal)
             setupEmailView()
             setupFirstName()
             SetupLastName()
@@ -54,8 +74,8 @@ class SignUpViewController: UIViewController, Storyboarded {
         }
         
         private func setupEmailView() {
-            emailAddressTextField.placeholder = "Email"
-            emailAddressTextField.title = "Email Address"
+            emailAddressTextField.placeholder = "e_mail_address".localized
+            emailAddressTextField.title = "e_mail_address".localized
             emailAddressTextField.tintColor = Colors.overcastBlueColor
             emailAddressTextField.selectedTitleColor = Colors.overcastBlueColor
             emailAddressTextField.selectedLineColor = Colors.overcastBlueColor
@@ -69,8 +89,8 @@ class SignUpViewController: UIViewController, Storyboarded {
         }
         
         private func setupFirstName() {
-            firstNameTextField.placeholder = "First name"
-            firstNameTextField.title = "First Name"
+            firstNameTextField.placeholder = "first_name".localized
+            firstNameTextField.title = "first_name".localized
             firstNameTextField.tintColor = Colors.overcastBlueColor
             firstNameTextField.selectedTitleColor = Colors.overcastBlueColor
             firstNameTextField.selectedLineColor = Colors.overcastBlueColor
@@ -84,8 +104,8 @@ class SignUpViewController: UIViewController, Storyboarded {
         }
         
         private func SetupLastName() {
-            lastNameTextField.placeholder = "Last name"
-            lastNameTextField.title = "Last Name"
+            lastNameTextField.placeholder = "last_name".localized
+            lastNameTextField.title = "last_name".localized
             lastNameTextField.tintColor = Colors.overcastBlueColor
             lastNameTextField.selectedTitleColor = Colors.overcastBlueColor
             lastNameTextField.selectedLineColor = Colors.overcastBlueColor
@@ -99,8 +119,8 @@ class SignUpViewController: UIViewController, Storyboarded {
         }
         
         private func setupPassowrd() {
-            passwordTextField.placeholder = "Password"
-            passwordTextField.title = "Password"
+            passwordTextField.placeholder = "password".localized
+            passwordTextField.title = "password".localized
             passwordTextField.tintColor = Colors.overcastBlueColor
             passwordTextField.selectedTitleColor = Colors.overcastBlueColor
             passwordTextField.selectedLineColor = Colors.overcastBlueColor
@@ -114,8 +134,8 @@ class SignUpViewController: UIViewController, Storyboarded {
         }
         
         private func setupConfrimPassword() {
-            confirmPasswordTextField.placeholder = "Confirm password"
-            confirmPasswordTextField.title = "Confirm Password"
+            confirmPasswordTextField.placeholder = "confirm_password".localized
+            confirmPasswordTextField.title = "confirm_password".localized
             confirmPasswordTextField.tintColor = Colors.overcastBlueColor
             confirmPasswordTextField.selectedTitleColor = Colors.overcastBlueColor
             confirmPasswordTextField.selectedLineColor = Colors.overcastBlueColor
@@ -131,38 +151,38 @@ class SignUpViewController: UIViewController, Storyboarded {
         func validateFields(){
             guard let emailAddress = emailAddressTextField.text, !emailAddress.isEmpty else {
                 self.emailAddressTextField.becomeFirstResponder()
-                self.showAlertWith(title: "Ajkune", message: "Please write your email address!")
+                self.showAlertWith(title: "Ajkune", message: "empty_email".localized)
                 return
             }
             if !isValidEmail(emailAddressTextField.text ?? ""){
                 self.emailAddressTextField.becomeFirstResponder()
-                self.showAlertWith(title: "Teed Up", message: "Invalid email.")
+                self.showAlertWith(title: "Ajkune", message: "invalid_email".localized)
                return
                 
             }
             guard let firstName = firstNameTextField.text, !firstName.isEmpty else {
                 self.firstNameTextField.becomeFirstResponder()
-                self.showAlertWith(title: "Ajkune", message: "Please write your name!")
+                self.showAlertWith(title: "Ajkune", message: "empty_name".localized)
                 return
             }
             guard let lastname = lastNameTextField.text, !lastname.isEmpty else {
                 self.lastNameTextField.becomeFirstResponder()
-                self.showAlertWith(title: "Ajkune", message: "Please write your Last Name!")
+                self.showAlertWith(title: "Ajkune", message:  "empty_lastName".localized)
                 return
             }
             guard let pass = passwordTextField.text, !pass.isEmpty else {
                 self.passwordTextField.becomeFirstResponder()
-                self.showAlertWith(title: "Ajkune", message: "Please write your password!")
+                self.showAlertWith(title: "Ajkune", message: "empty_password".localized)
                 return
             }
             guard let confirmPass = confirmPasswordTextField.text, !confirmPass.isEmpty else {
                 self.confirmPasswordTextField.becomeFirstResponder()
-                self.showAlertWith(title: "Ajkune", message: "Please confirm password!")
+                self.showAlertWith(title: "Ajkune", message: "confirm_new_password".localized)
                 return
             }
             guard (confirmPass == pass) else {
                 self.passwordTextField.becomeFirstResponder()
-                self.showAlertWith(title: "Ajkune", message: "Passwords do not match!")
+                self.showAlertWith(title: "Ajkune", message: "register_password_not_match".localized)
                 return
             }
             
@@ -189,7 +209,7 @@ class SignUpViewController: UIViewController, Storyboarded {
                 Account.shared.initLogin()
                 
             }else{
-                self.showOKAlert(title: "Error", message: "Problem with registration")
+                self.showOKAlert(title: "Error", message: "registration_failed".localized)
             }
         })
     }

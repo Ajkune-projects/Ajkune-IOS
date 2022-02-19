@@ -100,8 +100,8 @@ class OfferTabViewController: UIViewController, Storyboarded{
             if response?.count != nil{
                 self.banner.setImage(with: response?.first?.image_path ?? "")
                 self.bannerTitle.text = response?.first?.title ?? ""
-                self.priceLabel.text = response?.first?.price ?? ""
-                self.initialPrice.text = response?.first?.initial_price ?? ""
+                self.priceLabel.text = "\(response?.first?.price ?? "0.0")CHF"
+                self.initialPrice.text = "\(response?.first?.initial_price ?? "0.0")CHF"
             }
         })
     }

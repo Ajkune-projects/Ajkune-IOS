@@ -33,26 +33,26 @@ class UserAddressViewController: UIViewController, Storyboarded {
     }
     
     func validateTextfields(){
-//            guard let street = streetTextfield.text, !street.isEmpty else {
-//                self.streetTextfield.becomeFirstResponder()
-//                self.showAlertWith(title: "Ajkune", message: "Please write your street!")
-//                return
-//            }
-//        guard let city = cityTextfield.text, !city.isEmpty else {
-//            self.cityTextfield.becomeFirstResponder()
-//            self.showAlertWith(title: "Ajkune", message: "Please write your city!")
-//            return
-//        }
-//        guard let zipCode = zipCodeTextfield.text, !zipCode.isEmpty else {
-//            self.zipCodeTextfield.becomeFirstResponder()
-//            self.showAlertWith(title: "Ajkune", message: "Please write your zipCode!")
-//            return
-//        }
-//        guard let country = countryTextfield.text, !country.isEmpty else {
-//            self.countryTextfield.becomeFirstResponder()
-//            self.showAlertWith(title: "Ajkune", message: "Please write your country!")
-//            return
-//        }
+            guard let street = streetTextfield.text, !street.isEmpty else {
+                self.streetTextfield.becomeFirstResponder()
+                self.showAlertWith(title: "Ajkune", message: "Please write your street!")
+                return
+            }
+        guard let city = cityTextfield.text, !city.isEmpty else {
+            self.cityTextfield.becomeFirstResponder()
+            self.showAlertWith(title: "Ajkune", message: "Please write your city!")
+            return
+        }
+        guard let zipCode = zipCodeTextfield.text, !zipCode.isEmpty else {
+            self.zipCodeTextfield.becomeFirstResponder()
+            self.showAlertWith(title: "Ajkune", message: "Please write your zipCode!")
+            return
+        }
+        guard let country = countryTextfield.text, !country.isEmpty else {
+            self.countryTextfield.becomeFirstResponder()
+            self.showAlertWith(title: "Ajkune", message: "Please write your country!")
+            return
+        }
         ProfileDetails.street = streetTextfield.text ?? ""
         ProfileDetails.city = cityTextfield.text ?? ""
         ProfileDetails.zipCode = zipCodeTextfield.text ?? ""

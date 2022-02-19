@@ -13,6 +13,7 @@ class OfferProductCell: UICollectionViewCell {
     @IBOutlet weak var initialPrice: UILabel!
     @IBOutlet weak var productImage: UIImageView!
     @IBOutlet weak var descriptionProductLbl: UILabel!
+    @IBOutlet weak var initialPriceUnderline: UIView!
     @IBOutlet weak var raiting: CosmosView!
     @IBOutlet weak var productPriceLbl: UILabel!
 

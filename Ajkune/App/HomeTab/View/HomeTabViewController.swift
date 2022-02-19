@@ -18,6 +18,7 @@ class HomeTabViewController: UIViewController, Storyboarded{
     @IBOutlet weak var categoriesLabel: UILabel!
     var viewModel: HomeTabViewModelProtocol?
     var categoryID:Int?
+    @IBOutlet weak var initialPrice: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +26,6 @@ class HomeTabViewController: UIViewController, Storyboarded{
         setupProductsCollectionView()
         setupCategoriesCollectionView()
         productsCollectionView.isScrollEnabled = false
-//        productsCollectionView.isUserInteractionEnabled = false
         filterData()
         getALLProducts()
         getBanner()
@@ -37,7 +37,7 @@ class HomeTabViewController: UIViewController, Storyboarded{
     }
     
     func localized(){
-        categoriesLabel.text = "categoryTitle".localized
+        categoriesLabel.text = "Categories"
     }
     
     func layoutConfig() -> UICollectionViewCompositionalLayout {
@@ -96,7 +96,7 @@ class HomeTabViewController: UIViewController, Storyboarded{
         globalData.fromAllCategories = false
     }
     func setupProductsCollectionView(){
-        self.productsCollectionView.register(ProductCell.self)
+        self.productsCollectionView.register(OfferProductCell.self)
         self.productsCollectionView.delegate = self.viewModel?.productDataSource
         self.productsCollectionView.dataSource = self.viewModel?.productDataSource
         self.productsCollectionView.emptyDataSetSource = self.viewModel?.productDataSource
@@ -176,7 +176,8 @@ class HomeTabViewController: UIViewController, Storyboarded{
             if response?.count != nil{
                 self.banner.setImage(with: response?.first?.image_path ?? "")
                 self.bannerTitle.text = response?.first?.title ?? ""
-                self.priceLabel.text = response?.first?.price ?? ""
+                self.priceLabel.text = "\(response?.first?.price ?? "0.0")CHF"
+                self.initialPrice.text = "\(response?.first?.initial_price ?? "0.0")CHF"
             }
         })
     }

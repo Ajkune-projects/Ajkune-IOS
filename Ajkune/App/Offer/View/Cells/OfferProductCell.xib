@@ -157,6 +157,7 @@
             <connections>
                 <outlet property="descriptionProductLbl" destination="RoR-Cw-RK7" id="bal-LB-Mkj"/>
                 <outlet property="initialPrice" destination="LbI-6Z-s0z" id="RTj-FS-d2K"/>
+                <outlet property="initialPriceUnderline" destination="6dx-uT-aYm" id="jdR-uv-2cL"/>
                 <outlet property="mainView" destination="lKL-JY-OA6" id="Got-At-pgJ"/>
                 <outlet property="productImage" destination="JfE-bk-9ar" id="blk-Gl-pSG"/>
                 <outlet property="productPriceLbl" destination="QQl-N0-4VR" id="ofz-2b-b1m"/>

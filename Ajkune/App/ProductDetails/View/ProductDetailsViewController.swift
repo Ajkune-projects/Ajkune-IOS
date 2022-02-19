@@ -66,6 +66,14 @@ class ProductDetailsViewController: UIViewController, Storyboarded, UITextViewDe
         }else{
             self.productDetails.text = prod?.desc_en
         }
+        if Double(prod?.initial_price ?? "0.0") ?? 0.0 > 0.0{
+            self.initialLabel.text = "\(prod?.initial_price ?? "0.0")CHF"
+            self.initialLabel.isHidden = false
+            self.line.isHidden = false
+        }else{
+            self.initialLabel.isHidden = true
+            self.line.isHidden = true
+        }
         self.productRaiting.settings.updateOnTouch = false
         self.backButton.setTitle(prod?.name, for: .normal)
     }
@@ -88,7 +96,6 @@ class ProductDetailsViewController: UIViewController, Storyboarded, UITextViewDe
         }else{
             self.productDetails.text = prod?.desc_en
         }
-        
         self.productRaiting.settings.updateOnTouch = false
         self.backButton.setTitle(prod?.name, for: .normal)
     }

@@ -10,6 +10,22 @@
 "Language_subtitle" = "Sprache wählen";
 "TitleButton" = "Sprache ändern";
 
+"app_name" = "Ajkune-Professional";
+"password" = "Passwort";
+"e_mail_address" = "E-Mail-Adresse";
+"login" = "Einloggen";
+"forgot_password" = "Forgot password?";
+"don_t_have_an_account" = "Sie haben kein Konto?";
+"register" = "Registrieren";
+"create_account" = "Benutzerkonto erstellen";
+"first_name" = "Vorname";
+"last_name" = "Nachname";
+"already_a_member" = "Schon ein Mitglied?";
 
-"profile" = "ProfileGerman";
-"categoryTitle" = "category GR";
+//ALERT
+"enter_your_email_address_linked_to_your_account"= "Geben Sie Ihre mit Ihrem Konto verknüpfte E-Mail-Adresse ein";
+"empty_password"= "Bitte geben Sie Ihr Passwort ein.";
+"confirm_new_password"= "Bestätige neues Passwort";
+"confirm_new_password"= "Bestätige neues Passwort";
+"register_password_not_match"= "Passwörter stimmen nicht überein.";
+"register_empty_confirm_password"= "Bitte bestätigen Sie Ihr Passwort";

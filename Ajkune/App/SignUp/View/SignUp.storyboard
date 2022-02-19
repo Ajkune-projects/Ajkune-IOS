@@ -94,7 +94,7 @@
                                                     </button>
                                                 </subviews>
                                             </stackView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="poi-wi-fPi">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="poi-wi-fPi">
                                                 <rect key="frame" x="20" y="463" width="374" height="40"/>
                                                 <color key="backgroundColor" red="0.61176472900000001" green="0.29803922770000002" blue="0.43137252329999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
@@ -102,8 +102,8 @@
                                                     <constraint firstAttribute="height" constant="40" id="PVp-1U-LPD"/>
                                                 </constraints>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain">
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Button">
                                                     <attributedString key="attributedTitle">
                                                         <fragment content="REGISTER">
                                                             <attributes>
@@ -112,7 +112,7 @@
                                                             </attributes>
                                                         </fragment>
                                                     </attributedString>
-                                                </buttonConfiguration>
+                                                </state>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                         <integer key="value" value="10"/>
@@ -161,11 +161,14 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="alreadyMemberLbl" destination="VMl-d4-4AL" id="upR-tp-i2C"/>
                         <outlet property="confirmPasswordTextField" destination="RTo-1y-bff" id="6EG-ND-ieu"/>
                         <outlet property="emailAddressTextField" destination="4Bh-VS-qlM" id="Orl-aE-JzL"/>
                         <outlet property="firstNameTextField" destination="8Qc-Rr-6bI" id="L0K-rS-dWn"/>
                         <outlet property="lastNameTextField" destination="0ya-e8-nlT" id="fnh-2p-5se"/>
+                        <outlet property="loginBtn" destination="rvP-Ih-qpN" id="MWj-sV-Uow"/>
                         <outlet property="passwordTextField" destination="nFy-NK-9ev" id="hpY-OK-fIz"/>
+                        <outlet property="registerBtn" destination="poi-wi-fPi" id="6YI-Rg-gTi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZOA-cu-P3Y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -175,19 +178,19 @@
     </scenes>
     <designables>
         <designable name="0ya-e8-nlT">
-            <size key="intrinsicContentSize" width="69" height="18.5"/>
+            <size key="intrinsicContentSize" width="374" height="39.220703125"/>
         </designable>
         <designable name="4Bh-VS-qlM">
-            <size key="intrinsicContentSize" width="90" height="18.5"/>
+            <size key="intrinsicContentSize" width="374" height="39.220703125"/>
         </designable>
         <designable name="8Qc-Rr-6bI">
-            <size key="intrinsicContentSize" width="70" height="18.5"/>
+            <size key="intrinsicContentSize" width="374" height="39.220703125"/>
         </designable>
         <designable name="RTo-1y-bff">
-            <size key="intrinsicContentSize" width="117.5" height="17"/>
+            <size key="intrinsicContentSize" width="374" height="39.220703125"/>
         </designable>
         <designable name="nFy-NK-9ev">
-            <size key="intrinsicContentSize" width="62.5" height="17"/>
+            <size key="intrinsicContentSize" width="374" height="39.220703125"/>
         </designable>
     </designables>
     <resources>

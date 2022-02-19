@@ -22,7 +22,7 @@ class SettingsTabViewController: UIViewController, Storyboarded {
     }
     
     @objc func updateLang(notification: Notification) {
-        profileButton.setTitle("profile".localized, for: .normal)
+        profileButton.setTitle("Profile", for: .normal)
 
     }
 //IBActions

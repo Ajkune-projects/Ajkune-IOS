@@ -11,9 +11,12 @@ import SkyFloatingLabelTextField
 class LoginViewController: UIViewController, Storyboarded {
     
     //MARK: IBOutlets
+    @IBOutlet weak var forgotPassword: UIButton!
+    @IBOutlet weak var dontHaveAccLabel: UILabel!
     @IBOutlet weak var emailTextField: SkyFloatingLabelTextField!
     @IBOutlet weak var passwordTextField: SkyFloatingLabelTextField!
     @IBOutlet weak var signUpButton: UIButton!
+    @IBOutlet weak var loginBtn: UIButton!
     @IBOutlet weak var securePasswordIcon: UIButton!
     
     
@@ -27,19 +30,36 @@ class LoginViewController: UIViewController, Storyboarded {
         setupEmailTxt()
         setupPassTxt()
         setupUI()
+        addObservers()
+        localize()
         // Do any additional setup after loading the view.
     }
     
     //MARK: - IBFunctions
     func setupUI(){
         showHidePass()
-//        self.emailTextField.text = "djellzarrustemii@gmail.com"
-//        self.passwordTextField.text = "123456"
+        
+    }
+    func addObservers(){
+        registerNotification(notification: Notification.Name.changeLang, selector: #selector(self.updateLang(notification:)))
+    }
+    
+    @objc func updateLang(notification: Notification) {
+        localize()
+    }
+    //MARK: - Functions
+    func localize(){
+        emailTextField.placeholder = "e_mail_address".localized
+        passwordTextField.placeholder = "password".localized
+        dontHaveAccLabel.text = "don_t_have_an_account".localized
+        forgotPassword.setTitle("forgot_password".localized, for: .normal)
+        signUpButton.setTitle("register".localized, for: .normal)
+        loginBtn.setTitle("login".localized, for: .normal)
         
     }
     
     func setupEmailTxt(){
-            emailTextField.title = "Email Address"
+            emailTextField.title = "e_mail_address".localized
             emailTextField.tintColor = Colors.overcastBlueColor
             emailTextField.selectedTitleColor =  Colors.overcastBlueColor
             emailTextField.selectedLineColor =  Colors.overcastBlueColor
@@ -52,7 +72,7 @@ class LoginViewController: UIViewController, Storyboarded {
             emailTextField.rightView = imageView
     }
     func setupPassTxt(){
-        passwordTextField.title = "Password"
+        passwordTextField.title = "password".localized
         passwordTextField.tintColor = Colors.overcastBlueColor
         passwordTextField.selectedTitleColor = Colors.overcastBlueColor
         passwordTextField.selectedLineColor = Colors.overcastBlueColor
@@ -78,12 +98,12 @@ class LoginViewController: UIViewController, Storyboarded {
     func login(){
         guard let email = emailTextField.text, !email.isEmpty else {
             self.emailTextField.becomeFirstResponder()
-            self.showAlertWith(title: "Ajkune", message: "Please enter your email.")
+            self.showAlertWith(title: "Ajkune", message: "enter_your_email_address_linked_to_your_account".localized)
             return
         }
         guard let password = passwordTextField.text, !password.isEmpty else {
             self.passwordTextField.becomeFirstResponder()
-            self.showAlertWith(title: "Ajkune", message: "Please enter your password.")
+            self.showAlertWith(title: "Ajkune", message: "empty_password".localized)
             return
         }
         SHOW_CUSTOM_LOADER()
@@ -94,7 +114,7 @@ class LoginViewController: UIViewController, Storyboarded {
                         self.viewModel?.loginSuccessful()
             }
             else{
-                self.showAlertWith(title: "OUPS !", message: "The username or password is incorrect")
+                self.showAlertWith(title: "OUPS !", message: "error_login".localized)
             }
         })
     }

@@ -22,7 +22,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="137" height="59"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iZ1-ll-rQv">
-                                <rect key="frame" x="20" y="0.0" width="97" height="59"/>
+                                <rect key="frame" x="7" y="0.0" width="123" height="59"/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -31,11 +31,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="iZ1-ll-rQv" firstAttribute="centerX" secondItem="zwM-dR-TtA" secondAttribute="centerX" id="Gjx-rM-zyV"/>
-                            <constraint firstAttribute="trailing" secondItem="iZ1-ll-rQv" secondAttribute="trailing" constant="20" id="H0J-ED-Nfa"/>
+                            <constraint firstAttribute="trailing" secondItem="iZ1-ll-rQv" secondAttribute="trailing" constant="7" id="H0J-ED-Nfa"/>
                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="NKx-EO-w8q"/>
                             <constraint firstAttribute="bottom" secondItem="iZ1-ll-rQv" secondAttribute="bottom" id="OoQ-hs-P5e"/>
                             <constraint firstItem="iZ1-ll-rQv" firstAttribute="top" secondItem="zwM-dR-TtA" secondAttribute="top" id="ViV-n0-7sI"/>
-                            <constraint firstItem="iZ1-ll-rQv" firstAttribute="leading" secondItem="zwM-dR-TtA" secondAttribute="leading" constant="20" id="xuL-fc-zwD"/>
+                            <constraint firstItem="iZ1-ll-rQv" firstAttribute="leading" secondItem="zwM-dR-TtA" secondAttribute="leading" constant="7" id="xuL-fc-zwD"/>
                         </constraints>
                     </view>
                 </subviews>
