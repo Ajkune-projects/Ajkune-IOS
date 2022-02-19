@@ -14,7 +14,8 @@
 "password" = "Passwort";
 "e_mail_address" = "E-Mail-Adresse";
 "login" = "Einloggen";
-"forgot_password" = "Forgot password?";
+"signUp" = "Anmeldung";
+"forgot_password" = "Passwort vergessen?";
 "don_t_have_an_account" = "Sie haben kein Konto?";
 "register" = "Registrieren";
 "create_account" = "Benutzerkonto erstellen";
@@ -22,10 +23,32 @@
 "last_name" = "Nachname";
 "already_a_member" = "Schon ein Mitglied?";
 
+//Forgot Pass
+"next" = "Nächste";
+"enter_the_code_you_came_from_to_receive_by_email" = "Geben Sie den Code ein, von dem Sie gekommen sind, um ihn per E-Mail zu erhalten";
+"email_address_verification" = "Überprüfung der E-Mail-Adresse";
+"enter_your_new_password" = "Gib dein neues Passwort ein";
+"new_password" = "Neues Passwort";
+"confirm_new_password" = "Bestätige neues Passwort";
+"reset_password" = "Passwort zurücksetzen";
+
+
 //ALERT
 "enter_your_email_address_linked_to_your_account"= "Geben Sie Ihre mit Ihrem Konto verknüpfte E-Mail-Adresse ein";
 "empty_password"= "Bitte geben Sie Ihr Passwort ein.";
 "confirm_new_password"= "Bestätige neues Passwort";
-"confirm_new_password"= "Bestätige neues Passwort";
 "register_password_not_match"= "Passwörter stimmen nicht überein.";
 "register_empty_confirm_password"= "Bitte bestätigen Sie Ihr Passwort";
+"create_new_password" = "Neues Passwort erstellen";
+
+
+
+//i kom shtu vet
+"initialScreenDesc" = "Bleib hoch.\nBleib Fröhlich.\nImmer.";
+"initialScreenTitle" = "BRILLANTE PRODUKTE";
+"confirm_password" = "Bestätige das Passwort";
+"empty_email" = "Bitte schreiben Sie Ihre E-Mail-Adresse!";
+"invalid_email" = "Ungültige E-Mail.";
+"empty_name" = "Bitte schreiben Sie Ihren Namen!";
+"empty_lastName" = "Bitte schreiben Sie Ihren Nachnamen!";
+"registration_failed" = "Registrierung fehlgeschlagen";

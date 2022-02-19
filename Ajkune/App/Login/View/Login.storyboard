@@ -54,25 +54,18 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Daz-rI-2P1">
-                                <rect key="frame" x="20" y="367" width="374" height="99"/>
+                                <rect key="frame" x="20" y="367" width="374" height="102"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jcB-HV-oKT">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jcB-HV-oKT">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="50"/>
                                         <color key="backgroundColor" red="0.61176472900000001" green="0.29803922770000002" blue="0.43137252329999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="d3h-ji-Ze2"/>
                                         </constraints>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="14"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Button">
-                                            <attributedString key="attributedTitle">
-                                                <fragment content="LOGIN IN">
-                                                    <attributes>
-                                                        <font key="NSFont" size="14" name="Avenir-Heavy"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
-                                        </state>
+                                        <state key="normal" title="LOGIN IN"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                 <integer key="value" value="10"/>
@@ -86,27 +79,30 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BXS-cB-bxh">
-                                        <rect key="frame" x="0.0" y="65" width="374" height="34"/>
+                                        <rect key="frame" x="0.0" y="65" width="374" height="37"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="18"/>
                                         <color key="tintColor" red="0.61176472900000001" green="0.29803922770000002" blue="0.43137252329999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <state key="normal" title="Forgot password?"/>
+                                        <state key="normal" title="Forgot password?">
+                                            <color key="titleColor" red="0.61176470589999998" green="0.29803921570000003" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
                                         <connections>
                                             <action selector="forgotPassword:" destination="8PK-eR-8O2" eventType="touchUpInside" id="C2k-XF-ZZE"/>
                                         </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OPc-PI-uBn">
-                                <rect key="frame" x="112.5" y="496" width="189.5" height="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="OPc-PI-uBn">
+                                <rect key="frame" x="105.5" y="489" width="203" height="30"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DjG-LA-4tk">
-                                        <rect key="frame" x="0.0" y="0.0" width="140.5" height="30"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account?  " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DjG-LA-4tk">
+                                        <rect key="frame" x="0.0" y="0.0" width="144" height="30"/>
                                         <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="13"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zKF-zR-qhh">
-                                        <rect key="frame" x="140.5" y="0.0" width="49" height="30"/>
+                                        <rect key="frame" x="154" y="0.0" width="49" height="30"/>
                                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="13"/>
                                         <color key="tintColor" red="0.61176472900000001" green="0.29803922770000002" blue="0.43137252329999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -138,7 +134,7 @@
                             <constraint firstItem="5cp-N3-Yca" firstAttribute="leading" secondItem="hxM-Fy-Vh4" secondAttribute="leading" id="3Qo-xv-TaM"/>
                             <constraint firstItem="XL2-pL-Quf" firstAttribute="trailing" secondItem="you-KP-puI" secondAttribute="trailing" id="Loi-AZ-2Vw"/>
                             <constraint firstItem="Daz-rI-2P1" firstAttribute="top" secondItem="you-KP-puI" secondAttribute="bottom" constant="40" id="PF1-Pd-6NQ"/>
-                            <constraint firstItem="OPc-PI-uBn" firstAttribute="top" secondItem="Daz-rI-2P1" secondAttribute="bottom" constant="30" id="Qlh-a5-pjy"/>
+                            <constraint firstItem="OPc-PI-uBn" firstAttribute="top" secondItem="Daz-rI-2P1" secondAttribute="bottom" constant="20" id="Qlh-a5-pjy"/>
                             <constraint firstItem="Daz-rI-2P1" firstAttribute="leading" secondItem="you-KP-puI" secondAttribute="leading" id="XFZ-9q-MlA"/>
                             <constraint firstItem="ERq-VR-Srr" firstAttribute="trailing" secondItem="5cp-N3-Yca" secondAttribute="trailing" constant="20" id="g0n-DU-hfb"/>
                             <constraint firstItem="hxM-Fy-Vh4" firstAttribute="leading" secondItem="ERq-VR-Srr" secondAttribute="leading" constant="20" id="ovg-Qu-bXW"/>

@@ -10,19 +10,38 @@ import UIKit
 import SkyFloatingLabelTextField
 class ForgotPasswordViewController: UIViewController, Storyboarded {
 //MARK:IBOutlets
+    @IBOutlet weak var forgotPasswordTitle: UILabel!
     @IBOutlet weak var emailTextField: SkyFloatingLabelTextField!
     
-//MARK:Properties
+    @IBOutlet weak var nextBtn: UIButton!
+    @IBOutlet weak var forgotPassDesc: UILabel!
+    //MARK:Properties
     var coordinator: ForgotPasswordCoordinator?
     var viewModel: ForgotPasswordViewModelProtocol?
     
     override func viewDidLoad() {
         setupEmailView()
+        addObservers()
+        forgotPasswordTitle.text = "forgot_password".localized
+        forgotPassDesc.text = "enter_your_email_address_linked_to_your_account".localized
+        nextBtn.setTitle("next".localized, for: .normal)
+    }
+    
+    func addObservers(){
+        registerNotification(notification: Notification.Name.changeLang, selector: #selector(self.updateLang(notification:)))
+    }
+    
+    @objc func updateLang(notification: Notification) {
+        setupEmailView()
+        forgotPasswordTitle.text = "forgot_password".localized
+        forgotPassDesc.text = "enter_your_email_address_linked_to_your_account".localized
+        nextBtn.setTitle("next".localized, for: .normal)
+        
     }
     
     func setupEmailView() {
-        emailTextField.placeholder = "Email"
-        emailTextField.title = "Email Address"
+        emailTextField.placeholder = "e_mail_address".localized
+        emailTextField.title = "e_mail_address".localized
         emailTextField.tintColor = Colors.overcastBlueColor
         emailTextField.selectedTitleColor = Colors.overcastBlueColor
         emailTextField.selectedLineColor = Colors.overcastBlueColor
@@ -45,7 +64,7 @@ class ForgotPasswordViewController: UIViewController, Storyboarded {
     func requestForgotPassword(){
         guard let email = emailTextField.text, !email.isEmpty else {
             self.emailTextField.becomeFirstResponder()
-            self.showAlertWith(title: "Ajkune", message: "Please enter your email.")
+            self.showAlertWith(title: "Ajkune", message: "empty_email".localized)
             return
         }
         forgotPassword.emailAddress = email

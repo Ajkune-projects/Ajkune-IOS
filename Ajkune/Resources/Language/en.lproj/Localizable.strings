@@ -29,6 +29,7 @@
 
 
 
+
 //ALERT
 "enter_your_email_address_linked_to_your_account" = "Enter your email address linked to your account";
 "empty_password" = "Please enter your password.";
@@ -36,21 +37,25 @@
 "register_password_not_match" = "Passwords do not match.";
 "register_empty_confirm_password" = "Please confirm your password";
 
-
-
-
-
-
-
-
+//Forgot pass
+"next" = "Next";
+"email_address_verification" = "Email address verification";
+"enter_the_code_you_came_from_to_receive_by_email" = "Enter the code you came from to receive by email";
+"create_new_password" = "Create new password";
+"enter_your_new_password" = "Enter your new password";
+"new_password" = "New password";
+"confirm_new_password" = "Confirm new password";
+"reset_password" = "Reset Password";
 
 
 
 //Vet i kom shtu
 "error_login" = "The username or password is incorrect";
 "empty_email" = "Please write your email address!";
-"invalid_email" = "Invalid email.";
+"invalid_email" = "Ungültige E-Mail";
 "empty_name" = "Please write your name!";
 "empty_lastName" = "Please write your Last Name!";
 "registration_failed" = "Registration Failed";
 "confirm_password" = "Confirm password";
+"initialScreenDesc" = "Stay High.\nStay Happy.\nAlways.";
+"initialScreenTitle" = "BRILLIANT PRODUCTS";

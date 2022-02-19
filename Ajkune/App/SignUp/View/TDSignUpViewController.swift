@@ -207,7 +207,6 @@ class SignUpViewController: UIViewController, Storyboarded {
             HIDE_CUSTOM_LOADER()
             if response?.success == true{
                 Account.shared.initLogin()
-                
             }else{
                 self.showOKAlert(title: "Error", message: "registration_failed".localized)
             }

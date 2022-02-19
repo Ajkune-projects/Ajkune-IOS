@@ -9,6 +9,9 @@ import Foundation
 import UIKit
 import PinCodeInputView
 class ForgotPasswordVerificationViewController: UIViewController, Storyboarded {
+    @IBOutlet weak var forgotPassTitle: UILabel!
+    @IBOutlet weak var enterEmailDesc: UILabel!
+    @IBOutlet weak var enterCodeDesc: UILabel!
     
     //MARK:Properties
     var coordinator: ForgotPasswordVerificationCoordinator?
@@ -23,6 +26,21 @@ class ForgotPasswordVerificationViewController: UIViewController, Storyboarded {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        addObservers()
+        forgotPassTitle.text = "forgot_password".localized
+        enterEmailDesc.text = "email_address_verification".localized
+        enterCodeDesc.text = "enter_the_code_you_came_from_to_receive_by_email".localized
+        
+    }
+    func addObservers(){
+        registerNotification(notification: Notification.Name.changeLang, selector: #selector(self.updateLang(notification:)))
+    }
+    
+    @objc func updateLang(notification: Notification) {
+        forgotPassTitle.text = "forgot_password".localized
+        enterEmailDesc.text = "email_address_verification".localized
+        enterCodeDesc.text = "enter_the_code_you_came_from_to_receive_by_email".localized
+        
     }
     //MARK: - Functions
     func setupUI(){
@@ -43,11 +61,11 @@ class ForgotPasswordVerificationViewController: UIViewController, Storyboarded {
         })
         pinCodeInputView.set(
             appearance: .init(
-                itemSize: CGSize(width: 35, height: 35),
+                itemSize: CGSize(width: 40, height: 35),
                 font:.systemFont(ofSize: 22, weight: .medium),
                 textColor: UIColor.black,
                 backgroundColor: UIColor.black,
-                cursorColor: Colors.overcastBlueColor,
+                cursorColor: .black,
                 cornerRadius: 0
             )
         )
