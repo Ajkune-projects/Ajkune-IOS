@@ -12,6 +12,7 @@ class MainTabBarContainer: UITabBarController, Storyboarded {
    
     override func viewDidLoad() {
         super.viewDidLoad()
+        addObservers()
         self.tabBar.unselectedItemTintColor = UIColor.gray
         self.tabBar.tintColor = Colors.overcastBlueColor
         self.navigationController?.navigationBar.isHidden = true
@@ -63,4 +64,19 @@ class MainTabBarContainer: UITabBarController, Storyboarded {
         self.tabBar.frame = CGRect( x: 0, y: UIScreen.main.bounds.height - 80, width: self.view.frame.width, height: 80)
 
 }
+    func addObservers(){
+            registerNotification(notification: Notification.Name.changeLang, selector: #selector(self.updateLang(notification:)))
+        }
+        
+        @objc func updateLang(notification: Notification) {
+            localizeTabBar()
+        }
+        //MARK: - Functions
+    func localizeTabBar() {
+        self.tabBar.items![0].title = "HomeTab".localized
+        self.tabBar.items![1].title = "AppointmentTab".localized
+        self.tabBar.items![2].title = "GiftTab".localized
+        self.tabBar.items![3].title = "OfferTab".localized
+        self.tabBar.items![4].title = "AccountTab".localized
+    }
 }

@@ -11,6 +11,83 @@
 "TitleButton" = "Cambia lingua";
 
 
+//Login/Register
 
-"profile" = "ProfileItalian";
-"categoryTitle" = "category IT";
+"app_name" = "Ajkune-Professional";
+"password" = "Parola d'ordine";
+"e_mail_address" = "Indirizzo email";
+"login" = "Accesso";
+"forgot_password" = "Ha dimenticato la password?";
+"don_t_have_an_account" = "Non hai un account?";
+"register" = "Registrati";
+"create_account" = "Crea un account";
+"first_name" = "Nome di battesimo";
+"last_name" = "Cognome";
+"already_a_member"= "Sei già un membro??";
+
+
+
+
+//ALERT
+"enter_your_email_address_linked_to_your_account" = "Inserisci il tuo indirizzo email collegato al tuo account";
+"empty_password" = "Per favore inserisci LA TUA password.";
+"confirm_new_password" = "Conferma la nuova password";
+"register_password_not_match" = "Le passwords non corrispondono.";
+"register_empty_confirm_password" = "Le passwords non corrispondono.";
+
+//Forgot pass
+"next" = "Prossimo";
+"email_address_verification" = "Verifica dell'indirizzo e-mail";
+"enter_the_code_you_came_from_to_receive_by_email" = "Inserisci il codice da cui provieni per ricevere via email";
+"create_new_password" = "Crea nuova password";
+"enter_your_new_password" = "Inserisci la tua nuova password";
+"new_password" = "Nuova password";
+"confirm_new_password" = "Conferma la nuova password";
+"reset_password" = "Resetta la password";
+
+
+
+//Vet i kom shtu
+"error_login" = "Il nome utente o password non sono corretti";
+"empty_email" = "Per favore scrivi il tuo indirizzo email!";
+"invalid_email" = "E-mail non valido";
+"empty_name" = "Per favore scrivi il tuo nome!";
+"empty_lastName" = "Per favore scrivi il tuo cognome!";
+"registration_failed" = "Registrazione fallita";
+"confirm_password" = "Conferma password";
+"initialScreenDesc" = "Rimani in alto.\nRimani felice.\nSempre.";
+"initialScreenTitle" = "PRODOTTI BRILLANTI";
+
+//TABS
+"HomeTab" = "Casa";
+"AppointmentTab" = "Appointment";
+"GiftTab" = "Gif";
+"OfferTab" = "Offerte";
+"AccountTab" = "Account";
+
+/// deri qetu jon kry
+
+//HOMETab
+"ajkunes_products" = "I prodotti Ajkunes";
+"categories" = "Categorie";
+"there_is_no_product_in_this_category" = "TNon ci sono prodotti in questa categoria!";
+"filter" = "Filtro";
+"see_all" = "Vedi tutto";
+"lang" = "it";
+
+//Filter
+"filter_search" = "Filtra la ricerca";
+"price_range"= "Fascia di prezzo";
+"min"= "Min";
+"max"= "Massimo";
+"sort_by"= "Ordina per";
+"products"= "Prodotti";
+"done"= "Fatto";
+"offers" = "Offerte";
+
+//Gifts
+"play" = "Giocare a";
+"play_lucky_wheel" = "Giocare a “Lucky wheel”";
+"lucky_wheel" = "Lucky wheel";
+"there_is_no_gift_for_you_at_the_moment" = "Non ci sono regali per te al momento";
+

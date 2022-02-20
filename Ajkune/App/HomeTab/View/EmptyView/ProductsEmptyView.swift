@@ -17,6 +17,7 @@ class ProductsEmptyView: UIView {
         commonInit()
         self.view.frame = bounds
         self.addSubview(self.view)
+        descLabel.text = "there_is_no_product_in_this_category".localized
     }
     
     required init?(coder aDecoder: NSCoder) {

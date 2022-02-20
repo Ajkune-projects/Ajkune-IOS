@@ -24,7 +24,7 @@ class SettingsTabLayout<C:TDDefaultCoordinator> : TabLayout {
     }
     
     func tabBarItem() -> UITabBarItem {
-        return UITabBarItem(title: "Account", image: UIImage(named: "deselectedSettings"), selectedImage: UIImage(named: "selectedSettings"))
+        return UITabBarItem(title: "AccountTab".localized, image: UIImage(named: "deselectedSettings"), selectedImage: UIImage(named: "selectedSettings"))
     }
     
     func imageInsets() -> UIEdgeInsets {

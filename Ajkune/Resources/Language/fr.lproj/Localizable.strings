@@ -10,6 +10,83 @@
 "Language_subtitle" = "Choisir la langue";
 "TitleButton" = "Changer de langue";
 
+//Login/Register
 
-"profile" = "ProfileFranch";
-"categoryTitle" = "category FR";
+"app_name" = "Ajkune-Professional";
+"password" = "Mot de passe";
+"e_mail_address" = "Adresse e-mail";
+"login" = "Connexion";
+"forgot_password" = "Mot de passe oublié ?";
+"don_t_have_an_account" = "Vous n'avez pas de compte ?";
+"register" = "S'inscrire";
+"create_account" = "Créer un compte";
+"first_name" = "Prénom";
+"last_name" = "Nom";
+"already_a_member"= "Déjà membre ?";
+
+
+
+
+//ALERT
+"enter_your_email_address_linked_to_your_account" = "Saisissez votre adresse e-mail liée à votre compte";
+"empty_password" = "S'il vous plait entrez votre mot de passe.";
+"confirm_new_password" = "Confirmer le nouveau mot de passe";
+"register_password_not_match" = "Les mots de passe ne correspondent pas.";
+"register_empty_confirm_password" = "Veuillez confirmer votre mot de passe";
+
+//Forgot pass
+"next" = "Suivant";
+"email_address_verification" = "Vérification de l'adresse e-mail";
+"enter_the_code_you_came_from_to_receive_by_email" = "Entrez le code d'où vous venez pour recevoir par email";
+"create_new_password" = "Créer un nouveau mot de passe";
+"enter_your_new_password" = "Entrez votre nouveau mot de passe";
+"new_password" = "Nouveau mot de passe";
+"confirm_new_password" = "Confirmer le nouveau mot de passe";
+"reset_password" = "Réinitialiser le mot de passe";
+
+
+
+//Vet i kom shtu
+"error_login" = "Le pseudo ou mot de passe est incorect";
+"empty_email" = "S'il vous plaît écrivez votre adresse e-mail!";
+"invalid_email" = "Email invalide";
+"empty_name" = "Veuillez écrire votre nom !";
+"empty_lastName" = "Veuillez écrire votre nom de famille !";
+"registration_failed" = "Échec de l'enregistrement";
+"confirm_password" = "Confirmez le mot de passe";
+"initialScreenDesc" = "Restez défoncé.\nRestez heureux.\nToujours.";
+"initialScreenTitle" = "DES PRODUITS BRILLANTS";
+
+//TABS
+"HomeTab" = "Accueil";
+"AppointmentTab" = "Rendez-vous";
+"GiftTab" = "Gifs";
+"OfferTab" = "Des offres";
+"AccountTab" = "Compte";
+
+/// deri qetu jon kry
+
+//HOMETab
+
+"ajkunes_products" = "Les produits d'Ajkunes";
+"categories" = "Catégories";
+"there_is_no_product_in_this_category" = "Il n'y a pas de produit dans cette catégorie !";
+"filter" = "Filtre";
+"see_all" = "Voir tout";
+"lang" = "fr";
+
+//Filter
+"filter_search" = "Filtrer la recherche";
+"price_range"= "Échelle des prix";
+"min"= "Min";
+"max"= "Max";
+"sort_by"= "Trier par";
+"products"= "Des produits";
+"done"= "D'accord !";
+"offers" = "Des offres";
+
+//Gifts
+"play" = "Jouer";
+"play_lucky_wheel" = "Jouer “Lucky wheel”";
+"lucky_wheel" = "Lucky wheel";
+"there_is_no_gift_for_you_at_the_moment" = "Il n'y a pas de cadeau pour vous pour le moment";

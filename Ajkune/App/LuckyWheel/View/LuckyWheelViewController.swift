@@ -10,6 +10,8 @@ import TextFieldEffects
 import SwiftFortuneWheel
 
 class LuckyWheelViewController: UIViewController , Storyboarded, UITextFieldDelegate{
+    @IBOutlet weak var titleBtn: UIButton!
+    @IBOutlet weak var btnPlay: UIButton!
     //MARK: - IBOutlets
     @IBOutlet weak var wheelControl: SwiftFortuneWheel! {
         didSet {
@@ -26,6 +28,8 @@ class LuckyWheelViewController: UIViewController , Storyboarded, UITextFieldDele
     var image: UIImage?
     override func viewDidLoad() {
         super.viewDidLoad()
+        titleBtn.setTitle("lucky_wheel".localized, for: .normal)
+        btnPlay.setTitle("play".localized, for: .normal)
         getListOfGifts()
         
         

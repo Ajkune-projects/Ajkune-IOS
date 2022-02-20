@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 class SeeAllCategoriesViewController: UIViewController, Storyboarded{
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var categoriesBtn: UIButton!
     
     //MARK: - Properties
     var viewModel: SeeAllCategoriesViewModelProtocol?
@@ -16,6 +17,7 @@ class SeeAllCategoriesViewController: UIViewController, Storyboarded{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        categoriesBtn.setTitle("categories".localized, for: .normal)
         self.viewModel?.viewDelegate = self
         setupCategoriesTableView()
         getALLCategories()

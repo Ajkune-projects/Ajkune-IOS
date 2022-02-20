@@ -25,7 +25,7 @@ class OfferTabLayout<C:TDDefaultCoordinator> : TabLayout {
     }
     
     func tabBarItem() -> UITabBarItem {
-        return UITabBarItem(title: "Offer", image: UIImage(named: "deselectedOffer"), selectedImage: UIImage(named: "selectedOffer"))
+        return UITabBarItem(title: "OfferTab".localized, image: UIImage(named: "deselectedOffer"), selectedImage: UIImage(named: "selectedOffer"))
     }
     
     func imageInsets() -> UIEdgeInsets {

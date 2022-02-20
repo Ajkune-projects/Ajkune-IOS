@@ -100,7 +100,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Categories" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oYn-yZ-pq2">
-                                                <rect key="frame" x="20" y="282" width="330" height="19.666666666666686"/>
+                                                <rect key="frame" x="20" y="282" width="268" height="19.666666666666686"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="19.5" id="XgL-It-LRU"/>
                                                 </constraints>
@@ -108,10 +108,10 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Cg-qk-nM5">
-                                                <rect key="frame" x="360" y="275.66666666666669" width="48" height="32"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Cg-qk-nM5">
+                                                <rect key="frame" x="298" y="275.66666666666669" width="100" height="32"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="48" id="ShQ-Fb-jBT"/>
+                                                    <constraint firstAttribute="width" constant="100" id="ShQ-Fb-jBT"/>
                                                     <constraint firstAttribute="height" constant="32" id="jee-Ni-gav"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="14"/>
@@ -218,7 +218,7 @@
                                             <constraint firstItem="ruK-vb-wtA" firstAttribute="trailing" secondItem="1hT-6r-z1Y" secondAttribute="trailing" id="tLR-1k-qgP"/>
                                             <constraint firstAttribute="bottom" secondItem="wvu-Ig-OYA" secondAttribute="bottom" constant="98" id="xVq-3F-6eb"/>
                                             <constraint firstItem="Ydl-vV-ZTi" firstAttribute="leading" secondItem="FJg-QV-3a3" secondAttribute="leading" id="yVu-MD-UNQ"/>
-                                            <constraint firstItem="9Cg-qk-nM5" firstAttribute="trailing" secondItem="1hT-6r-z1Y" secondAttribute="trailing" id="zqJ-ql-Lj4"/>
+                                            <constraint firstItem="9Cg-qk-nM5" firstAttribute="trailing" secondItem="1hT-6r-z1Y" secondAttribute="trailing" constant="-10" id="zqJ-ql-Lj4"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -242,13 +242,16 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="ajkunesProductsLbl" destination="Up3-G4-OF2" id="as2-Fi-lrX"/>
                         <outlet property="banner" destination="1hT-6r-z1Y" id="CFX-rN-9Aw"/>
                         <outlet property="bannerTitle" destination="FJg-QV-3a3" id="O5t-AV-Jll"/>
                         <outlet property="categoriesLabel" destination="oYn-yZ-pq2" id="phq-C2-E30"/>
                         <outlet property="categoryCollectionView" destination="Uf5-sb-y7P" id="4zi-sf-KY4"/>
+                        <outlet property="filterBtn" destination="ggX-0z-SsR" id="YvI-Xr-nQS"/>
                         <outlet property="initialPrice" destination="Ydl-vV-ZTi" id="IBR-ro-9IU"/>
                         <outlet property="priceLabel" destination="oiE-bq-kbY" id="ric-lf-RfV"/>
                         <outlet property="productsCollectionView" destination="wvu-Ig-OYA" id="S8e-Vi-kLf"/>
+                        <outlet property="seeAllBtn" destination="9Cg-qk-nM5" id="Lf6-Fh-emb"/>
                         <outlet property="tableViewHeightConst" destination="V1M-pQ-zsh" id="D74-gz-IJF"/>
                     </connections>
                 </viewController>

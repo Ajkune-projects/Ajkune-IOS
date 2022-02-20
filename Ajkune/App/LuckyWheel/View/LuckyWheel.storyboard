@@ -104,6 +104,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnPlay" destination="8DH-Yi-m8m" id="Xyw-Xy-YkY"/>
+                        <outlet property="titleBtn" destination="sWB-yX-GpI" id="TOd-BR-Can"/>
                         <outlet property="wheelControl" destination="1XF-DD-N9F" id="5d1-BD-aOd"/>
                     </connections>
                 </viewController>

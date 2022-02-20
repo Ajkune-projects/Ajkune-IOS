@@ -25,7 +25,7 @@ class AppointmentTabLayout<C:TDDefaultCoordinator> : TabLayout {
     }
     
     func tabBarItem() -> UITabBarItem {
-        return UITabBarItem(title: "Appointment", image: UIImage(named: "deselectedAppointment"), selectedImage: UIImage(named: "selectedAppointment"))
+        return UITabBarItem(title: "AppointmentTab".localized, image: UIImage(named: "deselectedAppointment"), selectedImage: UIImage(named: "selectedAppointment"))
     }
     
     func imageInsets() -> UIEdgeInsets {

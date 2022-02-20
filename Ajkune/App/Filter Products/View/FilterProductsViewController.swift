@@ -9,12 +9,17 @@ import UIKit
 import WARangeSlider
 
 class FilterProductsViewController: UIViewController , Storyboarded{
+    @IBOutlet weak var filterProducts: UIButton!
+    @IBOutlet weak var minLbl: UILabel!
     @IBOutlet weak var rangeSlider: RangeSlider!
+    @IBOutlet weak var maxLbl: UILabel!
     @IBOutlet weak var productBtn: UIButton!
     @IBOutlet weak var minValue: UIButton!
     @IBOutlet weak var maxValue: UIButton!
     @IBOutlet weak var offerBtn: UIButton!
-    
+    @IBOutlet weak var priceRangeLbl: UILabel!
+    @IBOutlet weak var doneBtn: UIButton!
+    @IBOutlet weak var sortByLbl: UILabel!
     //MARK: - Properties
     var viewModel: FilterProductsViewModelProtocol?
     var coordinator: FilterProductsCoordinator?
@@ -23,6 +28,8 @@ class FilterProductsViewController: UIViewController , Storyboarded{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        addObservers()
+        localize()
         rangeSlider.minimumValue = 5
         rangeSlider.lowerValue = 5
         rangeSlider.upperValue = 200
@@ -32,6 +39,26 @@ class FilterProductsViewController: UIViewController , Storyboarded{
         rangeSlider.addTarget(self, action: #selector(rangeSliderValueChanged(_:)), for: .valueChanged)
      setupUI()
 
+    }
+    func addObservers(){
+        registerNotification(notification: Notification.Name.changeLang, selector: #selector(self.updateLang(notification:)))
+    }
+    
+    @objc func updateLang(notification: Notification) {
+        localize()
+        
+    }
+    func localize(){
+        maxLbl.text = "max".localized
+        minLbl.text = "min".localized
+        sortByLbl.text = "sort_by".localized
+        productBtn.setTitle("products".localized, for: .normal)
+        doneBtn.setTitle("done".localized, for: .normal)
+        filterProducts.setTitle("filter_search".localized, for: .normal)
+        offerBtn.setTitle("offers".localized, for: .normal)
+        priceRangeLbl.text = "price_range".localized
+        
+        
     }
     @objc func rangeSliderValueChanged(_ rangeSlider: RangeSlider) {
         print("Range slider value changed: (\(rangeSlider.lowerValue) , \(rangeSlider.upperValue))")

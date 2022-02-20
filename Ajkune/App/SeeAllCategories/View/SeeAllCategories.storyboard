@@ -64,6 +64,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="categoriesBtn" destination="ago-A6-6rr" id="nJI-Xi-g9Z"/>
                         <outlet property="tableView" destination="syf-R5-wKk" id="bHE-U9-pDj"/>
                     </connections>
                 </viewController>

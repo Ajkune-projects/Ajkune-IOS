@@ -20,6 +20,7 @@ class CustomTabBar: UITabBar {
         self.addSubview(roundedView)
     }
 
+
     override func layoutSubviews() {
         super.layoutSubviews()
         let position = CGPoint(x: 0, y: 0)

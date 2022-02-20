@@ -52,3 +52,39 @@
 "empty_name" = "Bitte schreiben Sie Ihren Namen!";
 "empty_lastName" = "Bitte schreiben Sie Ihren Nachnamen!";
 "registration_failed" = "Registrierung fehlgeschlagen";
+
+
+//TABS
+"HomeTab" = "Heim";
+"AppointmentTab" = "Bestellung";
+"GiftTab" = "Gifs";
+"OfferTab" = "Bietet an";
+"AccountTab" = "Konto";
+
+//jon kry
+
+
+//HOMETab
+
+"ajkunes_products" = "Produkte von Ajkunes";
+"categories" = "Kategorien";
+"there_is_no_product_in_this_category" = "Es gibt kein Produkt in dieser Kategorie!";
+"filter" = "Filter";
+"see_all" = "Alles sehen";
+"lang" = "de";
+
+//Filter
+"filter_search" = "Suche filtern";
+"price_range"= "Preisklasse";
+"min"= "Mindest";
+"max"= "Max";
+"sort_by"= "Sortiere nach";
+"products"= "Products";
+"done"= "Fertig";
+"offers" = "Bietet an";
+
+//Gifts
+"play" = "Spielen";
+"play_lucky_wheel" = "Spielen “Lucky wheel”";
+"lucky_wheel" = "Lucky wheel";
+"there_is_no_gift_for_you_at_the_moment" = "Momentan gibt es kein Geschenk für Sie";

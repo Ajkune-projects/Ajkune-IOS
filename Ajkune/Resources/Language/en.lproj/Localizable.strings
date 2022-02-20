@@ -52,10 +52,44 @@
 //Vet i kom shtu
 "error_login" = "The username or password is incorrect";
 "empty_email" = "Please write your email address!";
-"invalid_email" = "Ungültige E-Mail";
+"invalid_email" = "Invalid E-mail";
 "empty_name" = "Please write your name!";
 "empty_lastName" = "Please write your Last Name!";
 "registration_failed" = "Registration Failed";
 "confirm_password" = "Confirm password";
 "initialScreenDesc" = "Stay High.\nStay Happy.\nAlways.";
 "initialScreenTitle" = "BRILLIANT PRODUCTS";
+
+//TABS
+"HomeTab" = "Home";
+"AppointmentTab" = "Appointment";
+"GiftTab" = "Gift";
+"OfferTab" = "Offer";
+"AccountTab" = "Account";
+
+/// deri qetu jon kry
+
+//HOMETab
+
+"ajkunes_products" = "Ajkunes’ products";
+"categories" = "Categories";
+"there_is_no_product_in_this_category" = "There is no product in this category!";
+"filter" = "Filter";
+"see_all" = "See all";
+"lang" = "en";
+
+//Filter
+"filter_search" = "Filter search";
+"price_range"= "Price range";
+"min"= "Min";
+"max"= "Max";
+"sort_by"= "Sort by";
+"products"= "Products";
+"done"= "Done";
+"offers" = "Offer";
+
+//Gifts
+"play" = "Play";
+"play_lucky_wheel" = "Play “Lucky wheel”";
+"lucky_wheel" = "Lucky wheel";
+"there_is_no_gift_for_you_at_the_moment" = "There is no gift for you at the moment";

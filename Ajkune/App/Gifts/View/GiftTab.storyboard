@@ -160,8 +160,12 @@ for you at the moment!</string>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="emptyTitleLbl" destination="YDt-N2-D8x" id="WxV-VY-h4x"/>
                         <outlet property="emptyView" destination="C17-Kl-JCR" id="AqD-QM-rNT"/>
+                        <outlet property="giftTitleBtn" destination="ZXv-zN-sDZ" id="fzY-6E-7qW"/>
                         <outlet property="giftView" destination="fjp-2G-Thf" id="LdD-f6-r0M"/>
+                        <outlet property="playBtn" destination="y01-oY-UOP" id="s0m-id-sT0"/>
+                        <outlet property="playLuckyWheelLBL" destination="4yf-qb-bdT" id="Ta9-Zw-2qk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="62S-5j-hUd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

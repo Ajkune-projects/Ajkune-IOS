@@ -8,6 +8,7 @@ import UIKit
 class HomeTabViewController: UIViewController, Storyboarded{
     
     //MARK: - Properties
+    @IBOutlet weak var filterBtn: UIButton!
     @IBOutlet weak var categoryCollectionView: UICollectionView!
     @IBOutlet weak var productsCollectionView: UICollectionView!
     @IBOutlet weak var banner: UIImageView!
@@ -15,6 +16,8 @@ class HomeTabViewController: UIViewController, Storyboarded{
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var tableViewHeightConst: NSLayoutConstraint!
     @IBOutlet weak var emptyView: UIView!
+    @IBOutlet weak var seeAllBtn: UIButton!
+    @IBOutlet weak var ajkunesProductsLbl: UILabel!
     @IBOutlet weak var categoriesLabel: UILabel!
     var viewModel: HomeTabViewModelProtocol?
     var categoryID:Int?
@@ -37,7 +40,10 @@ class HomeTabViewController: UIViewController, Storyboarded{
     }
     
     func localized(){
-        categoriesLabel.text = "Categories"
+        categoriesLabel.text = "categories".localized
+        ajkunesProductsLbl.text = "ajkunes_products".localized
+        filterBtn.setTitle("filter".localized, for: .normal)
+        seeAllBtn.setTitle("see_all".localized, for: .normal)
     }
     
     func layoutConfig() -> UICollectionViewCompositionalLayout {

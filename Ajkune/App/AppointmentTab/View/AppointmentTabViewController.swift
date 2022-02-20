@@ -43,26 +43,17 @@ class AppointmentTabViewController: UIViewController, WKUIDelegate,Storyboarded 
     }
     @objc func updateLang(notification: Notification) {
         setupWebView()
-
+        setupUI()
     }
     
     func setupWebView(){
-        responseUrl = "https://connect.shore.com/bookings/ajkune-professional-spreitenbach-nbz/locations?locale=\(self.lang ?? "")-CH"
+        responseUrl = "https://connect.shore.com/bookings/ajkune-professional-spreitenbach-nbz/locations?locale=\("lang".localized)-CH"
         let myURL = URL(string: (responseUrl ?? ""))
         let myRequest = URLRequest(url: myURL ?? URL(fileURLWithPath: "") )
         webView.load(myRequest)
     }
     
         func setupUI() {
-            if Language.language == Language.french{
-                lang = "fr"
-            }else if Language.language == Language.german{
-                lang = "de"
-            }else if Language.language == Language.italian{
-                lang = "if"
-            }else{
-                lang = "en"
-            }
             self.mainView.addSubview(webView)
             
             NSLayoutConstraint.activate([

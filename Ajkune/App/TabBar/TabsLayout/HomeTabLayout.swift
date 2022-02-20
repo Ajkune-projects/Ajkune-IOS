@@ -23,7 +23,7 @@ class HomeTabLayout<C:TDDefaultCoordinator> : TabLayout {
     }
     
     func tabBarItem() -> UITabBarItem {
-        return UITabBarItem(title: "Home", image: UIImage(named: "deselectedHome"), selectedImage: UIImage(named: "selectedHome"))
+        return UITabBarItem(title: "HomeTab".localized, image: UIImage(named: "deselectedHome"), selectedImage: UIImage(named: "selectedHome"))
     }
     
     func imageInsets() -> UIEdgeInsets {

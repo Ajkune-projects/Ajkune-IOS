@@ -317,11 +317,17 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="doneBtn" destination="ffo-BV-9Bp" id="y6c-b7-EXg"/>
+                        <outlet property="filterProducts" destination="V1K-eV-7aA" id="HPW-VP-lOG"/>
+                        <outlet property="maxLbl" destination="bBZ-4u-Jf3" id="vav-BB-z4I"/>
                         <outlet property="maxValue" destination="iTW-WZ-9T0" id="Yas-zk-9KC"/>
+                        <outlet property="minLbl" destination="Dqh-qf-abK" id="5aI-lC-D59"/>
                         <outlet property="minValue" destination="uMv-eg-bgm" id="Wa2-s2-3pj"/>
                         <outlet property="offerBtn" destination="ik4-aw-RLy" id="UTG-WW-aQq"/>
+                        <outlet property="priceRangeLbl" destination="yvU-fV-mqG" id="ufn-Pa-LaM"/>
                         <outlet property="productBtn" destination="zsc-re-arX" id="223-lJ-0fu"/>
                         <outlet property="rangeSlider" destination="7D5-Vt-6tg" id="JzQ-7y-yq1"/>
+                        <outlet property="sortByLbl" destination="8aW-6Q-Aez" id="SOZ-bl-cgU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4GV-cf-Ndk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

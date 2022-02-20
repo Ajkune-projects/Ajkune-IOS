@@ -29,6 +29,7 @@ class SignUpViewController: UIViewController, Storyboarded {
             super.viewDidLoad()
             setupUIDesignFields()
             showHidePass()
+            addObservers()
             registerBtn.setTitle("register".localized, for: .normal)
             alreadyMemberLbl.text = "already_a_member".localized
             loginBtn.setTitle("login".localized, for: .normal)
