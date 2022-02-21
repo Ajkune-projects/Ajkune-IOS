@@ -38,7 +38,7 @@ class FilterProductsViewController: UIViewController , Storyboarded{
         maxValue.setTitle("CHF \(rangeSlider.upperValue.roundToPlaces(places: 2))", for: .normal)
         rangeSlider.addTarget(self, action: #selector(rangeSliderValueChanged(_:)), for: .valueChanged)
      setupUI()
-
+        navigationController?.interactivePopGestureRecognizer?.isEnabled = false
     }
     func addObservers(){
         registerNotification(notification: Notification.Name.changeLang, selector: #selector(self.updateLang(notification:)))
@@ -117,6 +117,7 @@ class FilterProductsViewController: UIViewController , Storyboarded{
                 globalData.filteredProducts = response ?? [Products]()
                 if globalData.filterFromOffer == false && type == "offer"{
                     if let tabBarController = self.tabBarController{
+                      
                         tabBarController.selectedIndex = 3
                     }
                 }else if globalData.filterFromOffer == true && type == "product" {

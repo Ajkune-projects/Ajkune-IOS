@@ -251,6 +251,7 @@
                         <outlet property="initialPrice" destination="Ydl-vV-ZTi" id="IBR-ro-9IU"/>
                         <outlet property="priceLabel" destination="oiE-bq-kbY" id="ric-lf-RfV"/>
                         <outlet property="productsCollectionView" destination="wvu-Ig-OYA" id="S8e-Vi-kLf"/>
+                        <outlet property="scrollView" destination="Y9e-VB-08X" id="YzC-kR-oES"/>
                         <outlet property="seeAllBtn" destination="9Cg-qk-nM5" id="Lf6-Fh-emb"/>
                         <outlet property="tableViewHeightConst" destination="V1M-pQ-zsh" id="D74-gz-IJF"/>
                     </connections>

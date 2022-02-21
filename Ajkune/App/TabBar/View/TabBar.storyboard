@@ -14,7 +14,7 @@
             <objects>
                 <tabBarController storyboardIdentifier="MainTabBarContainer" id="rK6-VM-ijv" customClass="MainTabBarContainer" customModule="Ajkune" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="hOM-LY-izh"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gmV-oj-p2Y">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gmV-oj-p2Y" customClass="TabBarWithCorners" customModule="Ajkune" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -57,6 +57,11 @@
             <point key="canvasLocation" x="-2231" y="-381"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="gmV-oj-p2Y">
+            <size key="intrinsicContentSize" width="-1" height="83"/>
+        </designable>
+    </designables>
     <resources>
         <systemColor name="systemGray2Color">
             <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

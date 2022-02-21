@@ -143,6 +143,7 @@ for you at the moment!</string>
                     </view>
                     <connections>
                         <outlet property="emptyView" destination="9PU-JI-gUL" id="NdI-H0-D24"/>
+                        <outlet property="scrollView" destination="L7N-ch-4RH" id="Puj-Up-FMP"/>
                         <outlet property="tableView" destination="bSS-Z2-5ZO" id="OK9-zB-CgG"/>
                     </connections>
                 </viewController>

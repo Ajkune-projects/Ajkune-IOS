@@ -24,7 +24,7 @@ class GiftTabLayout<C:TDDefaultCoordinator> : TabLayout {
     }
     
     func tabBarItem() -> UITabBarItem {
-        return UITabBarItem(title: "GiftTab".localized, image: UIImage(named: "deselectedGift"), selectedImage: UIImage(named: "selectedGift"))
+        return UITabBarItem(title: "", image: UIImage(named: ""), selectedImage: UIImage(named: ""))
     }
     
     func imageInsets() -> UIEdgeInsets {

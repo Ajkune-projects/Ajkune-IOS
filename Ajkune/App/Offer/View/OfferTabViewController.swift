@@ -17,25 +17,40 @@ class OfferTabViewController: UIViewController, Storyboarded{
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var initialPrice: UILabel!
     @IBOutlet weak var tableViewHeightConst: NSLayoutConstraint!
+    @IBOutlet weak var scrollView: UIScrollView!
     
     var viewModel: OfferTabViewModelProtocol?
     var categoryID:Int?
-    
+    var refreshControl = UIRefreshControl()
     override func viewDidLoad() {
         super.viewDidLoad()
         self.viewModel?.viewDelegate = self
         setupProductsCollectionView()
         filterData()
+        refresh()
         getALLProducts()
         getBanner()
         globalData.filterFromOffer = true
     }
+    
     override func viewWillAppear(_ animated: Bool) {
         filterData()
     }
     override func viewDidAppear(_ animated: Bool) {
         globalData.filterFromOffer = true
     }
+    
+    func refresh(){
+        refreshControl.addTarget(self, action: #selector(self.refresh(_:)), for: .valueChanged)
+        self.scrollView.addSubview(refreshControl) // not required when using UITableViewController
+    }
+    
+    @objc func refresh(_ sender: AnyObject) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2)) {
+            self.getALLProducts()
+        }
+    }
+    
     func filterData(){
         if globalData.fromFilter == true{
             self.viewModel?.getALLProducts(products: globalData.filteredProducts)
@@ -66,6 +81,7 @@ class OfferTabViewController: UIViewController, Storyboarded{
         SHOW_CUSTOM_LOADER()
         self.viewModel?.getALLProducts(completion: { response in
             HIDE_CUSTOM_LOADER()
+            self.refreshControl.endRefreshing()
             if response?.count != nil{
                 self.viewModel?.getALLProducts(products: response)
                 dispatch {
@@ -73,6 +89,7 @@ class OfferTabViewController: UIViewController, Storyboarded{
                     self.view.layoutIfNeeded()
                     self.tableViewHeightConst.constant = self.productsCollectionView.contentSize.height
                     self.view.layoutIfNeeded()
+                    
                 }
             }
         })

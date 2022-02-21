@@ -353,6 +353,7 @@
                                             <constraint firstItem="Hwc-hR-apE" firstAttribute="top" secondItem="0hP-lz-Ewk" secondAttribute="bottom" constant="20" id="pZg-3P-QZ2"/>
                                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Tlw-Oz-66c" secondAttribute="trailing" constant="10" id="uYB-Wx-yvb"/>
                                             <constraint firstItem="msc-YT-6eX" firstAttribute="top" secondItem="Hwc-hR-apE" secondAttribute="bottom" constant="10" id="vXd-vg-oEs"/>
+                                            <constraint firstAttribute="bottom" relation="lessThanOrEqual" secondItem="SSO-JL-8ww" secondAttribute="bottom" constant="160" id="wfA-dz-qXj"/>
                                             <constraint firstItem="SSO-JL-8ww" firstAttribute="trailing" secondItem="Hwc-hR-apE" secondAttribute="trailing" id="y2J-Ci-duI"/>
                                             <constraint firstItem="6Eg-vA-gnK" firstAttribute="top" secondItem="y97-Fx-8rR" secondAttribute="bottom" constant="10" id="yOm-oe-7Gd"/>
                                         </constraints>

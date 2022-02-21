@@ -115,6 +115,7 @@
 		57A7819527B5DA85004CA286 /* UserAddressViewModelCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A7819427B5DA85004CA286 /* UserAddressViewModelCoordinatorDelegate.swift */; };
 		57A7819727B5DAB9004CA286 /* UserAddressViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A7819627B5DAB9004CA286 /* UserAddressViewModel.swift */; };
 		57A7819927B5DB1D004CA286 /* UserAddress.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57A7819827B5DB1D004CA286 /* UserAddress.storyboard */; };
+		57B95AF827C42B090007966F /* PullToRefreshDSL in Resources */ = {isa = PBXBuildFile; fileRef = 57B95AF727C42B090007966F /* PullToRefreshDSL */; };
 		57CB252027AAC5EC004B8767 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CB251C27AAC5EB004B8767 /* BaseViewModel.swift */; };
 		57CB252127AAC5EC004B8767 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CB251D27AAC5EB004B8767 /* BaseNavigationController.swift */; };
 		57CB252227AAC5EC004B8767 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57CB251E27AAC5EB004B8767 /* AppCoordinator.swift */; };
@@ -330,6 +331,7 @@
 		57A7819427B5DA85004CA286 /* UserAddressViewModelCoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAddressViewModelCoordinatorDelegate.swift; sourceTree = "<group>"; };
 		57A7819627B5DAB9004CA286 /* UserAddressViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAddressViewModel.swift; sourceTree = "<group>"; };
 		57A7819827B5DB1D004CA286 /* UserAddress.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserAddress.storyboard; sourceTree = "<group>"; };
+		57B95AF727C42B090007966F /* PullToRefreshDSL */ = {isa = PBXFileReference; lastKnownFileType = folder; name = PullToRefreshDSL; path = "../../../TeedUp-iOS/TeedUp/Custom Classes/PullToRefreshDSL"; sourceTree = "<group>"; };
 		57CB251C27AAC5EB004B8767 /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		57CB251D27AAC5EB004B8767 /* BaseNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
 		57CB251E27AAC5EB004B8767 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
@@ -1240,6 +1242,7 @@
 		57CB252B27AAC743004B8767 /* CostumClasses */ = {
 			isa = PBXGroup;
 			children = (
+				57B95AF727C42B090007966F /* PullToRefreshDSL */,
 				578BF4A927B9CBD9004005D7 /* SwiftFortuneWheel */,
 				57D823D327AC4BAB004AB232 /* UnderlineItemView.swift */,
 				57CB252C27AAC755004B8767 /* Constants.swift */,
@@ -1882,6 +1885,7 @@
 			files = (
 				57D8242B27B096D8004AB232 /* CommentCell.xib in Resources */,
 				57570ED027AB233F00D0DFB1 /* TDInitialScreen.storyboard in Resources */,
+				57B95AF827C42B090007966F /* PullToRefreshDSL in Resources */,
 				578BF49327B9B131004005D7 /* GiftTab.storyboard in Resources */,
 				578BF4A627B9C259004005D7 /* LuckyWheel.storyboard in Resources */,
 				5780A10C27BF125F0078E3E5 /* Profile.storyboard in Resources */,

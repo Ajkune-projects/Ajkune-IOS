@@ -13,6 +13,7 @@ extension Notification.Name {
     static var changeLang = Notification.Name.init("changeLang")
     static var UIKeyboardWillShow = Notification.Name.init("UIKeyboardWillShow")
     static var UIKeyboardWillHide = Notification.Name.init("UIKeyboardWillHide")
+    static var tab = Notification.Name.init("tab")
 
 }
 

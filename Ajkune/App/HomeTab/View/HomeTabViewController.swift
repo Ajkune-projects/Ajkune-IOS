@@ -8,6 +8,7 @@ import UIKit
 class HomeTabViewController: UIViewController, Storyboarded{
     
     //MARK: - Properties
+    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var filterBtn: UIButton!
     @IBOutlet weak var categoryCollectionView: UICollectionView!
     @IBOutlet weak var productsCollectionView: UICollectionView!
@@ -19,9 +20,13 @@ class HomeTabViewController: UIViewController, Storyboarded{
     @IBOutlet weak var seeAllBtn: UIButton!
     @IBOutlet weak var ajkunesProductsLbl: UILabel!
     @IBOutlet weak var categoriesLabel: UILabel!
+    @IBOutlet weak var initialPrice: UILabel!
+    
+    //Properties
     var viewModel: HomeTabViewModelProtocol?
     var categoryID:Int?
-    @IBOutlet weak var initialPrice: UILabel!
+    var refreshControl = UIRefreshControl()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,6 +42,22 @@ class HomeTabViewController: UIViewController, Storyboarded{
         categoryCollectionView.collectionViewLayout = layoutConfig()
         addObservers()
         localized()
+        refresh()
+    }
+
+    func refresh(){
+        refreshControl.addTarget(self, action: #selector(self.refresh(_:)), for: .valueChanged)
+        self.scrollView.addSubview(refreshControl) // not required when using UITableViewController
+    }
+    
+    @objc func refresh(_ sender: AnyObject) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2)) {
+            self.getBanner()
+            self.getALLProducts()
+            globalData.categoryIndexPath = IndexPath(row: 0, section: 0)
+            self.categoryCollectionView?.selectItem(at: globalData.categoryIndexPath, animated: false, scrollPosition: .top)
+            self.refreshControl.endRefreshing()
+        }
     }
     
     func localized(){
@@ -59,11 +80,17 @@ class HomeTabViewController: UIViewController, Storyboarded{
     }
     func addObservers(){
         registerNotification(notification: Notification.Name.changeLang, selector: #selector(self.updateLang(notification:)))
+        registerNotification(notification: Notification.Name.tab, selector: #selector(self.updateTab(notification:)))
     }
     @objc func updateLang(notification: Notification) {
         localized()
         productsCollectionView.reloadData()
 
+    }
+    @objc func updateTab(notification: Notification) {
+        if let tabBarController = self.tabBarController{
+            tabBarController.selectedIndex = 2
+        }
     }
     override func viewWillAppear(_ animated: Bool) {
         filterData()

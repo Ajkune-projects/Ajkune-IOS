@@ -190,6 +190,7 @@
                         <outlet property="initialPrice" destination="brz-zT-eiq" id="kXh-j8-F0F"/>
                         <outlet property="priceLabel" destination="6Oh-eY-h19" id="KZe-95-RAU"/>
                         <outlet property="productsCollectionView" destination="qeD-q8-aeS" id="o9a-Qg-V2e"/>
+                        <outlet property="scrollView" destination="OF5-AP-3HF" id="SNP-NZ-3HJ"/>
                         <outlet property="tableViewHeightConst" destination="ARr-HA-PNR" id="1iU-pB-ry9"/>
                     </connections>
                 </viewController>

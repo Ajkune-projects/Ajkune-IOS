@@ -430,8 +430,8 @@
             filePath = "Ajkune/App/HomeTab/View/HomeTabViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "126"
-            endingLineNumber = "126"
+            startingLineNumber = "153"
+            endingLineNumber = "153"
             landmarkName = "getALLProducts()"
             landmarkType = "7">
          </BreakpointContent>
@@ -446,8 +446,8 @@
             filePath = "Ajkune/App/HomeTab/View/HomeTabViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "128"
-            endingLineNumber = "128"
+            startingLineNumber = "155"
+            endingLineNumber = "155"
             landmarkName = "getALLProducts()"
             landmarkType = "7">
          </BreakpointContent>
@@ -542,8 +542,8 @@
             filePath = "Ajkune/App/HomeTab/View/HomeTabViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "212"
-            endingLineNumber = "212"
+            startingLineNumber = "239"
+            endingLineNumber = "239"
             landmarkName = "selectedCategory(id:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -558,8 +558,8 @@
             filePath = "Ajkune/App/HomeTab/View/HomeTabViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "210"
-            endingLineNumber = "210"
+            startingLineNumber = "237"
+            endingLineNumber = "237"
             landmarkName = "selectedCategory(id:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -574,8 +574,8 @@
             filePath = "Ajkune/App/HomeTab/View/HomeTabViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "213"
-            endingLineNumber = "213"
+            startingLineNumber = "240"
+            endingLineNumber = "240"
             landmarkName = "selectedCategory(id:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -606,8 +606,8 @@
             filePath = "Ajkune/App/HomeTab/View/HomeTabViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "202"
-            endingLineNumber = "202"
+            startingLineNumber = "229"
+            endingLineNumber = "229"
             landmarkName = "productDetails(id:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1094,8 +1094,8 @@
             filePath = "Ajkune/App/HomeTab/View/HomeTabViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "147"
-            endingLineNumber = "147"
+            startingLineNumber = "174"
+            endingLineNumber = "174"
             landmarkName = "getALLCategories()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1110,8 +1110,8 @@
             filePath = "Ajkune/App/HomeTab/View/HomeTabViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "191"
-            endingLineNumber = "191"
+            startingLineNumber = "218"
+            endingLineNumber = "218"
             landmarkName = "seeAllCategoriesPressed(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1120,7 +1120,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "BDD27FF3-F09C-4422-8564-E138E509FE15"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Ajkune/App/HomeTab/Coordinator/HomeTabCoordinator.swift"
@@ -1136,7 +1136,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "EC4D6775-AF20-4849-B86A-EB50EDC9DBCD"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Ajkune/App/SeeAllCategories/View/SeeAllCategoryViewController.swift"
@@ -1152,7 +1152,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "E7D60F15-5C93-40E3-9F93-09B667F891C8"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Ajkune/App/HomeTab/Coordinator/HomeTabCoordinator.swift"
@@ -1174,8 +1174,8 @@
             filePath = "Ajkune/App/HomeTab/View/HomeTabViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
+            startingLineNumber = "96"
+            endingLineNumber = "96"
             landmarkName = "viewWillAppear(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1222,8 +1222,8 @@
             filePath = "Ajkune/App/HomeTab/View/HomeTabViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "156"
-            endingLineNumber = "156"
+            startingLineNumber = "183"
+            endingLineNumber = "183"
             landmarkName = "getCategoryByID(id:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1238,8 +1238,8 @@
             filePath = "Ajkune/App/HomeTab/View/HomeTabViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "159"
-            endingLineNumber = "159"
+            startingLineNumber = "186"
+            endingLineNumber = "186"
             landmarkName = "getCategoryByID(id:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1254,8 +1254,8 @@
             filePath = "Ajkune/App/HomeTab/View/HomeTabViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "163"
-            endingLineNumber = "163"
+            startingLineNumber = "190"
+            endingLineNumber = "190"
             landmarkName = "getCategoryByID(id:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1270,8 +1270,8 @@
             filePath = "Ajkune/App/HomeTab/View/HomeTabViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "123"
-            endingLineNumber = "123"
+            startingLineNumber = "150"
+            endingLineNumber = "150"
             landmarkName = "getALLProducts()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1318,8 +1318,8 @@
             filePath = "Ajkune/App/HomeTab/View/HomeTabViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "83"
-            endingLineNumber = "83"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
             landmarkName = "filterData()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1334,8 +1334,8 @@
             filePath = "Ajkune/App/HomeTab/View/HomeTabViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
             landmarkName = "filterData()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1376,7 +1376,23 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "66F2B966-3798-4860-AB23-3BE70B3A9F56"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Ajkune/App/Profile/View/ProfileViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "118"
+            endingLineNumber = "118"
+            landmarkName = "getUserDetails()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "06DD168E-DF4A-42B7-9F41-0CBFFC6120BB"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Ajkune/App/Profile/View/ProfileViewController.swift"
@@ -1391,31 +1407,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "06DD168E-DF4A-42B7-9F41-0CBFFC6120BB"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Ajkune/App/Profile/View/ProfileViewController.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "116"
-            endingLineNumber = "116"
-            landmarkName = "getUserDetails()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "D0896F07-C490-49FE-82D9-7BADB97BEDAC"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Ajkune/App/Profile/View/ProfileViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "146"
-            endingLineNumber = "146"
+            startingLineNumber = "158"
+            endingLineNumber = "158"
             landmarkName = "saveUserDetails()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1430,8 +1430,8 @@
             filePath = "Ajkune/App/Profile/View/ProfileViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "185"
-            endingLineNumber = "185"
+            startingLineNumber = "202"
+            endingLineNumber = "202"
             landmarkName = "saveUserDetails(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1440,14 +1440,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "33DB44AB-21FB-441A-B04F-79546CEDE353"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Ajkune/App/Profile/View/ProfileViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "141"
-            endingLineNumber = "141"
+            startingLineNumber = "153"
+            endingLineNumber = "153"
             landmarkName = "saveUserDetails()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1456,14 +1456,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "B40F5E58-B936-411A-BC63-8A4B776A92BC"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Ajkune/App/Profile/View/ProfileViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "123"
-            endingLineNumber = "123"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
             landmarkName = "getUserDetails()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1472,14 +1472,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "8385A6AD-5E41-4F26-B921-0134CB81B2BE"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Ajkune/App/Profile/View/ProfileViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "126"
-            endingLineNumber = "126"
+            startingLineNumber = "127"
+            endingLineNumber = "127"
             landmarkName = "getUserDetails()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1494,8 +1494,8 @@
             filePath = "Ajkune/App/Gifts/View/GiftTabViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "51"
-            endingLineNumber = "51"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
             landmarkName = "showGiftScreen(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1526,8 +1526,8 @@
             filePath = "Ajkune/App/HomeTab/View/HomeTabViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "130"
-            endingLineNumber = "130"
+            startingLineNumber = "157"
+            endingLineNumber = "157"
             landmarkName = "getALLProducts()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1536,7 +1536,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "1901FAE9-0E59-421A-B16B-41C5AB280C3B"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Ajkune/App/LuckyWheel/View/LuckyWheelViewController.swift"
@@ -1552,7 +1552,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "F63AE551-D320-40BA-9507-2E45081B1B69"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Ajkune/App/LuckyWheel/View/LuckyWheelViewController.swift"
@@ -1568,7 +1568,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "1C044F88-4BFB-4609-9A92-82C2CC40679A"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Ajkune/App/LuckyWheel/View/LuckyWheelViewController.swift"
@@ -1577,22 +1577,6 @@
             startingLineNumber = "81"
             endingLineNumber = "81"
             landmarkName = "rotateTap(_:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "59686A1D-D59A-4FFE-B09F-A29C4029AA07"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Ajkune/App/LuckyWheel/ViewModel/LuckyWheelViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
-            landmarkName = "showModal(gift:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1798,8 +1782,8 @@
             filePath = "Ajkune/App/MyGifts/View/MyGiftsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "30"
-            endingLineNumber = "30"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
             landmarkName = "getMyGifts()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1814,8 +1798,8 @@
             filePath = "Ajkune/App/HomeTab/View/HomeTabViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "140"
-            endingLineNumber = "140"
+            startingLineNumber = "167"
+            endingLineNumber = "167"
             landmarkName = "getALLCategories()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1862,8 +1846,8 @@
             filePath = "Ajkune/App/MyGifts/View/MyGiftsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
             landmarkName = "getMyGifts()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1878,8 +1862,8 @@
             filePath = "Ajkune/App/MyGifts/View/MyGiftsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "29"
-            endingLineNumber = "29"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
             landmarkName = "getMyGifts()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1894,8 +1878,8 @@
             filePath = "Ajkune/App/HomeTab/View/HomeTabViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "166"
-            endingLineNumber = "166"
+            startingLineNumber = "193"
+            endingLineNumber = "193"
             landmarkName = "getCategoryByID(id:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1910,8 +1894,8 @@
             filePath = "Ajkune/App/HomeTab/View/HomeTabViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "158"
-            endingLineNumber = "158"
+            startingLineNumber = "185"
+            endingLineNumber = "185"
             landmarkName = "getCategoryByID(id:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1926,8 +1910,8 @@
             filePath = "Ajkune/App/HomeTab/View/HomeTabViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "80"
-            endingLineNumber = "80"
+            startingLineNumber = "107"
+            endingLineNumber = "107"
             landmarkName = "filterData()"
             landmarkType = "7">
          </BreakpointContent>
@@ -1942,8 +1926,8 @@
             filePath = "Ajkune/App/HomeTab/View/HomeTabViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "206"
-            endingLineNumber = "206"
+            startingLineNumber = "233"
+            endingLineNumber = "233"
             landmarkName = "selectedCategory(id:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1952,14 +1936,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "46179278-F3E7-45DE-8052-8A8BB7394E32"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Ajkune/App/HomeTab/View/HomeTabViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "222"
-            endingLineNumber = "222"
+            startingLineNumber = "249"
+            endingLineNumber = "249"
             landmarkName = "selectedCategory(id:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1974,8 +1958,8 @@
             filePath = "Ajkune/App/HomeTab/View/HomeTabViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "218"
-            endingLineNumber = "218"
+            startingLineNumber = "245"
+            endingLineNumber = "245"
             landmarkName = "selectedCategory(id:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -1990,8 +1974,8 @@
             filePath = "Ajkune/App/Offer/View/OfferTabViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
             landmarkName = "filterData()"
             landmarkType = "7">
          </BreakpointContent>
@@ -2000,14 +1984,14 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "52C3F316-DD7F-4129-87FD-D531E45C5DD4"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Ajkune/App/Offer/View/OfferTabViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
             landmarkName = "filterData()"
             landmarkType = "7">
          </BreakpointContent>
@@ -2048,7 +2032,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "79369341-9A49-477D-902A-2C85D0F828E2"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Ajkune/App/ProductDetails/View/ProductDetailsViewController.swift"
@@ -2064,7 +2048,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "075014E4-8531-447A-BB6B-826671578AFD"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Ajkune/App/ProductDetails/View/ProductDetailsViewController.swift"
@@ -2080,7 +2064,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "88478C89-71EC-4E65-952C-D097BA7CCA53"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Ajkune/App/ProductDetails/View/ProductDetailsViewController.swift"
@@ -2096,7 +2080,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "3647DFD8-FA1E-4AC0-B049-9EC87E77BC39"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Ajkune/App/ProductDetails/View/ProductDetailsViewController.swift"
@@ -2111,16 +2095,176 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "277A71E6-3B6C-4268-B0CE-8B41026044FD"
-            shouldBeEnabled = "Yes"
+            uuid = "F146C78C-6B35-4B37-8D6F-B5140CA77763"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Ajkune/App/HomeTab/DataSource/ProductsDataSource.swift"
+            filePath = "Ajkune/App/TabBar/View/TDMainTabBarContainer.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
-            landmarkName = "collectionView(_:cellForItemAt:)"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "tabBarController(_:didSelect:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0FA5C91A-7695-4091-B1C7-3BCDEE2A0CBA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Ajkune/App/HomeTab/View/HomeTabViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "updateTab(notification:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3F27354F-DEF6-46FD-8D5B-83A2AD7930F2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Ajkune/App/TabBar/View/TDMainTabBarContainer.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "viewDidLayoutSubviews()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "26812718-0303-463C-A6FF-0A146726CFD3"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Ajkune/App/Profile/View/ProfileViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "128"
+            endingLineNumber = "128"
+            landmarkName = "getUserDetails()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AA627986-36F3-4FD7-B5BE-5F5E64AC6E30"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Ajkune/App/Profile/View/ProfileViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "141"
+            endingLineNumber = "141"
+            landmarkName = "getUserDetails()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "922179DD-51E9-4BCB-ABB1-6A58468B1A57"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Ajkune/App/Profile/View/ProfileViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "129"
+            endingLineNumber = "129"
+            landmarkName = "getUserDetails()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "67725E06-89A3-4503-A8CF-A4E557748B99"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Ajkune/App/Profile/View/ProfileViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "198"
+            endingLineNumber = "198"
+            landmarkName = "saveUserDetails(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FD0FA3D2-EABA-4261-B5A2-70ACA00571B4"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Ajkune/App/Gifts/View/GiftTabViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "hasGifts()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DDC2962A-EACB-4E64-BDA0-AEC8C80615C2"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Ajkune/App/TabBar/View/CustomTabbar.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "setupCenterButton()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "77794517-A7B2-478C-95FF-012BF8143592"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Ajkune/App/TabBar/View/CustomTabbar.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "setupCenterButton()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AFB937D9-BE09-4F89-A12E-EDAA82F0BED9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Ajkune/App/TabBar/View/CustomTabbar.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "setupCenterButton()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

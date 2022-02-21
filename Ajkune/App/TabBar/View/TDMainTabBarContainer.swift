@@ -9,10 +9,11 @@ import UIKit
 
 class MainTabBarContainer: UITabBarController, Storyboarded {
     let layer = CAShapeLayer()
-   
+    let centerButton = UIButton(frame: CGRect(x: 0, y: 10, width: 70, height: 70))
     override func viewDidLoad() {
         super.viewDidLoad()
         addObservers()
+        self.navigationController?.navigationBar.isHidden = true
         self.tabBar.unselectedItemTintColor = UIColor.gray
         self.tabBar.tintColor = Colors.overcastBlueColor
         self.navigationController?.navigationBar.isHidden = true
@@ -58,7 +59,7 @@ class MainTabBarContainer: UITabBarController, Storyboarded {
              self.viewDidAppear(true)
                         
             }
-        }
+    }
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         self.tabBar.frame = CGRect( x: 0, y: UIScreen.main.bounds.height - 80, width: self.view.frame.width, height: 80)
@@ -75,7 +76,7 @@ class MainTabBarContainer: UITabBarController, Storyboarded {
     func localizeTabBar() {
         self.tabBar.items![0].title = "HomeTab".localized
         self.tabBar.items![1].title = "AppointmentTab".localized
-        self.tabBar.items![2].title = "GiftTab".localized
+//        self.tabBar.items![2].title = "GiftTab".localized
         self.tabBar.items![3].title = "OfferTab".localized
         self.tabBar.items![4].title = "AccountTab".localized
     }

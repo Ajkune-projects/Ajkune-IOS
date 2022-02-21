@@ -29,6 +29,7 @@ class ProfileViewController: UIViewController , Storyboarded, UITextFieldDelegat
     var isOpen = false
     var choosenImg: UIImage?
     var profilePic:String?
+    var isActive:Int?
     
     override func viewDidLoad() {
         setupFields()
@@ -125,14 +126,25 @@ class ProfileViewController: UIViewController , Storyboarded, UITextFieldDelegat
 //                self.addressLabel.text = response?.address
                 ProfileDetails.street = response?.user?.street ?? ""
                 ProfileDetails.city = response?.user?.address ?? ""
-                ProfileDetails.zipCode = "\(response?.user?.zip_code ?? 0)"
+//                ProfileDetails.zipCode = "\(== nil ? nil : response?.user?.zip_code)"
+                if response?.user?.zip_code == nil ||  response?.user?.zip_code == 0{
+                    ProfileDetails.zipCode = ""
+                }else{
+                    ProfileDetails.zipCode = "\(String(describing: response?.user?.zip_code))"
+                }
                 ProfileDetails.country = response?.user?.country ?? ""
-                ProfileDetails.fullAddress = "\(response?.user?.street ?? "") \n\(response?.user?.address ?? "")\n\(response?.user?.zip_code ?? 0 )\n\(response?.user?.country ?? "")"
+                ProfileDetails.fullAddress = "\(response?.user?.street ?? "") \n\(response?.user?.address ?? "")\n\(ProfileDetails.zipCode ?? "")\n\(response?.user?.country ?? "")"
+                if response?.user?.street == nil && response?.user?.zip_code  == nil && response?.user?.address == nil {
+                    ProfileDetails.fullAddress = ""
+                }
                 self.addressLabel.text = ProfileDetails.fullAddress
+               
+                self.isActive = response?.user?.active_profile
                 if response?.user?.active_profile == 1{
                     self.userImage.borderColor = UIColor(hexString: "#FFD700")
                     self.verifiedImage.isHidden = false
                 }
+                self.setupLabel()
             }
         })
     }
@@ -145,6 +157,7 @@ class ProfileViewController: UIViewController , Storyboarded, UITextFieldDelegat
                 HIDE_CUSTOM_LOADER()
                 if response?.user?.active_profile == 1{
                     self.userImage.borderColor = UIColor(hexString: "#FFD700")
+                    self.nameLabel.text = "\(response?.user?.name) \(response?.user?.last_name)"
                     self.verifiedImage.isHidden = false
                 }
                 self.showOKAlert(title: "Ajkune", message: "Data saved successfully")
@@ -182,20 +195,24 @@ class ProfileViewController: UIViewController , Storyboarded, UITextFieldDelegat
     }
     
     @IBAction func saveUserDetails(_ sender: Any) {
+        if self.isActive == 0 && profilePic == nil{
+            self.showAlertWith(title: "Ajkune", message: "Please add your profile photo!")
+            return
+        }
         saveUserDetails()
     }
 
     @objc func tappedMe() {
         let editPicture = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
-        let removePicture = UIAlertAction(title: "Remove photo", style: .default, handler: {
-              (alert: UIAlertAction!) -> Void in self.deleteProfilePicture() })
+//        let removePicture = UIAlertAction(title: "Remove photo", style: .default, handler: {
+//              (alert: UIAlertAction!) -> Void in self.deleteProfilePicture() })
         let takeApicture = UIAlertAction(title: "Take a picture", style: .default, handler: {
             (alert: UIAlertAction!) -> Void in self.openCamera() })
         let chooseFromCameraRoll = UIAlertAction(title:"Choose from gallery", style: .default, handler: {
             (alert: UIAlertAction!) -> Void in self.openPhotoLibraryButton() })
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: {
             (alert: UIAlertAction!) -> Void in })
-        editPicture.addAction(removePicture)
+//        editPicture.addAction(removePicture)
         editPicture.addAction(takeApicture)
         editPicture.addAction(chooseFromCameraRoll)
         editPicture.addAction(cancelAction)
