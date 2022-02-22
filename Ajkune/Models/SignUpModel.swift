@@ -32,7 +32,7 @@ struct Usr: Codable {
     var active_profile: Int?
     var last_name, gender, date_of_birth, phone: String?
     var address, street: String?
-    var zip_code: Int?
+    var zip_code: Int!
     var country, role: String?
     var image_name: String?
     var has_gift: Int?

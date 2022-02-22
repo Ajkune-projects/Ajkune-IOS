@@ -186,7 +186,8 @@ class SignUpViewController: UIViewController, Storyboarded {
                 self.showAlertWith(title: "Ajkune", message: "register_password_not_match".localized)
                 return
             }
-            
+            let user = UserSignUpModel(name: firstNameTextField.text ?? "", email: emailAddressTextField.text ?? "", password: passwordTextField.text ?? "")
+            registerUser(model: user)
             
         }
     
@@ -199,8 +200,7 @@ class SignUpViewController: UIViewController, Storyboarded {
 
     @IBAction func createAccountAction(_ sender: Any) {
         validateFields()
-        let user = UserSignUpModel(name: firstNameTextField.text ?? "", email: emailAddressTextField.text ?? "", password: passwordTextField.text ?? "")
-        registerUser(model: user)
+        
     }
     func registerUser(model:UserSignUpModel){
         SHOW_CUSTOM_LOADER()

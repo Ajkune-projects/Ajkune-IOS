@@ -129,7 +129,14 @@ class ProfileViewController: UIViewController , Storyboarded, UITextFieldDelegat
         }
     }
     
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if textField == lastNameTextfield{
+            self.nameLabel.text = "\(firstNameTextfield.text ?? "") \(lastNameTextfield.text ?? "")"
+        }
+    }
+    
     func getUserDetails(){
+        SHOW_CUSTOM_LOADER()
         self.viewModel?.getUserDetails(completion: { response in
             if response != nil {
                 self.firstNameTextfield.text = response?.user?.name
@@ -147,7 +154,10 @@ class ProfileViewController: UIViewController , Storyboarded, UITextFieldDelegat
                 if response?.user?.zip_code == nil ||  response?.user?.zip_code == 0{
                     ProfileDetails.zipCode = ""
                 }else{
-                    ProfileDetails.zipCode = "\(String(describing: response?.user?.zip_code))"
+                    ProfileDetails.zipCode = "\(response?.user?.zip_code ?? 0)"
+                }
+                if  ProfileDetails.zipCode == "0"{
+                    ProfileDetails.zipCode = ""
                 }
                 ProfileDetails.country = response?.user?.country ?? ""
                 ProfileDetails.fullAddress = "\(response?.user?.street ?? "") \n\(response?.user?.address ?? "")\n\(ProfileDetails.zipCode ?? "")\n\(response?.user?.country ?? "")"
@@ -163,6 +173,7 @@ class ProfileViewController: UIViewController , Storyboarded, UITextFieldDelegat
                 }
                 self.setupLabel()
             }
+            HIDE_CUSTOM_LOADER()
         })
     }
     
@@ -174,7 +185,7 @@ class ProfileViewController: UIViewController , Storyboarded, UITextFieldDelegat
                 HIDE_CUSTOM_LOADER()
                 if response?.user?.active_profile == 1{
                     self.userImage.borderColor = UIColor(hexString: "#FFD700")
-                    self.nameLabel.text = "\(response?.user?.name) \(response?.user?.last_name)"
+                    self.nameLabel.text = "\(response?.user?.name ?? "") \(response?.user?.last_name ?? "")"
                     self.verifiedImage.isHidden = false
                 }
                 self.showOKAlert(title: "Ajkune", message: "data_saved_successfully".localized)
@@ -279,7 +290,6 @@ extension ProfileViewController: UIImagePickerControllerDelegate, UINavigationCo
             imagePicker.sourceType = UIImagePickerController.SourceType.camera
             imagePicker.allowsEditing = true
             self.present(imagePicker, animated: true, completion: nil)
-
         }
     }
 
