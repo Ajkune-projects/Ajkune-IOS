@@ -111,6 +111,7 @@
                         <outlet property="languageButton" destination="zvy-1I-ReF" id="IA6-gF-kOI"/>
                         <outlet property="logoutButton" destination="Us7-2C-Dp3" id="OBF-RX-qO0"/>
                         <outlet property="profileButton" destination="ex3-xV-oGT" id="BVB-Zu-l4l"/>
+                        <outlet property="titleButton" destination="foE-5b-l83" id="6wt-94-Iw9"/>
                         <outlet property="yourGiftsButton" destination="Jrl-in-nT8" id="gnx-9a-J28"/>
                     </connections>
                 </viewController>

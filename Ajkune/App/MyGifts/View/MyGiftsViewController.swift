@@ -12,6 +12,7 @@ import TextFieldEffects
 class MyGiftsViewController: UIViewController , Storyboarded, UITextFieldDelegate{
     //MARK: - IBOutlets
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var emptyLabel: UILabel!
     @IBOutlet weak var emptyView: UIView!
     @IBOutlet weak var giftTitle: UIButton!
     @IBOutlet weak var tableView: UITableView!
@@ -24,6 +25,7 @@ class MyGiftsViewController: UIViewController , Storyboarded, UITextFieldDelegat
         getMyGifts()
         refresh()
         giftTitle.setTitle("your_gifs".localized, for: .normal)
+        emptyLabel.text = "there_is_no_gift_for_you_at_the_moment".localized
     }
     //MARK: - IBActions
     

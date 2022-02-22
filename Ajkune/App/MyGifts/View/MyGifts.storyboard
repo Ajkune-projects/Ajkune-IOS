@@ -33,10 +33,10 @@
                                                 <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
                                             </tableView>
                                             <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9PU-JI-gUL">
-                                                <rect key="frame" x="57" y="335.5" width="300" height="185"/>
+                                                <rect key="frame" x="37" y="335.5" width="340" height="185"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B9h-7X-vef">
-                                                        <rect key="frame" x="0.0" y="85" width="300" height="70"/>
+                                                        <rect key="frame" x="20" y="85" width="300" height="70"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="70" id="7Ps-cp-Ai0"/>
@@ -55,7 +55,7 @@ for you at the moment!</string>
                                                         </userDefinedRuntimeAttributes>
                                                     </label>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smileIcon" translatesAutoresizingMaskIntoConstraints="NO" id="rTM-Ld-FS6">
-                                                        <rect key="frame" x="127.5" y="30" width="45" height="45"/>
+                                                        <rect key="frame" x="147.5" y="30" width="45" height="45"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="45" id="Nn7-ai-NLC"/>
                                                             <constraint firstAttribute="width" constant="45" id="Yz5-f6-Nqo"/>
@@ -64,9 +64,9 @@ for you at the moment!</string>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.6588235294" green="0.27450980390000002" blue="0.43529411759999997" alpha="0.050000000000000003" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="trailing" secondItem="B9h-7X-vef" secondAttribute="trailing" id="81u-iX-kC6"/>
+                                                    <constraint firstAttribute="trailing" secondItem="B9h-7X-vef" secondAttribute="trailing" constant="20" id="81u-iX-kC6"/>
                                                     <constraint firstItem="rTM-Ld-FS6" firstAttribute="top" secondItem="9PU-JI-gUL" secondAttribute="top" constant="30" id="Iqy-Zn-Oye"/>
-                                                    <constraint firstItem="B9h-7X-vef" firstAttribute="leading" secondItem="9PU-JI-gUL" secondAttribute="leading" id="SMK-Ub-UbU"/>
+                                                    <constraint firstItem="B9h-7X-vef" firstAttribute="leading" secondItem="9PU-JI-gUL" secondAttribute="leading" constant="20" id="SMK-Ub-UbU"/>
                                                     <constraint firstAttribute="bottom" secondItem="B9h-7X-vef" secondAttribute="bottom" constant="30" id="d1R-b5-f1C"/>
                                                     <constraint firstItem="B9h-7X-vef" firstAttribute="top" secondItem="rTM-Ld-FS6" secondAttribute="bottom" constant="10" id="vXG-An-gYJ"/>
                                                     <constraint firstItem="rTM-Ld-FS6" firstAttribute="centerX" secondItem="9PU-JI-gUL" secondAttribute="centerX" id="xnV-cs-CsB"/>
@@ -142,6 +142,7 @@ for you at the moment!</string>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="emptyLabel" destination="B9h-7X-vef" id="5R3-4F-PBq"/>
                         <outlet property="emptyView" destination="9PU-JI-gUL" id="NdI-H0-D24"/>
                         <outlet property="giftTitle" destination="GqP-Rg-Bwa" id="Wvq-na-oeF"/>
                         <outlet property="scrollView" destination="L7N-ch-4RH" id="Puj-Up-FMP"/>

@@ -138,6 +138,7 @@ for you at the moment!</string>
                                                     <constraint firstItem="YDt-N2-D8x" firstAttribute="top" secondItem="gwS-0Y-loQ" secondAttribute="bottom" constant="10" id="ShM-zz-CaI"/>
                                                     <constraint firstItem="gwS-0Y-loQ" firstAttribute="top" secondItem="C17-Kl-JCR" secondAttribute="top" constant="30" id="W3e-qT-C1g"/>
                                                     <constraint firstAttribute="trailing" secondItem="YDt-N2-D8x" secondAttribute="trailing" constant="10" id="nU4-0S-y4m"/>
+                                                    <constraint firstAttribute="width" constant="320" id="pXi-6J-Kvc"/>
                                                     <constraint firstAttribute="bottom" secondItem="YDt-N2-D8x" secondAttribute="bottom" constant="30" id="rCe-eH-ggi"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>

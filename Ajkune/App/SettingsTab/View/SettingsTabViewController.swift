@@ -12,6 +12,7 @@ class SettingsTabViewController: UIViewController, Storyboarded {
     @IBOutlet weak var languageButton: UIButton!
     @IBOutlet weak var yourGiftsButton: UIButton!
     @IBOutlet weak var logoutButton: UIButton!
+    @IBOutlet weak var titleButton: UIButton!
     
     //Properties
     var viewModel: SettingsTabViewModelProtocol?
@@ -33,6 +34,7 @@ class SettingsTabViewController: UIViewController, Storyboarded {
         languageButton.setTitle("language".localized, for: .normal)
         logoutButton.setTitle("log_out".localized, for: .normal)
         yourGiftsButton.setTitle("your_gifs".localized, for: .normal)
+        titleButton.setTitle("account".localized, for: .normal)
     }
     
 //IBActions

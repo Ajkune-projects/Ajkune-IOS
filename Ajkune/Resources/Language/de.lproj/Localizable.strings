@@ -63,7 +63,7 @@
 
 "ajkunes_products" = "Produkte von Ajkunes";
 "categories" = "Kategorien";
-"there_is_no_product_in_this_category" = "Es gibt kein Produkt in dieser Kategorie!";
+"there_is_no_product_in_this_category" = "Es gibt kein Produkt in dieser\n Kategorie!";
 "filter" = "Filter";
 "see_all" = "Alles sehen";
 "lang" = "de";
@@ -103,6 +103,7 @@
 "language" = "Sprache";
 "log_out" = "Ausloggen";
 "your_gifs" = "Ihre Gifs";
+"account" = "Konto";
 
 //Profile
 "first_name" = "Vorname";
@@ -130,3 +131,4 @@
  "city" = "Stadt";
 
 "gift_added_details" = "Herzlichen Glückwunsch, Sie haben gewonnen: %s. Für weitere Informationen wenden Sie sich bitte an diese E-Mail: ajkune.professional@gmail.com";
+"there_is_no_gift_for_you_at_the_moment" = "Momentan gibt es kein Geschenk für Sie !";

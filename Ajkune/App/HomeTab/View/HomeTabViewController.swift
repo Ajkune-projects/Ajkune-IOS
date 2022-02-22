@@ -65,6 +65,9 @@ class HomeTabViewController: UIViewController, Storyboarded{
         ajkunesProductsLbl.text = "ajkunes_products".localized
         filterBtn.setTitle("filter".localized.uppercased(), for: .normal)
         seeAllBtn.setTitle("see_all".localized.uppercased(), for: .normal)
+        getALLProducts()
+        globalData.categoryIndexPath = IndexPath(row: 0, section: 0)
+        self.categoryCollectionView?.selectItem(at: globalData.categoryIndexPath, animated: false, scrollPosition: .top)
     }
     
     func layoutConfig() -> UICollectionViewCompositionalLayout {

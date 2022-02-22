@@ -37,16 +37,18 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yyv-F5-J7K">
-                                                <rect key="frame" x="351" y="14" width="45" height="32"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yyv-F5-J7K">
+                                                <rect key="frame" x="326" y="14" width="70" height="32"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="32" id="58f-Wq-iOJ"/>
-                                                    <constraint firstAttribute="width" constant="45" id="vdd-L6-Nfg"/>
+                                                    <constraint firstAttribute="width" constant="70" id="vdd-L6-Nfg"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="14"/>
                                                 <color key="tintColor" red="0.61176472900000001" green="0.29803922770000002" blue="0.43137252329999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                                <state key="normal" title="FILTER"/>
+                                                <state key="normal" title="FILTER">
+                                                    <color key="titleColor" red="0.61176470589999998" green="0.29803921570000003" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="filterProducts:" destination="8p8-RX-ewD" eventType="touchUpInside" id="cUq-D4-f4q"/>
                                                 </connections>

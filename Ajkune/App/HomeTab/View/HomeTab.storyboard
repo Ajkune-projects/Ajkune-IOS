@@ -37,10 +37,10 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggX-0z-SsR">
-                                                <rect key="frame" x="365" y="13.666666666666664" width="45" height="32"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ggX-0z-SsR">
+                                                <rect key="frame" x="340" y="13.666666666666664" width="70" height="32"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="45" id="9Bu-iX-dd6"/>
+                                                    <constraint firstAttribute="width" constant="70" id="9Bu-iX-dd6"/>
                                                     <constraint firstAttribute="height" constant="32" id="RXB-Gg-Ymg"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="14"/>

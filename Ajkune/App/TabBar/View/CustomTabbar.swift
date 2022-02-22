@@ -48,9 +48,10 @@ import UIKit
     func setupCenterButton() {
         var centerButtonFrame = centerButton.frame
         if UIDevice.current.screenType == .iPhones_6_6s_7_8 {
-        centerButtonFrame.origin.y = (self.bounds.height - centerButtonFrame.height)
+            centerButtonFrame.origin.y = (self.bounds.height - centerButtonFrame.height)-15
+            
         }else if UIDevice.current.screenType == .iPhones_6Plus_6sPlus_7Plus_8Plus {
-            centerButtonFrame.origin.y = (self.bounds.height - centerButtonFrame.height)-10
+            centerButtonFrame.origin.y = (self.bounds.height - centerButtonFrame.height)-15
         }else{
             centerButtonFrame.origin.y = (self.bounds.height - centerButtonFrame.height) - 40
         }

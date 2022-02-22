@@ -84,6 +84,13 @@ class ProfileViewController: UIViewController , Storyboarded, UITextFieldDelegat
         }
     }
     
+    func validateFields(){
+        if (lastNameTextfield.text == "") || (firstNameTextfield.text == "") || (birthdate.text == "" ) || (emailTextField.text == "") || (phoneNumberTextfield.text == "") || (chooseGender.text == "") {
+            showOKAlert(title: "Ajkune", message: "fill_required_fields".localized)
+            return
+        }
+    }
+    
     func rightImageView(){
         let calendar = UIButton(frame: CGRect(x: 0, y: 0, width: 15, height: 15))
         calendar.setImage(UIImage(named: "calendar"), for: UIControl.State())
@@ -178,6 +185,7 @@ class ProfileViewController: UIViewController , Storyboarded, UITextFieldDelegat
     }
     
     func saveUserDetails(){
+        validateFields()
         let user = UserProfile(name: firstNameTextfield.text ?? "", last_name: lastNameTextfield.text ?? "", gender: chooseGender.text ?? "", date_of_birth: birthdate.text ?? "", phone: phoneNumberTextfield.text ?? "", address:ProfileDetails.city, street: ProfileDetails.street, zip_code: ProfileDetails.zipCode, country: ProfileDetails.country, base64_img: profilePic)
         SHOW_CUSTOM_LOADER()
         self.viewModel?.verificationProfile(user: user, completion: { response in

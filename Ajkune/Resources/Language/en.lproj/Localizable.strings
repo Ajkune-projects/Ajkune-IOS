@@ -113,6 +113,7 @@
 "language" = "Language";
 "log_out" = "Log out";
 "your_gifs" = "Your gifs";
+"account" = "Account";
 
 //Profile
 "first_name" = "First name";
@@ -139,3 +140,4 @@
  "city" = "City ";
 
 "gift_added_details" = "Congratulations you have win : %s. For more details please contact in this email: ajkune.professional@gmail.com";
+"there_is_no_gift_for_you_at_the_moment" = "There is no gift for you at the moment";

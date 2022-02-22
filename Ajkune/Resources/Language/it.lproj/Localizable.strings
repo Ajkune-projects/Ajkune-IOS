@@ -64,7 +64,7 @@
 //HOMETab
 "ajkunes_products" = "I prodotti Ajkunes";
 "categories" = "Categorie";
-"there_is_no_product_in_this_category" = "TNon ci sono prodotti in questa categoria!";
+"there_is_no_product_in_this_category" = "TNon ci sono prodotti in questa\n categoria!";
 "filter" = "Filtro";
 "see_all" = "Vedi tutto";
 "lang" = "it";
@@ -103,6 +103,7 @@
 "language" = "Lingua";
 "log_out" = "Disconnettersi";
 "your_gifs" = "Le tue gif";
+"account" = "Account";
 
 //Profile
 "first_name" = "Nome di battesimo";
@@ -130,3 +131,4 @@
  "city" = "Città";
 
 "gift_added_details" = "Congratulazioni hai vinto: %s. Per maggiori dettagli si prega di contattare in questa e-mail: ajkune.professional@gmail.com";
+"there_is_no_gift_for_you_at_the_moment" = "Non ci sono regali per te al momento";
