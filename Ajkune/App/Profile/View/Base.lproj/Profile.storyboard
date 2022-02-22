@@ -393,11 +393,16 @@
                         <outlet property="birthdate" destination="Mvy-Cp-OID" id="flU-24-DNb"/>
                         <outlet property="chooseGender" destination="bfx-IQ-euL" id="trp-9a-9wy"/>
                         <outlet property="emailTextField" destination="cOn-iw-dda" id="XKI-kC-LtF"/>
+                        <outlet property="femaleBtn" destination="FcK-zK-GId" id="rTX-X7-lvl"/>
                         <outlet property="firstNameTextfield" destination="Vho-98-BV4" id="74X-9G-DAF"/>
                         <outlet property="genderOptionsView" destination="J6i-xO-vIt" id="PIc-iv-XIW"/>
                         <outlet property="lastNameTextfield" destination="GBO-F6-L9d" id="qfP-AD-pwS"/>
+                        <outlet property="maleBtn" destination="dDM-cN-sZV" id="8nG-Yn-tnJ"/>
                         <outlet property="nameLabel" destination="VD9-sA-lKQ" id="5id-tu-N8g"/>
+                        <outlet property="otherBtn" destination="OTd-j0-NyR" id="fVV-Da-YLx"/>
                         <outlet property="phoneNumberTextfield" destination="N0O-4h-OAG" id="6rX-59-lV5"/>
+                        <outlet property="profileTitle" destination="BBg-hG-WlS" id="Zdf-DV-UvK"/>
+                        <outlet property="saveBtn" destination="SSO-JL-8ww" id="2r0-si-NUg"/>
                         <outlet property="userImage" destination="6Eg-vA-gnK" id="Kjx-6t-kPP"/>
                         <outlet property="verifiedImage" destination="Tlw-Oz-66c" id="bDg-n0-7AW"/>
                     </connections>

@@ -45,8 +45,6 @@
 "reset_password" = "Réinitialiser le mot de passe";
 
 
-
-//Vet i kom shtu
 "error_login" = "Le pseudo ou mot de passe est incorect";
 "empty_email" = "S'il vous plaît écrivez votre adresse e-mail!";
 "invalid_email" = "Email invalide";
@@ -63,8 +61,6 @@
 "GiftTab" = "Gifs";
 "OfferTab" = "Des offres";
 "AccountTab" = "Compte";
-
-/// deri qetu jon kry
 
 //HOMETab
 
@@ -90,3 +86,49 @@
 "play_lucky_wheel" = "Jouer “Lucky wheel”";
 "lucky_wheel" = "Lucky wheel";
 "there_is_no_gift_for_you_at_the_moment" = "Il n'y a pas de cadeau pour vous pour le moment";
+
+//Product Details
+"specification" = "Spécification";
+"write_a_comment" = "Écrire un commentaire";
+"title" = "Titre *";
+"review_comment" = "Commentaire d'examen *";
+"comment" = "Commenter";
+"comment_dots" = "Commenter…";
+"buy_this_product" = "Achetez ce produit";
+"fill_required_fields" = "Veuillez remplir les champs obligatoires.";
+
+//OfferTab
+"ajkune_offers" = "Les offres d'Ajkunes";
+
+// SettingTab
+"profile" = "Profil";
+"language" = "Langue";
+"log_out" = "Se déconnecter";
+"your_gifs" = "Vos gifs";
+
+//Profile
+"first_name" = "Prénom";
+"last_name" = "Nom";
+"choose_gender" = "Choisissez le sexe";
+"choose_date" = "Choisissez la date";
+"phone_number" = "Numéro de téléphone";
+"edit_your_address" = "Modifier votre adresse";
+"add_your_address" = "Entrez votre adresse";
+
+"female" = "Femelle";
+"male" = "Mâle";
+"other" = "Autre";
+"no_added_address_yet" = "Pas encore d'adresse ajoutée !";
+"save" = "Enregistrer";
+"data_saved_successfully" = "Données enregistrées avec succès";
+"take_photo" = "Scattare una foto";
+"choose_from_gallery" = "Scegli dalla galleria";
+"cancel" = "Annulla";
+
+//Address Details
+ "street" = "De rue";
+ "country" = "Pays ";
+ "zip_code" = "Code postal ";
+ "city" = "Ville ";
+
+"gift_added_details" = "Félicitations vous avez gagné : %s. Pour plus de détails, veuillez contacter dans cet e-mail: ajkune.professional@gmail.com";

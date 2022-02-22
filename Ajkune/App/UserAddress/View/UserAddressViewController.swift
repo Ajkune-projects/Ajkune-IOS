@@ -14,6 +14,7 @@ class UserAddressViewController: UIViewController, Storyboarded {
     @IBOutlet weak var cityTextfield: HoshiTextField!
     @IBOutlet weak var zipCodeTextfield: HoshiTextField!
     @IBOutlet weak var countryTextfield: HoshiTextField!
+    @IBOutlet weak var saveBtn: UIButton!
     
     //MARK: - Properties
     var viewModel: UserAddressViewModelProtocol?
@@ -25,32 +26,36 @@ class UserAddressViewController: UIViewController, Storyboarded {
         zipCodeTextfield.text = ProfileDetails.zipCode
         countryTextfield.text = ProfileDetails.country
         if ProfileDetails.fullAddress == "" {
-            titleButton.setTitle("ADD ADDRESS", for: .normal)
+            titleButton.setTitle("add_your_address".localized, for: .normal)
         }else{
-            titleButton.setTitle("EDIT ADDRESS", for: .normal)
+            titleButton.setTitle("edit_your_address".localized, for: .normal)
         }
-        // Do any additional setup after loading the view.
+        saveBtn.setTitle("save".localized, for: .normal)
+        streetTextfield.placeholder = "street".localized
+        cityTextfield.placeholder = "city".localized
+        zipCodeTextfield.placeholder = "zip_code".localized
+        countryTextfield.placeholder = "country".localized
     }
     
     func validateTextfields(){
             guard let street = streetTextfield.text, !street.isEmpty else {
                 self.streetTextfield.becomeFirstResponder()
-                self.showAlertWith(title: "Ajkune", message: "Please write your street!")
+                self.showAlertWith(title: "Ajkune", message: "fill_required_fields".localized)
                 return
             }
         guard let city = cityTextfield.text, !city.isEmpty else {
             self.cityTextfield.becomeFirstResponder()
-            self.showAlertWith(title: "Ajkune", message: "Please write your city!")
+            self.showAlertWith(title: "Ajkune", message: "fill_required_fields".localized)
             return
         }
         guard let zipCode = zipCodeTextfield.text, !zipCode.isEmpty else {
             self.zipCodeTextfield.becomeFirstResponder()
-            self.showAlertWith(title: "Ajkune", message: "Please write your zipCode!")
+            self.showAlertWith(title: "Ajkune", message: "fill_required_fields".localized)
             return
         }
         guard let country = countryTextfield.text, !country.isEmpty else {
             self.countryTextfield.becomeFirstResponder()
-            self.showAlertWith(title: "Ajkune", message: "Please write your country!")
+            self.showAlertWith(title: "Ajkune", message: "fill_required_fields".localized)
             return
         }
         ProfileDetails.street = streetTextfield.text ?? ""

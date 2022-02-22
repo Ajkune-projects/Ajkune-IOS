@@ -25,15 +25,8 @@
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain">
-                                    <attributedString key="attributedTitle">
-                                        <fragment content="BUY THIS PRODUCT">
-                                            <attributes>
-                                                <font key="NSFont" size="14" name="Avenir-Heavy"/>
-                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                            </attributes>
-                                        </fragment>
-                                    </attributedString>
+                                <buttonConfiguration key="configuration" style="plain" title="BUY THIS PRODUCT">
+                                    <fontDescription key="titleFontDescription" name="Avenir-Heavy" family="Avenir" pointSize="14"/>
                                 </buttonConfiguration>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -194,16 +187,8 @@
                                                 </constraints>
                                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain">
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="COMMENT">
-                                                            <attributes>
-                                                                <color key="NSColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <font key="NSFont" size="14" name="Avenir-Heavy"/>
-                                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
+                                                <buttonConfiguration key="configuration" style="plain" title="COMMENT">
+                                                    <fontDescription key="titleFontDescription" name="Avenir-Heavy" family="Avenir" pointSize="14"/>
                                                 </buttonConfiguration>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
@@ -314,7 +299,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="addCommentBtn" destination="kBr-HZ-6io" id="MIC-Dt-t3L"/>
                         <outlet property="backButton" destination="aHm-Tv-fwF" id="qcd-NT-AVm"/>
+                        <outlet property="buyProductBtn" destination="qGn-ta-u8L" id="54b-CR-t8m"/>
                         <outlet property="commentBottomView" destination="RwF-lo-pdp" id="8Tr-VD-9Pb"/>
                         <outlet property="commentTableView" destination="JXo-ul-Kpe" id="EdG-ZP-ItW"/>
                         <outlet property="commentTextView" destination="8cQ-qN-6Wg" id="VHP-pu-Lin"/>
@@ -325,8 +312,11 @@
                         <outlet property="productImage" destination="TWv-rW-WrF" id="Pb9-Mm-tRD"/>
                         <outlet property="productName" destination="Hgb-1M-Vlk" id="xf1-v3-gn1"/>
                         <outlet property="productRaiting" destination="plo-YP-G2i" id="Icq-Bf-lXv"/>
+                        <outlet property="reviewCommentLabel" destination="OPF-iX-Pnq" id="ohz-Tp-eHx"/>
+                        <outlet property="specificationLabel" destination="63w-x4-YlW" id="zpe-ef-8xO"/>
                         <outlet property="tableViewHeightConst" destination="Wy0-gg-6OA" id="Qcy-O6-IjN"/>
                         <outlet property="titleComment" destination="UJV-dw-aU3" id="MgJ-Hv-f99"/>
+                        <outlet property="writeCommentLbl" destination="AG7-h2-Nsv" id="GGu-Ws-bgU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -128,7 +128,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="500" id="V1M-pQ-zsh"/>
                                                 </constraints>
-                                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" sectionInsetReference="layoutMargins" id="90D-t2-qSU">
+                                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" sectionInsetReference="layoutMargins" id="90D-t2-qSU">
                                                     <size key="itemSize" width="164" height="258"/>
                                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -136,13 +136,13 @@
                                                 </collectionViewFlowLayout>
                                                 <cells>
                                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductCell" id="Pde-zW-AhC">
-                                                        <rect key="frame" x="8" y="8" width="186" height="258"/>
+                                                        <rect key="frame" x="8" y="8" width="184" height="258"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="mJA-CT-Bia">
-                                                            <rect key="frame" x="0.0" y="0.0" width="186" height="258"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="184" height="258"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </collectionViewCellContentView>
-                                                        <size key="customSize" width="186" height="258"/>
+                                                        <size key="customSize" width="184" height="258"/>
                                                     </collectionViewCell>
                                                 </cells>
                                             </collectionView>

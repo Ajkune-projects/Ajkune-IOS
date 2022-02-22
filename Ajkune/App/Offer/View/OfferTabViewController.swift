@@ -10,6 +10,7 @@ import UIKit
 class OfferTabViewController: UIViewController, Storyboarded{
     
     //MARK: - Properties
+    @IBOutlet weak var offerTitle: UILabel!
     @IBOutlet weak var categoryCollectionView: UICollectionView!
     @IBOutlet weak var productsCollectionView: UICollectionView!
     @IBOutlet weak var banner: UIImageView!
@@ -17,6 +18,7 @@ class OfferTabViewController: UIViewController, Storyboarded{
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var initialPrice: UILabel!
     @IBOutlet weak var tableViewHeightConst: NSLayoutConstraint!
+    @IBOutlet weak var filterBtn: UIButton!
     @IBOutlet weak var scrollView: UIScrollView!
     
     var viewModel: OfferTabViewModelProtocol?
@@ -30,7 +32,10 @@ class OfferTabViewController: UIViewController, Storyboarded{
         refresh()
         getALLProducts()
         getBanner()
+        addObservers()
         globalData.filterFromOffer = true
+        offerTitle.text = "ajkune_offers".localized
+        filterBtn.setTitle("filter".localized.uppercased(), for: .normal)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -40,6 +45,13 @@ class OfferTabViewController: UIViewController, Storyboarded{
         globalData.filterFromOffer = true
     }
     
+    func addObservers(){
+        registerNotification(notification: Notification.Name.changeLang, selector: #selector(self.updateLang(notification:)))
+    }
+    @objc func updateLang(notification: Notification) {
+        offerTitle.text = "ajkune_offers".localized
+        filterBtn.setTitle("filter".localized.uppercased(), for: .normal)
+    }
     func refresh(){
         refreshControl.addTarget(self, action: #selector(self.refresh(_:)), for: .valueChanged)
         self.scrollView.addSubview(refreshControl) // not required when using UITableViewController

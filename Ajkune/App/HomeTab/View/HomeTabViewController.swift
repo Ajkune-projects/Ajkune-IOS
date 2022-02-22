@@ -63,8 +63,8 @@ class HomeTabViewController: UIViewController, Storyboarded{
     func localized(){
         categoriesLabel.text = "categories".localized
         ajkunesProductsLbl.text = "ajkunes_products".localized
-        filterBtn.setTitle("filter".localized, for: .normal)
-        seeAllBtn.setTitle("see_all".localized, for: .normal)
+        filterBtn.setTitle("filter".localized.uppercased(), for: .normal)
+        seeAllBtn.setTitle("see_all".localized.uppercased(), for: .normal)
     }
     
     func layoutConfig() -> UICollectionViewCompositionalLayout {

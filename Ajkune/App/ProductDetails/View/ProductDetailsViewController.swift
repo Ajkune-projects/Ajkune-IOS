@@ -10,8 +10,10 @@ import UIKit
 import SkyFloatingLabelTextField
 import Cosmos
 class ProductDetailsViewController: UIViewController, Storyboarded, UITextViewDelegate {
+    @IBOutlet weak var specificationLabel: UILabel!
     @IBOutlet weak var productImage: UIImageView!
     @IBOutlet weak var productName: UILabel!
+    @IBOutlet weak var writeCommentLbl: UILabel!
     @IBOutlet weak var productRaiting: CosmosView!
     @IBOutlet weak var commentBottomView: UIView!
     @IBOutlet weak var productDetails: UILabel!
@@ -20,9 +22,12 @@ class ProductDetailsViewController: UIViewController, Storyboarded, UITextViewDe
     @IBOutlet weak var titleComment: SkyFloatingLabelTextField!
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var commentTableView: UITableView!
+    @IBOutlet weak var buyProductBtn: UIButton!
     @IBOutlet weak var line: UIView!
     @IBOutlet weak var initialLabel: UILabel!
     @IBOutlet weak var tableViewHeightConst: NSLayoutConstraint!
+    @IBOutlet weak var addCommentBtn: UIButton!
+    @IBOutlet weak var reviewCommentLabel: UILabel!
     //MARK:Properties
     var coordinator: ProductDetailsCoordinator?
     var viewModel: ProductDetailsViewModelProtocol?
@@ -45,7 +50,18 @@ class ProductDetailsViewController: UIViewController, Storyboarded, UITextViewDe
         setupTitleComment()
         setupCommentView()
         setupTableView()
+        localize()
        
+    }
+    
+    func localize(){
+        specificationLabel.text = "specification".localized
+        writeCommentLbl.text = "write_a_comment".localized
+//        titleComment.placeholder = "title".localized
+        reviewCommentLabel.text = "review_comment".localized
+//        commentTextView.placeholder = "comment_dots".localized
+        addCommentBtn.setTitle("comment".localized, for: .normal)
+        buyProductBtn.setTitle("buy_this_product".localized, for: .normal)
     }
     
     //MARK: - Functions
@@ -101,8 +117,8 @@ class ProductDetailsViewController: UIViewController, Storyboarded, UITextViewDe
     }
     
    func setupTitleComment() {
-        titleComment.placeholder = "Title *"
-       titleComment.title = "Title *"
+        titleComment.placeholder = "title".localized
+       titleComment.title = "title".localized
        titleComment.tintColor = Colors.lightGray
        titleComment.selectedTitleColor = Colors.lightGray
        titleComment.selectedLineColor = Colors.overcastBlueColor
@@ -113,7 +129,7 @@ class ProductDetailsViewController: UIViewController, Storyboarded, UITextViewDe
     func setupCommentView(){
         commentTextView.delegate = self
         commentTextView.textColor = Colors.lightGray
-        commentTextView.text = "Comment..."
+        commentTextView.text = "comment_dots".localized
     }
     
     func textViewDidBeginEditing(_ textView: UITextView) {
@@ -127,7 +143,7 @@ class ProductDetailsViewController: UIViewController, Storyboarded, UITextViewDe
     func textViewDidEndEditing(_ textView: UITextView) {
         commentBottomView.backgroundColor = Colors.lightGray
         if commentTextView.text == "" {
-            commentTextView.text = "Comment..."
+            commentTextView.text = "comment_dots".localized
             commentTextView.textColor = Colors.lightGray
         }
     }
@@ -192,17 +208,17 @@ class ProductDetailsViewController: UIViewController, Storyboarded, UITextViewDe
     @IBAction func commentAction(_ sender: Any) {
         guard let title = titleComment.text, !title.isEmpty else {
             self.titleComment.becomeFirstResponder()
-            self.showAlertWith(title: "Ajkune", message: "Please write title!")
+            self.showAlertWith(title: "Ajkune", message: "fill_required_fields".localized)
             return
         }
-        if commentTextView.text == "Comment..." {
+        if commentTextView.text == "comment_dots".localized {
             self.commentTextView.becomeFirstResponder()
-            self.showAlertWith(title: "Ajkune", message: "Please write comment!")
+            self.showAlertWith(title: "Ajkune", message: "fill_required_fields".localized)
             return
         }
         guard let comment = commentTextView.text, !comment.isEmpty else {
             self.commentTextView.becomeFirstResponder()
-            self.showAlertWith(title: "Ajkune", message: "Please write comment!")
+            self.showAlertWith(title: "Ajkune", message: "fill_required_fields".localized)
             return
         }
         addComment()

@@ -39,7 +39,8 @@ class CongratsViewController: UIViewController, Storyboarded {
     }
 
     func fillData(){
-        giftDesc.text = "Congratulations you have win : \(giftDetails?.giftListDescription ?? "").For more details please contact in this email: ajkune.professional@gmail.com"
+        var string = "gift_added_details".localized
+        giftDesc.text = string.replacingOccurrences(of: "%s", with:" \(giftDetails?.giftListDescription ?? "")", options: .literal, range: nil)
         giftImage.setImage(with: giftDetails?.imageURL ?? "")
     }
     

@@ -13,6 +13,7 @@ class MyGiftsViewController: UIViewController , Storyboarded, UITextFieldDelegat
     //MARK: - IBOutlets
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var emptyView: UIView!
+    @IBOutlet weak var giftTitle: UIButton!
     @IBOutlet weak var tableView: UITableView!
     //MARK: - Properties
     var viewModel: MyGiftsViewModelProtocol?
@@ -22,6 +23,7 @@ class MyGiftsViewController: UIViewController , Storyboarded, UITextFieldDelegat
         setupTableView()
         getMyGifts()
         refresh()
+        giftTitle.setTitle("your_gifs".localized, for: .normal)
     }
     //MARK: - IBActions
     

@@ -105,7 +105,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="500" id="ARr-HA-PNR"/>
                                                 </constraints>
-                                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" sectionInsetReference="layoutMargins" id="kpi-tc-XPp">
+                                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" sectionInsetReference="layoutMargins" id="kpi-tc-XPp">
                                                     <size key="itemSize" width="164" height="258"/>
                                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -187,7 +187,9 @@
                     <connections>
                         <outlet property="banner" destination="9wT-HF-kmr" id="N3M-Q2-DVL"/>
                         <outlet property="bannerTitle" destination="iYC-7q-0ZK" id="9ap-zH-4CH"/>
+                        <outlet property="filterBtn" destination="Yyv-F5-J7K" id="p9D-pG-E90"/>
                         <outlet property="initialPrice" destination="brz-zT-eiq" id="kXh-j8-F0F"/>
+                        <outlet property="offerTitle" destination="HCR-4x-ePQ" id="ARQ-sp-8kp"/>
                         <outlet property="priceLabel" destination="6Oh-eY-h19" id="KZe-95-RAU"/>
                         <outlet property="productsCollectionView" destination="qeD-q8-aeS" id="o9a-Qg-V2e"/>
                         <outlet property="scrollView" destination="OF5-AP-3HF" id="SNP-NZ-3HJ"/>

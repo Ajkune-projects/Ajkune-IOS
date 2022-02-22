@@ -21,7 +21,11 @@ class ProfileViewController: UIViewController , Storyboarded, UITextFieldDelegat
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var addressButton: UIButton!
     @IBOutlet weak var addressLabel: UILabel!
-    
+    @IBOutlet weak var profileTitle: UIButton!
+    @IBOutlet weak var saveBtn: UIButton!
+    @IBOutlet weak var otherBtn: UIButton!
+    @IBOutlet weak var maleBtn: UIButton!
+    @IBOutlet weak var femaleBtn: UIButton!
     //MARK: - Properties
     var viewModel: ProfileViewModelProtocol?
     var coordinator: ProfileCoordinator?
@@ -38,6 +42,7 @@ class ProfileViewController: UIViewController , Storyboarded, UITextFieldDelegat
         genderOptionsView.shadowView()
         setupDatePicker()
         rightImageView()
+        localize()
         let tap = UITapGestureRecognizer(target: self, action: #selector(self.tappedMe))
         userImage.addGestureRecognizer(tap)
         userImage.isUserInteractionEnabled = true
@@ -46,6 +51,18 @@ class ProfileViewController: UIViewController , Storyboarded, UITextFieldDelegat
         setupLabel()
     }
     
+    func localize(){
+        profileTitle.setTitle("profile".localized, for: .normal)
+        saveBtn.setTitle("save".localized, for: .normal)
+        firstNameTextfield.placeholder = "first_name".localized
+        lastNameTextfield.placeholder = "last_name".localized
+        chooseGender.placeholder = "choose_gender".localized
+        birthdate.placeholder = "choose_date".localized
+        phoneNumberTextfield.placeholder = "phone_number".localized
+        femaleBtn.setTitle("female".localized, for: .normal)
+        maleBtn.setTitle("male".localized, for: .normal)
+        otherBtn.setTitle("other".localized, for: .normal)
+    }
     func setupFields(){
         chooseGender.delegate = self
         firstNameTextfield.delegate = self
@@ -59,10 +76,10 @@ class ProfileViewController: UIViewController , Storyboarded, UITextFieldDelegat
     
     func setupLabel(){
         if ProfileDetails.fullAddress == "" {
-            addressLabel.text = "No added address yet!"
-            addressButton.setTitle("ADD ADDRESS", for: .normal)
+            addressLabel.text = "no_added_address_yet".localized
+            addressButton.setTitle("add_your_address".localized.uppercased(), for: .normal)
         }else{
-            addressButton.setTitle("EDIT ADDRESS", for: .normal)
+            addressButton.setTitle("edit_your_address".localized.uppercased(), for: .normal)
             addressLabel.text = ProfileDetails.fullAddress
         }
     }
@@ -160,7 +177,7 @@ class ProfileViewController: UIViewController , Storyboarded, UITextFieldDelegat
                     self.nameLabel.text = "\(response?.user?.name) \(response?.user?.last_name)"
                     self.verifiedImage.isHidden = false
                 }
-                self.showOKAlert(title: "Ajkune", message: "Data saved successfully")
+                self.showOKAlert(title: "Ajkune", message: "data_saved_successfully".localized)
             }else{
                 self.showOKAlert(title: "Error", message: "Error")
             }
@@ -175,17 +192,17 @@ class ProfileViewController: UIViewController , Storyboarded, UITextFieldDelegat
     @IBAction func femalePressed(_ sender: Any) {
         isOpen = false
         self.genderOptionsView.isHidden = true
-        chooseGender.text = "Female"
+        chooseGender.text = "female".localized
     }
     @IBAction func malePressed(_ sender: Any) {
         isOpen = false
         self.genderOptionsView.isHidden = true
-        chooseGender.text = "Male"
+        chooseGender.text = "male".localized
     }
     @IBAction func otherPressed(_ sender: Any) {
         isOpen = false
         self.genderOptionsView.isHidden = true
-        chooseGender.text = "Other"
+        chooseGender.text = "other".localized
     }
     @IBAction func backPressed(_ sender: Any) {
         coordinator?.stop()
@@ -206,11 +223,11 @@ class ProfileViewController: UIViewController , Storyboarded, UITextFieldDelegat
         let editPicture = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
 //        let removePicture = UIAlertAction(title: "Remove photo", style: .default, handler: {
 //              (alert: UIAlertAction!) -> Void in self.deleteProfilePicture() })
-        let takeApicture = UIAlertAction(title: "Take a picture", style: .default, handler: {
+        let takeApicture = UIAlertAction(title: "take_photo".localized, style: .default, handler: {
             (alert: UIAlertAction!) -> Void in self.openCamera() })
-        let chooseFromCameraRoll = UIAlertAction(title:"Choose from gallery", style: .default, handler: {
+        let chooseFromCameraRoll = UIAlertAction(title:"choose_from_gallery".localized, style: .default, handler: {
             (alert: UIAlertAction!) -> Void in self.openPhotoLibraryButton() })
-        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: {
+        let cancelAction = UIAlertAction(title: "cancel".localized, style: .cancel, handler: {
             (alert: UIAlertAction!) -> Void in })
 //        editPicture.addAction(removePicture)
         editPicture.addAction(takeApicture)

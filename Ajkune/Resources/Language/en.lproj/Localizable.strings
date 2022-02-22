@@ -67,7 +67,6 @@
 "OfferTab" = "Offer";
 "AccountTab" = "Account";
 
-/// deri qetu jon kry
 
 //HOMETab
 
@@ -95,4 +94,48 @@
 "there_is_no_gift_for_you_at_the_moment" = "There is no gift for you at the moment";
 
 //Product Details
+"specification" = "Specification";
+"write_a_comment" = "Write a comment";
+"title" = "Title *";
+"review_comment" = "Review comment *";
+"comment" = "Comment";
+"comment_dots" = "Comment…";
+"buy_this_product" = "Buy this product";
+"fill_required_fields" = "Please fill required fields.";
 
+//OfferTab
+"ajkune_offers" = "Ajkune's Offers";
+
+
+// SettingTab
+
+"profile" = "Profile";
+"language" = "Language";
+"log_out" = "Log out";
+"your_gifs" = "Your gifs";
+
+//Profile
+"first_name" = "First name";
+"last_name" = "Last name";
+"choose_gender" = "Choose gender";
+"choose_date" = "Choose date";
+"phone_number" = "Phone number";
+"edit_your_address" = "Edit your address";
+"add_your_address" = "Add your address";
+"female" = "Female";
+"male" = "Male";
+"other" = "Other";
+"no_added_address_yet" = "No added address yet!";
+"save" = "Save";
+"data_saved_successfully" = "Data saved successfully";
+"take_photo" = "Take a photo";
+"choose_from_gallery" = "Choose From Gallery";
+"cancel" = "Cancel";
+
+//Address Details
+ "street" = "Street ";
+ "country" = "Country ";
+ "zip_code" = "Zip code ";
+ "city" = "City ";
+
+"gift_added_details" = "Congratulations you have win : %s. For more details please contact in this email: ajkune.professional@gmail.com";

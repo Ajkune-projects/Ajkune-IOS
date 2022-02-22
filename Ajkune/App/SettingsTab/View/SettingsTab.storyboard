@@ -71,7 +71,7 @@
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
-                                            <action selector="myGiftsAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="xXy-Rs-dJJ"/>
+                                            <action selector="myGiftsAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="eJe-oT-eXg"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Us7-2C-Dp3">
@@ -108,7 +108,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="languageButton" destination="zvy-1I-ReF" id="IA6-gF-kOI"/>
+                        <outlet property="logoutButton" destination="Us7-2C-Dp3" id="OBF-RX-qO0"/>
                         <outlet property="profileButton" destination="ex3-xV-oGT" id="BVB-Zu-l4l"/>
+                        <outlet property="yourGiftsButton" destination="Jrl-in-nT8" id="gnx-9a-J28"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

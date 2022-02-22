@@ -196,6 +196,7 @@
                     <connections>
                         <outlet property="cityTextfield" destination="3q2-gQ-Ndx" id="FJd-fB-ORe"/>
                         <outlet property="countryTextfield" destination="paE-mB-pdQ" id="ihD-Uj-tua"/>
+                        <outlet property="saveBtn" destination="SfC-Gt-Fyv" id="xwQ-48-ivE"/>
                         <outlet property="streetTextfield" destination="CZW-q1-ev1" id="Twp-Lx-9db"/>
                         <outlet property="titleButton" destination="HXZ-yw-Ec7" id="B5r-oi-5AP"/>
                         <outlet property="zipCodeTextfield" destination="6jU-kb-Jcg" id="pex-Ga-TM1"/>
