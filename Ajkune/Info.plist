@@ -1,10 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Ajkune Professional needs permission to access gallery for getting photo you want to post!</string>
-	<key>NSCameraUsageDescription</key>
-	<string>Ajkune Professional needs permission to access camera for take photo you want to post!</string>
-</dict>
+<dict/>
 </plist>
