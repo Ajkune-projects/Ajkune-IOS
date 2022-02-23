@@ -293,7 +293,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSO-JL-8ww">
-                                                <rect key="frame" x="20" y="826" width="374" height="50"/>
+                                                <rect key="frame" x="20" y="676" width="374" height="50"/>
                                                 <color key="backgroundColor" red="0.61176470589999998" green="0.29803921570000003" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="CJT-0C-yWT"/>
@@ -314,6 +314,9 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="msc-YT-6eX">
                                                 <rect key="frame" x="20" y="632" width="374" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="34" id="us2-jc-o6C"/>
+                                                </constraints>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="ADD ADDRESS">
                                                     <color key="titleColor" red="0.6588235294" green="0.27450980390000002" blue="0.43529411759999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -339,7 +342,7 @@
                                             <constraint firstItem="VD9-sA-lKQ" firstAttribute="top" secondItem="6Eg-vA-gnK" secondAttribute="bottom" constant="22" id="8HR-Si-otH"/>
                                             <constraint firstItem="0hP-lz-Ewk" firstAttribute="top" secondItem="6Eg-vA-gnK" secondAttribute="bottom" constant="40" id="AoV-Zm-niV"/>
                                             <constraint firstItem="0hP-lz-Ewk" firstAttribute="trailing" secondItem="BBg-hG-WlS" secondAttribute="trailing" id="CYB-r3-IaX"/>
-                                            <constraint firstItem="R5c-8e-N4l" firstAttribute="top" secondItem="SSO-JL-8ww" secondAttribute="bottom" id="Gjx-rk-eMW"/>
+                                            <constraint firstItem="R5c-8e-N4l" firstAttribute="top" relation="greaterThanOrEqual" secondItem="SSO-JL-8ww" secondAttribute="bottom" constant="10" id="Gjx-rk-eMW"/>
                                             <constraint firstItem="J6i-xO-vIt" firstAttribute="firstBaseline" secondItem="bfx-IQ-euL" secondAttribute="firstBaseline" constant="15" id="IUs-wZ-fxq"/>
                                             <constraint firstItem="0hP-lz-Ewk" firstAttribute="leading" secondItem="BBg-hG-WlS" secondAttribute="leading" id="K4b-P7-leQ"/>
                                             <constraint firstItem="y97-Fx-8rR" firstAttribute="trailing" secondItem="BBg-hG-WlS" secondAttribute="trailing" id="KGQ-46-p29"/>
@@ -365,7 +368,7 @@
                                             <constraint firstItem="msc-YT-6eX" firstAttribute="top" secondItem="Hwc-hR-apE" secondAttribute="bottom" constant="10" id="vXd-vg-oEs"/>
                                             <constraint firstItem="SSO-JL-8ww" firstAttribute="trailing" secondItem="Hwc-hR-apE" secondAttribute="trailing" id="y2J-Ci-duI"/>
                                             <constraint firstItem="6Eg-vA-gnK" firstAttribute="top" secondItem="y97-Fx-8rR" secondAttribute="bottom" constant="10" id="yOm-oe-7Gd"/>
-                                            <constraint firstItem="SSO-JL-8ww" firstAttribute="top" relation="greaterThanOrEqual" secondItem="msc-YT-6eX" secondAttribute="bottom" constant="20" id="zYQ-wb-2Jw"/>
+                                            <constraint firstItem="SSO-JL-8ww" firstAttribute="top" secondItem="msc-YT-6eX" secondAttribute="bottom" constant="10" id="zYQ-wb-2Jw"/>
                                         </constraints>
                                     </view>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bottomArrow" translatesAutoresizingMaskIntoConstraints="NO" id="GMJ-Fj-6Ns">

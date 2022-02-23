@@ -30,9 +30,9 @@ class SignUpViewController: UIViewController, Storyboarded {
             setupUIDesignFields()
             showHidePass()
             addObservers()
-            registerBtn.setTitle("register".localized, for: .normal)
+            registerBtn.setTitle("register".localized.uppercased(), for: .normal)
             alreadyMemberLbl.text = "already_a_member".localized
-            loginBtn.setTitle("login".localized, for: .normal)
+            loginBtn.setTitle("login".localized.uppercased(), for: .normal)
             
         }
     func addObservers(){
@@ -64,9 +64,9 @@ class SignUpViewController: UIViewController, Storyboarded {
         }
         
          func setupUIDesignFields(){
-            registerBtn.setTitle("register".localized, for: .normal)
+             registerBtn.setTitle("register".localized.uppercased(), for: .normal)
             alreadyMemberLbl.text = "already_a_member".localized
-            loginBtn.setTitle("login".localized, for: .normal)
+             loginBtn.setTitle("login".localized.uppercased(), for: .normal)
             setupEmailView()
             setupFirstName()
             SetupLastName()

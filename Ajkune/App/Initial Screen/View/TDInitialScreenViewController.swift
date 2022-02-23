@@ -32,8 +32,8 @@ class TDInitialScreenViewController: UIViewController, Storyboarded {
     }
     //MARK: - Functions
     func localize(){
-        loginBtn.setTitle("login".localized, for: .normal)
-        signUpBtn.setTitle("register".localized, for: .normal)
+        loginBtn.setTitle("login".localized.uppercased(), for: .normal)
+        signUpBtn.setTitle("register".localized.uppercased(), for: .normal)
         descriptionLabel.text = "initialScreenDesc".localized
         titleLabel.text = "initialScreenTitle".localized
     }

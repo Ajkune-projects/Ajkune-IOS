@@ -53,8 +53,8 @@ class LoginViewController: UIViewController, Storyboarded {
         passwordTextField.placeholder = "password".localized
         dontHaveAccLabel.text = "don_t_have_an_account".localized
         forgotPassword.setTitle("forgot_password".localized, for: .normal)
-        signUpButton.setTitle("register".localized, for: .normal)
-        loginBtn.setTitle("login".localized, for: .normal)
+        signUpButton.setTitle("register".localized.uppercased(), for: .normal)
+        loginBtn.setTitle("login".localized.uppercased(), for: .normal)
         
     }
     
