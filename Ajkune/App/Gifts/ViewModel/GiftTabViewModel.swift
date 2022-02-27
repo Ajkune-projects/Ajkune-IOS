@@ -12,7 +12,9 @@ class GiftTabViewModel: GiftTabViewModelProtocol{
     func showGiftScreen() {
         coordinatorDelegate?.showGiftScreen()
     }
-    
+    func showInitialScreen() {
+        coordinatorDelegate?.showInitialScreen()
+    }
     func hasGifts(completion: @escaping ((Gift?) -> Void)) {
         let gift = AuthenticationClient.hasGiftUser()
         gift.execute(onSuccess: { gift in

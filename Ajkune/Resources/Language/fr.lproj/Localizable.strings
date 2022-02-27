@@ -23,9 +23,14 @@
 "first_name" = "Prénom";
 "last_name" = "Nom";
 "already_a_member"= "Déjà membre ?";
-
-
-
+"deactivate_account" = "Vous avez désactivé votre compte!";
+"deleteAccount" = "Supprimer le compte" ;
+"login_as_guest" = "CONNEXION EN TANT QU'INVITÉ";
+"premissions_gifts" = "Vous n'êtes pas autorisé à recevoir des cadeaux, veuillez vous connecter ou vous inscrire pour recevoir des cadeaux.";
+"login_register" = "Connexion / S'inscrire";
+"login_premissions" = "Vous n'avez pas accès pour cette action. Voulez-vous vous connecter ou vous inscrire ?";
+"yes" = "Oui";
+"no" = "Non";
 
 //ALERT
 "enter_your_email_address_linked_to_your_account" = "Saisissez votre adresse e-mail liée à votre compte";

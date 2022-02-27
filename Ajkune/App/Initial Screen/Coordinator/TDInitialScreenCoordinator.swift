@@ -9,6 +9,7 @@ import Foundation
 
 protocol TDInitialScreenCoordinatorDelegate {
     func initializeLoginScreen()
+    func goToHomeTab()
 }
 
 class TDInitialScreenCoordinator: TDDefaultCoordinator{    
@@ -16,6 +17,7 @@ class TDInitialScreenCoordinator: TDDefaultCoordinator{
     var viewController : TDInitialScreenViewController?
     var viewModel : TDInitialScreenViewModelProtocol
     var coordinatorDelegate : TDInitialScreenCoordinatorDelegate?
+    var coordinatorHome : LoginCoordinatorDelegate?
     var signUpCoordinator: SignUpCoordinator?
     
     init(viewModel: TDInitialScreenViewModelProtocol) {
@@ -37,4 +39,8 @@ extension TDInitialScreenCoordinator: TDInitialScreenViewModelCoordinatorDelegat
     func initializeLogin(){
         self.coordinatorDelegate?.initializeLoginScreen()
     }
+    func loginSuccessful() {
+        self.coordinatorDelegate?.goToHomeTab()
+    }
 }
+

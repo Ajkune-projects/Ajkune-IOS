@@ -26,7 +26,14 @@
 "first_name" = "First name";
 "last_name" = "Last name";
 "already_a_member"= "Already a member?";
-
+"deactivate_account" = "You have deactivated your account!";
+"deleteAccount" = "Delete Account" ;
+"login_as_guest" = "LOGIN AS GUEST";
+"premissions_gifts" = "You don't have permissions to get gifts, please login or register to get gifts.";
+"login_register" = "Log in / Register";
+"login_premissions" = "You don't have access for this action. Do you want to login or register?";
+"yes" = "Yes";
+"no" = "NO";
 
 
 

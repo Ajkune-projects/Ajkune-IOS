@@ -8,6 +8,7 @@
 protocol GiftTabViewModelProtocol : BaseViewModel {
     var coordinatorDelegate : GiftTabViewModelCoordinatorDelegate? {get set}
     func showGiftScreen()
+    func showInitialScreen()
     
     //API
     func hasGifts(completion: @escaping ((Gift?) -> Void))

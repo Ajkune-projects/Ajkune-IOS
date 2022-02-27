@@ -36,10 +36,10 @@
                                 </state>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Fhr-vf-gcy">
-                                <rect key="frame" x="20" y="108" width="374" height="200"/>
+                                <rect key="frame" x="20" y="108" width="374" height="250"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ex3-xV-oGT">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="35"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
                                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
                                         <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -51,7 +51,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zvy-1I-ReF">
-                                        <rect key="frame" x="0.0" y="55" width="374" height="35"/>
+                                        <rect key="frame" x="0.0" y="54" width="374" height="34"/>
                                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
                                         <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -63,7 +63,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jrl-in-nT8">
-                                        <rect key="frame" x="0.0" y="110" width="374" height="35"/>
+                                        <rect key="frame" x="0.0" y="108" width="374" height="34"/>
                                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
                                         <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -74,8 +74,41 @@
                                             <action selector="myGiftsAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="eJe-oT-eXg"/>
                                         </connections>
                                     </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oiz-w3-SvD">
+                                        <rect key="frame" x="0.0" y="162" width="374" height="34"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="remove" translatesAutoresizingMaskIntoConstraints="NO" id="UDW-dH-WNW">
+                                                <rect key="frame" x="0.0" y="0.0" width="22" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="22" id="odD-7t-am4"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IQa-tI-4Jv">
+                                                <rect key="frame" x="22" y="0.0" width="352" height="34"/>
+                                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
+                                                <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="Delete Account">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="deleteAccountAction:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ccQ-Yz-I4i"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="IQa-tI-4Jv" secondAttribute="bottom" id="8qW-6a-NV9"/>
+                                            <constraint firstAttribute="bottom" secondItem="UDW-dH-WNW" secondAttribute="bottom" id="9zv-mC-NHL"/>
+                                            <constraint firstItem="IQa-tI-4Jv" firstAttribute="top" secondItem="Oiz-w3-SvD" secondAttribute="top" id="JM4-mx-eu0"/>
+                                            <constraint firstAttribute="trailing" secondItem="IQa-tI-4Jv" secondAttribute="trailing" id="R6N-S4-vIl"/>
+                                            <constraint firstItem="IQa-tI-4Jv" firstAttribute="leading" secondItem="UDW-dH-WNW" secondAttribute="trailing" id="YJy-FG-G7W"/>
+                                            <constraint firstItem="UDW-dH-WNW" firstAttribute="leading" secondItem="Oiz-w3-SvD" secondAttribute="leading" id="nYf-52-TWY"/>
+                                            <constraint firstItem="UDW-dH-WNW" firstAttribute="top" secondItem="Oiz-w3-SvD" secondAttribute="top" id="y41-Vj-r4F"/>
+                                        </constraints>
+                                    </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Us7-2C-Dp3">
-                                        <rect key="frame" x="0.0" y="165" width="374" height="35"/>
+                                        <rect key="frame" x="0.0" y="216" width="374" height="34"/>
                                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
                                         <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
@@ -88,7 +121,7 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="2be-mC-8C7"/>
+                                    <constraint firstAttribute="height" constant="250" id="2be-mC-8C7"/>
                                 </constraints>
                             </stackView>
                         </subviews>
@@ -108,22 +141,24 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="deleteAccount" destination="IQa-tI-4Jv" id="CUk-W8-ihi"/>
                         <outlet property="languageButton" destination="zvy-1I-ReF" id="IA6-gF-kOI"/>
                         <outlet property="logoutButton" destination="Us7-2C-Dp3" id="OBF-RX-qO0"/>
                         <outlet property="profileButton" destination="ex3-xV-oGT" id="BVB-Zu-l4l"/>
-                        <outlet property="titleButton" destination="foE-5b-l83" id="6wt-94-Iw9"/>
+                        <outlet property="titleButton" destination="foE-5b-l83" id="flq-Tl-zUv"/>
                         <outlet property="yourGiftsButton" destination="Jrl-in-nT8" id="gnx-9a-J28"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4" y="72"/>
+            <point key="canvasLocation" x="2.8985507246376816" y="71.651785714285708"/>
         </scene>
     </scenes>
     <resources>
         <image name="languageIcon" width="20" height="20"/>
         <image name="logoutIcon" width="18" height="18"/>
         <image name="profileIcon" width="16" height="16"/>
+        <image name="remove" width="50" height="50"/>
         <image name="selectedGift" width="20" height="19"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -108,15 +108,40 @@ Always.</string>
                                     <constraint firstAttribute="height" constant="50" id="ffY-cF-vZn"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Fc-3E-syx">
+                                <rect key="frame" x="148.5" y="690" width="117" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="117" id="KS0-JB-1qJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="14"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="LOGIN AS GUEST">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginAsGuest:" destination="AaN-U6-Vwx" eventType="touchUpInside" id="4uj-4g-50y"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zo8-tA-22c">
+                                <rect key="frame" x="148.5" y="720" width="117" height="2"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="2" id="Rbb-g2-Qf9"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="XFq-2M-Ib3"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="8Fc-3E-syx" firstAttribute="centerX" secondItem="UdG-FY-H45" secondAttribute="centerX" id="4ai-zO-2Da"/>
                             <constraint firstItem="thV-zb-ylc" firstAttribute="top" secondItem="Vgi-we-t9e" secondAttribute="bottom" constant="70" id="4rz-eP-zFz"/>
                             <constraint firstItem="VOa-cP-OdG" firstAttribute="top" secondItem="XFq-2M-Ib3" secondAttribute="top" constant="70" id="54x-cb-yxA"/>
                             <constraint firstItem="21Z-Cd-Vio" firstAttribute="trailing" secondItem="XFq-2M-Ib3" secondAttribute="trailing" id="EHd-7c-t0r"/>
                             <constraint firstItem="21Z-Cd-Vio" firstAttribute="top" secondItem="UdG-FY-H45" secondAttribute="top" id="EpW-NE-Yrj"/>
+                            <constraint firstItem="zo8-tA-22c" firstAttribute="centerX" secondItem="UdG-FY-H45" secondAttribute="centerX" id="IFH-8f-Rmb"/>
                             <constraint firstItem="iNS-Hl-SxN" firstAttribute="top" secondItem="VOa-cP-OdG" secondAttribute="bottom" constant="60" id="JJJ-yM-cZM"/>
+                            <constraint firstItem="zo8-tA-22c" firstAttribute="bottom" secondItem="8Fc-3E-syx" secondAttribute="bottom" id="NNJ-2B-jdM"/>
                             <constraint firstItem="iNS-Hl-SxN" firstAttribute="trailing" secondItem="thV-zb-ylc" secondAttribute="trailing" id="OTu-uH-vWd"/>
                             <constraint firstItem="Vgi-we-t9e" firstAttribute="top" secondItem="iNS-Hl-SxN" secondAttribute="bottom" constant="16" id="OxQ-ui-8Kt"/>
                             <constraint firstItem="VHN-44-U9e" firstAttribute="top" secondItem="UdG-FY-H45" secondAttribute="top" id="OyZ-9r-CRw"/>
@@ -124,6 +149,8 @@ Always.</string>
                             <constraint firstItem="Vgi-we-t9e" firstAttribute="leading" secondItem="thV-zb-ylc" secondAttribute="leading" id="TwV-5a-iZw"/>
                             <constraint firstItem="Vgi-we-t9e" firstAttribute="trailing" secondItem="thV-zb-ylc" secondAttribute="trailing" id="Ukx-jp-Udn"/>
                             <constraint firstItem="XFq-2M-Ib3" firstAttribute="trailing" secondItem="VHN-44-U9e" secondAttribute="trailing" id="WHf-NM-va4"/>
+                            <constraint firstItem="8Fc-3E-syx" firstAttribute="top" secondItem="thV-zb-ylc" secondAttribute="bottom" constant="30" id="YgH-V7-bRe"/>
+                            <constraint firstItem="zo8-tA-22c" firstAttribute="width" secondItem="8Fc-3E-syx" secondAttribute="width" id="c4f-aG-LIp"/>
                             <constraint firstItem="VHN-44-U9e" firstAttribute="leading" secondItem="XFq-2M-Ib3" secondAttribute="leading" id="eDj-Bu-Qjz"/>
                             <constraint firstItem="VOa-cP-OdG" firstAttribute="centerX" secondItem="UdG-FY-H45" secondAttribute="centerX" id="eq5-13-aah"/>
                             <constraint firstItem="21Z-Cd-Vio" firstAttribute="leading" secondItem="XFq-2M-Ib3" secondAttribute="leading" id="lo1-7l-DAV"/>
@@ -135,6 +162,7 @@ Always.</string>
                     </view>
                     <connections>
                         <outlet property="descriptionLabel" destination="Vgi-we-t9e" id="cdu-Tp-txp"/>
+                        <outlet property="loginAsGuest" destination="8Fc-3E-syx" id="pOO-tj-ocm"/>
                         <outlet property="loginBtn" destination="flt-jh-Ja0" id="mxR-TX-tCu"/>
                         <outlet property="signInButton" destination="flt-jh-Ja0" id="XVL-Zn-crm"/>
                         <outlet property="signUpBtn" destination="1q7-9z-Gsj" id="qun-Sa-xuX"/>

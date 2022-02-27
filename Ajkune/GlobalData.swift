@@ -7,12 +7,14 @@
 
 import Foundation
 public var changeLanguage = ""
+
 struct forgotPassword{
     static var  emailAddress:String? = ""
     static var  resetCode:String? = ""
 }
 
 struct globalData{
+    static var defaultToken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC80NS43Ny41NC4xNThcL2FwaVwvbG9naW4iLCJpYXQiOjE2NDU5OTg0NjUsImV4cCI6MTY0NzUxMDQ2NSwibmJmIjoxNjQ1OTk4NDY1LCJqdGkiOiJqYXpUbktjQmxsMktzUVB3Iiwic3ViIjo1LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.5EMVtGhsCCLkSRcyXcDv_uy-btVTXPzEcZUZ7__4Cfo"
     static var categoryIndexPath = IndexPath(row: 0, section: 0)
     static var categoryIndexPathOffer = IndexPath(row: 0, section: 0)
     static var fromAllCategories: Bool = false

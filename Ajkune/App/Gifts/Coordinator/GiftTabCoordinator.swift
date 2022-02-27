@@ -11,6 +11,7 @@ class GiftTabCoordinator: TDDefaultCoordinator{
     var viewController : GiftTabViewController?
     var viewModel : GiftTabViewModelProtocol
     var luckyWheelCoordinator: LuckyWheelCoordinator?
+    var initialScreen : TDInitialScreenCoordinator?
     
     init(viewModel: GiftTabViewModelProtocol = GiftTabViewModel()) {
         self.viewModel = viewModel
@@ -27,5 +28,9 @@ extension GiftTabCoordinator: GiftTabViewModelCoordinatorDelegate{
     func showGiftScreen() {
         luckyWheelCoordinator = LuckyWheelCoordinator(viewModel: LuckyWheelViewModel(), navigationController: self.viewController?.navigationController)
         luckyWheelCoordinator?.start()
+    }
+    func showInitialScreen(){
+        initialScreen = TDInitialScreenCoordinator(viewModel: TDInitialScreenViewModel())
+        initialScreen?.start()
     }
 }

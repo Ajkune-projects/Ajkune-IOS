@@ -12,4 +12,7 @@ protocol SettingsTabViewModelProtocol : BaseViewModel {
     func showProfile()
     func showLanguage()
     func showMyGifts()
+    
+    //API
+    func deleteUser(completion: @escaping ((ServerResponse?) -> Void))
 }

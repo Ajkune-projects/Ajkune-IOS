@@ -75,4 +75,7 @@ class AuthenticationClient {
     static func getMyGifts() -> Future<[Gift1], Error> {
         return TDAPIClient.performRequest(route: TDAuthenticationEndpoint.getMyGifts)
     }
+    static func deleteUser() -> Future<ServerResponse, Error> {
+        return TDAPIClient.performRequest(route: TDAuthenticationEndpoint.deleteUser)
+    }
 }

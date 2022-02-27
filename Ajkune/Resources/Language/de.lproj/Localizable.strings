@@ -22,6 +22,14 @@
 "first_name" = "Vorname";
 "last_name" = "Nachname";
 "already_a_member" = "Schon ein Mitglied?";
+"deactivate_account" = "Sie haben Ihr Konto deaktiviert!";
+"deleteAccount" = "Konto löschen" ;
+"login_as_guest" = "ALS GAST ANMELDEN";
+"premissions_gifts" = "Sie sind nicht berechtigt, Geschenke zu erhalten. Bitte melden Sie sich an oder registrieren Sie sich, um Geschenke zu erhalten.";
+"login_register" = "Einloggen / Registrieren";
+"login_premissions" = "Sie haben keinen Zugriff auf diese Aktion. Möchten Sie sich anmelden oder registrieren?";
+"yes" = "Ja";
+"no" = "Nein";
 
 //Forgot Pass
 "next" = "Nächste";

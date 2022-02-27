@@ -9,4 +9,5 @@ import Foundation
 protocol TDInitialScreenViewModelCoordinatorDelegate: class {
     func showSignUp()
     func initializeLogin()
+    func loginSuccessful()
 }

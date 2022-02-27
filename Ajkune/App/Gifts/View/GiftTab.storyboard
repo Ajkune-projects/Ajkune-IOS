@@ -102,14 +102,14 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <view hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C17-Kl-JCR">
-                                                <rect key="frame" x="47" y="315.5" width="320" height="185"/>
+                                                <rect key="frame" x="47" y="304.5" width="320" height="207"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YDt-N2-D8x">
                                                         <rect key="frame" x="10" y="85" width="300" height="70"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="Vos-kk-ayb"/>
-                                                            <constraint firstAttribute="height" constant="70" id="wGc-i1-PZd"/>
+                                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="70" id="wGc-i1-PZd"/>
                                                         </constraints>
                                                         <string key="text">There is no gift
 for you at the moment!</string>
@@ -130,16 +130,35 @@ for you at the moment!</string>
                                                             <constraint firstAttribute="width" constant="45" id="fpc-8r-fSL"/>
                                                         </constraints>
                                                     </imageView>
+                                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jz2-99-I8b">
+                                                        <rect key="frame" x="10" y="160" width="300" height="37"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="37" id="5Yp-S1-yCk"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="14"/>
+                                                        <color key="tintColor" red="0.61176472900000001" green="0.29803922770000002" blue="0.43137252329999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Login / Register">
+                                                            <color key="titleColor" red="0.61176470589999998" green="0.29803921570000003" blue="0.43137254899999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="loginOrRegister:" destination="WnM-Jo-GeR" eventType="touchUpInside" id="nyt-V0-t2F"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.6588235294" green="0.27450980390000002" blue="0.43529411759999997" alpha="0.050000000000000003" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                                 <constraints>
+                                                    <constraint firstItem="jz2-99-I8b" firstAttribute="top" secondItem="YDt-N2-D8x" secondAttribute="bottom" constant="5" id="BX3-GQ-v6M"/>
                                                     <constraint firstItem="gwS-0Y-loQ" firstAttribute="centerX" secondItem="C17-Kl-JCR" secondAttribute="centerX" id="LCk-7T-ocb"/>
                                                     <constraint firstItem="YDt-N2-D8x" firstAttribute="leading" secondItem="C17-Kl-JCR" secondAttribute="leading" constant="10" id="SJ5-xc-jdF"/>
                                                     <constraint firstItem="YDt-N2-D8x" firstAttribute="top" secondItem="gwS-0Y-loQ" secondAttribute="bottom" constant="10" id="ShM-zz-CaI"/>
                                                     <constraint firstItem="gwS-0Y-loQ" firstAttribute="top" secondItem="C17-Kl-JCR" secondAttribute="top" constant="30" id="W3e-qT-C1g"/>
+                                                    <constraint firstAttribute="bottom" secondItem="jz2-99-I8b" secondAttribute="bottom" constant="10" id="Wuw-tY-bbo"/>
+                                                    <constraint firstItem="jz2-99-I8b" firstAttribute="leading" secondItem="YDt-N2-D8x" secondAttribute="leading" id="eXF-Ol-aD6"/>
+                                                    <constraint firstItem="jz2-99-I8b" firstAttribute="centerX" secondItem="C17-Kl-JCR" secondAttribute="centerX" id="hjh-5I-evf"/>
                                                     <constraint firstAttribute="trailing" secondItem="YDt-N2-D8x" secondAttribute="trailing" constant="10" id="nU4-0S-y4m"/>
                                                     <constraint firstAttribute="width" constant="320" id="pXi-6J-Kvc"/>
-                                                    <constraint firstAttribute="bottom" secondItem="YDt-N2-D8x" secondAttribute="bottom" constant="30" id="rCe-eH-ggi"/>
+                                                    <constraint firstItem="jz2-99-I8b" firstAttribute="trailing" secondItem="YDt-N2-D8x" secondAttribute="trailing" id="tfQ-Bi-j3i"/>
                                                 </constraints>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
@@ -196,6 +215,8 @@ for you at the moment!</string>
                         <outlet property="emptyView" destination="C17-Kl-JCR" id="5KF-Wv-mvV"/>
                         <outlet property="giftTitleBtn" destination="ZXv-zN-sDZ" id="Yzb-Fz-VNv"/>
                         <outlet property="giftView" destination="fjp-2G-Thf" id="ZFl-60-18T"/>
+                        <outlet property="heightLoginBtn" destination="5Yp-S1-yCk" id="TUf-KD-3H1"/>
+                        <outlet property="loginBtn" destination="jz2-99-I8b" id="KcP-RE-1BM"/>
                         <outlet property="playBtn" destination="y01-oY-UOP" id="q7h-cm-LvW"/>
                         <outlet property="playLuckyWheelLBL" destination="4yf-qb-bdT" id="e77-NS-3o4"/>
                         <outlet property="scrollView" destination="qC6-xA-Tvh" id="5WS-85-cNt"/>
@@ -203,7 +224,7 @@ for you at the moment!</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XJy-w2-Py4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-801" y="72"/>
+            <point key="canvasLocation" x="-801.44927536231887" y="71.651785714285708"/>
         </scene>
     </scenes>
     <resources>

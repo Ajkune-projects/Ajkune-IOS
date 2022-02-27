@@ -14,6 +14,7 @@ class TDInitialScreenViewController: UIViewController, Storyboarded {
     @IBOutlet weak var signInButton: UIButton!
     @IBOutlet weak var loginBtn: UIButton!
     @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var loginAsGuest: UIButton!
     @IBOutlet weak var signUpBtn: UIButton!
     //MARK: - Properties
     var viewModel: TDInitialScreenViewModelProtocol?
@@ -36,6 +37,7 @@ class TDInitialScreenViewController: UIViewController, Storyboarded {
         signUpBtn.setTitle("register".localized.uppercased(), for: .normal)
         descriptionLabel.text = "initialScreenDesc".localized
         titleLabel.text = "initialScreenTitle".localized
+        loginAsGuest.setTitle("login_as_guest".localized, for: .normal)
     }
     //MARK: - IBActions
     @IBAction func loginButtonPressed(_ sender: Any) {
@@ -45,4 +47,10 @@ class TDInitialScreenViewController: UIViewController, Storyboarded {
     @IBAction func signUpButtonPressed(_ sender: Any) {
          self.viewModel?.showSignUp()
     }
+    
+    @IBAction func loginAsGuest(_ sender: Any) {
+        UserDefaults.standard.setValue(globalData.defaultToken, forKey: USER_TOKEN)
+        self.viewModel?.loginSuccessful()
+    }
+    
 }

@@ -76,6 +76,12 @@ extension TDAppCoordinator: TDInitialScreenCoordinatorDelegate{
         self.initialScreenCoordinator = nil
         self.initializeLogin()
     }
+    func goToHomeTab() {
+        self.loginCoordinator = nil
+        self.initializeMainApp()
+    }
+
+
 }
 
 extension TDAppCoordinator: AccountProtocol{

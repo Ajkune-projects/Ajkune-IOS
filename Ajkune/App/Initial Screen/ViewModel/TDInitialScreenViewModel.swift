@@ -17,7 +17,9 @@ class TDInitialScreenViewModel: TDInitialScreenViewModelProtocol{
     func initializeLogin() {
         self.coordinatorDelegate?.initializeLogin()
     }
-    //    func userInitialScreenSuccessful(){
-    //        coordinatorDelegate?.userInitialScreenSuccessful()
-    //    }
+    
+    func loginSuccessful() {
+        coordinatorDelegate?.loginSuccessful()
+    }
+    
 }

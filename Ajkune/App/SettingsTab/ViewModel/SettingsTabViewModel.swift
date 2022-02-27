@@ -19,4 +19,14 @@ class SettingsTabViewModel: SettingsTabViewModelProtocol{
     func showMyGifts() {
         coordinatorDelegate?.showMyGifts()
     }
+    
+    //API
+    func deleteUser(completion: @escaping ((ServerResponse?) -> Void)) {
+         let client = AuthenticationClient.deleteUser()
+         client.execute(onSuccess: { response in
+             completion(response)
+         }, onFailure: {error in
+             completion(nil)
+         })
+     }
 }

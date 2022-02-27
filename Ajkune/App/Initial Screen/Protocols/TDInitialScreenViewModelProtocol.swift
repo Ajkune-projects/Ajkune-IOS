@@ -10,4 +10,5 @@ protocol TDInitialScreenViewModelProtocol : BaseViewModel {
     var coordinatorDelegate : TDInitialScreenViewModelCoordinatorDelegate? {get set}
     func showSignUp()
     func initializeLogin()
+    func loginSuccessful()
 }

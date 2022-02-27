@@ -8,4 +8,5 @@
 import Foundation
 protocol GiftTabViewModelCoordinatorDelegate: AnyObject {
     func showGiftScreen()
+    func showInitialScreen()
 }

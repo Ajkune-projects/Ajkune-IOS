@@ -15,6 +15,7 @@ enum TDAuthenticationEndpoint: TDAPIConfiguration {
     case checkResetPasswordCode(resetPasswordCode: String)
     case requestResetPassword(data: ResetPasswordModel)
     case getBanner
+    case deleteUser
 //Products
     case getProducts
     case getProductsByID(Id:Int)
@@ -45,10 +46,9 @@ enum TDAuthenticationEndpoint: TDAPIConfiguration {
             return .post
         case .getProducts, .getProductsByID,.getCategories,.getBanner,.getProductDetails,.filterProducts,.getUserDetails,.getProductsFromOffer,.getProductsByIdOffer,.hasGiftUser,.luckyWheelGifts,.getMyGifts:
             return .get
-//        case :
-//            return .delete
-//        case :
-//            return .put
+        case .deleteUser:
+            return .delete
+            
         }
     }
     
@@ -97,6 +97,8 @@ enum TDAuthenticationEndpoint: TDAPIConfiguration {
             return "/commentOffer/new"
         case .getMyGifts:
             return "/gift/win"
+        case .deleteUser:
+            return "/deleteMyUser"
         }
     }
     
@@ -119,7 +121,7 @@ enum TDAuthenticationEndpoint: TDAPIConfiguration {
                      "email":data.email,
                      "password":data.password,
                      "confirmation_password":data.confirmation_password]
-        case .getProducts,.getProductsByID,.getCategories,.getBanner,.getProductDetails,.filterProducts,.getUserDetails,.getProductsByIdOffer,.getProductsFromOffer,.hasGiftUser,.luckyWheelGifts,.getMyGifts:
+        case .getProducts,.getProductsByID,.getCategories,.getBanner,.getProductDetails,.filterProducts,.getUserDetails,.getProductsByIdOffer,.getProductsFromOffer,.hasGiftUser,.luckyWheelGifts,.getMyGifts,.deleteUser:
             return nil
         case .addComment(let product_id, let title, let comment):
             return ["product_id":product_id,
