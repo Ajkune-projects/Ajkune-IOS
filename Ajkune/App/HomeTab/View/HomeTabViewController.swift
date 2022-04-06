@@ -160,7 +160,11 @@ class HomeTabViewController: UIViewController, Storyboarded{
                    self.tableViewHeightConst.constant = self.productsCollectionView.contentSize.height
                             self.view.layoutIfNeeded()
                 }
-            } })
+            }else{
+                Account.shared.initLogin()
+            }
+            
+        })
     }
     
     func getALLCategories(){

@@ -14,7 +14,7 @@ struct forgotPassword{
 }
 
 struct globalData{
-    static var defaultToken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC80NS43Ny41NC4xNThcL2FwaVwvbG9naW4iLCJpYXQiOjE2NDU5OTg0NjUsImV4cCI6MTY0NzUxMDQ2NSwibmJmIjoxNjQ1OTk4NDY1LCJqdGkiOiJqYXpUbktjQmxsMktzUVB3Iiwic3ViIjo1LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.5EMVtGhsCCLkSRcyXcDv_uy-btVTXPzEcZUZ7__4Cfo"
+    static var defaultToken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC80NS43Ny41NC4xNThcL2FwaVwvbG9naW4iLCJpYXQiOjE2NDkyNzE5MTgsImV4cCI6MTY1MDc4MzkxOCwibmJmIjoxNjQ5MjcxOTE4LCJqdGkiOiI1blNYV1NEd3VEampHemd0Iiwic3ViIjo1LCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.dPXzDxUzbT46QrqEeyuObvMnOF5rKRT7EkChc-fZeXM"
     static var categoryIndexPath = IndexPath(row: 0, section: 0)
     static var categoryIndexPathOffer = IndexPath(row: 0, section: 0)
     static var fromAllCategories: Bool = false
